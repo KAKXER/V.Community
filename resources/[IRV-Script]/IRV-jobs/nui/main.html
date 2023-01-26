@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/eclipse-dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="centered" style="width: 965px; height: 500px;display: none;">
+        <div class="left-menu">
+            <div class="logo">
+                <img class="jobLogo" style="margin-bottom:30px;" src="images/postal.png" width="125" /><br /> Rahnama
+                <br />
+                <a>(az <b>ESC</b> baraye bastane Menu estefade konid)</a>
+            </div>
+
+            <div class="accordion">
+                <div class="section">
+                    <input type="radio" name="accordion-1" id="section-1" checked="checked" />
+                    <div class="content">
+                        <ul>
+                            <li class="section" target-panel="#commands"><i class="fa fa-cogs"></i><span>Commands</span>
+                            </li>
+                            <li class="section" target-panel="#hotkeys"><i class="fa fa-keyboard-o"></i><span>HotKeys</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div id="commands" class="panel panel-dark panel-scale" style="width: 760px;right: 4px;">
+            <div class="panel-header">
+                <div><b class="windowTitle">List command haye jobe <span class="jobTitle"></span></b>
+                </div>
+                <hr />
+            </div>
+
+            <div style="overflow-y: scroll; max-height: 350px;">
+                <table style="line-height:2.75rem" class="commandsTable" width="100%">
+                </table>
+            </div>
+            <div class="buttons"></div>
+        </div>
+
+        <div id="hotkeys" class="panel panel-dark panel-scale" style="display: none; width: 760px;right: 4px">
+            <div class="panel-header">
+                <div><b>List hotkey haye jobe <span class="jobTitle"></span></b></div>
+                <hr />
+            </div>
+
+            <div style="overflow-y: scroll; max-height: 350px;">
+                <table style="line-height:2.75rem" class="hotkeysTable" width="100%">
+                </table>
+            </div>
+            <div class="buttons"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="libraries/script.js"></script>
+</body>
+
+</html>

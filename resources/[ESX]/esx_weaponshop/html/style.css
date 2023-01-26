@@ -1,0 +1,268 @@
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf);
+}
+
+body {
+  display: none;
+  user-select: none;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+
+  box-sizing: border-box;
+  /* background: rgba(0, 0, 0, 0.479); */
+}
+
+.shopName {
+  text-indent: 25px;
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  font-family: fantasy;
+  color: rgb(255, 255, 255);
+  text-shadow: 0vw 0vw 0.1vw #000000;
+
+}
+
+
+
+@keyframes background {
+  0% {
+      background-position: 0 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+.shop {
+  /* width: 370px; */
+  height: 600px;
+  /* overflow: auto; */
+
+  position: absolute;
+  margin-left: -1%;
+  margin-top: 2%;
+
+  animation: slide-in;
+  animation-duration: 1.0s;
+  animation-fill-mode: forwards;
+  transform: translateX(-80px);
+}
+
+.shop::-webkit-scrollbar {
+  width: 0px;
+}
+
+.shop::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.shop::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.item {
+  display: flex;
+  width: 20vw;
+
+  margin-left: 3vh;
+  margin-top: 0.5vh;
+
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+  position: relative;
+}
+
+.item::after {
+  content: '';
+  font-family: 'Font Awesome 5 Pro';
+
+  font-weight: 400;
+  position: absolute;
+
+  left: 85%;
+  top: 38%;
+
+  right: 5%;
+  bottom: 0;
+  opacity: 0;
+}
+
+.item:hover::after {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.item:hover {
+  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.2)
+  );
+  border: 0.2vw solid rgba(0, 0, 0, 0.5);
+  transition: all 0.4s;
+  border-radius: 15px;
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.384) 0px 18px 36px -18px inset;
+}
+
+.img-item {
+  max-width: 65px;
+  height: 65px;
+  object-fit: cover;
+}
+
+.itemString {
+  text-align: left;
+}
+
+.itemPrice {
+  text-align: left;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.itemName {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bg-price {
+  background-color: #28dd179c;
+  padding: 2px 8px 2px 8px;
+  border-radius: 8px;
+}
+
+.modal-price {
+  background-color: #28dd179c;
+  padding: 2px 8px 2px 8px;
+  border-radius: 8px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 7%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+  border: 0.2vw solid rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+
+
+  transform: translateY(-100px);
+  animation-name: slide-modal;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.modal.visible {
+  display: block;
+}
+
+.modal_header {
+  color: white;
+  background: rgb(0, 110, 255);
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.modal_header a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 0 20px;
+  font-size: 16px;
+  background: rgb(0, 132, 255);
+  height: 100%;
+}
+
+button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 1em;
+  border: 0;
+  position: relative;
+
+  transition: all 0.5s;
+  outline: none;
+}
+
+.btn-1 {
+  top: 5.4vh;
+  background: rgba(252, 250, 251, 0.5);
+}
+
+.btn-1::after {
+  content: '';
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.btn-1:hover {
+  background: #28dd179c;
+  transition: all 0.5s;
+  transform: scale(1.05);
+  box-shadow: #28dd179c 0px 30px 60px -12px inset,
+  rgba(46, 44, 44, 0.801) 0px 18px 36px -18px inset;
+}
+
+.btn-1:hover::after {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.modalimage img {
+  margin-top: 23px;
+  max-width: 50px;
+  height: 50dpx;
+  object-fit: cover;
+}
+
+@keyframes slide-modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

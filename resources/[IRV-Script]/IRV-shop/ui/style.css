@@ -1,0 +1,252 @@
+.auto-insurance {
+    height: 700px;
+    width: 340px;
+    box-shadow: 0 0 15px #000000;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.header {
+    height: 50px;
+    width: 340px;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 15px #000000;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Source Sans Pro";
+    text-transform: uppercase;
+    background: radial-gradient(circle, #06d845, #00ad34);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    text-fill-color: transparent;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    animation: textclip 1.5s linear infinite;
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.item {
+    height: 61px;
+    width: 340px;
+    background-color: #262626;
+    box-shadow: 0 0 3px #000000;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+    height: 13px;
+    background-color: #525252;
+}
+
+::-webkit-scrollbar-button:hover {
+    background-color: #00ad34;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00ad34;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #00ad4e;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #4e4e4e;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #707070;
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+.footer {
+    height: 62px;
+    width: 340px;
+    border-radius: 0 0 4px 4px;
+    background-color: #262626;
+    box-shadow: 0 0 15px #000000;
+    position: absolute;
+    bottom: 0;
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-button {
+    height: 38px;
+    width: 308px;
+    background-color: rgba(13, 242, 89, 0.842);
+    position: absolute;
+    font-weight: bold;
+    color: #FBFBFB;
+    font-family: "Source Sans Pro";
+    box-shadow: 0 0 15px rgba(13, 242, 89, 0.604);
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.main-button:hover {
+    animation: anim 0.4s forwards;
+}
+
+@keyframes anim{
+    100%{
+        background-color: #F93154;
+    box-shadow: 0 0 15px #F93154;
+    }
+}
+
+.item .title {
+    color: #FBFBFB;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    left: 20%;
+    top: 12%;
+}
+
+.item .info {
+    color: rgb(251, 251, 251);
+    font-family: "Source Sans Pro";
+/*     font-size: 13px; */
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.retrieve-chop-button {
+    height: 24px;
+    width: 84px;
+    background-color: #DA5151;
+    left: 70%;
+    position: absolute;
+    top: 18px;
+}
+
+.retrieve-chop-button p {
+    color: #FBFBFB;
+    font-family: "Source Sans Pro";
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.retrieve-button {
+    height: 28px;
+    width: 55px;
+    background-color: #00B74A;
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+    left: 80%;
+    position: absolute;
+    top: 18px;
+}
+
+.retrieve-button p {
+    color: #FBFBFB;
+    background-color: #004e1f;
+    font-family: "Source Sans Pro";
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: #FBFBFB;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+button:active,
+button:focus,
+button:hover {
+    outline: none;
+    border: none;
+}
+
+.buttonDisabled {
+    pointer-events: none;
+    cursor: no-drop;
+    opacity: 0.7;
+}
+
+* {
+    user-select: none;
+}
+.quantity { 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 24px;
+    width: 40px;
+    text-align: center;
+    left: 65%;
+    position: absolute;
+    top: 18.5px;
+    border: 1px solid #3e3e3e;
+    padding-left: 10px;
+}
+.quantity:focus { 
+    outline: none;
+}

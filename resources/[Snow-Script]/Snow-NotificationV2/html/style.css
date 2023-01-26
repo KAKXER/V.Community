@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#ui {
+    position: absolute;
+    bottom: 22vh;
+    left: 1.5%;
+    width: 50ch;
+    overflow: hidden;
+    display: none;
+}
+
+#leftnotif {
+    position: absolute;
+    bottom: 0px;
+    width: 7px;
+    height: 80px;
+    background-color: #00f5e8;
+    border-radius: 20px;
+}
+
+#titlenotif {
+    color: #eff1f2;
+    text-shadow: 0px 0px 5px #eff1f2;
+    position: absolute;
+    top: 0px;
+    padding-left: 15px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#descrnotif {
+    position: absolute;
+    top: 27px;
+    width: 30ch;
+    font-family: sans-serif;
+    padding-left: 15px;
+    line-height: 20px;
+    color: white;
+}
+
+#notiftext {
+    transform: translateX(-200%);
+    height: 70px;
+}
+
+@keyframes leftnotif {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 70px;
+    }
+}
+
+@keyframes closeleftnotif {
+    from {
+        height: 70px;
+    }
+
+    to {
+        height: 0px;
+    }
+}
+
+@keyframes textanim {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(15%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes closetextanim {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}

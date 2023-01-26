@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Snow-NotificationV2</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="style.scss">
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+	<div id="list"></div>
+</div>
+	<!-- Notification Setting Menu -->
+	<div id="SettingMenu" style="display: none;">
+		<div onclick="CloseButton()" id="CloseButton"><span>X</span></div>
+		<div id="header"></div>
+		<div id="headerText"><span>Snow Notification</span></div>
+		<div id="volumeBar">
+			<div class="SoundSlider">
+				<span>VOLUME</span>
+				<input type="range" min="0.0" max="100.0" value="0.1">
+				<progress min="0.0" max="100.0" value="0.1"></progress>
+			</div>
+		</div>
+		<div id="opacityBar">
+			<div class="AlphaSlider">
+				<span>OPACITY</span>
+				<input type="range" min="0" max="100" value="100">
+				<progress min="0" max="100" value="100"></progress>
+			</div>
+		</div>
+		<div id="center">
+			<div id="CSound" onclick="CSoundClick()" data-numberlk="ON"><span>Custom Sound</span></div>
+			<div id="DSound" onclick="DSoundClick()" data-numberlk="ON"><span>Default Sound</span></div>
+			<div id="Title" onclick="TitleClick()" data-numberlk="ON"><span>Title Notif</span></div>
+			<div id="footerText">
+				<p> Changes apply after reopening this</p>
+				<p> Made by Snow Development</p>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+	<script src="script.js"></script>
+</html>

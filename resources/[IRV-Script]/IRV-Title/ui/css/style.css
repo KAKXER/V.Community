@@ -1,0 +1,295 @@
+html {
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#Display {
+	opacity: 1;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#LINE {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(255,255,255,1);
+	stroke-width: 0.26vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.LINE {
+    filter: drop-shadow(0.104vw 0.104vw 0.313vw rgba(0, 255, 99, 1));
+    overflow: visible;
+    position: absolute;
+    width: 311.27.292vw;
+    height: 74.9.063vw;
+    left: 20.50.833vw;
+    top: 0.417vw;
+	transform: matrix(1,0,0,1,0,0);
+}
+#IRV_Role_Play {
+    filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+    left: 1.9vw;
+    top: 1.208vw;
+    position: absolute;
+    overflow: visible;
+    width: 12.552vw;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Byorg;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.979vw;
+	color: rgba(7,164,68,1);
+	letter-spacing: -0.06vw;
+    text-shadow:
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#ID_AND_PLAYERS {
+	filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+	left: 0.8vw;
+	top: 3.95vw;
+	position: absolute;
+	overflow: visible;
+	width: 15.365vw;
+	height: 1.042vw;
+	text-align: left;
+	font-family: "Jersey 716";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.781vw;
+	color: rgba(255,255,255,1);
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#DisplayAdmin {
+	opacity: 1;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#Government {
+	filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+	left: 0.8vw;
+	top: 4.95vw;
+	position: absolute;
+	overflow: visible;
+	width: 15.365vw;
+	height: 1.042vw;
+	text-align: left;
+	font-family: "Jersey 716";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.781vw;
+	color: rgba(255,255,255,1);
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#Police {
+	filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+	left: 0.8vw;
+	top: 5.95vw;
+	position: absolute;
+	overflow: visible;
+	width: 15.365vw;
+	height: 1.042vw;
+	text-align: left;
+	font-family: "Jersey 716";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.781vw;
+	color: rgba(255,255,255,1);
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#Medic {
+	filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+	left: 0.8vw;
+	top: 6.95vw;
+	position: absolute;
+	overflow: visible;
+	width: 15.365vw;
+	height: 1.042vw;
+	text-align: left;
+	font-family: "Jersey 716";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.781vw;
+	color: rgba(255,255,255,1);
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#Taxi {
+	filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+	left: 0.8vw;
+	top: 7.95vw;
+	position: absolute;
+	overflow: visible;
+	width: 15.365vw;
+	height: 1.042vw;
+	text-align: left;
+	font-family: "Jersey 716";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.781vw;
+	color: rgba(255,255,255,1);
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#Mechanic {
+	filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+	left: 0.8vw;
+	top: 8.95vw;
+	position: absolute;
+	overflow: visible;
+	width: 15.365vw;
+	height: 1.042vw;
+	text-align: left;
+	font-family: "Jersey 716";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.781vw;
+	color: rgba(255,255,255,1);
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#Sheriff {
+	filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+	left: 0.8vw;
+	top: 9.95vw;
+	position: absolute;
+	overflow: visible;
+	width: 15.365vw;
+	height: 1.042vw;
+	text-align: left;
+	font-family: "Jersey 716";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.781vw;
+	color: rgba(255,255,255,1);
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#Weazel {
+	filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+	left: 0.8vw;
+	top: 10.95vw;
+	position: absolute;
+	overflow: visible;
+	width: 15.365vw;
+	height: 1.042vw;
+	text-align: left;
+	font-family: "Jersey 716";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.781vw;
+	color: rgba(255,255,255,1);
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#Doc {
+	filter: drop-shadow(0vw 0.104vw 5.156vw rgba(0, 255, 99, 1));
+	left: 0.8vw;
+	top: 11.95vw;
+	position: absolute;
+	overflow: visible;
+	width: 15.365vw;
+	height: 1.042vw;
+	text-align: left;
+	font-family: "Jersey 716";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.781vw;
+	color: rgba(255,255,255,1);
+    text-shadow:
+    -1px -1px 5px #0000006b,
+    1px -1px 5px #0000006b,
+    -1px 1px 5px #0000006b,
+    1px 1px 5px #0000006b,
+    -2px -2px 5px #0000006b,
+    2px -2px 5px #0000006b,
+    -2px 2px 5px #0000006b,
+    2px 2px 5px #0000006b;
+}
+#LOGO_IRV {
+	position: absolute;
+    width: 1.563vw;
+    height: 1.3vw;
+    left: 15vw;
+    top: 1.6vw;
+}
+#KHAT {
+    position: absolute;
+    width: 16.25vw;
+    height: 3.906vw;
+    left: 0.5vw;
+    top: 0.3vw;
+}

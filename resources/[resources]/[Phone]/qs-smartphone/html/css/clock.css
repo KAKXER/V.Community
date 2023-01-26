@@ -1,0 +1,715 @@
+.clock-app {
+	font-family: "ios";
+	display: none;
+	height: 108%;
+	width: 100%;
+	color: black;
+	background: white;
+	overflow: hidden
+}
+
+.clock-app ::selection {
+	background-color: transparent
+}
+
+.clock-app-header {
+	position: absolute;
+	width: 100%;
+	height: 58.8px;
+	top: 420px;
+	z-index: 99
+}
+
+.clock-app-container {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	color: black;
+	background: white
+}
+
+#clock-container-header {
+	position: relative;
+	top: 0
+}
+
+.clock-app-tab {
+	position: relative;
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 12px;
+	flex: 1
+}
+
+#repeat_text {
+	left: 143px;
+	top: 10px;
+	font-size: 16px
+}
+
+.repeat-sign {
+	position: relative;
+	bottom: 10px;
+	right: 7px
+}
+
+.clock-app-tab .global-app-header {
+	position: relative;
+	height: unset;
+	margin-bottom: unset;
+	padding-top: 40px;
+	font-size: 16px;
+	background: #f0eff4;
+	border-bottom: 1px solid #b1b1b16b;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+	z-index: 999
+}
+
+.clock-app-tab .global-app-header .blue-text:last-child {
+	place-self: flex-end;
+	position: unset
+}
+
+.clock-worldtime {
+	position: relative;
+	top: 10px
+}
+
+.clock-app-tab-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	padding-top: 40px;
+	background: #f0eff4;
+	border-bottom: 1px solid #b1b1b16b;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2)
+}
+
+.clock-app-tab-header p {
+	width: 100%;
+	text-align: center
+}
+
+.clock-app-active {
+	display: flex !important
+}
+
+.clock-app-tab-inside {
+	position: relative;
+	padding: 15px;
+	box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.2)
+}
+
+.clock-app-footer {
+	position: relative;
+	margin-bottom: -47px;
+	height: 88px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 30px;
+	text-align: center;
+	padding: 8px 16px;
+	background: #f0eff4;
+	border-top: 1px solid rgba(109, 108, 108, 0.473);
+	box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.14);
+	cursor: pointer
+}
+
+.clock-app-footer i {
+	font-size: 25px
+}
+
+.clock-app-footer p {
+	margin-top: 3px;
+	font-size: 12px
+}
+
+.clock-app-header-button {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 80%;
+	text-align: center;
+	line-height: 58px;
+	background: #0f0f0f;
+	border-bottom: 1px solid #c9c9c9;
+	font-family: "ios";
+	color: white;
+	transition: .08s
+}
+
+.clock-app-footer-button {
+	position: relative;
+	width: 60px;
+}
+
+.clock-app-header-button:hover {
+	background: #252525
+}
+
+.clock-app-footer-selected p {
+	color: #ff7c14
+}
+
+.clock-app-footer-selected i {
+	color: #ff7c14
+}
+
+.clock-app-loaded {
+	display: none;
+	padding-left: 284.1px;
+	height: 625px
+}
+
+.clock-app-loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	overflow: hidden
+}
+
+.stopwatch-timer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 64px;
+	font-size: 64px;
+	background: var(--main-background-color);
+	font-family: "ios"
+}
+
+.clock-buttons {
+	display: flex;
+	align-items: center;
+	background: var(--main-background-color);
+	padding: 0 26px 16px;
+	justify-content: space-between;
+	font-size: 14px;
+	border-bottom: 1px solid #c9c9c9
+}
+
+.clock-button {
+	display: flex;
+	width: 64px;
+	height: 64px;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	border-radius: 50%;
+	color: var(--main-background-color)
+}
+
+.clock-button p {
+	font-size: 16px;
+	margin: 0 !important
+}
+
+.clock-button[data-type="lap"] {
+	background: var(--main-dark-gray);
+	border: 2px solid var(--main-darker-gray)
+}
+
+.clock-button[data-type="clear"] {
+	background: #000000;
+	border: 2px solid #313131
+}
+
+.clock-button[data-type="start"] {
+	background: var(--main-green);
+	border: 2px solid var(--main-darker-green)
+}
+
+.clock-button[data-type="stop"] {
+	background: var(--main-red);
+	border: 2px solid var(--main-darker-red)
+}
+
+.stopwatch-lap-list {
+	overflow: auto;
+	max-height: 247px
+}
+
+.stopwatch-lap {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	padding: 0 16px;
+	border-bottom: 1px solid #c9c9c9;
+	background: var(--main-background-color)
+}
+
+.stopwatch-lap:last-child {
+	border-bottom: none
+}
+
+.stopwatch-lap p {
+	margin: 8px
+}
+
+.stopwatch-lap-list::-webkit-scrollbar {
+	position: absolute;
+	width: 6px
+}
+
+.stopwatch-lap-list::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0)
+}
+
+.stopwatch-lap-list::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 9px 0 0 9px
+}
+
+.world-time {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 32px;
+	background: var(--main-background-color)
+}
+
+.world-time:last-child {
+	border-bottom: 1px solid #c9c9c9
+}
+
+.world-time::after {
+	content: "";
+	width: 100%;
+	margin-top: 22%;
+	margin-left: -30px;
+	background: var(--border-gray);
+	position: absolute;
+	color: black;
+	height: 1px
+}
+
+.world-time:last-child::after {
+	display: none
+}
+
+.world-time p {
+	margin: 0
+}
+
+.world-time-info {
+	display: flex;
+	flex-direction: column
+}
+
+.world-time-info p:first-child {
+	font-size: 20px
+}
+
+.world-time-info p:last-child {
+	color: var(--main-dark-gray);
+	font-family: "ios";
+	font-size: 12px
+}
+
+.world-time-clock {
+	display: flex;
+	align-items: flex-end
+}
+
+.world-time-clock p:first-child {
+	font-size: 46px
+}
+
+.world-time-clock p:last-child {
+	font-size: 19px;
+	padding-bottom: 10px;
+	padding-left: 5px
+}
+
+.clock-timer-setup-container {
+	display: flex;
+	border-bottom: 1px solid var(--border-gray);
+	margin-bottom: 32px;
+	padding: 15px
+}
+
+.clock-app-timer-setup {
+	position: absolute;
+	width: 100%
+}
+
+.clock-timer-container #clock-timer-minute-picker {
+	text-align: right;
+	direction: rtl;
+	text-indent: 8px
+}
+
+.clock-timer-container #clock-timer-second-picker {
+	text-align: left;
+	text-indent: 8px
+}
+
+.clone-scroller::-webkit-scrollbar {
+	display: none
+}
+
+.clock-app-timer-show {
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	display: none
+}
+
+.clock-app-timer-show-container-texts {
+	display: flex;
+	background: var(--main-background-color);
+	padding-top: 64px;
+	font-size: 64px;
+	align-items: center;
+	justify-content: center
+}
+
+.switch__container {
+	position: relative;
+	width: 60px;
+	left: 10px;
+	top: 5px
+}
+
+.switch {
+	position: absolute;
+	left: -9999px
+}
+
+.switch+label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	user-select: none
+}
+
+.switch--shadow+label {
+	padding: 2px;
+	width: 60px;
+	height: 30px;
+	background-color: #dddddd;
+	border-radius: 60px
+}
+
+.switch--shadow+label:before,
+.switch--shadow+label:after {
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	content: ""
+}
+
+.switch--shadow+label:before {
+	right: 1px;
+	background-color: #f1f1f1;
+	border-radius: 60px;
+	transition: background .4s
+}
+
+.switch--shadow+label:after {
+	width: 26px;
+	height: 26px;
+	background-color: #fff;
+	border-radius: 100%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	transition: all .4s
+}
+
+.switch--shadow:checked+label:before {
+	background-color: #8ce196
+}
+
+.switch--shadow:checked+label:after {
+	transform: translateX(32px)
+}
+
+.switch--flat+label {
+	padding: 2px;
+	width: 60px;
+	height: 30px;
+	background-color: #dddddd;
+	border-radius: 60px;
+	transition: background .4s
+}
+
+.switch--flat+label:before,
+.switch--flat+label:after {
+	display: block;
+	position: absolute;
+	content: ""
+}
+
+.switch--flat+label:before {
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	right: 2px;
+	background-color: #fff;
+	border-radius: 60px;
+	transition: background .4s
+}
+
+.switch--flat+label:after {
+	top: 4px;
+	left: 4px;
+	bottom: 4px;
+	width: 56px;
+	background-color: #dddddd;
+	border-radius: 52px;
+	transition: margin 0.4s, background .4s
+}
+
+.switch--flat:checked+label {
+	background-color: #8ce196
+}
+
+.switch--flat:checked+label:after {
+	margin-left: 60px;
+	background-color: #8ce196
+}
+
+.global-app-header {
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	white-space: nowrap;
+	top: 0;
+	position: relative;
+	padding: 0 24px;
+	font-size: 15px;
+	text-align: center;
+	font-family: "ios";
+	margin-bottom: 48px
+}
+
+.global-app-header p:nth-child(2) {
+	width: 100%;
+	text-align: center;
+	font-size: 17px
+}
+
+.global-app-header .blue-text {
+	color: #087fff
+}
+
+.global-app-header .blue-text:last-child {
+	position: absolute;
+	right: 22px
+}
+
+.global-app-header .red-text {
+	color: red;
+	position: absolute;
+	right: 24px
+}
+
+.icon-clock {
+	overflow: hidden;
+	background: #000;
+	border-radius: 12px;
+	transform: scale(1.05)
+}
+
+.clock {
+	width: 215px;
+	height: 215px;
+	border-radius: 50%;
+	background: #f1f1f1;
+	position: absolute;
+	top: 25px;
+	left: 25.3px;
+	transform: translate(-50%, -50%) scale(0.2)
+}
+
+.clock ol {
+	list-style-type: none;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: 5px;
+	right: 6px
+}
+
+.clock ol li {
+	counter-increment: labelCounter;
+	position: absolute;
+	font-size: 31px
+}
+
+.clock ol li:before {
+	font-family: "Helvetica";
+	content: counter(labelCounter) ""
+}
+
+.clock ol li:nth-child(1) {
+	right: 55px;
+	top: 20px
+}
+
+.clock ol li:nth-child(2) {
+	right: 25px;
+	top: 50px
+}
+
+.clock ol li:nth-child(3) {
+	right: 12px;
+	top: 85px
+}
+
+.clock ol li:nth-child(4) {
+	right: 25px;
+	top: 125px
+}
+
+.clock ol li:nth-child(5) {
+	right: 55px;
+	top: 150px
+}
+
+.clock ol li:nth-child(6) {
+	right: 90px;
+	top: 160px
+}
+
+.clock ol li:nth-child(7) {
+	right: 125px;
+	top: 150px
+}
+
+.clock ol li:nth-child(8) {
+	right: 155px;
+	top: 125px
+}
+
+.clock ol li:nth-child(9) {
+	right: 165px;
+	top: 85px
+}
+
+.clock ol li:nth-child(10) {
+	right: 150px;
+	top: 50px
+}
+
+.clock ol li:nth-child(11) {
+	right: 120px;
+	top: 20px
+}
+
+.clock ol li:nth-child(12) {
+	right: 85px;
+	top: 10px
+}
+
+@-webkit-keyframes spin {
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+#hour {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #303030;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -7px;
+	margin-left: -7px
+}
+
+#hour:before,
+#hour:after {
+	content: "";
+	display: block;
+	position: absolute
+}
+
+#hour:before {
+	width: 8px;
+	height: 65px;
+	border-radius: 4px;
+	background: #303030;
+	position: absolute;
+	bottom: 2px;
+	left: 50%;
+	transform: translate(-50%, 0)
+}
+
+#min {
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: #303030;
+	position: absolute;
+	top: 50%;
+	left: 50%
+}
+
+#min:before,
+#min:after {
+	content: "";
+	display: block;
+	position: absolute
+}
+
+#min:before {
+	width: 6px;
+	height: 90px;
+	border-radius: 4px;
+	background: #303030;
+	position: absolute;
+	bottom: 2px;
+	left: 50%;
+	transform: translate(-50%, 0)
+}
+
+#sec {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #dd3e1c;
+	border: 2px solid #e13e1b;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -4px;
+	margin-left: -4px
+}
+
+#sec:before,
+#sec:after {
+	content: "";
+	display: block;
+	position: absolute
+}
+
+#sec:before {
+	width: 2px;
+	height: 105px;
+	border-radius: 4px;
+	background: #e13e1b;
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	transform: translate(-50%, 0)
+}

@@ -1,0 +1,274 @@
+.ping-app {
+	display: none;
+	height: 108%;
+	width: 100%;
+	overflow: hidden;
+	background: #242833
+}
+
+.ping-content {
+	position: relative;
+	top: 320px;
+	z-index: 3
+}
+
+.ping-header {
+	position: absolute;
+	width: 100%;
+	height: 185px;
+	top: 480px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background: white;
+	border-radius: 7px;
+	z-index: 2;
+	box-shadow: 0 -5px 7px rgba(0, 0, 0, 0.2)
+}
+
+.ping-city-name {
+	position: relative;
+	height: 30px
+}
+
+.ping-city-name p {
+	position: relative;
+	left: 10px;
+	top: 3px;
+	color: black;
+	font-family: "ios";
+	font-size: 16px
+}
+
+.ping-city-mylocation {
+	position: relative;
+	bottom: 9px;
+	color: black;
+	font-size: 12px
+}
+
+.ping-city-mylocation p {
+	position: relative;
+	left: 10px;
+	top: 3px;
+	color: grey
+}
+
+.ping-city-mylocation h4 {
+	position: relative;
+	left: 42px;
+	bottom: 24px;
+	color: royalblue
+}
+
+.ping-city-name i {
+	position: relative;
+	left: 270px;
+	bottom: 25px;
+	font-size: 20px;
+	color: lightslategrey
+}
+
+.ping-vehicle-boxes {
+	display: flex;
+	position: relative;
+	height: 50px;
+	padding: 4px;
+	bottom: 30px;
+	border-bottom: 1px solid #b1b1b16b
+}
+
+.ping-vehicle-boxes i {
+	position: relative;
+	color: grey;
+	font-size: 20px;
+	line-height: 35px;
+	left: 20px
+}
+
+.ping-car {
+	position: relative;
+	height: 35px;
+	width: 60px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+	background: rgba(211, 211, 211, 0.3)
+}
+
+.ping-foot {
+	position: relative;
+	height: 35px;
+	width: 60px;
+	margin-right: 10px;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px
+}
+
+.ping-train {
+	position: relative;
+	height: 35px;
+	width: 60px;
+	margin-right: 10px;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+	background: rgba(211, 211, 211, 0.3)
+}
+
+.ping-bike {
+	position: relative;
+	height: 35px;
+	width: 60px;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+	background: rgba(211, 211, 211, 0.4)
+}
+
+.ping-list {
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	overflow-y: scroll
+}
+
+.ping-list img {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	right: 100px
+}
+
+.ping-list::-webkit-scrollbar {
+	display: none
+}
+
+.imagepingapp {
+	position: relative;
+	width: auto;
+	height: 570px;
+	bottom: 20px
+}
+
+.ping-player-info {
+	position: relative;
+	left: 15px;
+	top: 265px
+}
+
+.ping-player-info i {
+	position: relative;
+	margin-left: 5px;
+	bottom: 1px;
+	font-size: 10px
+}
+
+.channel {
+	position: absolute;
+	width: 310px;
+	height: 78px;
+	top: 260px;
+	font-size: 20px;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	z-index: 1;
+	color: darkgrey
+}
+
+input[name="channel"]::-webkit-input-placeholder {
+	color: lightgrey
+}
+
+.channel span {
+	text-align: center
+}
+
+.channel input {
+	position: relative;
+	top: 25px;
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid #b1b1b16b;
+	background: none;
+	outline: none;
+	font-family: "ios";
+	width: 100%;
+	height: 30px;
+	text-align: left;
+	padding: 15px;
+	margin-bottom: 4.5%;
+	font-size: 18px
+}
+
+.channel input::-webkit-inner-spin-button {
+	-webkit-appearance: none
+}
+
+.ping-sender-piinger {
+	position: relative;
+	bottom: 40px;
+	left: 230px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 15px;
+	padding: 9px;
+	line-height: 25px;
+	margin-left: 10px;
+	transition: .3s;
+	cursor: pointer;
+	font-family: "ios";
+	color: white
+}
+
+.ping-sender-piinger:hover {
+	background: darkgreen
+}
+
+#ping-send {
+	background: limegreen;
+	border-radius: 9px
+}
+
+#ping-accept {
+	position: relative;
+	background: white;
+	color: black;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+	bottom: 610px;
+	left: 230px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom: 1px solid #b1b1b16b;
+	padding: 13px;
+	font-size: 18px
+}
+
+#ping-accept i {
+	position: relative;
+	bottom: 5px
+}
+
+#ping-reject {
+	position: relative;
+	background: white;
+	color: black;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+	bottom: 610px;
+	left: 230px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 9px;
+	font-size: 18px
+}
+
+#ping-reject i {
+	position: relative;
+	bottom: 0
+}

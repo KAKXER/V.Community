@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IR.V Developments</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="nui://game/ui/jquery.js"></script>
+    <style type="text/css">
+        .auto-insurance {
+            height: 500px;
+            width: 340px;
+            box-shadow: 0 0 15px #000000;
+            position: relative;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        
+        .header {
+            height: 50px;
+            width: 340px;
+            border-radius: 4px 4px 0 0;
+            box-shadow: 0 0 15px #000000;
+            background: radial-gradient(circle, #0ff053, #008a29);
+            font-family: "Source Sans Pro";
+            font-size: 14px;
+            font-weight: bold;
+            text-shadow:
+            -1px -1px 5px #0000006b,
+            1px -1px 5px #0000006b,
+            -1px 1px 5px #0000006b,
+            1px 1px 5px #0000006b,
+            -2px -2px 5px #0000006b,
+            2px -2px 5px #0000006b,
+            -2px 2px 5px #0000006b,
+            2px 2px 5px #0000006b;
+        }
+        
+        .item {
+            height: 60px;
+            width: 340px;
+            background-color: #262626;
+            box-shadow: 0 0 15px #000000;
+            position: relative;
+            margin-bottom: 1px;
+        }
+
+        ::-webkit-scrollbar-button {
+            display: none;
+            height: 13px;
+            border-radius: 0px;
+            background-color: #525252;
+        }
+
+        ::-webkit-scrollbar-button:hover {
+            background-color: #525252;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #707070;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #707070;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #4e4e4e;
+        }
+
+        ::-webkit-scrollbar-track:hover {
+            background-color: #707070;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        
+        .footer {
+            height: 62px;
+            width: 340px;
+            border-radius: 0 0 4px 4px;
+            background-color: #262626;
+            box-shadow: 0 0 15px #000000;
+            position: absolute;
+            bottom: 0;
+            text-shadow:
+            -1px -1px 5px #0000006b,
+            1px -1px 5px #0000006b,
+            -1px 1px 5px #0000006b,
+            1px 1px 5px #0000006b,
+            -2px -2px 5px #0000006b,
+            2px -2px 5px #0000006b,
+            -2px 2px 5px #0000006b,
+            2px 2px 5px #0000006b;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .main-button {
+            height: 38px;
+            width: 308px;
+            background-color: #0ff053;
+            position: absolute;
+            font-weight: bold;
+            color: #FBFBFB;
+            font-family: Helvetica;
+            font-size: 12px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        
+        .item .title {
+            color: #FBFBFB;
+            font-family: "Source Sans Pro";
+            font-size: 14px;
+            font-weight: bold;
+            position: absolute;
+            left: 5%;
+            top: 20%;
+        }
+        
+        .item .price {
+            color: #FBFBFB;
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+        }
+        
+        a {
+            text-decoration: none !important;
+        }
+        
+        .retrieve-chop-button {
+            height: 24px;
+            width: 84px;
+            background-color: #F93154;
+            box-shadow: 0 0 15px #F93154;
+            left: 70%;
+            position: absolute;
+            top: 18px;
+            text-shadow:
+            -1px -1px 5px #0000006b,
+            1px -1px 5px #0000006b,
+            -1px 1px 5px #0000006b,
+            1px 1px 5px #0000006b,
+            -2px -2px 5px #0000006b,
+            2px -2px 5px #0000006b,
+            -2px 2px 5px #0000006b,
+            2px 2px 5px #0000006b;
+        }
+        
+        .retrieve-chop-button p {
+            color: #FFFFFF;
+            font-family: "Source Sans Pro";
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .policei-button {
+            height: 24px;
+            width: 84px;
+            background-color: #1266F1;
+            box-shadow: 0 0 15px #1266F1;
+            left: 70%;
+            position: absolute;
+            top: 18px;
+            text-shadow:
+            -1px -1px 5px #0000006b,
+            1px -1px 5px #0000006b,
+            -1px 1px 5px #0000006b,
+            1px 1px 5px #0000006b,
+            -2px -2px 5px #0000006b,
+            2px -2px 5px #0000006b,
+            -2px 2px 5px #0000006b,
+            2px 2px 5px #0000006b;
+        }
+
+        .sheriffi-button {
+            height: 24px;
+            width: 84px;
+            background-color: #b89629;
+            box-shadow: 0 0 15px #b89629;
+            left: 70%;
+            position: absolute;
+            top: 18px;
+            text-shadow:
+            -1px -1px 5px #0000006b,
+            1px -1px 5px #0000006b,
+            -1px 1px 5px #0000006b,
+            1px 1px 5px #0000006b,
+            -2px -2px 5px #0000006b,
+            2px -2px 5px #0000006b,
+            -2px 2px 5px #0000006b,
+            2px 2px 5px #0000006b;
+        }
+        
+        .retrieve-button {
+            height: 24px;
+            width: 84px;
+            background-color: #00B74A;
+            box-shadow: 0 0 15px #00B74A;
+            left: 70%;
+            position: absolute;
+            top: 18px;
+            text-shadow:
+            -1px -1px 5px #0000006b,
+            1px -1px 5px #0000006b,
+            -1px 1px 5px #0000006b,
+            1px 1px 5px #0000006b,
+            -2px -2px 5px #0000006b,
+            2px -2px 5px #0000006b,
+            -2px 2px 5px #0000006b,
+            2px 2px 5px #0000006b;
+        }
+        
+        .retrieve-button p {
+            color: #FFFFFF;
+            font-family: "Source Sans Pro";
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        button {
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            color: #fff;
+        }
+        
+        button:active,
+        button:focus,
+        button:hover {
+            outline: none;
+            border: none;
+        }
+        
+        .buttonDisabled {
+            pointer-events: none;
+            cursor: no-drop;
+            opacity: 0.7;
+        }
+        
+        * {
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="auto-insurance" style="top: 50vh; transform: translateY(-50%); float: right; right: 20%; display: none;">
+        <div class="header center">
+            <div id="uiTitle" style="color: #FFFFFF;">Mors Mutual Insurance</div>
+        </div>
+        <div id="carsConteiner" style="overflow-y: scroll; height: 388px; overflow-x: hidden; background-color: #444444;">
+        </div>
+        <div id="item-template" style="display: none;">
+            <div class="item">
+                <div class="title"><span style="color:#1266F1">[{{vehicle.type}}]</span> {{vehicle.name}} - <span style="color:#F93154">{{vehicle.plate}}</span></div>
+                <small class="price">
+                    <span style="{{showPrice}}"><span style="color:#00B74A;font-weight: bold;">{{cost}}</span> baraye daryaft</span>
+                    <span style="display: block;">{{cdTime}}</span>
+                </small>
+                <button href="#" onclick="{{onclick}}" class="{{buttonClass}} center">
+                    <small>{{buttonText}}</small>
+                </button>
+            </div>
+        </div>
+        <div class="footer center">
+            <a id="uiExit" href="#" onclick="Exit()" class="main-button center">CLOSE</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

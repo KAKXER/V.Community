@@ -1,0 +1,42 @@
+.pacman-app {
+  display: none;
+  height: 110%;
+  width: 100%;
+  background: black;
+}
+
+.pacman-header {
+  position: absolute;
+  top: 7px;
+  height: 98px;
+  width: 310px;
+  background-color: black;
+  z-index: 9;
+}
+
+.pacman-iframe {
+  position: relative;
+  right: 101px;
+  top: 33px;
+  height: 160px;
+  zoom: 3;
+}
+
+.pacman-footer {
+  position: absolute;
+  top: 570px;
+  left: 3.17px;
+  height: 89px;
+  width: 310px;
+  background-color: black;
+  z-index: 9;
+}
+
+.pacman-anti-popup {
+  position: absolute;
+  top: 550px;
+  height: 25px;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+}

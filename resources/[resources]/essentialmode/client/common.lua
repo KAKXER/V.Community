@@ -1,0 +1,11 @@
+AddEventHandler("esx:getSharedObject", function(cb)
+    cb(ESX)
+end)
+
+function getSharedObject()
+    return ESX
+end
+
+exports('getSharedObject', function()
+	return ESX
+end)

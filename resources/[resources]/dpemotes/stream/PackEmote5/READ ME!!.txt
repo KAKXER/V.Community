@@ -1,0 +1,65 @@
+Pack of instagram inspired selfies and instagram model type poses.
+
+Don't forget to read the readme for the favoriteAnims.xml line. It's necessary to add.
+
+Place this line into FavoriteAnims.xml in your menyooStuff folder.
+
+	<Anim dict="anim@lbp_kneeling_point" name="kneeling_point_clip" />
+	<Anim dict="anim@cargirl_peace" name="peace_clip" />
+	<Anim dict="anim@cargirl_look_back" name="look_back_clip" />
+	<Anim dict="anim@model_flipoff_cute" name="flipoff_cute_clip" />
+	<Anim dict="anim@selfie_instagram_booty" name="instagram_booty_clip" />
+	<Anim dict="anim@model_kylie_insta" name="kylie_insta_clip" />
+
+
+Install using Jennie's Custom Anims mod. Get it here:
+https://www.gta5-mods.com/misc/custom-animations-add-on-customanims
+
+Make sure you follow their guidelines on how to install that mod properly and how to install animations using it.
+
+
+
+FOR DPEMOTES USERS ON FIVEM: 
+
+
+Place all the ycd files into this folder:
+
+resources/dpemotes-master/streams
+
+Then copy this line into your AnimationList.lua
+
+["leanbeefpatty1"] = {"anim@lbp_kneeling_point", "kneeling_point_clip", "Lean Beef Patty Style (Smos)", AnimationOptions =
+{
+	EmoteLoop = true,
+	EmoteMoving = false,
+}},
+
+["carpose1"] = {"anim@cargirl_peace", "peace_clip", "Car Relaxed Sit (Smos)", AnimationOptions =
+{
+	EmoteLoop = true,
+	EmoteMoving = false,
+}},
+
+["carpose2"] = {"anim@cargirl_look_back", "peace_clip", "Car Model Stance (Smos)", AnimationOptions =
+{
+	EmoteLoop = true,
+	EmoteMoving = false,
+}},
+
+["fuckyou3"] = {"anim@model_flipoff_cute", "flipoff_cute_clip", "Cute Flipping Off Pose (Smos)", AnimationOptions =
+{
+	EmoteLoop = true,
+	EmoteMoving = false,
+}},
+
+["kneelkylie"] = {"anim@model_kylie_insta", "kylie_insta_clip", "Kylie Kneeling (Smos)", AnimationOptions =
+{
+	EmoteLoop = true,
+	EmoteMoving = false,
+}},
+
+["selfieinsta1"] = {"anim@selfie_instagram_booty", "instagram_booty_clip", "Instagram Booty Selfie (Smos)", AnimationOptions =
+{
+	EmoteLoop = true,
+	EmoteMoving = false,
+}},

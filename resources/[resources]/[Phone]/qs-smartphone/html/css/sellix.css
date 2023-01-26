@@ -1,0 +1,205 @@
+.sellix-app {
+	display: none;
+	height: 100%;
+	width: 100%;
+	background: white;
+	overflow: hidden
+}
+
+.sellix-app-header {
+	position: absolute;
+	height: 87px;
+	width: 100%
+}
+
+.sellix-app-header img {
+	position: relative;
+	height: 30px;
+	width: auto;
+	left: 98px;
+	top: 53px
+}
+
+.sellix-homescreen {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0
+}
+
+.sellix-detailscreen {
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: -420px
+}
+
+.sellix-items {
+	position: absolute;
+	width: 270px;
+	height: 540px;
+	top: 95px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	overflow-y: scroll;
+	font-size: 12px;
+	border-top: 1px solid lightgray
+}
+
+.sellix-items::-webkit-scrollbar {
+	display: none
+}
+
+.sellix-item {
+	position: relative;
+	height: 69px;
+	width: 100%;
+	top: 10px;
+	transition: .08s linear;
+	margin-bottom: 10px;
+	border-bottom: 1px solid whitesmoke;
+	cursor: pointer
+}
+
+.sellix-item-firstletter {
+	position: relative;
+	line-height: 68px;
+	left: 12px;
+	bottom: 4px;
+	background-color: #0f0052;
+	background-size: cover;
+	padding-top: 11px;
+	padding-bottom: 21px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 50%;
+	color: black;
+	font-family: 'ios';
+	font-size: 8px;
+	transition: .05s linear
+}
+
+#itemdata-price {
+	position: absolute;
+	text-align: right;
+	left: 150px;
+	bottom: 7px;
+	font-size: 12px;
+	font-family: 'ios'
+}
+
+.sellix-title {
+	position: relative;
+	left: 3px;
+	top: 5px;
+	color: black;
+	font-size: 15px;
+	font-family: 'ios'
+}
+
+.sellix-banned {
+	text-align: center;
+	color: black;
+	font-size: 15px;
+	font-family: 'ios'
+}
+
+.sellix-item:hover {
+	background-color: whitesmoke
+}
+
+.sellix-item-data {
+	position: absolute;
+	left: 68px;
+	color: black;
+	top: 22px;
+	line-height: 14px;
+	font-family: 'ios';
+	font-size: 14px
+}
+
+.sellix-item-data b {
+	position: relative;
+	bottom: 5px
+}
+
+.sellix-itemdetails {
+	position: absolute;
+	height: 76%;
+	width: 84%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 106px;
+	font-size: 11px
+}
+
+.itemdetail-box-buyer,
+.itemdetail-box-location,
+.itemdetail-box-delivery,
+.itemdetail-box-item,
+.itemdetail-box-quantity,
+.itemdetail-box-price {
+	position: relative;
+	width: 100%;
+	background-color: whitesmoke;
+	padding: 8px;
+	color: black;
+	font-family: 'ios';
+	border-bottom: 1px solid lightgrey;
+	margin-bottom: 15px
+}
+
+.item-answer {
+	position: relative;
+	float: right;
+	top: 4px;
+	color: grey;
+	font-size: 13px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 90px;
+	text-align: right
+}
+
+.sellix-footer-back {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: rgb(233, 233, 233);
+	transition: .05s linear;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+	font-family: 'ios';
+	font-size: 16px;
+	cursor: pointer
+}
+
+.sellix-footer-back:hover {
+	background-color: rgb(212, 212, 212)
+}
+
+.sellix-footer-take {
+	position: absolute;
+	bottom: 63px;
+	width: 100%;
+	height: 52px;
+	font-weight: bold;
+	background-color: rgb(137, 73, 221);
+	color: white;
+	transition: .05s linear;
+	text-align: center;
+	line-height: 52px;
+	font-family: 'ios';
+	font-size: 16px;
+	cursor: pointer
+}
+
+.sellix-footer-take:hover {
+	background-color: rgb(124, 53, 218)
+}

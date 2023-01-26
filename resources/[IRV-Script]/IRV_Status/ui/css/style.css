@@ -1,0 +1,611 @@
+html {
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#Display {
+	opacity: 0;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+
+}
+#Mic {
+	position: absolute;
+	width: 2.448vw;
+	height: 1.094vw;
+	left: 95.885vw;
+	top: 26.406vw;
+	overflow: visible;
+	transition: all ease 0.3s;
+}
+#LogoMic {
+	position: absolute;
+	width: 0.781vw;
+	height: 1.094vw;
+	left: 1.667vw;
+	top: 0vw;
+	overflow: visible;
+}
+#AdadAntenMic {
+	left: 0vw;
+	top: 0.156vw;
+	position: absolute;
+	overflow: visible;
+	width: 1.354vw;
+	height: 0.729vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.625vw;
+	color: rgba(255,255,255,1);
+}
+#Radio {
+	position: absolute;
+	width: 2.76vw;
+	height: 1.146vw;
+	left: 95.885vw;
+	top: 28.698vw;
+	overflow: visible;
+	transition: all ease 0.3s;
+}
+#LogoAntenRadio {
+	position: absolute;
+	width: 1.458vw;
+	height: 1.146vw;
+	left: 1.302vw;
+	top: 0vw;
+	overflow: visible;
+}
+#AdadAntenRadio {
+	left: 0vw;
+	top: 0.208vw;
+	position: absolute;
+	overflow: visible;
+	width: 1.354vw;
+	height: 0.729vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.625vw;
+	color: rgba(255,255,255,1);
+}
+#Gang {
+	position: absolute;
+	width: 6.875vw;
+	height: 2.083vw;
+	left: 91.771vw;
+	top: 8.073vw;
+	overflow: visible;
+	transition: all ease 0.3s;
+}
+#LogoGang {
+	position: absolute;
+	width: 2.083vw;
+	height: 2.083vw;
+	left: 4.792vw;
+	top: 0vw;
+	overflow: visible;
+	opacity: 0;
+	transition: .5s;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#BackTextGang {
+	fill: rgba(38,38,38,1);
+	opacity: 0;
+	rx: 0.833vw; 
+	ry: 0.833vw; 
+	x: 0vw; 
+	y: 0vw;
+	width: 4.271vw;
+	height: 1.875vw;
+	transition: .5s;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+.BackTextGang {
+	position: absolute;
+	overflow: visible;
+	width: 4.271vw;
+	height: 1.875vw;
+	left: 0vw;
+	top: 0.104vw;
+	transition: .2s;
+}
+#TextGang {
+	left: 0.573vw;
+	top: 0.677vw;
+	position: absolute;
+	overflow: visible;
+	width: 3.177vw;
+	height: 0.729vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.625vw;
+	transition: .5s;
+    color: rgb(255 255 255);
+	opacity: 0;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#Job {
+	position: absolute;
+	width: 7.708vw;
+	height: 2.083vw;
+	left: 90.938vw;
+	top: 5.625vw;
+	overflow: visible;
+	transition: all ease 0.3s;
+}
+#LogoJob {
+	position: absolute;
+	width: 2.083vw;
+	height: 2.083vw;
+	left: 5.625vw;
+	top: 0vw;
+	overflow: visible;
+	opacity: 0;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#BackTextJob {
+	fill: rgba(38,38,38,1);
+	opacity: 0;
+	rx: 0.833vw; 
+	ry: 0.833vw; 
+	x: 0vw; 
+	y: 0vw;
+	width: 5.104vw;
+	height: 1.875vw;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+.BackTextJob {
+	position: absolute;
+	overflow: visible;
+	width: 4.271vw;
+	height: 1.875vw;
+	left: 0vw;
+	top: 0.104vw;
+}
+#TextJob {
+	left: 0.417vw;
+	top: 0.677vw;
+	position: absolute;
+	overflow: visible;
+	width: 4.323vw;
+	height: 0.729vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.625vw;
+    color: rgb(255 255 255);
+	opacity: 0;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#Heal {
+	position: absolute;
+	width: 2.656vw;
+	height: 3.646vw;
+	left: 86.875vw;
+	top: 0.885vw;
+	overflow: visible;
+	transition: all ease 0.3s;
+}
+#BackHeal {
+	fill: rgba(38,38,38,1);
+	stroke: rgba(255,87,87,1);
+	stroke-width: 0.156vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.BackHeal {
+	filter: drop-shadow(0vw 0vw 1.015vw #c00000);
+	position: absolute;
+	overflow: visible;
+	width: 5.781vw;
+	height: 5.729vw;
+	left: 0vw;
+	top: 0vw;
+}
+#LogoHeal {
+	position: absolute;
+	left: 0.35vw;
+	top: 0.4vw;
+	overflow: visible;
+	color: #C00000;
+	font-size: 1.92vw;
+}
+.LogoHeal {
+   font-family: "Material Icons";
+   font-style: normal;
+}
+.LogoHeal:before {
+	content: "\e87d";
+}
+#BackPoshtHealMeshki {
+	fill: rgba(46,44,44,1);
+	stroke: rgba(0,0,0,1);
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.BackPoshtHealMeshki {
+	position: absolute;
+	overflow: visible;
+	width: 2.135vw;
+	height: 0.521vw;
+	left: 0.26vw;
+	top: 3.125vw;
+}
+#HealGhermez {
+	fill: rgba(192,0,0,1);
+	rx: 0.208vw;
+	ry: 0.208vw;
+	x: 0vw;
+	y: 0vw;
+	width: 100%;
+	height: 0.417vw;
+	transition: .5s;
+}
+.HealGhermez {
+	position: absolute;
+	overflow: visible;
+	width: 2.031vw;
+	height: 0.417vw;
+	left: 0.313vw;
+	top: 3.177vw;
+}
+#Armor {
+	position: absolute;
+	width: 2.604vw;
+	height: 3.646vw;
+	left: 90vw;
+	top: 0.885vw;
+	overflow: visible;
+	transition: all ease 0.3s;
+}
+#BackArmor {
+	fill: rgba(38,38,38,1);
+	stroke: rgba(160,255,160,1);
+	stroke-width: 0.156vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.BackArmor {
+	filter: drop-shadow(0vw 0vw 1.042vw #006a00);
+	position: absolute;
+	overflow: visible;
+	width: 5.729vw;
+	height: 5.729vw;
+	left: 0vw;
+	top: 0vw;
+}
+#LogoArmor {
+	position: absolute;
+	left: 0.45vw;
+	top: 0.469vw;
+	overflow: visible;
+	color: #00C000;
+   	font-size: 1.72vw;
+}
+.LogoArmor {
+   font-family: "Material Icons";
+   font-style: normal;
+}
+.LogoArmor:before {
+	content: "\e97d";
+}
+#BackPoshtArmorMeshki {
+	fill: rgba(46,44,44,1);
+	stroke: rgba(0,0,0,1);
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.BackPoshtArmorMeshki {
+	position: absolute;
+	overflow: visible;
+	width: 2.135vw;
+	height: 0.521vw;
+	left: 0.26vw;
+	top: 3.125vw;
+}
+#ArmorSabz {
+	fill: rgba(0,192,0,1);
+	rx: 0.208vw;
+	ry: 0.208vw;
+	x: 0vw;
+	y: 0vw;
+	width: 100%;
+	height: 0.417vw;
+	transition: .5s;
+}
+.ArmorSabz {
+	position: absolute;
+	overflow: visible;
+	width: 2.031vw;
+	height: 0.417vw;
+	left: 0.313vw;
+	top: 3.177vw;
+}
+#Ghaza {
+	position: absolute;
+	width: 2.604vw;
+	height: 3.646vw;
+	left: 93.125vw;
+	top: 0.885vw;
+	overflow: visible;
+	transition: all ease 0.3s;
+}
+#BackGhaza {
+	fill: rgba(38,38,38,1);
+	stroke: rgba(255,160,160,1);
+	stroke-width: 0.156vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.BackGhaza {
+	filter: drop-shadow(0vw 0vw 1.042vw #ae5e27);
+	position: absolute;
+	overflow: visible;
+	width: 5.729vw;
+	height: 5.729vw;
+	left: 0vw;
+	top: 0vw;
+}
+#LogoGhaza {
+	position: absolute;
+	left: 0.50vw;
+	top: 0.45vw;
+	overflow: visible;
+	color: #ED7D31;
+	font-size: 1.55vw;
+}
+.LogoGhaza {
+   font-family: "Material Icons";
+   font-style: normal;
+}
+.LogoGhaza:before {
+   content: "\e57a";
+}
+#BackPoshtGhazaMeshki {
+	fill: rgba(46,44,44,1);
+	stroke: rgba(0,0,0,1);
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.BackPoshtGhazaMeshki {
+	position: absolute;
+	overflow: visible;
+	width: 2.135vw;
+	height: 0.521vw;
+	left: 0.26vw;
+	top: 3.125vw;
+}
+#GhazaNaranji {
+	fill: rgba(237,125,49,1);
+	rx: 0.208vw;
+	ry: 0.208vw;
+	x: 0vw;
+	y: 0vw;
+	width: 100%;
+	height: 0.417vw;
+	transition: .5s;
+}
+.GhazaNaranji {
+	position: absolute;
+	overflow: visible;
+	width: 2.031vw;
+	height: 0.417vw;
+	left: 0.313vw;
+	top: 3.177vw;
+}
+#Ab {
+	position: absolute;
+	width: 2.604vw;
+	height: 3.646vw;
+	left: 96.25vw;
+	top: 0.885vw;
+	overflow: visible;
+	transition: all ease 0.3s;
+}
+#BackAB {
+	fill: rgba(38,38,38,1);
+	stroke: rgba(160,192,255,1);
+	stroke-width: 0.156vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.BackAB {
+	filter: drop-shadow(0vw 0vw 1.042vw #354d62);
+	position: absolute;
+	overflow: visible;
+	width: 5.729vw;
+	height: 5.729vw;
+	left: 0vw;
+	top: 0vw;
+}
+#LogoAb {
+	position: absolute;
+	left: 0.45vw;
+	top: 0.469vw;
+	overflow: visible;
+	color: #5B9BD5;
+	font-size: 1.72vw;
+}
+.LogoAb {
+   font-family: "Material Icons";
+   font-style: normal;
+}
+.LogoAb:before {
+	content: "\e798";
+}
+#BackPoshtAbMeshki {
+	fill: rgba(46,44,44,1);
+	stroke: rgba(0,0,0,1);
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.BackPoshtAbMeshki {
+	position: absolute;
+	overflow: visible;
+	width: 2.135vw;
+	height: 0.521vw;
+	left: 0.26vw;
+	top: 3.125vw;
+}
+#AbAbi {
+	fill: rgba(91,155,213,1);
+	rx: 0.208vw;
+	ry: 0.208vw;
+	x: 0vw;
+	y: 0vw;
+	width: 100%;
+	height: 0.417vw;
+	transition: .5s;
+}
+.AbAbi {
+	position: absolute;
+	overflow: visible;
+	width: 2.031vw;
+	height: 0.417vw;
+	left: 0.313vw;
+	top: 3.177vw;
+}
+
+table.indicator {
+	position: absolute;
+	/* width: 2.76vw;
+	height: 1.146vw; */
+	left: 94.9vw;
+    top: 30.5vw;
+	overflow: visible;
+}
+.indicator td{
+	padding: 0.443vw 0.104vw;
+	left: -0.5vw;
+	top: 0.208vw;
+	/* position: absolute; */
+	overflow: visible;
+	width: 1.354vw;
+	height: 0.729vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.625vw;
+	color: #00ca0a;
+}
+.indicator td:nth-child(1) {
+	padding-left: 0.521vw;
+}
+.indicator td:nth-child(2) {
+	padding-right: 0.521vw;
+}
+.indicator img { 
+	width:1.458vw;
+	left: 1.86vw;
+	top: -0.15vw;
+	/* position: absolute; */
+	overflow: visible;
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 

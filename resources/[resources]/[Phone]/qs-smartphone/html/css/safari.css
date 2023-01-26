@@ -1,0 +1,200 @@
+.safari-app {
+	display: none;
+	background: white;
+	width: 100%;
+	height: 110%
+}
+
+.safari-container-app {
+	position: relative;
+	width: 100%;
+	height: 650px;
+	background: white
+}
+
+.safari-content {
+	position: relative;
+	width: 100%;
+	height: 520px;
+	top: 60px;
+	background: white;
+	padding: 8px;
+	text-align: left
+}
+
+.safari-favorites {
+	position: relative;
+	width: 100%;
+	height: 120px;
+	right: 3px;
+	margin-bottom: 30px
+}
+
+.safari-favorites img {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px
+}
+
+.safari-favorites p {
+	position: relative;
+	left: 10px;
+	top: 6px;
+	font-size: 18px;
+	font-weight: 600
+}
+
+.favorite-1,
+.favorite-2,
+.favorite-3,
+.favorite-4 {
+	width: 50px;
+	height: 50px;
+	margin: 9.5px;
+	float: left;
+	cursor: pointer
+}
+
+.safari-privacity {
+	position: relative;
+	width: 100%;
+	height: 120px
+}
+
+.safari-privacity p {
+	position: relative;
+	left: 10px;
+	font-size: 18px;
+	font-weight: 600
+}
+
+.safari-privacity i {
+	position: relative;
+	font-size: 25px;
+	width: 100%;
+	height: 100%;
+	bottom: 118px;
+	padding: 28px;
+	line-height: 55px
+}
+
+.safari-privacity-info {
+	position: relative;
+	width: 260px;
+	left: 10px;
+	height: auto;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px
+}
+
+.safari-privacity-info p {
+	position: relative;
+	top: 4px;
+	font-size: 13px;
+	font-weight: 200;
+	width: 190px;
+	left: 55px
+}
+
+.safari-footer {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	top: 560px;
+	padding: 10px;
+	border-top: 1px solid #b1b1b16b;
+	background: rgb(238, 238, 238)
+}
+
+#safari-searchContainer {
+	position: relative;
+	top: 0;
+	display: flex;
+	width: 250px;
+	height: 34px;
+	background-color: white;
+	text-align: center;
+	align-items: center;
+	border-radius: 8px;
+	padding: 5px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px
+}
+
+#safari-searchContainer i {
+	position: relative;
+	font-size: 15px;
+	left: 22px;
+	cursor: pointer
+}
+
+#safari-searchContainer input {
+	overflow: none;
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background: none;
+	border: none;
+	color: var(--text);
+	font-size: 15px;
+	resize: none
+}
+
+#safari-search-footer {
+	display: flex;
+	position: relative;
+	gap: 45px;
+	top: 12px;
+	left: 15px
+}
+
+#safari-search-footer i {
+	display: flex;
+	font-size: 16px;
+	color: lightgrey
+}
+
+.safari-blue-icon i {
+	display: flex;
+	font-size: 16px;
+	color: rgb(0, 140, 255) !important
+}
+
+.safari-container {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999999
+}
+
+#safari-iframe {
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+#safari-iframe iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	border-radius: 10px
+}
+
+.safari-iframe-box {
+	position: relative;
+	background: black;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.5) 0 2px 8px
+}

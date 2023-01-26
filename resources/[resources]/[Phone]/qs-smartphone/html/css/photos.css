@@ -1,0 +1,830 @@
+.photos-app {
+	display: none;
+	background: white;
+	width: 100%;
+	height: 110%;
+	font-family: "ios"
+}
+
+.photos-container {
+	position: relative;
+	height: 100%
+}
+
+.photos-footer {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 90px;
+	padding: 3px 16px 24px;
+	background: #ededed;
+	border-top: 1px solid #bfbebec2;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px
+}
+
+.photos-footer-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 22px;
+	z-index: 60;
+	color: #929191;
+	cursor: pointer
+}
+
+.photos-footer-button-selected {
+	color: var(--main-blue)
+}
+
+.photos-footer-button p {
+	font-size: 14px !important
+}
+
+#cancel-image-container {
+	position: relative;
+	right: 5px;
+	top: 1px;
+	cursor: pointer
+}
+
+#cancel-album-container {
+	position: relative;
+	right: 15px;
+	top: 5px;
+	cursor: pointer
+}
+
+#album-name {
+	position: relative;
+	font-size: 17px;
+	top: 5px
+}
+
+#share-image-to-photos {
+	position: absolute;
+	margin-top: 145px;
+	left: -217px;
+	font-size: 30px;
+	color: #337ab7
+}
+
+#save-image-to-photos {
+	position: absolute;
+	top: 545px;
+	left: 200px;
+	font-size: 28px;
+	color: #337ab7;
+	cursor: pointer
+}
+
+#coppy-gallery-button {
+	position: absolute;
+	top: 545px;
+	left: 140px;
+	font-size: 30px;
+	color: #337ab7;
+	cursor: pointer
+}
+
+.photos-footer-button p {
+	white-space: nowrap;
+	font-size: 14px;
+	margin: 2px;
+	font-family: "ios";
+	cursor: pointer
+}
+
+.photos-content {
+	position: relative;
+	display: flex;
+	top: 15px;
+	right: 6px
+}
+
+.photos-image-item img {
+	max-width: 100%;
+	cursor: pointer
+}
+
+.photos-content[data-showing="year"] {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	left: 0
+}
+
+.photos-content[data-showing="year"] .photos-image-item {
+	position: relative;
+	margin: 16px
+}
+
+.photos-content[data-showing="year"] .photos-image-item span {
+	position: absolute;
+	padding: 16px;
+	width: 100%;
+	color: white;
+	border-radius: 16px 16px 0 0;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+	font-weight: 700;
+	font-size: 32px;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 4px var(--main-black);
+	pointer-events: none
+}
+
+.photos-content[data-showing="year"] .photos-image-item img {
+	border-radius: 16px
+}
+
+.photos-content[data-showing="month"] {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	left: 0
+}
+
+.photos-content[data-showing="month"] .photos-image-item {
+	position: relative;
+	margin: 16px
+}
+
+.photos-content[data-showing="month"] .photos-image-item img {
+	border-radius: 16px
+}
+
+.photos-content[data-showing="month"] .photo-img-title {
+	color: var(--main-black);
+	font-weight: 700;
+	font-size: 32px
+}
+
+.photos-content[data-showing="month"] .photo-img-details-date-included {
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	padding: 54px 12px;
+	text-shadow: 1px 1px 2px var(--main-color);
+	color: var(--main-background-color);
+	font-size: 24px;
+	pointer-events: none
+}
+
+.photos-content[data-showing="month"] .photo-img-details {
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+	text-shadow: 1px 1px 2px var(--main-color);
+	color: var(--main-background-color);
+	font-size: 24px;
+	pointer-events: none
+}
+
+.photos-content[data-showing="month"] .photo-img-details-date {
+	font-size: 16px;
+	font-weight: 100;
+	pointer-events: none
+}
+
+.photos-content[data-showing="day"] {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 4px;
+	left: 0
+}
+
+.photos-content[data-showing="day"] .photos-image-item {
+	position: relative
+}
+
+.photos-content[data-showing="day"] .photos-image-item span {
+	position: absolute;
+	top: 0;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	margin: 16px;
+	font-size: 22px
+}
+
+.photos-content[data-showing="all"] {
+	display: grid;
+	gap: 2px;
+	grid-template-columns: repeat(4, max-content);
+	justify-content: stretch;
+	padding-bottom: 16px
+}
+
+.photos-content[data-showing="all"] .photos-image-item {
+	flex: 1 0 24%
+}
+
+.photos-content[data-showing="all"] img {
+	width: 65px;
+	height: 65px;
+	margin-left: 7px;
+	margin-top: 5px;
+	object-fit: cover
+}
+
+.filter-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	background: rgba(224, 224, 244, 0.9);
+	z-index: 50;
+	opacity: .3
+}
+
+.photos-app-page {
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	padding: 32px 6px 108px
+}
+
+.photos-app-page-active {
+	display: block
+}
+
+.photos-app-page::-webkit-scrollbar-thumb,
+.photos-content::-webkit-scrollbar-thumb,
+.photos-app-page::-webkit-scrollbar,
+.photos-content::-webkit-scrollbar {
+	width: 0
+}
+
+.photos-range-wrapper {
+	position: absolute;
+	width: 100%;
+	bottom: 110px;
+	left: 0;
+	padding: 0 20px;
+	cursor: pointer
+}
+
+.photos-range {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	place-items: center stretch;
+	text-align: center;
+	width: 100%;
+	background: rgba(219, 213, 213, 0.644);
+	color: gray;
+	font-size: 16px;
+	font-family: "ios";
+	font-weight: 700;
+	border-radius: 16px;
+	padding: 8px;
+	z-index: 80;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 35%)
+}
+
+.photos-range .filter-background {
+	left: 0
+}
+
+.photos-range p {
+	margin: -4px;
+	z-index: 60
+}
+
+.photos-range-selected {
+	color: white;
+	background: gray;
+	padding: 1px 15px;
+	border-radius: 16px
+}
+
+.photos-app-page[data-page="albums"] {
+	position: relative;
+	overflow: hidden
+}
+
+.photos-album-content {
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	height: 528px;
+	padding: 0 22px 108px 8px;
+	overflow: auto
+}
+
+.photos-album-content::-webkit-scrollbar,
+.photos-album-content::-webkit-scrollbar-thumb {
+	width: 0
+}
+
+.photos-album-content .photos-image-item {
+	margin: 12px 0 0
+}
+
+.photos-album-content .photos-image-item img {
+	border-radius: 8px
+}
+
+.photos-album-content .photos-image-item span {
+	margin-top: 2px;
+	font-size: 18px
+}
+
+.photos-album-content-container {
+	display: none;
+	position: absolute;
+	padding: 32px 6px 108px;
+	top: 0;
+	overflow: hidden;
+	background: var(--main-background-color);
+	width: 100%;
+	height: 100%;
+	right: -100%;
+	z-index: 70
+}
+
+#photos-album-content-header {
+	top: 0;
+	margin: -6px 0 0
+}
+
+.photos-search-bar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 10px;
+	top: 17px
+}
+
+.photos-search-bar textarea {
+	background: lightgray;
+	height: 28px;
+	border: none;
+	border-radius: 8px;
+	width: 100%;
+	padding: 6px 20px 4px;
+	font-size: 13.42px;
+	outline: none;
+	resize: none;
+	overflow: hidden
+}
+
+.photos-search-bar .fa-search {
+	position: absolute;
+	margin: 4px;
+	color: gray
+}
+
+.photos-search-bar .fa-times-circle {
+	position: absolute;
+	text-align: right;
+	right: 16px
+}
+
+.photos-foryou-container {
+	display: flex;
+	flex-direction: column
+}
+
+span.photos-foryou-header {
+	position: relative;
+	padding: 20px 13px;
+	font-size: 32px;
+	top: 20px
+}
+
+span.photos-foryou-title {
+	font-size: 19px;
+	margin: 8px 24px
+}
+
+:root {
+	--img-width: 276px
+}
+
+.photos-foryou-container .photos-image-item img {
+	width: var(--img-width) !important
+}
+
+.photos-foryou-container .photos-image-item {
+	width: var(--img-width) !important;
+	padding: 0 6px
+}
+
+.image-rotate-cover {
+	display: none;
+	transform: rotate(90deg);
+	width: 757.61px;
+	height: 28.77px;
+	position: absolute;
+	top: 287.7px;
+	left: -75.7px;
+	background: white;
+	z-index: 60
+}
+
+.phone-image-container {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	height: 108%;
+	width: 100%;
+	top: 0;
+	right: -425px;
+	border-radius: 10px;
+	overflow: hidden;
+	z-index: 140;
+	background-color: var(--main-background-color)
+}
+
+.phone-header-rotated {
+	color: black;
+	transform: rotate(90deg);
+	left: -10px;
+	width: 632.94px;
+	top: 306.88px
+}
+
+.app-header-rotated {
+	transform: rotate(90deg);
+	width: 326.06px;
+	top: 282.905px;
+	z-index: 60;
+	background: var(--main-background-color);
+	height: 19.18px;
+	left: 143.85px;
+	position: absolute;
+	display: grid
+}
+
+#share-image-to-photos {
+	position: relative;
+	top: 400px;
+	right: 140px
+}
+
+.global-app-footer {
+	position: relative;
+	top: 470px;
+	height: 100px;
+	width: 310px;
+	background: #d8d8d8;
+	border-top: 1.5px solid #00000026
+}
+
+.image-rotated {
+	width: 100%;
+	height: 100%;
+	transform: rotate(90deg);
+	object-fit: contain;
+	position: absolute;
+	z-index: 50
+}
+
+#photo-image-gallery {
+	position: absolute;
+	top: 230px !important
+}
+
+.phone-image-footer {
+	position: absolute;
+	width: 100%;
+	height: 90px;
+	top: 570px;
+	background: #d8d8d8;
+	border-top: 1.5px solid #00000026
+}
+
+.phone-image-source-container-child {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 10px
+}
+
+.phone-image-source-rotated {
+	transform: rotate(90deg)
+}
+
+.phone-image-source {
+	position: relative;
+	top: 230.16px;
+	width: 100%;
+	transition: transform .3s ease-in-out
+}
+
+.phone-rotated {
+	transform: rotate(-90deg) scale(1.4);
+	top: 50%;
+	right: 30%
+}
+
+.camera-app,
+.insta-addstory {
+	display: none;
+	margin-top: 65px;
+	height: 100%;
+	width: 100%;
+	background: rgb(0 0 0);
+	overflow: hidden
+}
+
+.camera-text {
+	position: relative;
+	top: 190px !important;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px !important;
+	cursor: pointer
+}
+
+.camera-header,
+.insta-addstory-header {
+	position: absolute;
+	width: 100%;
+	height: 86px;
+	background-color: #000000;
+	top: 0;
+	color: white;
+	font-family: "ios";
+	font-size: 18px
+}
+
+.camera-header img {
+	position: relative;
+	width: 95%;
+	top: 48px
+}
+
+.camera-bottom {
+	position: absolute;
+	width: -webkit-fill-available;
+	bottom: 0
+}
+
+.camera-header>p,
+.insta-addstory-header>p {
+	line-height: 116px;
+	text-indent: 20px
+}
+
+.camera-header>span,
+.insta-addstory-header>span {
+	position: absolute;
+	top: 86px;
+	left: 20px;
+	font-size: 12px;
+	height: 20px;
+	color: rgba(255, 255, 255, 0.842)
+}
+
+.camera-list {
+	position: absolute;
+	background-color: #00000033;
+	width: 90%;
+	height: 73%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 3%;
+	border-radius: 4.795px;
+	overflow-y: scroll
+}
+
+.camera-list::-webkit-scrollbar {
+	display: none
+}
+
+.camera-list {
+	position: relative;
+	width: 95%;
+	height: 58px;
+	background-color: rgba(31, 31, 31, 0.89);
+	margin: 2.5%;
+	border-radius: 4.795px
+}
+
+.camera-list-firstletter {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 34px;
+	height: 34px;
+	background-color: rgb(42, 137, 214);
+	text-align: center;
+	left: 10px;
+	line-height: 34px;
+	border-radius: 50%;
+	font-family: "ios";
+	font-size: 17px;
+	color: rgb(255, 255, 255)
+}
+
+.camera-list-fullname {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 53px;
+	font-family: "ios";
+	font-size: 15px;
+	max-width: 135px;
+	white-space: nowrap;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	color: rgb(255, 255, 255)
+}
+
+#camera-image-button-delete {
+	position: relative;
+	font-size: 29px
+}
+
+.no-camera {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: "ios";
+	font-size: 13px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	max-width: 134px;
+	color: rgb(255, 255, 255)
+}
+
+.camera-list-call {
+	color: white;
+	position: absolute;
+	top: 25%;
+	transform: translateY(-50%);
+	right: 20px;
+	font-size: 20px;
+	transform: rotate(90deg);
+	transition: .08s ease-in-out
+}
+
+.camera-list-call:hover {
+	color: rgb(66, 161, 11);
+	opacity: .8;
+	transform: rotate(0deg);
+	cursor: pointer
+}
+
+.camera-app h1 {
+	text-align: center;
+	color: white;
+	font-family: ios;
+	font-size: 14px;
+	position: relative;
+	top: 153px
+}
+
+.cekilen_foto {
+	display: none;
+	width: 100%;
+	height: 651px;
+	top: 10px;
+	overflow: hidden;
+	background: rgb(214, 214, 214);
+	z-index: 100;
+	position: absolute;
+	border-radius: 5px
+}
+
+.foto {
+	position: relative;
+	background: url(#);
+	width: 100%;
+	height: 300px;
+	top: 103px;
+	background-size: cover;
+	background-position: center
+}
+
+.alt_footer {
+	position: relative;
+	display: flex;
+	top: 135px;
+	height: 70px;
+	width: 100%;
+	background-color: #f0eff4;
+	border-top: 1px solid #d4d3d4;
+	cursor: pointer
+}
+
+.alt_footer a {
+	position: relative;
+	width: 100%;
+	font-size: 32px;
+	left: 33px;
+	top: 10px
+}
+
+.photoShow {
+	top: 0;
+	right: -110%;
+	width: 100%;
+	height: 584.99px;
+	background: black;
+	position: absolute;
+	transition: .7s;
+	z-index: 0
+}
+
+.img-photos {
+	height: 65px;
+	width: 65px
+}
+
+.camera-app-footer {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	top: 580px;
+	font-size: 12px;
+	color: black;
+	justify-content: space-around;
+	padding: 5px;
+	border-top: 1px solid rgba(109, 108, 108, 0.473);
+	box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2);
+	background: white
+}
+
+.camera-footer-item {
+	position: relative;
+	font-size: 22px;
+	text-align: center;
+	cursor: pointer
+}
+
+.camera-footer-item:hover {
+	opacity: .8
+}
+
+.photos-app-footer-inside {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	top: 530px;
+	height: 90px;
+	font-size: 12px;
+	color: black;
+	justify-content: space-around;
+	padding: 10px;
+	border-top: 1px solid rgba(109, 108, 108, 0.473);
+	box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2);
+	background: white
+}
+
+.photos-footer-item-inside {
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	color: grey
+}
+
+.photos-footer-item-inside i {
+	font-size: 25px
+}
+
+.photos-footer-item-inside:hover {
+	opacity: .8
+}
+
+.photos-app-footer-inside p {
+	position: relative;
+	font-family: Arial, sans-serif;
+	font-size: 12px !important;
+	top: 4px;
+	color: black
+}
+
+#phone-image-container-header {
+	position: relative;
+	top: 35px
+}
+
+#camera-image-container-header {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	background: white;
+	text-align: center;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2)
+}
+
+#camera-image-container-header p {
+	position: relative;
+	top: 40px;
+	font-weight: 600
+}

@@ -1,0 +1,322 @@
+html {
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#Display {
+	opacity: 0;
+	transition: all ease 0.1s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#Back {
+	opacity: 0.5;
+    position: absolute;
+    width: 30.5vw;
+    height: 30.3vw;
+    left: 34.79vw;
+    top: 10.23vw;
+    overflow: visible;
+}
+#Samt_Rast {
+	position: absolute;
+	width: 8.77vw;
+	height: 19.613vw;
+	left: 55.371vw;
+	top: 15.597vw;
+	overflow: visible;
+	transition: left .2s ease-in-out;
+}
+#Samt_Rast:hover {
+	left: 54.371vw;
+}
+
+#Image_Aslahe_Sard {
+    position: absolute;
+    width: 5.323vw;
+    height: 5.885vw;
+    left: 3vw;
+    top: 7.2vw;
+    overflow: visible;
+}
+#Border_Vasat_Samt_Rast {
+    fill: rgb(255 255 255 / 50%);
+}
+.Border_Vasat_Samt_Rast {
+	overflow: visible;
+	position: absolute;
+	width: 11.316vw;
+	height: 2.992vw;
+	transform: translate(-54.851vw, -17.881vw) matrix(1,0,0,1,973.2299,502.7762) rotate(90deg);
+	transform-origin: center;
+	left: 0vw;
+	top: 0vw;
+}
+#Select_Border_Aslahe_Sard {
+	fill: rgba(232,232,239,1);
+	opacity: 0;
+	transition: all ease 0.3s;
+}
+.Select_Border_Aslahe_Sard {
+	overflow: visible;
+	position: absolute;
+	width: 4.48vw;
+	height: 19.613vw;
+	left: 4.29vw;
+	top: 0vw;
+	transform: matrix(1,0,0,1,0,0);
+	transition: left .2s ease-in-out;
+}
+.Select_Border_Aslahe_Sard:hover {
+	left: 4.8vw;
+}
+#Samt_Bala {
+	position: absolute;
+	width: 19.609vw;
+	height: 169.39.323vw;
+	left: 40.185vw;
+	top: 11.25vw;
+	overflow: visible;
+	transition: top .3s ease-in-out;
+}
+
+#Samt_Bala:hover {
+	top: 12.25vw;
+}
+
+#Image_Aslahe_Sangin {
+    position: absolute;
+    width: 11.052vw;
+    height: 9.073vw;
+    left: 4.25vw;
+    top: -1vw;
+    overflow: visible;
+}
+#Select_Border_Aslahe_Sangin {
+	fill: rgba(232,232,239,1);
+	opacity: 1;
+	transition: all ease 0.3s;
+}
+.Select_Border_Aslahe_Sangin {
+	overflow: visible;
+	position: absolute;
+	width: 4.573vw;
+	height: 19.609vw;
+	transform: translate(-39.69vw, -13.542vw) matrix(1,0,0,1,906.3894,115.6672) rotate(270deg);
+	transform-origin: center;
+	left: 0vw;
+	top: 0vw;
+	transition: transform .2s ease-in-out;
+}
+.Select_Border_Aslahe_Sangin:hover {
+	transform: translate(-39.69vw, -14vw) matrix(1,0,0,1,906.3894,115.6672) rotate(270deg);
+}
+#Border_Vasat_Samt_Bala {
+    fill: rgb(255 255 255 / 50%);
+}
+.Border_Vasat_Samt_Bala {
+	overflow: visible;
+	position: absolute;
+	width: 11.316vw;
+	height: 2.964vw;
+	left: 4.171vw;
+	top: 5.878vw;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Tedad_Kheshab_Aslahe_Sangin {
+	left: 8.331vw;
+	top: 0.937vw;
+	position: absolute;
+	overflow: visible;
+	width: 3.125vw;
+	height: 1.25vw;
+	text-align: center;
+	font-family: Pricedown;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.042vw;
+	color: rgba(219,219,219,0.702);
+}
+#Samt_Chap {
+	position: absolute;
+	width: 8.851vw;
+	height: 19.587vw;
+	left: 35.859vw;
+	top: 15.597vw;
+	overflow: visible;
+	transition: left .3s ease-in-out;
+}
+
+#Samt_Chap:hover {
+	left: 36.859vw;
+}
+
+#Image_Aslahe_Sabok {
+    position: absolute;
+    width: 5.323vw;
+    height: 4.76vw;
+    left: 0.5vw;
+    top: 7.6vw;
+    overflow: visible;
+}
+#Border_Vasat_Samt_Chap {
+    fill: rgb(255 255 255 / 50%);
+}
+.Border_Vasat_Samt_Chap {
+	overflow: visible;
+	position: absolute;
+	width: 11.316vw;
+	height: 2.935vw;
+	transform: translate(-35.365vw, -17.889vw) matrix(1,0,0,1,712.132,503.3216) rotate(90deg);
+	transform-origin: center;
+	left: 0vw;
+	top: 0vw;
+}
+#Select_Border_Aslahe_Sabok {
+	fill: rgba(232,232,239,1);
+	opacity: 0;
+	transition: all ease 0.3s;
+}
+.Select_Border_Aslahe_Sabok {
+	overflow: visible;
+	position: absolute;
+	width: 4.541vw;
+	height: 19.587vw;
+	left: 0vw;
+	top: 0vw;
+	transform: matrix(1,0,0,1,0,0);
+	transition: left .2s ease-in-out;
+}
+/* .Select_Border_Aslahe_Sabok:hover {
+	left: -0.5vw;
+} */
+#Tedad_Kheshab_Aslahe_Sabok {
+	left: 1.771vw;
+	top: 11.33vw;
+	position: absolute;
+	overflow: visible;
+	width: 3.125vw;
+	height: 1.25vw;
+	text-align: center;
+	font-family: Pricedown;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.042vw;
+	color: rgba(219,219,219,0.702);
+}
+#Samt_Paiin {
+	position: absolute;
+	width: 19.591vw;
+	height: 8.777vw;
+	left: 40.24vw;
+	top: 30.723vw;
+	overflow: visible;
+	transition: top .3s ease-in-out;
+}
+
+#Samt_Paiin:hover {
+	top: 29.723vw;
+}
+
+#Image_Aslahe_Mini {
+    position: absolute;
+    width: 9.01vw;
+    height: 7.021vw;
+	left: 4.9vw;
+    top: 1.2vw;
+    overflow: visible;
+}
+#Border_Vasat_Samt_Paiin {
+    fill: rgb(255 255 255 / 50%);
+}
+.Border_Vasat_Samt_Paiin {
+	overflow: visible;
+	position: absolute;
+	width: 11.316vw;
+	height: 2.935vw;
+	left: 4.115vw;
+	top: 0vw;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Select_Border_Aslahe_Mini {
+	fill: rgba(232,232,239,1);
+	opacity: 0;
+	transition: all ease 0.3s;
+}
+
+.Select_Border_Aslahe_Mini {
+	overflow: visible;
+	position: absolute;
+	width: 4.483vw;
+	height: 19.591vw;
+	transform: translate(-39.746vw, -33.014vw) matrix(1,0,0,1,908.1454,571.2882) rotate(270deg);
+	transform-origin: center;
+	left: 0vw;
+	top: 0vw;
+	transition: transform .2s ease-in-out;
+}
+.Select_Border_Aslahe_Mini:hover {
+	transform: translate(-39.746vw, -32.65vw) matrix(1,0,0,1,908.1454,571.2882) rotate(270deg);
+}
+
+#Tedad_Kheshab_Aslahe_Mini {
+	left: 8.275vw;
+	top: 6.361vw;
+	position: absolute;
+	overflow: visible;
+	width: 3.125vw;
+	height: 1.25vw;
+	text-align: center;
+	font-family: Pricedown;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.042vw;
+	color: rgba(219,219,219,0.702);
+}
+#Vasat_Mosht {
+	position: absolute;
+	width: 8.906vw;
+	height: 8.906vw;
+	left: 45.547vw;
+	top: 20.938vw;
+	overflow: visible;
+}
+#select_Border_Mosht {
+	fill: rgba(0,0,0,0.349);
+	stroke: rgba(255, 255, 255, 0);
+	/* stroke: rgba(255,255,255,0.859); */
+	stroke-width: 0.625vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	transition: stroke .4s ease-in-out;
+}
+#select_Border_Mosht:hover {
+	stroke: rgb(255, 255, 255);
+}
+.select_Border_Mosht {
+	position: absolute;
+	overflow: visible;
+	width: 8.906vw;
+	height: 8.906vw;
+	left: 0vw;
+	top: 0vw;
+}
+#Logo_Mosht {
+	position: absolute;
+	width: 3.438vw;
+	height: 3.385vw;
+	left: 2.76vw;
+	top: 2.76vw;
+	overflow: visible;
+	transition: opacity .2s ease-in-out;
+}

@@ -1,0 +1,922 @@
+@font-face {
+	src: url('./fonts/Gilroy-ExtraBold.otf') format("OpenType");
+	font-family: "dunkin";
+}
+
+@font-face {
+	src: url('./fonts/Gilroy-Light.otf') format("OpenType");
+	font-family: "dunkins";
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#app {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+}
+
+.main-wrapper {
+	position: relative;
+	background-image: url('images/rectangle.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.mouse-move {
+	position: absolute;
+	left: 52%;
+	transform: translate(-50%);
+	top: 15%;
+	width: 45%;
+	height: 57%;
+	border: 2px solid rgba(255, 0, 0, 0);
+}
+
+.main-wrapper-top {
+    width: 9%;
+    height: 29%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.playerimageandname {
+	position: relative;
+	width: 15rem;
+	left: 5rem;
+	top: 3rem;
+	height: 5rem;
+}
+
+.playername {
+	position: absolute;
+	font-size: 12px;
+	width: 10rem;
+	height: 4rem;
+	top: 1rem;
+	left: 5.8rem;
+	color: white;
+	font-family: "dunkins";
+}
+
+.garage-top-logo {
+	position: relative;
+	width: 10rem;
+	height: 10rem;
+	top: 0.5rem;
+}
+
+.garage-top-logo img {
+	width: 8rem;
+	height: 8rem;
+}
+
+.garage-top-logo h2 {
+	position: relative;
+	margin-top: 1rem;
+	font-family: "dunkins";
+	color: #FFFFFF;
+	letter-spacing: 0.24em;
+	bottom: 1rem;
+	text-shadow: 0px 1px 21px rgba(255, 255, 255, 0.7);
+}
+
+.garage-top-close-button {
+	position: relative;
+	width: 15rem;
+	height: 4rem;
+}
+
+.garage-top-close-button h2 {
+	position: relative;
+	font-size: 1rem;
+	top: -10.2rem;
+	width: 8rem;
+	left: -1rem;
+	color: white;
+	text-align: end;
+	font-family: "dunkins";
+}
+
+.garage-top-close-button h3 {
+	position: relative;
+	width: 10rem;
+	color: white;
+	top: -10.1rem;
+	left: -3rem;
+	text-align: end;
+	font-size: 1rem;
+	font-family: "dunkins";
+}
+
+.car-wrapper {
+	display: none;
+	position: absolute;
+    width: 100%;
+    height: 12rem;
+    left: -1.2rem;
+    bottom: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	overflow-x: scroll;
+	overflow: hidden;
+}
+
+.car-wrapper-motor {
+	display: none;
+	position: absolute;
+	width: 98%;
+	height: 12rem;
+	left: 1rem;
+	bottom: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.car-wrapper-favorite {
+	/* display: none; */
+	position: absolute;
+	width: 98%;
+	height: 12rem;
+	left: 1rem;
+	bottom: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.car-wrapper-boat {
+	display: none;
+	position: absolute;
+	width: 98%;
+	height: 12rem;
+	left: 1rem;
+	bottom: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.car-wrapper-heli {
+	display: none;
+	position: absolute;
+	width: 98%;
+	height: 12rem;
+	left: 1rem;
+	bottom: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.car-wrapper-bikes {
+	display: none;
+	position: absolute;
+	width: 98%;
+	height: 12rem;
+	left: 1rem;
+	bottom: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.car-wrapper-car {
+	position: relative;
+	width: 17.5rem;
+	height: 10.5rem;
+	margin-left: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	border: 2px solid;
+	border-color: #00000000;
+	background: #111316ad;
+	box-shadow: 0px 24px 35px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+}
+
+.car-wrapper-car:hover,
+.car-wrapper-car.selected {
+	border-color: white;
+}
+
+.carnameee:hover,
+.carnameee.selected {
+	color: white;
+}
+
+.car-wrapper-car img {
+    width: 19rem;
+    margin-left: 0rem;
+    margin-top: -1rem;
+    background-size: 100% 100%;
+}
+
+.car-category {
+	position: absolute;
+	width: 35rem;
+    height: 1rem;
+    left: 4rem;
+    bottom: 16rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.car-categorywrapper {
+	position: relative;
+    left: -2.4rem;
+    width: 30rem;
+    top: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.car-categoryline {
+	position: absolute;
+	width: 1.5rem;
+	left: -.5rem;
+	transform: rotate(90deg);
+	border: 1px solid;
+	color: #FFFFFF;
+	text-shadow: 0px 1px 21px rgba(255, 255, 255, 0.7);
+}
+
+.cars {
+	padding-left: 1rem;
+	font-size: 1.3rem;
+	font-family: "dunkins";
+	color: white;
+}
+
+.motor {
+	padding-left: 1rem;
+	font-size: 1.3rem;
+	font-family: "dunkins";
+	color: rgb(144, 144, 144);
+}
+
+#specs {
+	color: rgba(255, 255, 255, 0.885);
+}
+
+#transfer {
+	display: none;
+	color: rgb(144, 144, 144);
+}
+
+#sell {
+	display: none;
+	color: rgb(144, 144, 144);
+}
+
+#back {
+	position: absolute;
+	left: 1%;
+	right: 98.62%;
+	top: 84.63%;
+	bottom: 12.96%;
+	font-size: 40px;
+	color: white;
+}
+
+#back:hover {
+	color: rgb(144, 144, 144);
+}
+
+#next {
+	position: absolute;
+	right: 1%;
+	left: 97.62%;
+	top: 84.63%;
+	bottom: 12.96%;
+	font-size: 40px;
+	color: white;
+}
+
+#next:hover {
+	color: rgb(144, 144, 144);
+}
+
+#compenents {
+	display: none;
+	width:13rem;
+	color: rgb(144, 144, 144);
+}
+
+.bikes {
+	padding-left: 1rem;
+	font-size: 1.3rem;
+	font-family: "dunkins";
+	color: rgb(144, 144, 144);
+}
+
+.boat {
+	padding-left: 1rem;
+	font-size: 1.3rem;
+	font-family: "dunkins";
+	display: none;
+	color: rgb(144, 144, 144);
+}
+
+.air {
+	display: none;
+	padding-left: 1rem;
+	font-size: 1.3rem;
+	font-family: "dunkins";
+	color: rgb(144, 144, 144);
+}
+
+.car-box-details {
+	width: 100%;
+	height: 65%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.car-box-details2 {
+	position: relative;
+	width: 20%;
+	height: 55%;
+    right: 0rem;
+	display: flex;
+}
+
+.car-box-details-buttons {
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid;
+	font-family: "dunkin";
+	height: 3rem;
+	color: rgba(255, 255, 255, 0.885);
+	align-items: center;
+	justify-content: center;
+	border-image: linear-gradient(-170deg, white 10%, #af261c00 30%, #af261c00 40%, white 100%) 10;
+}
+
+.car-box-details-buttons h2 {
+	position: relative;
+	width: 33%;
+	text-align: center;
+	font-size: 1rem;
+	text-overflow: ellipsis;
+	letter-spacing: 0.3rem;
+}
+
+.carbox-details-line {
+	position: absolute;
+	width: 100%;
+	top: 3rem;
+}
+
+#Favorite {
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	position: relative;
+	color: rgb(144, 144, 144);
+	white-space: nowrap;
+	font-family: "dunkins";
+	left: 7.4rem;
+	letter-spacing: 0.05rem;
+}
+
+#Favorite:hover {
+	color: white;
+}
+
+#Favorite2 {
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	position: relative;
+	color: rgb(144, 144, 144);
+	white-space: nowrap;
+	font-family: "dunkins";
+	left: 5.7rem;
+	letter-spacing: 0.05rem;
+}
+
+#Favorite2:hover {
+	color: white;
+}
+
+#star:hover {
+	color: rgb(234, 237, 23);
+}
+
+#star2 {
+	color: yellow;
+}
+
+#star2:hover {
+	color: rgb(255, 255, 255);
+}
+
+.carnameee {
+	position: absolute;
+	color: white;
+	display: inline-block;
+	align-self: flex-end;
+	text-align: center;
+	color: rgb(144, 144, 144);
+	font-family: "dunkin";
+	left: 4%;
+	width: 95%;
+	padding: 10px 1px;
+	letter-spacing: 0.1rem;
+}
+
+.carbox-details-wrapper-text {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	top: 5rem;
+}
+
+.carbox-sell {
+	position: relative;
+	width: 100%;
+	height: 20%;
+	left: 1.2rem;
+	flex-wrap: wrap;
+}
+
+.carbox-sell h2 {
+	width: 70%;
+	color: white;
+	font-family: "dunkin";
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.carbox-sell h3 {
+	width: 8%;
+	color: rgba(255, 255, 255, 0.19);
+	font-family: "dunkins";
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.carbox-transfer {
+	position: relative;
+	width: 100%;
+	height: 20%;
+	left: 1.2rem;
+	flex-wrap: wrap;
+}
+
+.carbox-transfer h2 {
+	width: 70%;
+	color: white;
+	font-family: "dunkin";
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#plate2 {
+	display: none;
+}
+
+.carbox-transfer h3 {
+	width: 8%;
+	color: rgba(255, 255, 255, 0.19);
+	font-family: "dunkins";
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#identifier {
+	width: 20%;
+	color: rgb(255, 255, 255);
+	font-family: "dunkin";
+	font-size: 1.1rem;
+	background: linear-gradient(267.94deg, #515151 0%, rgba(17, 19, 22, 0.201) 98.81%);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: -5.5%;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 0.4vh;
+}
+
+.carbox-maxdetails {
+	position: relative;
+	width: 100%;
+	height: 20%;
+	left: 1.2rem;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.carbox-maxdetails h2 {
+	width: 70%;
+	color: white;
+	font-family: "dunkin";
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: flex-;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.carbox-maxdetails h3 {
+	width: 16%;
+	color: rgba(255, 255, 255, 0.19);
+	font-family: "dunkins";
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.carbox-spawnbutton {
+	position: absolute;
+	width: 87%;
+	height: 50%;
+	left: 1.2rem;
+}
+
+.transferbutton {
+	width: 100%;
+	height: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: white;
+	font-family: "dunkin";
+	margin-top: 1rem;
+	background: linear-gradient(90deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 0.2721463585434174) 100%);
+	filter: drop-shadow(0px 0px 124px #000000);
+	border-radius: .5rem;
+	border: 1px solid white;
+	display: none;
+}
+
+.sellbutton {
+	width: 100%;
+	height: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: white;
+	font-family: "dunkin";
+	margin-top: 1rem;
+	background: linear-gradient(90deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 0.2721463585434174) 100%);
+	filter: drop-shadow(0px 0px 124px #000000);
+	border-radius: .5rem;
+	border: 1px solid white;
+	display: none;
+}
+
+.spawnbutton {
+	width: 100%;
+	height: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: white;
+	font-family: "dunkin";
+	margin-top: 1rem;
+	background: linear-gradient(90deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 0.2721463585434174) 100%);
+	filter: drop-shadow(0px 0px 124px #000000);
+	border-radius: .5rem;
+	border: 1px solid white;
+}
+
+.repairbutton {
+	width: 100%;
+	height: 55%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: white;
+	font-family: "dunkin";
+	margin-top: 1rem;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.2721463585434174) 0%, rgba(50, 50, 50, 1) 100%);
+	filter: drop-shadow(0px 0px 124px #000000);
+	border-radius: .5rem;
+}
+
+.repairbutton:active {
+	border: 1px solid white;
+}
+
+.vale {
+	width: 100%;
+	height: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: white;
+	font-family: "dunkin";
+	margin-top: 1rem;
+	background: linear-gradient(90deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 0.2721463585434174) 100%);
+	filter: drop-shadow(0px 0px 124px #000000);
+	border-radius: .5rem;
+	border: 1px solid white;
+}
+
+.out {
+	width: 100%;
+	height: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: white;
+	font-family: "dunkin";
+	margin-top: 1rem;
+	background: linear-gradient(90deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 0.2721463585434174) 100%);
+	filter: drop-shadow(0px 0px 124px #000000);
+	border-radius: .5rem;
+	border: 1px solid white;
+}
+
+.carbox-car-logo-container {
+	position: absolute;
+	left: -10rem;
+	width: 38rem;
+	top: 14rem;
+	height: 23rem;
+	display: flex;
+	justify-content: center;
+}
+
+.carbox-car-logo img {
+	width: 9rem;
+	height: 7rem;
+}
+
+.car-box-text {
+	text-align: center;
+	position: absolute;
+	top: 9.5rem;
+	font-family: "dunkin";
+	color: white;
+}
+
+
+@media screen and (width: 1360px) and (height: 768px) {
+	.car-box-details-buttons h2 {
+		letter-spacing: 0.1rem;
+	}
+}
+
+#model {
+	position: absolute;
+	margin-left: 11rem;
+	text-align: start;
+	width: 270px;
+	color:white;
+	left: 3.8rem;
+	top:10rem;
+    font-family: "dunkin";
+}
+
+#text3 {
+	margin-left: 39%;
+	margin-top: 4vh;
+	color: #36373A;
+	text-align: left;
+   word-wrap: break-word;
+}
+
+.category-image {
+	color: #5f5f5f;
+	font-size: 25px;
+}
+
+.compenents {
+	position: relative;
+	width: 100%;
+	height: 20%;
+	left: 1.2rem;
+	flex-wrap: wrap;
+}
+
+.compenents h2 {
+	width: 70%;
+	color: white;
+	font-family: "dunkin";
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	letter-spacing: 0.2rem;
+}
+
+.compenents h3 {
+	width: 30%;
+	color: rgba(255, 255, 255, 0.19);
+	font-family: "dunkins";
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.livery {
+	display: flex;
+	justify-content: space-between;
+	width: 4rem;
+	height: 3rem;
+	background-color: #51515100;
+}
+
+.livery button {
+	background-color: #fbfbfb00;
+	color: white;
+	font-family: "dunkins";
+	border: none;
+	font-size: 25px;
+	text-shadow: 5px 5px 21px rgb(255 255 255);
+}
+
+.livery button:hover {
+	color: rgb(83, 83, 83);
+}
+
+.light {
+	display: flex;
+	justify-content: space-between;
+	width: 4rem;
+	height: 3rem;
+	background-color: #51515100;
+}
+
+.light button {
+	background-color: #fbfbfb00;
+	color: white;
+	font-family: "dunkins";
+	border: none;
+	font-size: 25px;
+	text-shadow: 5px 5px 21px rgb(255 255 255);
+}
+
+.light button:hover {
+	color: rgb(83, 83, 83);
+}
+
+.bumper {
+	display: flex;
+	justify-content: space-between;
+	width: 4rem;
+	height: 3rem;
+	background-color: #51515100;
+}
+
+.bumper button {
+	background-color: #fbfbfb00;
+	color: white;
+	font-family: "dunkins";
+	border: none;
+	font-size: 25px;
+	text-shadow: 5px 5px 21px rgb(255 255 255);
+}
+
+.bumper button:hover {
+	color: rgb(83, 83, 83);
+}
+
+.extras {
+	display: flex;
+	justify-content: space-between;
+	width: 4rem;
+	height: 3rem;
+	background-color: #51515100;
+}
+
+.extras button {
+	background-color: #fbfbfb00;
+	color: white;
+	font-family: "dunkins";
+	border: none;
+	font-size: 25px;
+	text-shadow: 5px 5px 21px rgb(255 255 255);
+}
+
+.extras button:hover {
+	color: rgb(83, 83, 83);
+}
+
+#livnumber {
+	line-height: 3rem;
+	color: white;
+	font-family: "dunkins";
+}
+
+#number {
+	line-height: 3rem;
+	color: white;
+	font-family: "dunkins";
+}
+
+#text1 {
+	color: white;
+	font-family: "dunkins";
+}
+
+#text2 {
+	color: white;
+	font-family: "dunkins";
+}
+
+#stored2{
+	display: none;
+}
+
+.carlogo {
+	position: absolute;
+	display: none;
+}
+
+.aply{
+    width:19%;
+    position:relative;
+	display: block;
+    left:35%;
+    top:-80%;
+	text-align:center;
+	margin-left: 3rem;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: white;
+	font-family: "dunkins";
+	background: linear-gradient(267.94deg, #515151 0%, rgba(17, 19, 22, 0.201) 98.81%);
+	filter: drop-shadow(0px 0px 124px #000000);
+	border-radius: .3rem;
+	border: 1px solid white;
+}
+
+.aply:hover{
+	background-color:green;
+}
+
+.aply:active{
+	color:green;
+}

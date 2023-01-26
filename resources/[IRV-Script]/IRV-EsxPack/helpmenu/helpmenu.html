@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/eclipse-dark.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="centered" style="width: 965px; height: 500px;display: none;">
+        <div class="left-menu">
+            <div class="logo"><img src="images/lasvegas.png" width="125" /><br />
+                Help menu<br />
+                <a>(az <b>ESC</b> baray bastan menu estefade konid)</a>
+            </div>
+
+            <div class="accordion">
+                <div class="section">
+                    <input type="radio" name="accordion-1" id="section-1" checked="checked" />
+                    <div class="content">
+                        <ul>
+                            <li class="section" target-panel="#commands"><i class="fa fa-cogs"></i><span>Commands</span></li>
+                            <li class="section" target-panel="#hotkeys" ><i class="fa fa-keyboard-o"></i><span>HotKeys</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+                      <div>
+                </div>
+            </div>
+        </div>
+        <div id="commands" class="panel panel-dark panel-scale" style="width: 760px;right: 4px;">
+			<div class="panel-header"><div><b>List Command Haye Server</b></div>
+			<hr/></div>
+
+            <div style="overflow-y: scroll; max-height: 400px;">
+
+	            <table style="line-height:2.75rem" width="100%">
+					<tbody>
+						<tr>
+							<td style="width: 15px;"><b>Command</b></td>
+							<td style="width: 15px;"><b>Mavared Estefade</b></td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/report</td>
+							<td style="width: 15px;">Gozaresh Dadan</td>
+						</tr>
+						<tr>
+							<!-- <td style="width: 15px;">/report 1 [Matn]</td>
+							<td style="width: 15px;">Gozaresh Dadan [Ghanon Shekani]</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/report 2 [Matn]</td>
+							<td style="width: 15px;">Gozaresh Dadan [Bug]</td>
+						</tr>
+						<tr> -->
+							<td style="width: 15px;">/admins</td>
+							<td style="width: 15px;">Didan list staff online dar server</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/me</td>
+							<td style="width: 15px;">Anjam Action Hay Character</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/do</td>
+							<td style="width: 15px;">Bayan Etefaghat Yek RP ya Action</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/ooc & /b</td>
+							<td style="width: 15px;">Chat Out Of Character Dar Game</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/w [ID]</td>
+							<td style="width: 15px;">Sohbat Kardan Dare Goshi</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/s</td>
+							<td style="width: 15px;">Faryad Zadan</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/reload</td>
+							<td style="width: 15px;">Reload kardan etelaat HUD</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/alias [id] [esm]</td>
+							<td style="width: 15px;">Save kardan esm yek shakhs</td>
+						</tr>
+						<tr>
+							<td style="line-height:1.5rem" width="15px">/closei</td>
+							<td style="line-height:1.5rem" width="15px">Close Kardan Inventory (Dar <b>F8</b> Estefade Konid)</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/e [emote name]</td>
+							<td style="width: 15px;">Estefade Kardan Az Emote Mordnazar</td>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/emotebind [key] [name]</td>
+							<td style="width: 15px;">Set Kardan Emote Roy Key haye Num4-9</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/emotebinds</td>
+							<td style="width: 15px;">List Emote Ha Va Key Hay Set Shode</td>
+						</tr>
+						<tr>
+							<td style="line-height:1.5rem" width="15px">/perfmode</td>
+							<td style="line-height:1.5rem" width="15px">Toggle Kardan Namayesh ID Ha (Ba Negah Dashtan <b>G</b> ID ha Namayesh Dade Mishavand)</td>
+						</tr>
+						<tr>
+							<!-- <td style="width: 15px;">/r</td>
+							<td style="width: 15px;">Sohbat Kardan Dar Radio (IC)</td>
+						</tr>
+						<tr> -->
+							<td style="line-height:1.5rem" width="15px">/engine</td>
+							<td style="line-height:1.5rem" width="15px">Khamosh Va Roshan Kardan Mashin ya Motor</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/hood</td>
+							<td style="width: 15px;">Baz Va Baste Kardan Capot Mashin</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/trunk</td>
+							<td style="width: 15px;">Baz Va Baste Kardan Sandogh Mashin</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/takesalary</td>
+							<td style="width: 15px;">Greftan Salary Az Bank</td>
+						</tr>
+						<tr>
+							<td style="line-height:1.5rem" width="15px">/rm</td>
+							<td style="line-height:1.5rem" width="15px">Remove Kardan Vest (Zamani Ke Vest Nadashte Bashid Faghat Zaheri Bashad)</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/carry</td>
+							<td style="width: 15px;">Ersal Darkhast Baray Kol Kardan Player</td>
+						</tr>
+						<tr>
+							<!-- <td style="width: 15px;">/carryaccept</td>
+							<td style="width: 15px;">Tayid Darkhast Baray Kol Kardan</td>
+						</tr>
+						<tr> -->
+							<!-- <td style="line-height:1.5rem" width="15px">/dropbody</td>
+							<td style="line-height:1.5rem" width="15px">Payin Avordan Player Hengami Ke Player Ra Kol Kardid</td>
+						</tr>
+						<tr> -->
+							<!-- <td style="width: 15px;">/storebody</td>
+							<td style="width: 15px;">Gozashtan Player Dakhel Sandogh</td>
+						</tr>
+						<tr> -->
+							<td style="width: 15px;">/getin</td>
+							<td style="width: 15px;">Raftan Be Dakhel Sandogh Mashin</td>
+						</tr>
+						<tr>
+							<!-- <td style="width: 15px;">/leavetrunk</td>
+							<td style="width: 15px;">Kharej Shodan Az Sandogh Mashin</td>
+						</tr>
+						<tr> -->
+							<!-- <td style="line-height:1.5rem" width="15px">/rmute [true/false]</td>
+							<td style="line-height:1.5rem" width="15px">Khamosh Va Roshan Kardan Effect Radio</td>
+						</tr>
+						<tr> -->
+							<!-- <td style="width: 15px;">/heal accept</td>
+							<td style="width: 15px;">Ghabol Kardan Heal Az Medic</td>
+						</tr>
+						<tr> -->
+							<!-- <td style="line-height:1.5rem" width="15px">/showhouses</td>
+							<td style="line-height:1.5rem" width="15px">Namayesh Blip Khane Hay Baray Forosh Dar Map Be Modat 30 Sanie</td>
+						</tr>
+						<tr> -->
+							<!-- <td style="width: 15px;">/setinventory</td>
+							<td style="width: 15px;">Set Kardan Makan Inventory Dar Khane</td>
+						</tr>
+						<tr>
+							<td style="line-height:1.5rem" width="15px">/setwardrobe</td>
+							<td style="line-height:1.5rem" width="15px">Set Kardan Makan Avaz Kardan Lebas Dar Khane</td>
+						</tr>
+						<tr> -->
+							<td style="width: 15px;">/sl</td>
+							<td style="width: 15px;">Didan Mojavez Ha</td>
+						</tr>
+						<tr>
+							<td style="line-height:1.5rem" width="15px">/sl [ID]</td>
+							<td style="line-height:1.5rem" width="15px">Namayesh Mojavez Hay Khodetan Be Digar Player Ha</td>
+						</tr>
+						<tr>
+							<!-- <td style="width: 15px;">/givekey [ID]</td>
+							<td style="width: 15px;">Dadan Kelid Vasile Naghliye Be Player</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/removekey [ID]</td>
+							<td style="width: 15px;">Gereftan Kelid Vasile Naghliye Be Player</td>
+						</tr>
+						<tr> -->
+							<!-- <td style="width: 15px;">/removeallkeys</td>
+							<td style="width: 15px;">Gereftan Tamami Kilid haye yek vasile naghliye</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/grabcash</td>
+							<td style="width: 15px;">Dozdi Az Shop</td>
+						</tr>
+						<tr> -->
+							<td style="width: 15px;">/togglegps</td>
+							<td style="width: 15px;">Bozorg/kochik kardan overlay GPS</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/mark [X] [Y]</td>
+							<td style="width: 15px;">Mark kardan yek mokhtasat bar roye GPS</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/clear</td>
+							<td style="width: 15px;">Pak kardan text haye chat box</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/crusie</td>
+							<td style="width: 15px;">Bar gardandan sorat be halat pishfarz</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/getclass</td>
+							<td style="width: 15px;">Gereftan model va class vasile naghliye</td>
+						</tr>
+						<!-- <tr>
+							<td style="width: 15px;">/showvehicles</td>
+							<td style="width: 15px;">Namayesh location vasayel naghliye shoma bar roye GPS</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/vehiclestats</td>
+							<td style="width: 15px;">Namayesh etelaat vasayel naghliye spawn shode</td>
+						</tr>
+						<tr>
+							<td style="width: 15px;">/atc [message]</td>
+							<td style="width: 15px;">Peygham dadan be borj moraghebat</td>
+						</tr>
+						<tr>
+							<td style="line-height:1.5rem" style="width: 15px;">/p [message]</td>
+							<td style="line-height:1.5rem" style="width: 15px;">Chat kardan ba shakhsi ke dar hale hazer ba shoma dakhel call ast</td>
+						</tr> -->
+					</tbody>
+				</table>
+			</div>
+        </div>
+
+        <div id="hotkeys" class="panel panel-dark panel-scale" style="display: none; width: 760px;right: 4px">
+            <div class="panel-header"><div><b>List Hotkey Haye Server</b></div><hr /></div>
+
+          <div style="overflow-y: scroll; max-height: 400px;">
+
+            <table style="line-height:2.75rem" width="100%">
+
+          <tbody>
+            <tr>
+              <td style="width: 15px;"><b>KeyBoard HotKey</b></td>
+              <td style="width: 15px;"><b>Action</b></td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">F1</td>
+              <td style="width: 15px;">Biron Avordan Phone</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">F2</td>
+              <td style="width: 15px;">Baz Kardan Inventory</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">F3</td>
+              <td style="width: 15px;">List Emote</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">F7</td>
+              <td style="width: 15px;">Jarime Hay Parkhast Nashode</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">F8</td>
+              <td style="width: 15px;">Baz Kardan Console</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">F10</td>
+              <td style="width: 15px;">Score Board</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">F11</td>
+              <td style="width: 15px;">Taghir Range Seda</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">`</td>
+              <td style="width: 15px;">Bala Bordan Dast Ha</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">T</td>
+              <td style="width: 15px;">Baz Kardan Chat Box</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">U</td>
+              <td style="width: 15px;">Ghofl Kardan Motor Va Mashin</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">K</td>
+              <td style="width: 15px;">Menu Kolah, Ghoshvare, Eynak, Mask</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">L</td>
+              <td style="width: 15px;">Bastan Kamarband</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">N</td>
+              <td style="width: 15px;">Sohbat Kardan Dar Game (IC)</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">ALT</td>
+              <td style="width: 15px;">Sohbat Kardan Dar Radio (IC)</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">,</td>
+              <td style="width: 15px;">Baz Kardan Menu Lebas Va Mashin</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">X</td>
+              <td style="width: 15px;">Cancel kardan task/animation</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">Arow Up, Down, Right, Left</td>
+              <td style="width: 15px;">Jabeja Shodan Beyn Menu Hay Ghoshi</td>
+            </tr>
+            <tr>
+				<td style="width: 15px;">Z</td>
+				<td style="width: 15px;">Bozorg Kardan Gps</td>
+			  </tr>
+			  <tr>
+				<td style="width: 15px;">numpad9</td>
+				<td style="width: 15px;">Roshan Va Khamosh Kardan Drift Mashin</td>
+			  </tr>
+			  <tr>
+              <!-- <td style="width: 15px;">-</td>
+              <td style="width: 15px;">Zadan rahnamaye samte chap vasile nagliye</td>
+            </tr>
+            <tr>
+              <td style="width: 15px;">=</td>
+              <td style="width: 15px;">Zadan rahnamaye samte rast vasile naghliye</td>
+			</tr>
+			<tr> -->
+				<td style="width: 15px;">H</td>
+				<td style="width: 15px;">Avaz kardan halat cheragh haye vasile naghliye</td>
+			  </tr>
+					</tbody>
+				</table>
+			</div>
+        </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="libraries/script.js"></script>
+</body>
+</html>

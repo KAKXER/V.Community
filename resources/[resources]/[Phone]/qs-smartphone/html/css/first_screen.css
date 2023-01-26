@@ -1,0 +1,515 @@
+#first-screen {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
+	box-sizing: border-box;
+	transition-property: transform, opacity;
+	transition-duration: 400ms;
+	transition: ease all 0.4s;
+	z-index: 99999999;
+	background-color: white;
+	color: white;
+}
+  
+.first-screen-hello {
+	position: absolute;
+	height: 630px;
+	width: 100%;
+}
+
+.first-screen-hello-text {
+	position: relative;
+	top: 255px;
+	text-align: center;
+}
+
+#first-screen-hello i {
+	position: relative;
+	top: 510px;
+	float: right;
+	right: 26px;
+	font-size: 18px;
+	color: var(--main-blue);
+}
+ 
+.first-screen-hello-text p {
+	position: relative;
+	font-size: 50px;
+	color: black;
+	font-family: 'ios';
+	font-weight: 600;
+}
+
+.first-screen-hello-interaction {
+	position: absolute;
+	width: 100%;
+	bottom: -8%;
+	height: 3%;
+	left: 0;
+	transition: bottom 800ms ease-in 0s;
+	z-index: 3;
+    top: 615px;
+	cursor: grab;
+}
+
+.first-screen-hello-interaction::after {
+	content: "";
+	position: absolute;
+	width: 110px;
+	height: 4px;
+	right: 96px;
+	opacity: 80%;
+	background: black;
+	border-radius: 10px
+}
+
+.first-screen-hello .first-screen-hello-interaction {
+	bottom: 0
+}
+
+.first-screen-hello .first-screen-hello-interaction::after {
+	animation: interactionAnim 4000ms ease-in infinite
+}
+
+.first-screen-hello .first-screen-hello-interaction::before {
+	content: "Swipe up to open";
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	line-height: 35px;
+	color: black;
+	font-size: 13px;
+	font-family: "ios";
+	animation: interTextAnim 4000ms ease-in infinite
+}
+
+
+
+
+
+
+
+  
+#first-screen-general {
+	position: absolute;
+	left: 100%;
+	display: none;
+	background: white;
+    transition-duration: 400ms;
+	transition: ease all 0.4s;
+}
+
+.first-screen-general-header {
+	position: relative;
+	background: #f2f2f6;
+	top: -20px;
+	height: 300px;
+}
+
+.first-screen-general-back {
+	position: relative;
+	color: var(--main-blue);
+	top: 35px;
+	left: 13px;
+	cursor: pointer;
+}
+
+.first-screen-general-back p {
+	position: relative;
+	bottom: 20px;
+	left: 14px;
+	font-size: 15px;
+}
+
+.first-screen-general-header img {
+	position: relative;
+	height: 240px;
+	top: 30px;
+}
+
+.first-screen-general-text {
+	position: relative;
+	text-align: center;
+	padding: 20px;
+	height: 250px;
+}
+
+.first-screen-general-text h1 {
+	position: relative;
+	text-align: center;
+	color: black;
+	font-family: 'ios';
+	font-size: 33px;
+	bottom: 20px;
+	font-weight: 600;
+}
+
+.first-screen-general-text p {
+	position: relative;
+	color: black;
+	font-family: 'ios';
+	font-size: 14px;
+	overflow: hidden;
+	bottom: 20px;
+}
+
+.first-screen-general-continue {
+	position: relative;
+	text-align: center;
+	top: 10px;
+}
+
+.first-screen-general-continue p {
+	position: relative;
+	color: var(--main-blue);
+	font-family: 'ios';
+	font-size: 17px;
+	cursor: pointer;
+}
+ 
+
+
+.first-screen-pincode {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 100%;
+	display: none;
+	text-align: center;
+    transition-duration: 400ms;
+	transition: ease all 0.4s;
+}
+
+.first-screen-pincode-back {
+	position: relative;
+	color: var(--main-blue);
+	bottom: -15px;
+	right: 130px;
+	cursor: pointer;
+}
+
+.first-screen-pincode-back p {
+	position: relative;
+	bottom: 21px;
+	left: 25px;
+	font-size: 15px;
+}
+
+.first-screen-pincode-text {
+	position: relative;
+	height: 200px;
+	padding: 15px;
+	top: 20px;
+}
+
+.first-screen-pincode-text h1 {
+	position: relative;
+	text-align: center;
+	color: black;
+	font-family: 'ios';
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.first-screen-pincode-text p {
+	position: relative;
+	color: black;
+	font-family: 'ios';
+	font-size: 15px;
+	overflow: hidden;
+}
+
+.first-screen-pincode input  {
+	position: relative;
+	height: 35px;
+	width: 200px;
+	color: black;
+	font-size: 25px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	text-align: center;
+}
+
+.first-screen-pincode-cancel {
+	position: relative;
+	top: 10px;
+	float: center;
+	color: var(--main-blue);
+	cursor: pointer;
+}
+
+.first-screen-pincode-save {
+	position: relative;
+	float: right;
+	bottom: 301px;
+	right: 20px;
+	font-size: 15px;
+	color: var(--main-blue);
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.first-screen-styles {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 100%;
+	display: none;
+	text-align: center;
+    transition-duration: 400ms;
+	transition: ease all 0.4s;
+}
+
+.first-screen-styles-buttons {
+	position: relative;
+	top: 15px;
+	color: var(--main-blue);
+}
+
+.first-screen-styles-buttons p {
+	position: relative;
+	bottom: 21px;
+	left: 25px;
+	font-size: 15px;
+	color: var(--main-blue);
+}
+
+.first-screen-styles-back {
+	position: relative;
+	float: left;
+	left: 0px;
+    cursor: pointer;
+} 
+
+.first-screen-styles-save {
+	position: relative;
+	left: 73px;
+	top: 20px;
+		font-size: 15px;
+    cursor: pointer;
+} 
+
+.first-screen-styles-text {
+	position: relative;
+	padding: 15px;
+	top: 5px;
+	color: black;
+	font-family: 'ios';
+	font-size: 15px;
+} 
+
+.first-screen-styles-selector {
+	position: relative;
+	bottom: 65px;
+	height: 450px;
+	width: 270px !important;
+	border-radius: 25px !important;
+} 
+
+.first-screen-styles-container {
+	position: relative;
+	right: 6px;
+} 
+
+
+
+
+
+
+
+.first-screen-time {
+	position: absolute;
+	left: 100%;
+    width: 100%;
+	height: 100%;
+	display: none;
+	background: white;
+    transition-duration: 400ms;
+	transition: ease all 0.4s;
+} 
+
+.first-screen-time img {
+	position: relative;
+	height: 240px;
+	bottom: 30px;
+} 
+
+.first-screen-time-text {
+	position: relative;
+	text-align: center;
+	padding: 20px;
+	height: 250px;
+	bottom: 25px;
+}
+
+.first-screen-time-text h1 {
+	position: relative;
+	text-align: center;
+	color: black;
+	font-family: 'ios';
+	font-size: 33px;
+	bottom: 20px;
+	font-weight: 600;
+}
+
+.first-screen-time-text p {
+	position: relative;
+	color: black;
+	font-family: 'ios';
+	font-size: 14px;
+	overflow: hidden;
+	bottom: 20px;
+}
+
+.first-screen-time-back {
+	position: relative;
+	color: var(--main-blue);
+	top: 15px;
+	left: 13px;
+	cursor: pointer;
+}
+
+.first-screen-time-back p {
+	position: relative;
+	bottom: 21px;
+	left: 14px;
+	font-size: 15px;
+}
+
+.first-screen-time-save {
+	position: relative;
+	float: right;
+	right: 15px;
+	bottom: 35px;
+		font-size: 15px;
+	color: var(--main-blue);
+	cursor:pointer;
+} 
+
+.first-screen-time-boxes {
+	position: relative;
+	height: 150px;
+	width: 100%;
+	padding: 20px;
+	bottom: 130px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 17px;
+	color: black;
+} 
+
+.fsb1 {
+	position: relative;
+	background: white;
+	height: 35px;
+	margin-bottom: 20px;
+	border-radius: 7px;
+	font-family: 'ios';
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px;
+	cursor: pointer;
+} 
+
+.fsb2 {
+	position: relative;
+	background: white;
+	height: 35px;
+	border-radius: 7px;
+	font-family: 'ios';
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px;
+	cursor: pointer;
+} 
+
+
+
+
+
+
+.first-screen-finally {
+	position: absolute;
+	left: 100%;
+    width: 100%;
+	height: 100%;
+	display: none;
+	background: white;
+    transition-duration: 400ms;
+	transition: ease all 0.4s;
+} 
+
+.first-screen-finally-back {
+	position: relative;
+	color: var(--main-blue);
+	top: 15px;
+	left: 13px;
+	cursor: pointer;
+}
+
+.first-screen-finally-back p {
+	position: relative;
+	bottom: 21px;
+	left: 14px;
+	font-size: 15px;
+}
+
+.first-screen-finally-text {
+	position: relative;
+	text-align: center;
+	padding: 20px;
+	height: 250px;
+	bottom: 25px;
+}
+
+.first-screen-finally-text h1 {
+	position: relative;
+	text-align: center;
+	color: black;
+	font-family: 'ios';
+	font-size: 33px;
+	top: 20px;
+	font-weight: 600;
+}
+
+.first-screen-finally-text p {
+	position: relative;
+	color: black;
+	font-family: 'ios';
+	font-size: 16px;
+	overflow: hidden;
+	top: 50px;
+}
+
+.first-screen-finally-button {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	color: white;
+	font-size: 19px;
+	line-height: 48px;
+}
+
+.first-screen-finally-end {
+	position: relative;
+	background: red;
+	width: 250px;
+	height: 50px;
+	left: 25px;
+	top: 240px;
+	border-radius: 8px;
+	background: var(--main-blue);
+	cursor: pointer;
+}

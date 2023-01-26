@@ -1,0 +1,154 @@
+html {
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0.5vw;
+	padding: 0vw;
+ }
+#Display {
+	opacity: 0;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+	position: absolute;
+	bottom: 55.9vw;
+	overflow: visible;
+}
+#S {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+    left: 15.781vw;
+	bottom: -55.6vw;
+	position: absolute;
+	width: 2.135vw;
+	line-height: 4.219vw;
+	margin-top: -0.286vw;
+	text-align: left;
+	font-family: "Franklin Gothics";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3.646vw;
+	color: rgba(255,255,255,1);
+	letter-spacing: -0.038vw;
+}
+#Line_1 {
+	fill: transparent;
+	stroke: rgba(18,155,18,1);
+	stroke-width: 0.208vw;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1 {
+	filter: drop-shadow(0vw 0.052vw 0.052vw rgba(0, 0, 0, 0.49));
+	overflow: visible;
+	position: absolute;
+    width: 0.365vw;
+    height: 3.177vw;
+	left: 15.104vw;
+	/* top: 51.979vw; */
+	bottom: -55.1vw;
+	transform: matrix(1,0,0,1,0,0);
+}
+#respansive_3S {
+	position: absolute;
+	transition: all ease 0.3s;
+	left: 18.229vw;
+}
+#Strawberry {
+	filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+    /* left: 18.229vw; */
+    top: 52.969vw;
+	position: absolute;
+	overflow: visible;
+    width: 20.125vw;
+    height: 1.354vw;
+	line-height: 4.219vw;
+	margin-top: -1.615vw;
+	text-align: left;
+	font-family: "Segoe UIs";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.99vw;
+	color: rgba(255,255,255,0.722);
+	letter-spacing: -0.003vw;
+}
+#Innocence_blvd {
+	filter: drop-shadow(0vw 0.104vw 0.156vw rgba(0, 0, 0, 1));
+    /* left: 18.229vw; */
+    top: 51.719vw;
+	position: absolute;
+	overflow: visible;
+	width: 11.25vw;
+	height: 1.615vw;
+	line-height: 4.219vw;
+	margin-top: -1.51vw;
+	text-align: left;
+	font-family: "Segoe UIs";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.198vw;
+	color: rgba(18,155,18,1);
+	letter-spacing: -0.01vw;
+}
+#n_52 {
+    filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+    /* left: 18.229vw; */
+    top: 54.115vw;
+    position: absolute;
+    overflow: visible;
+    width: 5.833vw;
+    height: 1.094vw;
+    line-height: 4.219vw;
+    margin-top: -1.615vw;
+    text-align: left;
+    font-family: "Franklin Gothics";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.99vw;
+    color: rgba(255,255,255,0.722);
+    letter-spacing: -0.006vw;
+}
+#n_6632730094 {
+	filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+	left: 20.625vw;
+	top: 54.115vw;
+	position: absolute;
+	overflow: visible;
+	width: 12.031vw;
+	height: 1.094vw;
+	line-height: 4.219vw;
+	margin-top: -1.615vw;
+	text-align: left;
+	font-family: "Franklin Gothics";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.99vw;
+	color: rgba(255,255,255,1);
+	letter-spacing: -0.01vw;
+}
+#Line_4 {
+	fill: transparent;
+	stroke: rgba(18,155,18,1);
+	stroke-width: 0.156vw;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_4 {
+    filter: drop-shadow(0vw 0.052vw 0.052vw rgba(0, 0, 0, 0.49));
+    overflow: visible;
+    position: absolute;
+    width: 0.313vw;
+    height: 0.938vw;
+    left: 20.286vw;
+    top: 54.167vw;
+    transform: matrix(1,0,0,1,0,0);
+}

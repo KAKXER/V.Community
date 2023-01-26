@@ -1,0 +1,434 @@
+.bank-app {
+	display: none;
+	height: 110%;
+	width: 100%;
+	background: white;
+	overflow: hidden
+}
+
+.bank-app-header {
+	position: absolute;
+	width: 100%;
+	height: 33.6px;
+	top: 33.6px
+}
+
+.bank-wallet-header {
+	position: absolute;
+	width: 100%
+}
+
+.bank-wallet-header p {
+	position: absolute;
+	font-size: 23px;
+	font-weight: 600;
+	left: 20px;
+	top: 27px
+}
+
+.bank-wallet-header i {
+	position: absolute;
+	font-size: 18px;
+	font-weight: 600;
+	right: 20px;
+	top: 35px
+}
+
+.bank-app-accounts {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 70%;
+	background-color: #ffffff;
+	top: 109.2px;
+	left: 252px
+}
+
+.bank-app-transfer {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 528px;
+	background-color: white;
+	top: 60px;
+	left: 420px;
+	z-index: 4;
+	box-shadow: inset 0 -10px 10px -10px grey
+}
+
+.bank-app-transfer-header {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: -15px;
+	font-size: 18px;
+	line-height: 40px;
+	border-bottom: 1px solid rgba(109, 108, 108, 0.3);
+	box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+	font-family: "ios"
+}
+
+#bank-transfer-iban {
+	position: absolute;
+	width: 90%;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px;
+	border-radius: 7px;
+	top: 80px;
+	left: 13px;
+	padding: 10px;
+	border: 0 solid rgba(109, 108, 108, 0.3)
+}
+
+.bank-transfer-iban-text p {
+	position: relative;
+	top: 50px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: "ios"
+}
+
+#bank-transfer-amount {
+	position: absolute;
+	width: 90%;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px;
+	border-radius: 7px;
+	padding: 10px;
+	left: 13px;
+	top: 200px;
+	border: 0 solid rgba(109, 108, 108, 0.3)
+}
+
+.bank-transfer-amount-text p {
+	position: relative;
+	top: 135px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 600;
+	font-family: "ios"
+}
+
+.bank-transfer-iban-icon {
+	position: absolute;
+	top: 130px;
+	left: 33px;
+	font-size: 20px;
+	color: black
+}
+
+.bank-transfer-amount-icon {
+	position: absolute;
+	top: 185px;
+	left: 34px;
+	font-size: 24px;
+	color: black
+}
+
+.bank-app-transfer-buttons {
+	position: absolute;
+	bottom: 20px;
+	height: 40px;
+	width: 265px;
+	left: 17px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px;
+	border-radius: 7px;
+	text-align: center;
+	cursor: pointer
+}
+
+.bank-app-transfer-button {
+	position: relative;
+	top: 10px;
+	font-size: 17px
+}
+
+.bank-app-invoices-button {
+	position: relative;
+	left: 20px;
+	font-family: "ios";
+	font-size: 15px;
+	font-weight: 600;
+	top: 45px;
+	color: rgb(255, 255, 255);
+	cursor: pointer
+}
+
+.bank-app-invoices {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 528px;
+	background-color: white;
+	top: 60px;
+	left: 420px;
+	z-index: 4;
+	box-shadow: inset 0 -10px 10px -10px grey
+}
+
+.bank-app-invoices-list {
+	position: absolute;
+	top: 25px;
+	height: auto;
+	max-height: 460px;
+	width: 265px;
+	left: 17px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px;
+	border-radius: 10px;
+	padding: 20px
+}
+
+.bank-app-invoices-list::-webkit-scrollbar {
+	display: none
+}
+
+.bank-app-invoice {
+	position: relative;
+	height: 60px;
+	top: 4px;
+	width: 100%;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	letter-spacing: .5px
+}
+
+.bank-app-invoice-title {
+	position: absolute;
+	top: 6px;
+	left: 17px;
+	color: black;
+	font-family: "ios";
+	font-size: 15px
+}
+
+.bank-app-invoice-title span {
+	position: relative;
+	top: -5px
+}
+
+.bank-app-invoice-amount {
+	position: absolute;
+	bottom: 5px;
+	left: 18px;
+	color: green;
+	font-family: "ios";
+	font-size: 14px
+}
+
+.bank-app-invoice-buttons {
+	position: absolute;
+	right: 0;
+	bottom: 15px;
+	height: 25.2px;
+	width: 58.8px;
+	text-align: center;
+	cursor: pointer
+}
+
+.bank-app-invoice-buttons>i {
+	font-size: 22px;
+	color: #b3b3b3
+}
+
+.pay-invoice {
+	color: #4cd137;
+	transition: .1s
+}
+
+.pay-invoice:hover {
+	color: #70f75b
+}
+
+.decline-invoice {
+	color: #e84118;
+	transition: .1s
+}
+
+.decline-invoice:hover {
+	color: #ff5f38
+}
+
+.info-copy {
+	position: absolute;
+	margin-top: 270px;
+	margin-left: 60px;
+	color: white;
+	font-family: "ios";
+	font-weight: 500;
+	font-size: 12px
+}
+
+.bank-app-cardzone {
+	position: relative;
+	bottom: 5px;
+	text-align: center
+}
+
+.bank-app-card-img img {
+	position: relative;
+	width: 260px;
+	height: auto
+}
+
+.bank-app-account-balance {
+	position: absolute;
+	bottom: 190px;
+	font-family: "ios";
+	letter-spacing: 1px;
+	color: white;
+	font-size: 25px;
+	left: 40px;
+	background: transparent;
+	width: 185px;
+	text-align: left;
+	z-index: 3;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.cart-bank-wallet {
+	position: relative;
+	width: 100%;
+	height: 528px;
+	top: 80px;
+	overflow: hidden
+}
+
+.bank-card-1 {
+	position: relative;
+	top: 510px;
+	transform: perspective(100px) translateZ(-16px)
+}
+
+.bank-card-2 {
+	position: relative;
+	top: 510px;
+	transform: perspective(100px) translateZ(-10px)
+}
+
+.bank-card-3 {
+	position: relative;
+	top: 510px;
+	transform: perspective(100px) translateZ(-5px)
+}
+
+.bank-card-4 {
+	position: relative;
+	top: 510px
+}
+
+.bank-app-footer {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	top: 588px;
+	font-size: 12px;
+	color: black;
+	background: white;
+	justify-content: space-around;
+	padding: 5px;
+	border-top: 1px solid rgba(109, 108, 108, 0.473);
+	box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2)
+}
+
+.bank-footer-item {
+	position: relative;
+	font-size: 22px;
+	text-align: center;
+	cursor: pointer
+}
+
+.bank-app-information {
+	position: relative;
+	bottom: 280px;
+	height: 95px;
+	width: 265px;
+	left: 17px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px;
+	border-radius: 7px
+}
+
+.usernamebank {
+	position: absolute;
+	width: 100%;
+	text-align: left;
+	font-size: 17px;
+	padding: 10px;
+	font-weight: 600;
+	font-family: "ios";
+	border-bottom: 1px solid rgba(109, 108, 108, 0.2)
+}
+
+.cart-bank-dates img {
+	position: absolute;
+	height: 30px;
+	right: 10px;
+	top: 7px;
+	border-radius: 50%
+}
+
+.bank-app-account-number {
+	position: absolute;
+	top: 60px;
+	font-size: 15px;
+	border: none;
+	left: 10px;
+	font-family: "ios";
+	width: 245px
+}
+
+.bank-app-information-in i {
+	position: absolute;
+	top: 65px;
+	left: 195px;
+	font-size: 10px
+}
+
+.bank-input-footer {
+	position: absolute;
+	top: 320px;
+	width: 265px;
+	height: 50px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px;
+	border-radius: 7px
+}
+
+.bank-input-footer i {
+	position: relative;
+	font-size: 30px;
+	padding: 10px
+}
+
+.bank-input-footer-info-text {
+	position: relative;
+	width: 220px;
+	bottom: 44px;
+	left: 50px
+}
+
+.bank-input-footer-info-text p {
+	position: relative;
+	text-align: left;
+	font-size: 12px;
+	top: 2px
+}
+
+.bank-app-tranferlist {
+	position: relative;
+	height: 300px;
+	width: 265px;
+	left: 17px;
+	top: 50px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px;
+	border-radius: 7px
+}

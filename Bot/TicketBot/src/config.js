@@ -1,0 +1,100 @@
+import Discord from "discord.js";
+const { ButtonStyle, TextInputStyle } = Discord;
+
+export default {
+  PREFIX: "!",
+  TOKEN: "MTAzODU2MTg2MzM2MjkzNjkzMg.Gwt-BP.PPbVjiqM0p0qN1vwHLjo2Qaa_xfdwz_ZhpSG-M",
+  ACTIVITY: { NAME: "bot", TYPE: "PLAYING" },
+  GUILD_ID: "984135102193877063",
+  TICKET: {
+    CHANNEL: "939899281337368656",
+    CATEGORY: "939899172545523722",
+    ARCHIVE_CATEGORY: "1039172165502783569",
+    MESSAGE: "> Baraye Sakht ``📧Ticket``, yeki az mavared zir ra entakhab konid \n\n > Ticket Tavasot ``Authorities`` haye Server Morde Baresi Gharar Migirad. \n\n > Shoma az har ``Category`` Paiin faghat mitavanid az haman mozoe 1 add ``📧Ticket`` Create Konid.",
+    STAFF_ROLES: ["1041640223936893008"],
+    BUTTONS: [
+      {
+        STYLE: ButtonStyle.Success,
+        LABEL: "Taiid Ticket",
+        EMOTE: "✅",
+        ID: "successTicket",
+        DISABLED: false,
+      },
+      {
+        STYLE: ButtonStyle.Secondary,
+        LABEL: "Baygani Ticket",
+        EMOTE: "🎫",
+        ID: "archiveTicket",
+        DISABLED: false,
+      },
+      {
+        STYLE: ButtonStyle.Danger,
+        LABEL: "Hazf Ticket",
+        EMOTE: "🎟️",
+        ID: "deleteTicket",
+        DISABLED: false,
+      },
+    ],
+    BUTTONASLI: [
+      {
+        STYLE: ButtonStyle.Success,
+        LABEL: "support",
+        EMOTE: "🎫",
+        ID: "ticket",
+        DISABLED: false,
+      },
+      {
+        STYLE: ButtonStyle.Danger,
+        LABEL: "report",
+        EMOTE: "🎫",
+        ID: "report",
+        DISABLED: false,
+      },
+      {
+        STYLE: ButtonStyle.Secondary,
+        LABEL: "competence",
+        EMOTE: "🎫",
+        ID: "competence",
+        DISABLED: false,
+      },
+    ],
+    QUESTIONS: [
+      {
+        ID: "Title",
+        LABEL: "Title",
+        STYLE: TextInputStyle.Short,
+        MIN_LENGTH: 3,
+        MAX_LENGTH: 20,
+        PLACE_HOLDER: "Lotfan Title Ticket Khod ra Vared Konid.",
+        REQUIRED: true,
+      },
+      {
+        ID: "SteamHex",
+        LABEL: "Steam Hex",
+        STYLE: TextInputStyle.Short,
+        MIN_LENGTH: 15,
+        MAX_LENGTH: 21,
+        PLACE_HOLDER: "Lotfan Steam Hex Ya Identifier Khod Ra Vared Konid.",
+        REQUIRED: true,
+      },
+      {
+        ID: "IC Name",
+        LABEL: "IC Name",
+        STYLE: TextInputStyle.Short,
+        MIN_LENGTH: 4,
+        MAX_LENGTH: 25,
+        PLACE_HOLDER: "Lotfan IC Name Khod Ra Vared Konid.",
+        REQUIRED: false,
+      },
+      // {
+      //   ID: "IC Phone Nummber",
+      //   LABEL: "IC Phone Nummber",
+      //   STYLE: TextInputStyle.Short,
+      //   MIN_LENGTH: 10,
+      //   MAX_LENGTH: 11,
+      //   PLACE_HOLDER: "Lotfan IC Phone Nummber Khod Ra Vared Konid.",
+      //   REQUIRED: false,
+      // },
+    ],
+  },
+};

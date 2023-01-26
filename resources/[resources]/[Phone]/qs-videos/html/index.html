@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recorder</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    </head>
+    
+    <body>
+        <canvas id="local-video" class="content-area"></canvas>
+        <div id="wrapper">
+            <div id="device">
+                <video id="remote-video" width="1024" height="768" class="content-area" autoplay></video>
+                <div id="input-area">
+                    <br/>
+                    <button onclick="stopCall()" id="stop-stream">Stop</button>
+                    <button id="coming-call" onclick="joinCall()" style="display: none"> Join </button>
+                    <input id="callId-input" type="text" placeholder="Player Identifier" />
+                    <button onclick="startCall()" id="start-call">Start</button>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./js/script.js"></script>
+        <script src="./js/videoCall.js"></script>
+        <script src="../config/config.js"></script>
+    </body>
+</html>

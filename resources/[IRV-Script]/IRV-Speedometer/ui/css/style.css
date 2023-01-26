@@ -1,0 +1,458 @@
+
+html {
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0vw;
+	padding: 0vw;
+ }
+ #Speedometer {
+	opacity: 0;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+ }
+ #sabz {
+	position: absolute;
+	width: 6.736vw;
+	height: 2.487vw;
+	left: 84vw;
+    bottom: 3.5vw;
+	overflow: visible;
+ }
+ #sabz_1 {
+	fill: rgba(54,72,17,0.502);
+ }
+ .sabz_1 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(54, 72, 17, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.42vw;
+	
+ }
+ #sabz_2 {
+	fill: rgba(54,72,17,0.502);
+ }
+ .sabz_2 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(54, 72, 17, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.42vw;
+	left: 0.777vw;
+ }
+ #sabz_3 {
+	fill: rgba(54,72,17,0.502);
+ }
+ .sabz_3 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(54, 72, 17, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.42vw;
+	left: 1.554vw;
+ }
+ #sabz_4 {
+	fill: rgba(54,72,17,0.502);
+ }
+ .sabz_4 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(54, 72, 17, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.42vw;
+	left: 2.332vw;
+	
+ }
+ #sabz_5 {
+	fill: rgba(54,72,17,0.502);
+ }
+ .sabz_5 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(54, 72, 17, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.42vw;
+	left: 3.109vw;
+	
+ }
+ #sabz_6 {
+	fill: rgba(54,72,17,0.502);
+ }
+ .sabz_6 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(54, 72, 17, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.42vw;
+	left: 3.886vw;
+	
+ }
+ #sabz_7 {
+	fill: rgba(54,72,17,0.502);
+ }
+ .sabz_7 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(54, 72, 17, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.42vw;
+	left: 4.663vw;
+	
+ }
+ #sabz_8 {
+	fill: rgba(54,72,17,0.502);
+ }
+ .sabz_8 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(54, 72, 17, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.42vw;
+	left: 5.44vw;
+	
+ }
+ #sabz_9 {
+	fill: rgba(54,72,17,0.502);
+ }
+ .sabz_9 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(54, 72, 17, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.42vw;
+	left: 6.218vw;
+	
+ }
+ #naranji {
+	position: absolute;
+	width: 3.627vw;
+	height: 3.005vw;
+	left: 91vw;
+       bottom: 3.5vw;
+	overflow: visible;
+ }
+ #naranji_1 {
+	fill: rgba(121,58,11,0.502);
+ }
+ .naranji_1 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(121, 58, 11, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.938vw;
+	
+	
+ }
+ #naranji_2 {
+	fill: rgba(121,58,11,0.502);
+ }
+ .naranji_2 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(121, 58, 11, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.938vw;
+	left: 0.777vw;
+	
+ }
+ #naranji_3 {
+	fill: rgba(121,58,11,0.502);
+ }
+ .naranji_3 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(121, 58, 11, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.938vw;
+	left: 1.554vw;
+	
+ }
+ #naranji_4 {
+	fill: rgba(121,58,11,0.502);
+ }
+ .naranji_4 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(121, 58, 11, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.938vw;
+	left: 2.332vw;
+	
+ }
+ #naranji_5 {
+	fill: rgba(121,58,11,0.502);
+ }
+ .naranji_5 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(121, 58, 11, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 3.938vw;
+	left: 3.109vw;
+	
+ }
+ #ghermez {
+	position: absolute;
+	width: 4.404vw;
+	height: 3.523vw;
+	left: 95vw;
+    bottom: 3.5vw;
+	overflow: visible;
+ }
+ #ghermez_1 {
+	fill: rgba(89,22,12,0.502);
+ }
+ .ghermez_1 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(89, 22, 12, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 4.456vw;
+	
+	
+ }
+ #ghermez_2 {
+	fill: rgba(89,22,12,0.502);
+ }
+ .ghermez_2 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(89, 22, 12, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 4.456vw;
+	left: 0.777vw;
+	
+ }
+ #ghermez_3 {
+	fill: rgba(89,22,12,0.502);
+ }
+ .ghermez_3 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(89, 22, 12, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 4.456vw;
+	left: 1.554vw;
+	
+ }
+ #ghermez_4 {
+	fill: rgba(89,22,12,0.502);
+ }
+ .ghermez_4 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(89, 22, 12, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 4.456vw;
+	left: 2.332vw;
+	
+ }
+ #ghermez_5 {
+	fill: rgba(89,22,12,0.502);
+ }
+ .ghermez_5 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(89, 22, 12, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 4.456vw;
+	left: 3.109vw;
+	
+ }
+ #ghermez_6 {
+	fill: rgba(89,22,12,0.502);
+ }
+ .ghermez_6 {
+	filter: drop-shadow(0vw 0.155vw 0.311vw rgba(89, 22, 12, 1));
+	position: absolute;
+	overflow: visible;
+	width: 1.451vw;
+	height: 4.456vw;
+	left: 3.886vw;
+	
+ }
+ #damage {
+	position: absolute;
+	width: 2.85vw;
+	height: 1.917vw;
+	left: 96.3vw;
+	bottom: 7.5vw;
+	overflow: visible;
+ }
+ #back_damage {
+	fill: rgba(16,16,16,0.502);
+	stroke: black;
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+ }
+ .back_damage {
+	position: absolute;
+	overflow: visible;
+	width: 2.953vw;
+	height: 0.363vw;
+	
+	top: 1.554vw;
+ }
+ #khat_damage {
+	fill: rgba(18,155,18,1);
+	transition: .5s;
+ }
+ .khat_damage {
+	position: absolute;
+	overflow: visible;
+	width: 100%;
+	height: 0.259vw;
+	left: 0.052vw;
+	top: 1.606vw;
+ }
+ #image_damage {
+	position: absolute;
+	filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+	width: 1.658vw;
+	height: 1.295vw;
+	left: 0.622vw;
+	
+	overflow: visible;
+ }
+ #fuel {
+	position: absolute;
+	width: 2.85vw;
+	height: 1.917vw;
+	left: 92.5vw;
+	bottom: 7.5vw;
+	overflow: visible;
+ }
+ #back_fuel {
+	fill: rgba(16,16,16,0.502);
+	stroke: black;
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+ }
+ .back_fuel {
+	position: absolute;
+	overflow: visible;
+	width: 2.953vw;
+	height: 0.363vw;
+	
+	top: 1.554vw;
+ }
+ #khat_fuel {
+	fill: rgba(18,155,18,1);
+	transition: .5s;
+ }
+ .khat_fuel {
+	position: absolute;
+	overflow: visible;
+	width: 100%;
+	height: 0.259vw;
+	left: 0.052vw;
+	top: 1.606vw;
+ }
+ #image_fuel {
+	position: absolute;
+	filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+	width: 1.658vw;
+	height: 1.295vw;
+	left: 0.622vw;
+	
+	overflow: visible;
+ }
+ #icon_ha {
+	position: absolute;
+	width: 15.339vw;
+	height: 7.772vw;
+	left: 84.036vw;
+	bottom: 0.95vw;
+	overflow: visible;
+ }
+ #khat_asli {
+	fill: transparent;
+
+	stroke-width: 0.208vw;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+ }
+ .khat_asli {
+	overflow: visible;
+	position: absolute;
+	width: 15.443vw;
+	height: 0.104vw;
+	stroke: rgb(44, 224, 7);
+	top: 5.911vw;
+	transform: matrix(1,0,0,1,0,0);
+ }
+ #image_seatbelt {
+	position: absolute;
+	filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+	width: 1.762vw;
+	height: 1.347vw;
+	left: 12.995vw;
+	top: 6.725vw;
+	overflow: visible;
+ }
+ #image_lock {
+	position: absolute;
+	filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+	width: 1.762vw;
+	height: 1.347vw;
+	left: 8.828vw;
+	top: 6.725vw;
+	overflow: visible;
+ }
+ 
+ 
+ 
+ #image_light {
+	position: absolute;
+	filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+	width: 1.762vw;
+	height: 1.347vw;
+	left: 4.661vw;
+	top: 6.725vw;
+	overflow: visible;
+ }
+ #image_engine {
+	position: absolute;
+	filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+	width: 1.762vw;
+	height: 1.347vw;
+	left: 0.495vw;
+	top: 6.725vw;
+	overflow: visible;
+ }
+ #n_35_KMH {
+	left: 0.234vw;
+	top: -0.415vw;
+	position: absolute;
+	overflow: visible;
+	width: 6.321vw;
+	height: 1.71vw;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.295vw;
+	color: rgba(18, 155, 18, 0.603);
+ }
+ #speed {
+	filter: drop-shadow(0vw 0.104vw 0.104vw rgba(0, 0, 0, 1));
+	font-size: 1.76vw;
+	color:rgba(18,155,18,1);
+	text-shadow: 0 0 0.09vw #a9fd00;
+ }

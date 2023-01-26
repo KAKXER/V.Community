@@ -1,0 +1,304 @@
+* {
+    color: white;
+    font-family: 'Oswald', monospace;
+    outline: none;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    /* height: 68vh; */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.dark {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 100%;
+    height: 100%;
+}
+
+.panel {
+    box-sizing: border-box;
+    padding-top: 0.26vw;
+    display: flex;
+    margin-left: -1.563vw;
+    height: 37.5vw;
+    width: 23.438vw;
+    border-radius: 0.313vw;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+}
+
+
+.minipanel-kiyafetler {
+    display: inline-flex;
+    height: 20vw;
+    width: 100%;
+    margin-top: 0vw;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 2.083vw;
+    padding-right: 2.083vw;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.minipanel-kiyafetler::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+/* Optional: show position indicator in red */
+.minipanel-kiyafetler::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.clothe-buttons {
+    display: block;
+    width: 100%;
+    height: 2.5vw;
+    background: #00000085;
+    border: none;
+    font-size: 1vw;
+    font-family: 'Oswald', monospace;
+    border-radius: 0.2vw;
+    border-bottom: 0.052vw solid rgba(255, 255, 255, 0.550);
+    /* letter-spacing: 0.052vw; */
+    transition: all 300ms;
+    text-align: left;
+    margin-bottom: 0vw;
+    margin-top: 0.35vw;
+}
+
+.clothe-buttons:hover {
+    border-bottom: 0.26vw solid rgb(34, 245, 62);
+}
+
+.clothe-number-holder {
+    /* width: 100%; */
+    height: 2.5vw;
+    float: left;
+}
+
+.left-change-holder {
+    width: 45%;
+    height: 3.646vw;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.2vw;
+    width: 6vw;
+}
+
+.fast-change-holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.3vw;
+    height: 2.45vw;
+    box-shadow: 0 0.156vw 0.052vw -0.104vw rgba(0, 0, 0, 0.5);;
+}
+
+.solsag {
+    width: 2.083vw;
+    height: 2.083vw;
+    margin-left: -0.521vw;
+}
+
+.sagsol {
+    width: 2.083vw;
+    height: 2.083vw;
+    margin-left: -0.521vw;
+}
+
+.cls-1 {
+    transition: all 300ms;
+}
+
+.solsag:hover .cls-1 {
+    fill: rgb(34, 245, 62);
+}
+
+.sagsol:hover .cls-1 {
+    fill: rgb(34, 245, 62);
+}
+
+.clothe-index-text {
+    width: 2.083vw;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 0.885vw;
+    text-align: center;
+    margin-left: 0.521vw;
+    margin-right: 0.521vw;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.alt-buttons-holder {
+    width: 23.438vw;
+    display: inline-flex;
+}
+
+.alt-buttons {
+    position: relative;
+    display: inline-block;
+    width: 7.031vw;
+    height: 2.604vw;
+    top: -1.5vw;
+    left: 1.7vw;
+    background-color: rgba(17, 17, 17, 0.350);
+    outline: none;
+    border: none;
+    border-bottom: 0.052vw solid rgba(255, 255, 255, 0.550);
+    filter: drop-shadow(0vw 0vw 5vw rgb(0, 0, 0));
+    border-radius: 0.2vw;
+    margin-top: 1.823vw;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 0.729vw;
+    font-size: 0.781vw;
+    margin-left: 0.521vw;
+    transition: all 300ms;
+}
+
+.alt-buttons:hover {
+    overflow: hidden;
+    width: 7.448vw;
+    height: 2.604vw;
+    background-color: rgba(54, 54, 54, 0.45);
+    border-bottom: 0.26vw solid rgb(34, 245, 62);
+}
+
+.fast-clothe-change-holder{
+    height: 19.375vw;
+    filter: drop-shadow(rgb(0, 0, 0) 0vw 0vw 5vw);
+    background-color: rgba(17, 17, 17, 0.55);
+    display: inline-block;
+    position: absolute;
+    top: 0.65vw;
+    left: 21vw;
+    margin-left: 0.781vw;
+    box-sizing: border-box;
+    border-radius: 0.5vw;
+    padding: 0.521vw 0.26vw 0.26vw;
+}
+
+.fast-clothe-change-button {
+    width: 2.344vw;
+    height: 2.083vw;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding-right: 1.823vw;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 0.625vw;
+}
+
+.fast-clothe-change-button:hover {
+    background: rgb(206, 206, 206);
+}
+
+.fast-clothe-change-button2 {
+    width: 2.344vw;
+    height: 2.083vw;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding-right: 1.823vw;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 0.625vw;
+}
+
+.fast-clothe-change-button2:hover {
+    background: rgb(206, 206, 206);
+}
+
+.fast-clothe-change-ikon {
+    width: 2.188vw;
+    box-sizing: border-box;
+    padding-right: 0.521vw;
+    padding-top: 0.156vw;
+}
+
+#satin-al-btn {
+    background-color: rgb(76, 173, 80);
+    transition: all 300ms;
+}
+
+#satin-al-btn:hover {
+    background-color: rgb(63, 141, 65);
+}
+
+#iptal-et-btn {
+    background-color: rgb(210, 60, 50);
+    transition: all 300ms;
+}
+
+#iptal-et-btn:hover {
+    background-color: rgb(163, 48, 39);
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 100vh;
+    opacity: 1;
+    z-index: 99!important;
+}
+
+
+.alt-buttons-holder2 {
+    width: 23.438vw;
+    display: inline-flex;
+}
+
+.alt-buttons2 {
+    position: relative;
+    display: inline-block;
+    width: 7.031vw;
+    height: 2.604vw;
+    top: -1.5vw;
+    left: 1.7vw;
+    background-color: rgba(17, 17, 17, 0.350);
+    outline: none;
+    border: none;
+    border-bottom: 0.052vw solid rgba(255, 255, 255, 0.550);
+    filter: drop-shadow(0vw 0vw 5vw rgb(0, 0, 0));
+    border-radius: 0.2vw;
+    margin-top: 1.823vw;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 0.729vw;
+    font-size: 0.781vw;
+    margin-left: 0.521vw;
+    transition: all 300ms;
+    opacity: 0;
+	transition: all ease 0.3s;
+
+}
+
+.alt-buttons2:hover {
+    overflow: hidden;
+    width: 7.448vw;
+    height: 2.604vw;
+    background-color: rgba(54, 54, 54, 0.45);
+    border-bottom: 0.26vw solid rgb(34, 245, 62);
+}

@@ -1,0 +1,537 @@
+.menu-draggable {
+	position: absolute;
+	margin-top: -40px;
+	width: 316px;
+	transition: .4s;
+	height: 662px;
+	overflow: hidden;
+	z-index: 150
+}
+
+.phone-home-button-draggable {
+	cursor: pointer;
+	width: 110px;
+	height: 4px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 8px;
+	left: 48%;
+	transform: translateX(-50%);
+	z-index: 999999999;
+	transition: all .4s
+}
+
+#sun-icon {
+	position: relative;
+	font-size: 23px;
+	top: 36px;
+	cursor: pointer
+}
+
+#sound-icon {
+	position: relative;
+	font-size: 17px;
+	top: 35px;
+	cursor: pointer
+}
+
+.menu-draggable-background {
+	position: relative;
+	backdrop-filter: blur(10px);
+	background-color: rgba(124, 124, 124, 0.2);
+	width: -webkit-fill-available;
+	height: 652px;
+	border-radius: 10px
+}
+
+#phone-time-draggable {
+	position: absolute;
+	color: white;
+	top: -22px;
+	left: -9px
+}
+
+.settings-airdrop {
+	position: relative;
+	width: 35px;
+	left: 10px;
+	top: 10px;
+	filter: brightness(0) invert(1)
+}
+
+.info-icons-draggable {
+	position: absolute;
+	display: flex;
+	top: 71px;
+	left: 170px;
+	width: 110px;
+	letter-spacing: 6px;
+	gap: 7px
+}
+
+.time-icons-draggable {
+	position: absolute;
+	display: flex;
+	top: 86px;
+	left: 27px;
+	align-items: center;
+	font-weight: 600;
+	font-size: 16px
+}
+
+#phone-plane-draggable {
+	display: none;
+	position: relative;
+	top: -5px !important
+}
+
+#phone-bluetooth-draggable {
+	display: none
+}
+
+#phone-battery-draggable {
+	font-size: 17px
+}
+
+.info-icons-draggable {
+	position: relative;
+	color: white
+}
+
+.draggable-boxes {
+	position: relative;
+	top: 15px
+}
+
+.menu-draggable-box-1 {
+	position: relative;
+	height: 120px;
+	width: 120px;
+	top: 60px;
+	left: 14px;
+	background: rgba(5, 5, 5, 0.6);
+	border-radius: 13px
+}
+
+.circle-draggable-plane {
+	position: relative;
+	height: 47px;
+	width: 47px;
+	top: 8px;
+	left: 8px;
+	background: rgba(80, 80, 80, 0.5);
+	border-radius: 50%;
+	cursor: pointer
+}
+
+.circle-draggable-plane i {
+	position: relative;
+	color: white;
+	left: 13px;
+	top: 14px;
+	font-size: 20px
+}
+
+.circle-draggable-5g {
+	position: relative;
+	height: 47px;
+	width: 47px;
+	top: -40px;
+	left: 64px;
+	background: rgba(80, 80, 80, 0.5);
+	border-radius: 50%;
+	cursor: pointer
+}
+
+.circle-draggable-5g i {
+	position: relative;
+	color: white;
+	left: 12px;
+	top: 14px;
+	font-size: 20px
+}
+
+.circle-draggable-wifi {
+	position: relative;
+	height: 47px;
+	width: 47px;
+	bottom: 30px;
+	left: 8px;
+	background: rgba(80, 80, 80, 0.5);
+	border-radius: 50%;
+	cursor: pointer
+}
+
+.circle-draggable-wifi i {
+	position: relative;
+	color: white;
+	left: 11px;
+	top: 15px;
+	font-size: 20px
+}
+
+.circle-draggable-bluetooth {
+	position: relative;
+	height: 47px;
+	width: 47px;
+	bottom: 78px;
+	left: 64px;
+	background: rgba(80, 80, 80, 0.5);
+	border-radius: 50%;
+	cursor: pointer
+}
+
+.circle-draggable-bluetooth i {
+	position: relative;
+	color: white;
+	left: 17px;
+	top: 14px;
+	font-size: 20px
+}
+
+.menu-draggable-box-2 {
+	position: relative;
+	height: 120px;
+	width: 120px;
+	top: -60px;
+	left: 165px;
+	background: rgba(5, 5, 5, 0.6);
+	border-radius: 13px
+}
+
+.info-draggable-podcast {
+	position: relative;
+	color: white;
+	left: 93px;
+	top: 5px;
+	font-size: 19px
+}
+
+.info-draggable-music p {
+	position: relative;
+	color: #ffffff6b;
+	width: 120px;
+	bottom: 12px;
+	font-size: 18px;
+	font-family: "ios";
+	text-align: center
+}
+
+.info-draggable-play {
+	position: relative;
+	color: white;
+	left: 40px;
+	bottom: 19px;
+	cursor: pointer
+}
+
+.info-draggable-right {
+	position: relative;
+	color: white;
+	left: 89px;
+	bottom: 45px;
+	font-size: 16px;
+	cursor: pointer
+}
+
+.info-draggable-left {
+	position: relative;
+	color: white;
+	right: 89px;
+	bottom: 69px;
+	font-size: 16px;
+	transform: rotate(180deg);
+	cursor: pointer
+}
+
+.menu-draggable-box-3 {
+	position: relative;
+	height: 120px;
+	width: 120px;
+	top: -35px;
+	left: 14px;
+	background: transparent;
+	border-radius: 13px
+}
+
+.button-draggable-lock {
+	position: relative;
+	height: 55px;
+	width: 55px;
+	top: 5px;
+	left: 5px;
+	background: rgba(5, 5, 5, 0.6);
+	border-radius: 13px;
+	cursor: pointer
+}
+
+.button-draggable-lock i {
+	position: relative;
+	color: white;
+	left: 12px;
+	top: 13px;
+	font-size: 28px
+}
+
+.button-draggable-screens {
+	position: relative;
+	height: 55px;
+	width: 55px;
+	left: 66px;
+	bottom: 50px;
+	background: rgba(5, 5, 5, 0.6);
+	border-radius: 13px;
+	cursor: pointer
+}
+
+.button-draggable-screens i {
+	position: relative;
+	color: white;
+	left: 12px;
+	top: 13px;
+	font-size: 27px
+}
+
+.button-draggable-focus {
+	position: relative;
+	height: 50px;
+	width: 50px;
+	bottom: 42px;
+	left: 5px;
+	width: 116px;
+	background: rgba(5, 5, 5, 0.6);
+	border-radius: 13px;
+	cursor: pointer
+}
+
+.button-draggable-focus p {
+	position: relative;
+	color: white;
+	bottom: 12px;
+	left: 48px;
+	font-size: 15px
+}
+
+.button-draggable-focus i {
+	position: relative;
+	color: white;
+	left: 15px;
+	top: 13px;
+	font-size: 23px
+}
+
+.menu-draggable-box-4 {
+	position: relative;
+	height: 120px;
+	width: 120px;
+	top: -154px;
+	left: 165px;
+	background: transparent;
+	border-radius: 13px
+}
+
+.menu-draggable-box-5 {
+	position: relative;
+	height: 120px;
+	width: 260px;
+	top: -125px;
+	left: 20px;
+	background: #a7a7a733;
+	border-radius: 13px
+}
+
+.menu-draggable-box-5 i {
+	position: relative;
+	color: white;
+	left: 120px;
+	top: 10px;
+	font-size: 29px
+}
+
+.menu-draggable-box-5 p {
+	position: relative;
+	color: white;
+	left: 10px;
+	top: 10px;
+	width: 240px;
+	font-size: 17px;
+	text-align: center
+}
+
+.menu-draggable-box-6 {
+	position: relative;
+	height: 70px;
+	width: 260px;
+	top: -106px;
+	left: 20px;
+	border-radius: 13px
+}
+
+.button-draggable-lantern {
+	position: relative;
+	height: 55px;
+	width: 55px;
+	left: 10px;
+	top: 7px;
+	background: rgba(5, 5, 5, 0.6);
+	border-radius: 13px;
+	cursor: pointer
+}
+
+.button-draggable-lantern i {
+	position: relative;
+	color: white;
+	left: 13px;
+	top: 16px;
+	font-size: 23px;
+	transform: rotate(-90deg)
+}
+
+.button-draggable-clock {
+	position: relative;
+	height: 55px;
+	width: 55px;
+	left: 75px;
+	bottom: 48px;
+	background: rgba(5, 5, 5, 0.6);
+	border-radius: 13px;
+	cursor: pointer
+}
+
+.button-draggable-clock i {
+	position: relative;
+	color: white;
+	left: 14px;
+	top: 13px;
+	font-size: 27px
+}
+
+.button-draggable-calculator {
+	position: relative;
+	height: 55px;
+	width: 55px;
+	left: 138px;
+	bottom: 103px;
+	background: rgba(5, 5, 5, 0.6);
+	border-radius: 13px;
+	cursor: pointer
+}
+
+.button-draggable-calculator i {
+	position: relative;
+	color: white;
+	left: 17px;
+	top: 12px;
+	font-size: 27px
+}
+
+.button-draggable-camera {
+	position: relative;
+	height: 55px;
+	width: 55px;
+	left: 200px;
+	bottom: 158px;
+	background: rgba(5, 5, 5, 0.6);
+	border-radius: 13px;
+	cursor: pointer
+}
+
+.button-draggable-camera i {
+	position: relative;
+	color: white;
+	left: 14px;
+	top: 12px;
+	font-size: 27px
+}
+
+.sliders-menu-draggable {
+	position: relative;
+	bottom: 15px;
+	right: 10px;
+	transform: rotate(-90deg)
+}
+
+input[type="range"] {
+	-webkit-appearance: none;
+	position: relative;
+	overflow: hidden;
+	height: 47px;
+	cursor: pointer;
+	width: 105px !important;
+	border-radius: 10px;
+	background: #00000091
+}
+
+::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 40px;
+	background: #fdfdfd;
+	box-shadow: -764px 0 0 764px #ffffff
+}
+
+.sliders-menu-draggable i {
+	position: relative;
+	top: 33px;
+	left: 10px;
+	z-index: 2
+}
+
+#draggable-song-artist {
+	position: relative;
+	font-size: 15px;
+	width: 100px;
+	top: 5px;
+	left: 11px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-weight: 600
+}
+
+#draggable-song-name {
+	position: relative;
+	font-size: 11px;
+	width: 100px;
+	top: inheritpx;
+	top: -6px;
+	left: 11px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.draggable-players-icons {
+	position: relative;
+	left: 35px;
+	top: -18px
+}
+
+#dragable-play {
+	position: relative;
+	left: 6px;
+	top: -20px
+}
+
+.playBtn i {
+	position: relative;
+	left: 0;
+	top: -2px
+}
+
+#dragable-prev {
+	position: relative;
+	left: -15px;
+	top: 12px;
+	font-size: 20px;
+	color: white
+}
+
+#dragable-next {
+	position: relative;
+	left: 53px;
+	top: -50px;
+	font-size: 20px;
+	color: white
+}

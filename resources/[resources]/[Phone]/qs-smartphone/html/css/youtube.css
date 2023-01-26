@@ -1,0 +1,256 @@
+.youtube-app {
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	height: 110%;
+	background: #fff;
+	color: #000
+}
+
+#youtube-app-head {
+	width: 100%;
+	height: 85px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #b1b1b16b;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2)
+}
+
+#youtube-app-head::after {
+	position: relative;
+	content: "";
+	background-color: #b5b5b5;
+	width: 100%;
+	height: 1px;
+	top: 100%
+}
+
+#youtube-app-head-content {
+	position: absolute;
+	display: flex;
+	top: 48px;
+	justify-content: center;
+	text-align: center;
+	align-items: center
+}
+
+#youtube-app-head-Img {
+	position: relative;
+	margin-left: 15px;
+	width: 30px;
+	height: 30px
+}
+
+#youtube-app-head a {
+	position: relative;
+	margin-left: 5px;
+	font-weight: 900;
+	font-size: 18px;
+	color: unset;
+	text-decoration: none;
+	font-family: "ios"
+}
+
+#youtube-app-body {
+	position: relative;
+	width: 100%;
+	height: 510px;
+	overflow: auto;
+	padding: 10px
+}
+
+#youtube-app-body::-webkit-scrollbar,
+#youtube-app-search-page-body::-webkit-scrollbar {
+	display: none
+}
+
+.youtube-thumb-container {
+	position: relative;
+	top: 5px;
+	height: 190px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.thumb {
+	width: 100%;
+	height: 129px;
+	border-radius: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+	object-fit: cover
+}
+
+.youtube-thumb-details {
+	position: relative;
+	top: 8px;
+	display: flex;
+	align-items: center
+}
+
+.youtube-thumb-details-contents {
+	position: relative;
+	left: 5px;
+	display: flex;
+	flex-direction: column
+}
+
+.youtube-thumb-details-head {
+	position: relative;
+	font-size: 15px;
+	width: 260px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.youtube-thumb-details-content {
+	font-size: 12px;
+	color: #000000aa;
+	margin-top: 2px;
+	width: 230px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.youtube-thumb-details-owner {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	bottom: 10px;
+	right: 5px
+}
+
+#youtube-app-footer {
+	position: absolute;
+	top: 595px;
+	width: 100%;
+	height: 65px;
+	background-color: white;
+	z-index: 3;
+	display: flex;
+	border-top: 1px solid rgba(109, 108, 108, 0.473);
+	box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2);
+	justify-content: space-evenly;
+	align-items: center
+}
+
+.youtube-app-footer-icon {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	margin-bottom: 18px
+}
+
+#youtube-app-search-page-head {
+	position: relative;
+	top: 50px;
+	width: 100%;
+	height: 12%;
+	display: flex;
+	flex-direction: row;
+	align-items: center
+}
+
+#youtube-app-serach-page-head-content {
+	position: absolute;
+	display: flex;
+	top: 5%;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px
+}
+
+#youtube-app-search-page-head::after {
+	position: absolute;
+	content: "";
+	background-color: #b5b5b5;
+	width: 100%;
+	height: 1px;
+	top: 40px
+}
+
+#youtube-app-search-page-search {
+	width: 85%;
+	overflow: none;
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background: none;
+	border: none;
+	font-family: "ios";
+	color: #000;
+	font-size: 17px;
+	font-weight: 500;
+	resize: none
+}
+
+#youtube-app-search-page-search-icon {
+	position: relative;
+	right: 0;
+	top: -4.795px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer
+}
+
+#youtube-app-search-page-body {
+	position: relative;
+	width: 100%;
+	height: 515px;
+	top: 0;
+	padding: 20px;
+	overflow: auto
+}
+
+#showContent-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999999
+}
+
+#showContent-content {
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+#showContent-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+#showContent-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover
+}
+
+#showContent-img iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	border-radius: 10px
+}
+
+#youtube-otherPlays,
+#spotify-otherPlays {
+	display: none !important
+}

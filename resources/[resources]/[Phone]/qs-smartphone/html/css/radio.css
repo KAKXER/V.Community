@@ -1,0 +1,158 @@
+.radio-app {
+	height: 110%;
+	width: 100%;
+	background: white;
+	overflow: hidden;
+	display: none
+}
+
+.phone-recent-message-headline {
+	position: absolute;
+	left: 16px;
+	top: 60px;
+	font-size: 29px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: 600
+}
+
+.phone-radio-sector {
+	display: block;
+	position: absolute;
+	height: 84%;
+	width: 101%;
+	top: 16%
+}
+
+.phone-radio-list {
+	position: absolute;
+	height: 98.2%;
+	top: 0;
+	width: 99%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	overflow-x: hidden
+}
+
+#phone-radio-return {
+	position: relative;
+	left: 29px;
+	top: 5px;
+	height: 29px;
+	width: 29px
+}
+
+#phone-radio-return>i {
+	color: rgb(27, 131, 216)
+}
+
+#phone-radio-return>i:hover {
+	color: rgb(12, 12, 12)
+}
+
+.phone-radio-frequenz-inputs {
+	position: relative;
+	height: 58px;
+	width: 100%
+}
+
+.phone-radio-frequenz-input {
+	position: relative;
+	top: 15px;
+	height: 44px;
+	left: 5%;
+	font-family: "ios";
+	font-size: 17px;
+	width: 90%;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.4)
+}
+
+.phone-frequenz-button {
+	position: relative;
+	height: 48px;
+	width: 100%;
+	font-family: "ios";
+	font-weight: 400;
+	right: 4px;
+	top: 10px
+}
+
+#phone-frequenz-join-button {
+	position: relative;
+	background-color: rgb(27, 131, 216);
+	width: 90%;
+	height: 80%;
+	left: 5%;
+	top: 10%;
+	border: none;
+	outline: none;
+	color: white;
+	font-family: "ios";
+	font-weight: 400;
+	font-size: 20px;
+	border-radius: 2px;
+	box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2)
+}
+
+#phone-frequenz-join-button:hover {
+	background-color: rgb(24, 109, 179);
+	transition: .5s
+}
+
+#phone-frequenz-leave-button {
+	position: relative;
+	background-color: rgb(161, 25, 25);
+	width: 90%;
+	height: 80%;
+	left: 5%;
+	top: 10%;
+	border: none;
+	outline: none;
+	color: white;
+	font-family: "ios";
+	font-size: 20px;
+	font-weight: 400;
+	border-radius: 2px;
+	box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2)
+}
+
+#phone-frequenz-leave-button:hover {
+	background-color: rgb(131, 20, 20);
+	transition: .5s
+}
+
+#phone-constant-radio {
+	position: relative;
+	background-color: rgb(96, 209, 73);
+	width: 90%;
+	height: 80%;
+	left: 5%;
+	top: 10%;
+	border: none;
+	outline: none;
+	color: white;
+	font-family: "ios";
+	font-size: 20px;
+	font-weight: 400;
+	border-radius: 2px;
+	box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+	display: none
+}
+
+.disphone-constant-radio {
+	background-color: rgb(132, 73, 209) !important
+}
+
+.disphone-constant-radio:hover {
+	color: rgb(132, 73, 209) !important;
+	background-color: rgb(255, 255, 255) !important;
+	transition: .5s !important
+}
+
+#phone-constant-radio:hover {
+	color: rgb(87, 189, 67);
+	background-color: rgb(255, 255, 255);
+	transition: .5s
+}

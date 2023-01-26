@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>IR.V Developments</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <script src="nui://game/ui/jquery.js"></script>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <div class="auto-insurance"
+            style="top: 50vh; transform: translateY(-50%); float: right; right: 10%; display: none;">
+            <div class="header center">
+                <div id="uiTitle" style="color: #ffffff;">khosh amadid be <span class="shopName">Goverment</span></div>
+            </div>
+            <div id="carsConteiner" style="overflow-y: scroll; height: 588px; overflow-x: hidden; background-color: #272727;">
+            </div>
+            <div id="item-template" style="display: none;">
+                <div class="item">
+                    <div class="title">{{label}}</div>
+                    <img src={{image}} style="margin-left:2%;width: 50px;height: 59px;object-fit: contain;" alt="">
+                    <small class="info">
+                        <span>Price: </span><span style="color:#00973c;font-weight: bold;">{{price}}$</span>
+                        <br>
+                        <span>Stock: </span><span style="color:#ced109;font-weight: bold;">{{amount}}</span>
+                    </small>
+                    <input type="number" style="background-color: #5F6F94; color: #FBFBFB;text-shadow:-1px -1px 5px #0000006b,1px -1px 5px #0000006b,-1px 1px 5px #0000006b,1px 1px 5px #0000006b,-2px -2px 5px #0000006b,2px -2px 5px #0000006b,-2px 2px 5px #0000006b,2px 2px 5px #0000006b;" min="1" value="1" max="50" class="quantity">
+                    <button href="#" onclick="buyItem('{{name}}',$(this).parent().find('.quantity').val())" class="retrieve-button center">
+                        <small>BUY</small>
+                    </button>
+                </div>
+            </div>
+            <div class="footer center">
+                <a id="uiExit" href="#" onclick="Exit()" class="main-button center">CLOSE</a>
+            </div>
+        </div>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1474 @@
+.instagram-app {
+	display: none;
+	background: #fff;
+	height: 110%;
+	width: 101%;
+	overflow: hidden
+}
+
+.instagram-header {
+	position: absolute;
+	top: 10px;
+	height: 65px;
+	width: 100%;
+	border-bottom: 1px solid #b1b1b16b;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2)
+}
+
+.instagram-logo img {
+	position: relative;
+	top: 9px;
+	width: 90px;
+	left: 10px
+}
+
+.intagram-logo-icons {
+	position: relative;
+	width: 95%;
+	left: 203px;
+	top: 35px
+}
+
+.intagram-logo-icons i,
+.name-top {
+	position: relative;
+	font-size: 17px;
+	margin-left: 6px
+}
+
+#insta-home .card .footer-content .heart,
+#instagram-camera-history,
+.user-edit-profile h3 i {
+	cursor: pointer
+}
+
+.name-top {
+	margin-left: 20px;
+	font-weight: 600;
+	font-family: ios;
+	font-size: 17px
+}
+
+.user-edit-image-content {
+	position: relative;
+	text-align: center
+}
+
+.user-edit-image-content img {
+	position: relative;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	object-fit: cover
+}
+
+#back-user-profile {
+	position: relative;
+	left: 10px;
+	top: 3px;
+	font-family: "ios";
+	font-size: 19px;
+	z-index: 9999
+}
+
+.description,
+.name {
+	position: absolute;
+	width: 230px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+#back-user-profile,
+.name {
+	position: relative;
+	font-weight: 600
+}
+
+.name {
+	top: 0;
+	font-family: "ios" !important;
+	font-size: 15px !important;
+	width: 170px !important
+}
+
+.instagram-links {
+	float: right;
+	padding: 5px
+}
+
+#insta-direct h3 a,
+#insta-profile h3 a,
+.instagram-links a {
+	color: #333
+}
+
+.instagram-showstory {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 400px;
+	border-radius: 8px;
+	background-image: url(/html/img/backgrounds/b3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 999999999
+}
+
+.photoShowinsta {
+	display: none;
+	top: 0;
+	right: -110%;
+	width: 100%;
+	height: 108% !important;
+	background: #fff;
+	position: absolute;
+	transition: .7s;
+	z-index: 9999999
+}
+
+.imgSinsta {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	object-fit: cover;
+	background-position: center center
+}
+
+.grid5-container {
+	position: relative;
+	display: grid;
+	grid-template-columns: auto auto;
+	top: 230px;
+	z-index: 999
+}
+
+.grid5-item {
+	padding: 2px;
+	font-size: 26px;
+	margin-top: 5px;
+	text-align: center
+}
+
+.progress {
+	position: absolute;
+	width: 92%;
+	max-width: 100%;
+	height: 10px;
+	background-color: #949494;
+	border-radius: 5px;
+	overflow: hidden
+}
+
+.progress .progress-bar {
+	display: block;
+	height: 100%;
+	background: #fff;
+	transition: none;
+	background-size: 300% 100%;
+	-webkit-animation: progress-animation 2s linear infinite;
+	animation: progress-animation 2s linear infinite
+}
+
+.instagram-showstory_image {
+	position: relative
+}
+
+#instagram-showstory_ownerimage {
+	position: absolute;
+	top: 29px;
+	left: 18px;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px
+}
+
+#instagram-showstory_ownername {
+	position: absolute;
+	left: 58px;
+	top: 34px;
+	color: #fff;
+	font-weight: 600
+}
+
+#instagram-showstory_before,
+#instagram-showstory_next {
+	position: absolute;
+	font-family: "ios";
+	background: 0 0;
+	background: #fff;
+	border-radius: 10px;
+	font-size: 16.5px;
+	border: 0
+}
+
+#instagram-showstory_before {
+	left: -39px;
+	top: 192px
+}
+
+#instagram-showstory_next {
+	right: -38.36px;
+	top: 191.8px
+}
+
+.instagram-stories {
+	position: relative;
+	margin-bottom: 17px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	cursor: grab
+}
+
+.instagram-stories ul {
+	list-style-type: none;
+	display: flex;
+	margin-top: 8px;
+	margin-left: -25px;
+	height: 60px;
+	width: 335px
+}
+
+.insta-posts {
+	position: relative;
+	bottom: 15px
+}
+
+.instagram-stories::-webkit-scrollbar {
+	display: none
+}
+
+.instagram-stories ul li a img {
+	display: flex;
+	height: 35px;
+	width: 35px;
+	border-radius: 180px;
+	transition: .6s ease-in-out;
+	object-fit: cover
+}
+
+.instagram-stories ul li a img:hover {
+	transform: scale(1.1)
+}
+
+.instagram-stories ul li {
+	margin-right: 5px
+}
+
+.instagram-stories ul li a {
+	display: block;
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 100%
+}
+
+.outer-layer {
+	position: relative;
+	padding: 0;
+	border-radius: 100%;
+	border: 1px solid transparent;
+	width: 46.5px;
+	cursor: pointer
+}
+
+#instagram-stories-add {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #09f;
+	bottom: 0;
+	right: 0;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 15px;
+	border: solid 0#fff;
+	font-weight: 600
+}
+
+.name-viewprofiletwo {
+	position: relative;
+	top: 25px;
+	left: 7px;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: "ios";
+	width: 180px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.location-instagram {
+	position: relative;
+	top: 14px;
+	font-size: 12px;
+	font-family: "ios"
+}
+
+.instagram-app .tab-content .tab-pane {
+	width: 100%;
+	position: absolute;
+	top: 75px;
+	height: 515px;
+	overflow-y: scroll;
+	overflow-x: hidden
+}
+
+.instagram-app .tab-content .tab-pane::-webkit-scrollbar,
+.post-preview .instagram-description textarea::-webkit-scrollbar,
+.user-profile::-webkit-scrollbar {
+	width: 4.8px;
+	background-color: #fff
+}
+
+#insta-home .card {
+	position: relative;
+	right: 9px;
+	height: auto;
+	font-family: "ios";
+	margin: 0 0 5px;
+	border-top: 1px solid #8080804d
+}
+
+#insta-home .card .card-header {
+	position: relative;
+	height: 55px
+}
+
+#insta-home .card .profile-img {
+	display: inline-block;
+	height: 33px;
+	width: 33px;
+	border-radius: 50%;
+	position: relative;
+	left: 8px;
+	top: 5px;
+	object-fit: cover
+}
+
+.profile-info {
+	position: relative;
+	display: inline-block;
+	left: 16px;
+	bottom: 8px
+}
+
+#insta-home .card .name .name-top .verify {
+	position: relative;
+	background-image: url(../img/app_details/instagram-verify.png);
+	padding: 1px 5px;
+	background-size: cover;
+	left: 5px;
+	zoom: 0.7
+}
+
+.name-viewprofiletwo .verify {
+	position: relative;
+	background-image: url(../img/app_details/instagram-verify.png);
+	padding: 3px 13px;
+	background-size: cover;
+	left: 5px;
+	zoom: 0.7
+}
+
+#insta-home .card .time-created {
+	font-family: "ios";
+	font-size: 13px;
+	float: right;
+	position: relative;
+	top: 5px;
+	width: 45px;
+	text-align: right;
+	right: 5px;
+	color: gray
+}
+
+#insta-home .card .content {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: auto
+}
+
+#insta-home .card .likes,
+#insta-home span {
+	font-weight: 600
+}
+
+#insta-home .card .card-footer {
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-bottom: -15px
+}
+
+#insta-home .card .footer-content {
+	position: relative;
+	font-family: "ios";
+	font-size: 14px;
+	color: #868686;
+	width: 290px !important;
+	padding: 10px 10px 0;
+	word-wrap: break-word;
+	overflow: hidden;
+	left: 5px
+}
+
+#insta-home .card .footer-content span {
+	position: relative;
+	color: #333;
+	bottom: 6px;
+	font-size: 17px
+}
+
+#insta-home .card .footer-content .heart.liked i {
+	color: #ed4956
+}
+
+#insta-home .card .fa {
+	font-size: 24px
+}
+
+#insta-home .card .fa-heart-o {
+	display: inline-block;
+	width: 10%
+}
+
+#insta-home .card .add-comment {
+	display: inline-block;
+	width: 93%
+}
+
+#insta-home .card .add-comment input {
+	font-family: "ios";
+	display: inline-block;
+	width: 80%;
+	padding: 5px;
+	font-size: 12px;
+	border: 0
+}
+
+#insta-home .card .add-comment input:focus {
+	outline: 0 !important
+}
+
+#insta-home .card .add-comment span {
+	display: none;
+	width: 20%;
+	color: #0095f6;
+	cursor: pointer;
+	float: right;
+	margin-top: 5px
+}
+
+#insta-home .card .fa-ellipsis-h {
+	display: inline-block;
+	width: 15%;
+	color: gray;
+	padding: 0 0 0 18px
+}
+
+#insta-direct h3 {
+	font-family: "ios";
+	margin: 5px
+}
+
+#insta-direct h3 i {
+	margin-right: 10px;
+	cursor: pointer
+}
+
+#insta-direct .chat {
+	position: relative;
+	width: 100%;
+	height: 58px;
+	border-bottom: 1.4px solid #dbdbdb;
+	background: #fff;
+	transition: .15s
+}
+
+#insta-direct .chat-picture {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	top: 4.8px;
+	left: 14.8px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+#insta-direct .chat-name {
+	position: absolute;
+	top: 1.336px;
+	left: 67px;
+	font-family: "ios";
+	font-size: 14.8px
+}
+
+#insta-direct .chat-send-image {
+	position: absolute;
+	top: 1.336px;
+	right: 10px;
+	font-family: "ios";
+	font-size: 19px;
+	color: #535353
+}
+
+#insta-search-input {
+	height: 30px;
+	margin-left: -10px
+}
+
+#insta-search {
+	position: relative;
+	top: 40px;
+	height: 550px !important;
+	padding: 5px;
+	margin-left: -5px;
+	background: #fff
+}
+
+.search {
+	width: 92%;
+	margin-left: 19px;
+	margin-top: 12px
+}
+
+#ig_photo {
+	position: relative;
+	top: 15px;
+	left: 64px;
+	width: 150px;
+	font-weight: 600;
+	color: #479cf7;
+	cursor: pointer
+}
+
+.user-edit-data {
+	position: relative;
+	top: 40px;
+	right: 0
+}
+
+#search-icon {
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 9px
+}
+
+#insta-search .search i {
+	left: 10px;
+	top: 10px;
+	color: #ccc
+}
+
+#search-profile {
+	position: relative;
+	height: 30px
+}
+
+#insta-search .search input {
+	border: 0;
+	background: #eee;
+	padding: 2px 2px 2px 23px;
+	width: 76%;
+	color: #797979;
+	font-family: "ios";
+	border-radius: 7px;
+}
+
+#insta-search .search :focus,
+.post-preview .instagram-description textarea:focus {
+	outline: 0 !important;
+}
+
+#insta-search .search span {
+	display: none;
+	width: 22%;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	padding: 6px 2px;
+	background: #0095f6;
+	border-radius: 5px;
+	text-align: center;
+	margin-right: 2px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+#insta-search {
+	width: 100%;
+}
+
+#grid {
+	position: relative;
+	left: 3px;
+	top: 10px;
+}
+
+#insta-search #grid img {
+	position: relative;
+	width: 94px;
+	height: 94px;
+	float: left;
+	margin: 0.5%;
+	object-fit: cover;
+}
+
+.instagram-tabs {
+	position: absolute;
+	top: 590px;
+	right: 0;
+	left: 0;
+	padding-top: 8px;
+	border-top: 1px solid rgba(109, 108, 108, 0.473);
+	box-shadow: 0 -5px 7px rgba(0, 0, 0, 0.2);
+	background: #fff;
+	width: 100%;
+}
+
+.instagram-tabs ul {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: #fff;
+}
+
+.instagram-tabs ul li {
+	display: inline-block;
+	width: 70px;
+	text-align: center;
+	padding: 5px;
+}
+
+.instagram-tabs ul li:last-child {
+	padding: 0 10px;
+}
+
+.instagram-tabs ul li .bg-profile {
+	position: relative;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	top: 2px;
+	left: 18px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../img/app_details/default.png);
+}
+
+.instagram-tabs ul li a {
+	color: #333;
+	overflow: hidden;
+}
+
+.instagram-tabs ul li a svg {
+	position: relative;
+	color: #333;
+	overflow: hidden;
+	height: 20px;
+	left: 9px;
+}
+
+.instagram_stories_name {
+	position: relative;
+	top: 3px;
+	right: 2px;
+	text-align: center;
+	font-size: 13px;
+	font-family: "ios";
+	max-width: 50px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.direct-openedchat {
+	display: none;
+	position: absolute;
+	top: 35px;
+	left: -336px;
+	height: 94%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: inherit;
+	background-color: #fff;
+	z-index: 999;
+}
+
+#back-my-profile,
+#back-profile {
+	position: relative;
+	font-size: 17px;
+	color: #000;
+	top: 4px;
+	margin-left: 6px;
+	cursor: pointer;
+	z-index: 999
+}
+
+#post-text1,
+#post-text2 {
+	margin-top: 30px;
+	cursor: pointer
+}
+
+#post-text1 {
+	margin-left: 6px;
+	font-size: 24px;
+	color: #fff
+}
+
+#post-text2 {
+	position: relative;
+	top: 3px;
+	font-size: 15px;
+	font-weight: 600;
+	color: rgb(27 127 204/94%)
+}
+
+#post-text-share1,
+#post-text-share2 {
+	font-size: 20px;
+	color: #000;
+	cursor: pointer
+}
+
+#post-text-share1 {
+	margin-top: 33px;
+	margin-left: 15px
+}
+
+#post-text-share2 {
+	position: relative;
+	font-family: "ios" !important
+}
+
+.post-photo-text-header {
+	width: 341.404px;
+	height: 64.524px;
+	margin-top: -25px;
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.164)
+}
+
+.post-photo-text-header-share {
+	width: 30.58px;
+	height: 3.58px;
+	background-color: #f3f3f3;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.164)
+}
+
+.post-photo-filter {
+	display: none;
+	position: absolute;
+	top: 35px;
+	left: -336px;
+	height: 97%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: inherit;
+	background-color: #fff;
+	z-index: 100
+}
+
+.post-photo-filter .filters {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 430px;
+	color: #fff
+}
+
+.post-photo-filter .filters ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	display: inline-flex;
+	overflow-x: scroll;
+	overflow-y: hidden
+}
+
+.post-photo-filter .filters ul li {
+	position: relative;
+	min-width: 140px;
+	margin: 0.5%;
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer
+}
+
+#insta-profile .profileFollow table,
+.post-photo-filter .filters ul li img {
+	width: 100%
+}
+
+.post-photo-filter .filters ul::-webkit-scrollbar-thumb {
+	background-color: #fff;
+	border-radius: 3px;
+	width: 50px !important
+}
+
+.post-photo-filter h3,
+.post-preview h3 {
+	position: absolute;
+	z-index: 1;
+	margin: 5px;
+	font-family: "ios";
+	transition: 0.1s
+}
+
+.post-photo-filter h3 {
+	color: #fff;
+	opacity: 0.7;
+	padding: 0 5px
+}
+
+.post-photo-filter h3:hover {
+	opacity: 1
+}
+
+.post-photo-filter h3 a {
+	color: #fff
+}
+
+.post-photo-filter h3.next {
+	right: 0;
+	cursor: pointer;
+	font-size: 16px
+}
+
+.next {
+	margin-right: 15px !important
+}
+
+.image-preview {
+	margin-top: -4px !important
+}
+
+.post-photo-filter .image-preview {
+	width: 100%;
+	height: 93%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center
+}
+
+.post-photo-filter .image-preview-show {
+	position: absolute;
+	top: -100px;
+	width: 100%;
+	height: 724px;
+	background: #000
+}
+
+.post-photo-filter .image-preview-show figure,
+.post-preview {
+	position: absolute;
+	top: 37%;
+	width: 100%
+}
+
+.post-photo-filter .image-preview-show img {
+	position: relative;
+	width: 400px;
+	bottom: 0;
+	right: 20px
+}
+
+.post-preview {
+	display: none;
+	top: 35px;
+	left: -336px;
+	height: 103%;
+	background-repeat: no-repeat;
+	background-size: inherit;
+	background-color: #fff;
+	z-index: 100
+}
+
+.post-preview-background {
+	position: relative;
+	background: #fff;
+	height: 590px;
+	width: 300px;
+	bottom: 85px;
+	left: 4px;
+	z-index: -1
+}
+
+.post-preview h3 {
+	cursor: pointer
+}
+
+.post-preview h3.next {
+	right: 0;
+	top: 2px;
+	font-size: 1.58px;
+	color: #000;
+	font-family: "ios" !important
+}
+
+.post-preview .image-preview {
+	width: 0%;
+	position: absolute;
+	top: 85px;
+	margin: 4%
+}
+
+.post-preview .image-preview img {
+	position: relative;
+	top: -16px;
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+	object-fit: cover;
+	z-index: 1
+}
+
+.post-preview .instagram-description textarea {
+	position: relative;
+	top: 25px;
+	left: 95px;
+	width: 212px;
+	height: 80px;
+	border: 0;
+	background: #fff;
+	padding: 4px;
+	font-family: "ios";
+	border-top: 1px solid #b1b1b16b;
+	border-bottom: 1px solid #b1b1b16b
+}
+
+.sem-filtro-show {
+	margin-top: -20px
+}
+
+.post-preview .tab-position,
+.sem-filtro,
+.sem-filtro-show {
+	border-bottom: 1px solid #00000029
+}
+
+.post-preview .tab-position {
+	position: absolute;
+	width: 310px;
+	height: 37.54px;
+	margin: 0 auto;
+	transition: all 0.1s;
+	top: 180px
+}
+
+.post-preview .tab-position .title {
+	position: absolute;
+	left: 17.262px;
+	top: 5px;
+	font-weight: 600;
+	font-size: 15px;
+	font-family: "ios"
+}
+
+.post-preview .tab-position .description {
+	position: absolute;
+	left: 117px;
+	top: 5px;
+	font-size: 15px;
+	font-family: "ios";
+	color: rgba(0, 0, 0, 0.65);
+	text-align: right;
+	width: 185px;
+	height: 30px
+}
+
+#insta-profile {
+	position: relative;
+	top: 40px;
+	margin-left: -9px;
+	height: 560px;
+	background: #fff
+}
+
+#insta-profile h3 {
+	margin: 0 10px;
+	font-size: 28px
+}
+
+#insta-profile h3 span {
+	font-size: 16px
+}
+
+#insta-profile .mainbox {
+	width: 103%;
+	height: 164px;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden
+}
+
+#insta-profile .profileTop {
+	margin: 10px 7px;
+	display: inline-block;
+	width: 100%
+}
+
+#insta-profile .profileImg {
+	position: relative;
+	left: -3px;
+	width: 75px;
+	height: auto;
+	overflow: hidden;
+	border-radius: 180px
+}
+
+#insta-profile .profileImg img {
+	padding: 5px;
+	width: 100%;
+	height: 71.925px;
+	border-radius: 50%;
+	object-fit: cover
+}
+
+#insta-profile .profileFollow {
+	width: 65%;
+	position: absolute;
+	top: 10px;
+	right: 5px
+}
+
+#insta-profile .profileFollow table td {
+	text-align: center;
+	line-height: 0.3
+}
+
+#insta-profile .profileFollow table .topsub {
+	font-size: 15px;
+	color: #333;
+	font-weight: 600;
+	font-family: "ios";
+	height: 25px
+}
+
+#insta-profile .profileFollow table .bottomsub {
+	font-size: 11px;
+	color: #333;
+	font-family: "ios";
+	padding-top: 8px
+}
+
+#insta-profile .profileFollow a {
+	border: solid #ddd 2px;
+	border-radius: 3px;
+	padding: 3px;
+	position: absolute;
+	top: 33px;
+	color: #333;
+	font-size: 8pt;
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	font-family: "ios"
+}
+
+#insta-profile .profileFollow a:hover {
+	text-decoration: none;
+	background: #6c757d42;
+	border: solid #6c757d26 2px
+}
+
+#insta-profile .profileDetail {
+	padding: 8px 15px 0;
+	line-height: 1.3;
+	font-family: "ios"
+}
+
+.profileDetail {
+	position: relative;
+	left: 5px;
+	margin-top: -30px !important
+}
+
+#insta-profile .profileDetail p {
+	width: 100%;
+	color: #333
+}
+
+#insta-profile .profileDetail p .verify {
+	position: relative;
+	background-image: url(../img/app_details/instagram-verify.png);
+	padding: 1px 12px;
+	background-size: cover;
+	left: 5px;
+	zoom: 0.7
+}
+
+#insta-profile .profileDetail p:last-child {
+	width: 100%;
+	font-size: 14.8px;
+	margin-top: -10px !important;
+	color: #797979
+}
+
+#insta-profile .ImgTab {
+	position: relative;
+	width: 110%;
+	padding: 12px 8px;
+	margin-left: -10px;
+	top: -8px;
+	cursor: pointer
+}
+
+#insta-profile .ImgPro {
+	width: 31%;
+	height: 100%;
+	overflow: hidden;
+	display: inline-block;
+	margin: 0 2px
+}
+
+#insta-profile .ImgPro img {
+	width: 100%;
+	height: 75px;
+	object-fit: cover
+}
+
+.user-edit-profile,
+.user-profile {
+	display: none;
+	position: absolute;
+	top: 35px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: inherit;
+	background-color: #fff;
+	overflow-x: hidden
+}
+
+.user-profile {
+	left: -336px;
+	height: 94%;
+	overflow-y: scroll
+}
+
+.user-profile h3 {
+	font-family: "ios";
+	font-size: 18px
+}
+
+.user-profile h3.next {
+	position: absolute;
+	top: 0;
+	right: 4.8px
+}
+
+.user-profile h3.next a {
+	color: #ce3434 !important
+}
+
+.user-edit-profile {
+	height: 100%
+}
+
+.user-edit-profile h3 {
+	width: 310px;
+	border-bottom: 1px solid #cac9c9
+}
+
+.user-edit-profile .form-horizontal {
+	padding: 10px;
+	font-family: "ios"
+}
+
+.user-edit-profile .form-horizontal .btn-default {
+	background-color: rgba(var(--d69, 0, 149, 246), 1);
+	border: 0;
+	color: #fff
+}
+
+.not-logged {
+	padding-top: 70%;
+	background: #fff;
+	height: 100%
+}
+
+.not-logged .login-box {
+	background: #fff;
+	border-radius: 1px;
+	margin: 5%;
+	padding: 10px 0
+}
+
+.not-logged .login-box .header {
+	margin: 14.45px auto 12px;
+	text-align: center
+}
+
+.not-logged .login-box .header .logo {
+	width: 135px;
+	height: auto;
+	margin: 0 auto
+}
+
+.login-box img {
+	margin-top: -130px !important;
+}
+
+.not-logged .login-box .form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	-moz-box-direction: normal;
+	-webkit-box-direction: normal
+}
+
+.not-logged .login-box .form .input-box {
+	margin: 5px 20px
+}
+
+.not-logged .login-box .form .input-box input {
+	height: 36px;
+	border: 1px solid #efefef;
+	border-radius: 3px;
+	background-color: #fafafa;
+	width: 100%;
+	font-size: 12px;
+	margin: 0;
+	padding: 9px 0 7px 8px;
+	outline: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	box-sizing: border-box
+}
+
+.not-logged .login-box .form .input-box input:focus {
+	border-color: #bbb
+}
+
+.not-logged .login-box .form .button-box {
+	display: block;
+	position: relative;
+	margin: 5px 20px
+}
+
+.not-logged .login-box .form .button-box .btn {
+	cursor: pointer;
+	width: 100%;
+	padding: 0 8px;
+	background: #3897f0;
+	border: 1px solid #3897f0;
+	color: #fff;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 14px;
+	height: 28px;
+	line-height: 26px;
+	outline: 0;
+	white-space: nowrap
+}
+
+.not-logged .error {
+	background: #f8d7da;
+	border: thin solid #f5c2c7;
+	margin: 0 20px;
+	color: #842029;
+	padding: 2px 5px;
+	border-radius: 0.25rem
+}
+
+.not-logged .error p {
+	margin: 0
+}
+
+#insta-like,
+#insta-likes {
+	bottom: 5px;
+	position: relative
+}
+
+#insta-like {
+	font-size: 20px;
+	color: #000;
+	transition: 0.05 linear;
+	z-index: 0;
+	pointer-events: all;
+	cursor: pointer
+}
+
+#insta-like:hover {
+	color: #f21d39
+}
+
+#insta-likes {
+	left: 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: gray
+}
+
+#next-share-pic {
+	position: absolute;
+	top: 5px;
+	left: 275px;
+	font-size: 20px;
+	color: rgba(27, 127, 204, 0.8);
+	cursor: pointer
+}
+
+.instagram-content-user {
+	position: relative;
+	top: -10px;
+	font-size: 14px;
+	width: 295px
+}
+
+.img-options-instagram {
+	position: relative;
+	width: 306px;
+	height: 30px;
+	right: 12px;
+	top: 10px;
+	background: #fff;
+	margin-bottom: 15px
+}
+
+.instagram-options-1,
+.instagram-options-2 {
+	position: relative;
+	width: 159px;
+	height: 30px;
+	background: #fff;
+	text-align: center;
+	font-size: 20px
+}
+
+.instagram-options-1 {
+	right: 12px;
+	border-bottom: 2px solid gray;
+	cursor: pointer
+}
+
+.instagram-options-2 {
+	bottom: 30px;
+	left: 147px;
+	border-bottom: 2px solid #8080802b
+}
+
+.editprofile {
+	position: relative;
+	color: #353535;
+	font-weight: 600;
+	font-size: 14px
+}
+
+.instagram-add-profile,
+.instagram-edit-profile {
+	position: relative;
+	text-align: center;
+	height: 25px;
+	padding: 3px;
+	background: #eee;
+	border-radius: 4px
+}
+
+.instagram-edit-profile {
+	top: 100px;
+	right: 93px;
+	width: 240px;
+	cursor: pointer
+}
+
+.instagram-add-profile {
+	bottom: 31px;
+	width: 25px;
+	left: 248px
+}
+
+.edit-profile-title {
+	position: relative;
+	text-align: center;
+	bottom: 40px;
+	height: 20px;
+	width: 190px;
+	left: 62px;
+	font-weight: 600
+}
+
+.instagram-follow-profile {
+	position: relative;
+	top: 85px;
+	right: 93px;
+	text-align: center;
+	height: 25px;
+	width: 280px;
+	padding: 3px;
+	background: #eee;
+	border-radius: 4px;
+	cursor: pointer
+}
+
+.followuser,
+.followuser_stop {
+	position: relative;
+	color: #353535 !important;
+	font-weight: 600;
+	font-size: 13px;
+	top: 10px
+}
+
+#back-user-edit-profile,
+#ig_save {
+	position: relative;
+	font-size: 16px;
+	top: -8px;
+	left: 15px;
+	cursor: pointer
+}
+
+#ig_save {
+	top: -150px;
+	font-size: 17px;
+	left: 85px;
+	background: 0 0;
+	color: #479cf7
+}
+
+.instagram-tabs i {
+	position: relative;
+	font-size: 22px;
+	left: 10px
+}
+
+.insta-panel {
+	position: relative;
+	left: 6px
+}
+
+@-webkit-keyframes progress-animation {
+	0% {
+		background-position: 100%;
+	}
+
+	to {
+		background-position: 0;
+	}
+}
+
+@keyframes progress-animation {
+	0% {
+		background-position: 100%;
+	}
+
+	to {
+		background-position: 0;
+	}
+}

@@ -1,0 +1,505 @@
+.darkweb-app {
+	display: none;
+	height: 110%;
+	width: 100%;
+	background-color: #333;
+	overflow: hidden
+}
+
+.darkweb-header {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background-color: #171717;
+	top: 0;
+	border-bottom: 1px solid #7c0a98
+}
+
+.darkweb-header>p {
+	position: relative;
+	top: 106px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-size: 19px;
+	font-family: "ios";
+	font-weight: 600
+}
+
+.darkweb-header-logo {
+	position: absolute;
+	top: 50px;
+	width: 190px;
+	height: auto;
+	left: 50px;
+	color: #fff
+}
+
+.scroll-darkweb:focus,
+.scroll-darkweb:focus-within,
+.scroll-darkweb:hover {
+	overflow-y: auto;
+	padding-right: unset
+}
+
+.darkweb-list {
+	position: relative;
+	width: 97%;
+	height: 66px;
+	background-color: rgba(31, 31, 31, 0.89);
+	margin: 2.5%;
+	border-radius: 8px
+}
+
+.darkweb-list-firstletter img {
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	height: 55px;
+	background-color: #333;
+	border-radius: 50%
+}
+
+.darkweb-list-fullname,
+.darkweb-list-price {
+	position: absolute;
+	transform: translateY(-50%);
+	left: 72px;
+	font-family: "ios";
+	font-size: 15px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #fff
+}
+
+.darkweb-list-fullname {
+	top: 21px;
+	max-width: 135px;
+	overflow: hidden !important
+}
+
+.darkweb-list-price {
+	top: 70%;
+	text-align: center;
+	max-width: 134px;
+	min-width: 57px;
+	background-color: #7c0a98;
+	border-radius: 3px
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0
+}
+
+input[type="number"] {
+	-moz-appearance: textfield
+}
+
+.darkweb-list-count {
+	top: 70%;
+	transform: translateY(-50%);
+	left: 139px;
+	font-size: 14px;
+	text-align: center;
+	width: 48px;
+	height: 23px;
+	background-color: #00000033;
+	border-radius: 5px;
+	white-space: nowrap;
+	overflow: hidden !important;
+	text-overflow: ellipsis
+}
+
+#darkweb-text,
+.darkweb-list-count,
+.no-darkweb {
+	position: absolute;
+	color: #fff;
+	font-family: "ios"
+}
+
+.no-darkweb {
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 13px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	max-width: 134px
+}
+
+.darkweb-list-call {
+	color: #fff;
+	position: absolute;
+	top: 20px;
+	right: 19px;
+	font-size: 20px;
+	cursor: pointer
+}
+
+.darkweb-app-loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	overflow: hidden
+}
+
+.darkweb-logo {
+	position: absolute;
+	width: 95px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 211px;
+	z-index: 101
+}
+
+#darkweb-text {
+	top: 239px;
+	left: 87px;
+	font-size: 24px;
+	z-index: 100;
+	opacity: 0
+}
+
+#darkchat-message-header-bg {
+	position: absolute;
+	background-color: #171717;
+	border-top: 1px solid #7c0a98;
+	transform: perspective(2498.49px) rotateY(7deg);
+	width: 101%;
+	top: 0;
+	height: 13%
+}
+
+#darkchat-messages {
+	position: absolute;
+	top: 75px;
+	width: 100%;
+	height: 400px;
+	padding: 20px;
+	font-size: 13px;
+	color: #fff;
+	overflow-y: auto
+}
+
+#darkchat-sendMessageContainer {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center
+}
+
+#darkchat-message-input {
+	background-color: #171717;
+	border: 0;
+	margin-right: 10px;
+	color: #fff;
+	height: 30px;
+	width: 240px;
+	border-radius: 2px
+}
+
+#darkchat-message-send {
+	background-color: #7c0a98;
+	border: 0;
+	height: 30px;
+	width: 30px;
+	color: #fff
+}
+
+.darkchat-date {
+	font-size: 10px;
+	color: gray
+}
+
+.darkchat-message {
+	margin-left: 5px;
+	font-size: 17px;
+	color: #fff
+}
+
+.darkchat-message-content {
+	margin-bottom: 15px;
+	word-wrap: break-word
+}
+
+#darkchat-message-container {
+	position: absolute;
+	display: none;
+	z-index: 999999999;
+	width: 100%;
+	height: 560px;
+	top: -1px;
+	background-color: #333
+}
+
+.dartkchat-back {
+	position: relative;
+	bottom: 5px;
+	filter: invert(99%) sepia(57%) saturate(2%) hue-rotate(167deg) brightness(120%) contrast(100%)
+}
+
+#back-container {
+	position: relative;
+	top: 20px !important
+}
+
+#back-container a {
+	position: relative;
+	left: -10px;
+	top: 5px;
+	font-size: 17px
+}
+
+#back-container img {
+	position: relative;
+	height: 25px;
+	width: auto
+}
+
+.darkchat-content {
+	color: #ffae00;
+	background-color: #333;
+	width: 100%;
+	height: 30px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	padding: 5px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	border-radius: 4px
+}
+
+.darkchat-content p {
+	position: relative;
+	top: 6px;
+	padding: 5px;
+	color: #fff;
+	font-size: 15px;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+#darkchat-container::-webkit-scrollbar,
+#darkchat-messages::-webkit-scrollbar {
+	display: none
+}
+
+#darkchat-creategroup {
+	position: absolute;
+	display: none;
+	height: 110%;
+	width: 100%
+}
+
+#darkchat-creategroup-bg {
+	position: absolute;
+	width: 100%;
+	height: 650px;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: -90px;
+	z-index: 1
+}
+
+#darkchat-creategroup-contents {
+	top: 25%;
+	padding: 10px;
+	position: absolute;
+	width: 92%;
+	background-color: #333;
+	margin-left: 10px;
+	border-radius: 10px;
+	z-index: 99999
+}
+
+#darkchat-creategroup a,
+#darkchat-creategroup li {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700
+}
+
+#darkchat-groupassword,
+#darkchat-groupname,
+#darkchat-groupassword2 {
+	color: gray
+}
+
+#darkchat-creategroup li {
+	position: relative;
+	top: 8px
+}
+
+#options {
+	position: relative;
+	margin-left: -14px;
+	color: #fff
+}
+
+.form__group {
+	position: relative;
+	padding: 15px 0 0;
+	margin-top: 10px;
+	width: 100%
+}
+
+.form__field {
+	font-family: inherit;
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid #9b9b9b;
+	outline: 0;
+	font-size: 1.3rem;
+	color: #000;
+	padding: 7px 0;
+	background: 0 0;
+	transition: border-color .2s
+}
+
+.form__field::placeholder {
+	color: transparent
+}
+
+.form__field:placeholder-shown~.form__label {
+	font-size: 1.3rem;
+	cursor: text;
+	top: 20px
+}
+
+.form__label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: .2s;
+	font-size: 1rem;
+	color: #9b9b9b
+}
+
+.form__field:focus~.form__label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: .2s;
+	font-size: 1rem;
+	color: #11998e;
+	font-weight: 700
+}
+
+.form__field:invalid,
+.form__field:required {
+	box-shadow: none
+}
+
+#darkchat-creategroup #options {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	left: 64%;
+	top: 10px;
+	height: 30px;
+	cursor: pointer
+}
+
+#darkchat-creategroup #options #confirm {
+	margin-left: 10px
+}
+
+.darkweb-app-footer {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	top: 588px;
+	font-size: 12px;
+	color: #000;
+	justify-content: space-around;
+	padding: 5px;
+	background-color: #171717;
+	border-top: 1px solid #7c0a98;
+	box-shadow: 0-3px 7px rgba(0, 0, 0, 0.2)
+}
+
+.darkweb-footer-item {
+	position: relative;
+	font-size: 22px;
+	text-align: center;
+	cursor: pointer
+}
+
+.darkchat-home {
+	display: none;
+	position: relative;
+	height: 488px;
+	left: -300px;
+	bottom: 490px;
+	background-color: #333
+}
+
+.darkweb-home {
+	position: relative;
+	height: 590px;
+	background: #000
+}
+
+#darkchat-container,
+.darkchat-footer,
+.darkweb2-list {
+	width: 90%;
+	left: 15px;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px;
+	background-color: #171717
+}
+
+.darkchat-footer {
+	position: relative;
+	height: 35px;
+	top: 440px;
+	text-align: center;
+	cursor: pointer;
+	transition: .15s ease-in-out
+}
+
+.darkchat-footer p {
+	position: relative;
+	color: #fff;
+	top: 7px
+}
+
+#darkchat-container,
+.darkweb2-list {
+	position: absolute
+}
+
+#darkchat-container {
+	height: 415px;
+	top: 10px;
+	padding: 10px;
+	overflow: auto
+}
+
+.darkweb2-list {
+	height: 445px;
+	margin: 0 auto;
+	top: 120px
+}
+
+.scroll-darkweb {
+	height: 435px;
+	padding-right: 10px;
+	overflow-y: hidden;
+	border-radius: 10px;
+	overflow-x: hidden
+}

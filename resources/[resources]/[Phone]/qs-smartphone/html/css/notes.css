@@ -1,0 +1,237 @@
+.notes-app {
+	display: none;
+	height: 110%;
+	width: 100%;
+	background: #f0f0f1 !important;
+	overflow: hidden
+}
+
+.notes-app-header>p {
+	line-height: 84px
+}
+
+.notes-app-header {
+	position: absolute;
+	width: 100%;
+	height: 33.6px;
+	top: 42px
+}
+
+.NoteList {
+	position: absolute;
+	height: auto;
+	max-height: 475px;
+	width: 270px;
+	left: 15px;
+	top: 105px;
+	padding: 10px;
+	overflow: auto;
+	background: white;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px
+}
+
+.NoteList::-webkit-scrollbar-thumb {
+	position: relative;
+	background: transparent
+}
+
+.nn {
+	position: relative;
+	top: 5px;
+	background: white;
+	border-radius: 10px;
+	padding: 27px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px
+}
+
+.paylas {
+	position: absolute;
+	top: 0;
+	padding: 10px;
+	height: 630px;
+	background: #f0f0f1
+}
+
+.paylas input {
+	position: relative;
+	top: 44px;
+	height: 40px;
+	padding: 8px;
+	width: 278px;
+	border-radius: 10px;
+	background: white;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px
+}
+
+.paylas textarea {
+	position: relative;
+	top: 60px;
+	height: 450px;
+	padding: 8px;
+	width: 278px;
+	border-radius: 10px;
+	background: white;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px
+}
+
+#gnc_ttr {
+	position: relative;
+	border-radius: 10px;
+	top: 45px;
+	height: 35px;
+	padding: 8px;
+	width: 278px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+	border: none
+}
+
+.n-header {
+	position: relative
+}
+
+.gstr {
+	display: none;
+	position: relative;
+	top: 0;
+	left: -336px
+}
+
+#sticky_note_back {
+	position: relative;
+	top: 20px;
+	left: 17px;
+	font-size: 16px;
+	z-index: 9
+}
+
+#title_ {
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: "ios";
+	width: 200px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+#description_ {
+	position: absolute;
+	top: 24px;
+	left: 10px;
+	color: grey;
+	font-size: 14px;
+	font-family: "ios";
+	width: 225px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+#note_text {
+	position: relative;
+	left: 15px;
+	top: 20px;
+	font-size: 15px
+}
+
+#notes-app-mainHead {
+	position: absolute;
+	font-size: 23px;
+	font-weight: 600;
+	left: 3px;
+	top: 43px
+}
+
+.notes-footer {
+	position: relative;
+	height: 70px;
+	width: auto;
+	top: 602px;
+	border-top: 2px solid #d8d7d7
+}
+
+.notes-news {
+	position: relative;
+	text-align: center;
+	top: 5px;
+	font-weight: 600;
+	font-family: "ios";
+	font-size: 15px
+}
+
+#sticky_note {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 18px;
+	color: orange
+}
+
+.n-p {
+	display: none;
+	position: relative;
+	left: -336px
+}
+
+.notes-interior-footer {
+	position: relative;
+	border-top: 2px solid #d8d7d7;
+	height: 70px;
+	width: 100%;
+	top: 75px
+}
+
+.notes-delete {
+	position: relative;
+	top: 15px;
+	left: 25px;
+	font-size: 19px;
+	color: orange
+}
+
+.notes-delete:hover {
+	color: orange !important
+}
+
+#sticky_note_save {
+	position: relative;
+	top: 55px;
+	left: 230px;
+	font-size: 19px;
+	color: orange
+}
+
+#sticky_note_save_header {
+	position: relative;
+	bottom: 23px;
+	left: 215px;
+	font-size: 19px
+}
+
+.notes-no-notes {
+	position: relative;
+	top: 240px;
+	font-size: 19px;
+	font-weight: 600;
+	text-align: center;
+	color: #616060
+}
+
+@media only screen and (min-height: 1090px) {
+	#sticky_note {
+		right: 30px
+	}
+
+	#sticky_note_back {
+		right: 30px
+	}
+
+	#sticky_note_save {
+		right: 30px
+	}
+}

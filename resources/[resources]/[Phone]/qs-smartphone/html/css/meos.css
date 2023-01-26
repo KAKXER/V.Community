@@ -1,0 +1,659 @@
+.meos-app {
+	display: none;
+	height: 108%;
+	width: 100%;
+	background: rgb(36, 36, 36);
+	overflow: hidden
+}
+
+.meos-homescreen {
+	position: absolute;
+	height: 100%;
+	width: 100%
+}
+
+.meos-tabs {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	left: -310px
+}
+
+.meos-app-header {
+	position: absolute;
+	width: 100%;
+	height: 81.99px;
+	background-color: #004682;
+	top: 0
+}
+
+#meos-app-title {
+	position: absolute;
+	color: white;
+	top: 47.372px;
+	left: 18.22px;
+	font-family: "ios";
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: .911px
+}
+
+#meos-app-name {
+	position: absolute;
+	color: white;
+	top: 58px;
+	right: 18.22px;
+	font-family: "ios";
+	font-size: 13px;
+	letter-spacing: .911px;
+	float: right
+}
+
+.meos-blocks {
+	position: absolute;
+	width: 90%;
+	height: 55%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 96.566px
+}
+
+.meos-block {
+	position: relative;
+	background-color: #004682;
+	width: 45%;
+	height: 30%;
+	margin: 4.555px;
+	margin-left: 6.376px;
+	margin-top: 6.376px;
+	border-radius: 4.555px;
+	float: left;
+	transition: .1s linear;
+	text-align: center
+}
+
+.meos-block:hover {
+	background-color: #005299
+}
+
+.meos-block>i {
+	line-height: 60px;
+	color: white;
+	font-size: 24px
+}
+
+.meos-block>p {
+	line-height: 20px;
+	color: white;
+	font-size: 17px;
+	font-family: "ios";
+	pointer-events: none
+}
+
+.meos-tabs-footer {
+	position: absolute;
+	bottom: -45.55px;
+	width: 100%;
+	height: 47.95px;
+	background-color: #004682;
+	color: #ffffff;
+	text-align: center;
+	transition: .1s linear
+}
+
+.meos-tabs-footer:hover {
+	background-color: #005299
+}
+
+.meos-tabs-footer i {
+	line-height: 45.55px;
+	font-size: 17.3px
+}
+
+.noodknop {
+	animation: Emergency 3s infinite
+}
+
+@keyframes Emergency {
+	0% {
+		background-color: #d30404
+	}
+
+	25% {
+		background-color: #a00101
+	}
+
+	50% {
+		background-color: #d30404
+	}
+
+	75% {
+		background-color: #a00101
+	}
+
+	100% {
+		background-color: #d30404
+	}
+}
+
+.person-search-input {
+	position: absolute;
+	top: 80px;
+	left: 18.22px;
+	outline: none;
+	border: none;
+	height: 38.262px;
+	width: 215px;
+	border-bottom: 1px solid rgb(78, 78, 78);
+	padding: 9.11px;
+	background-color: rgb(235, 235, 235);
+	border-radius: 4.555px 4.555px 0 0;
+	transition: .1s linear;
+	font-family: "ios"
+}
+
+.person-search-input:focus {
+	border-bottom: 1px solid rgb(248, 160, 28);
+	transition: .1s linear
+}
+
+.person-search-input:valid {
+	border-bottom: 1.3665px solid rgb(76, 207, 24);
+	transition: .1s linear
+}
+
+.person-search-input-house {
+	position: absolute;
+	top: 83.21px;
+	left: 18.22px;
+	outline: none;
+	border: none;
+	height: 38.262px;
+	width: 220px;
+	border-bottom: 1px solid rgb(78, 78, 78);
+	padding: 10px;
+	background-color: rgb(235, 235, 235);
+	border-radius: 5px 5px 0 0;
+	transition: .1s linear;
+	font-family: "ios"
+}
+
+.person-search-input-house:focus {
+	border-bottom: 1px solid rgb(248, 160, 28);
+	transition: .1s linear
+}
+
+.person-search-input-house:valid {
+	border-bottom: 1px solid rgb(76, 207, 24);
+	transition: .1s linear
+}
+
+.confirm-search-person-test {
+	position: absolute;
+	width: 45.55px;
+	height: 38.262px;
+	background-color: #004682;
+	top: 80px;
+	right: 19.18px;
+	border-radius: 3.83px;
+	transition: .1s linear;
+	text-align: center;
+	color: white;
+	pointer-events: all
+}
+
+.confirm-search-person-test>i {
+	font-size: 16px;
+	line-height: 42px
+}
+
+.confirm-search-person-test:hover {
+	background-color: #005299
+}
+
+.confirm-search-person-house {
+	display: block;
+	position: absolute;
+	width: 47.95px;
+	height: 40.278px;
+	background-color: #004682;
+	top: 81.49px;
+	right: 19.18px;
+	border-radius: 4px;
+	transition: .1s linear;
+	text-align: center;
+	color: white
+}
+
+.confirm-search-person-house>i {
+	font-size: 16px;
+	line-height: 42px
+}
+
+.confirm-search-person-house:hover {
+	background-color: #005299
+}
+
+.person-search-results {
+	position: absolute;
+	width: 280px;
+	height: 414px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	top: 133.03px;
+	border-radius: 7px;
+	overflow: hidden;
+	overflow-y: scroll !important
+}
+
+.person-search-results::-webkit-scrollbar {
+	width: 5px
+}
+
+.person-search-results::-webkit-scrollbar-thumb {
+	background-color: #004682
+}
+
+.person-search-result {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #004682;
+	margin-bottom: 9.59px;
+	font-family: "ios";
+	color: white;
+	transition: .05s linear
+}
+
+.person-search-result-house {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #004682;
+	margin-bottom: 9.59px;
+	font-family: "ios";
+	color: white;
+	transition: .05s linear
+}
+
+.house-adress-location:hover {
+	opacity: .75
+}
+
+.appartment-adress-location:hover {
+	opacity: .75
+}
+
+.person-search-result-apartment>span :hover {
+	opacity: .5
+}
+
+.person-search-result:hover {
+	background-color: #005299
+}
+
+.person-search-result-name {
+	padding: 9.59px;
+	font-size: 15px
+}
+
+.person-search-result-dob {
+	font-size: 12px;
+	padding: 9.59px;
+	margin-top: -17.262px
+}
+
+.person-search-result-number {
+	font-size: 12px;
+	padding: 10px;
+	margin-top: -17.262px
+}
+
+.person-search-result-nationality {
+	font-size: 12px;
+	padding: 9.59px;
+	margin-top: -17.262px
+}
+
+.person-search-result-gender {
+	font-size: 12px;
+	padding: 9.59px;
+	margin-top: -17.262px
+}
+
+.person-search-result-warned {
+	font-size: 12px;
+	padding: 9.59px;
+	margin-top: -17.262px
+}
+
+.person-opensplit {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 90%;
+	height: .8px;
+	background-color: white;
+	top: 39px
+}
+
+.meos-person-page {
+	display: none
+}
+
+.meos-houses-page {
+	display: none
+}
+
+.meos-vehicle-page {
+	display: none
+}
+
+.meos-alerts-page {
+	display: none
+}
+
+.vehicle-search-input {
+	position: absolute;
+	top: 85.49px;
+	left: 19.18px;
+	outline: none;
+	border: none;
+	height: 40.278px;
+	width: 179.055px;
+	border-bottom: 1px solid rgb(78, 78, 78);
+	padding: 9.59px;
+	background-color: rgb(235, 235, 235);
+	border-radius: 5px 5px 0 0;
+	transition: .1s linear;
+	font-family: "ios"
+}
+
+.vehicle-search-input:focus {
+	border-bottom: 1px solid rgb(248, 160, 28);
+	transition: .1s linear
+}
+
+.vehicle-search-input:valid {
+	border-bottom: 1px solid rgb(76, 207, 24);
+	transition: .1s linear
+}
+
+.scan-search-vehicle {
+	position: absolute;
+	width: 38.36px;
+	height: 40.278px;
+	background-color: #004682;
+	top: 85.49px;
+	right: 67.13px;
+	border-radius: 4px;
+	transition: .1s linear;
+	text-align: center;
+	color: white
+}
+
+.scan-search-vehicle>i {
+	font-size: 16px;
+	line-height: 42px
+}
+
+.scan-search-vehicle:hover {
+	background-color: #005299
+}
+
+.confirm-search-vehicle {
+	position: absolute;
+	width: 38.36px;
+	height: 40.278px;
+	background-color: #004682;
+	top: 85.49px;
+	right: 20px;
+	border-radius: 4px;
+	transition: .1s linear;
+	text-align: center;
+	color: white
+}
+
+.confirm-search-vehicle>i {
+	font-size: 16px;
+	line-height: 42px
+}
+
+.confirm-search-vehicle:hover {
+	background-color: #005299
+}
+
+.vehicle-search-results {
+	position: absolute;
+	width: 280px;
+	height: 414px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	top: 133.03px;
+	border-radius: 7px;
+	overflow: hidden;
+	overflow-y: scroll !important
+}
+
+.vehicle-search-results::-webkit-scrollbar {
+	width: 5px
+}
+
+.vehicle-search-results::-webkit-scrollbar-thumb {
+	background-color: #004682
+}
+
+.vehicle-search-result {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #004682;
+	margin-bottom: 10px;
+	font-family: "ios";
+	color: white;
+	transition: .05s linear
+}
+
+.vehicle-search-result:hover {
+	background-color: #005299
+}
+
+.vehicle-search-result-name {
+	padding: 10.59px;
+	font-size: 14px
+}
+
+.vehicle-search-result-plate {
+	font-size: 11px;
+	padding: 11px;
+	margin-top: -23px
+}
+
+.vehicle-search-result-owner {
+	font-size: 13px;
+	padding: 9.59px;
+	margin-top: -17.262px
+}
+
+.vehicle-search-result-apk {
+	font-size: 13px;
+	padding: 9.59px;
+	margin-top: -17.262px
+}
+
+.vehicle-search-result-warrant {
+	font-size: 13px;
+	padding: 9.59px;
+	margin-top: -17.262px
+}
+
+.vehicle-opensplit {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 90%;
+	height: .8px;
+	background-color: white;
+	top: 53px
+}
+
+.meos-clear-alerts {
+	position: absolute;
+	height: 34px;
+	width: 62px;
+	top: 106px;
+	left: 20px;
+	background-color: #004682;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 34px;
+	color: white;
+	font-family: "ios";
+	transition: .05s linear
+}
+
+.meos-clear-alerts:hover {
+	background-color: #005299
+}
+
+.meos-alerts {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 87%;
+	height: 334px;
+	background-color: rgba(0, 0, 0, 0.1);
+	top: 154px;
+	border-radius: 5px;
+	overflow-x: hidden;
+	overflow-y: scroll
+}
+
+.meos-alerts::-webkit-scrollbar {
+	display: none
+}
+
+.meos-alert {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #004682;
+	padding: 15px;
+	margin-bottom: 5px
+}
+
+.meos-alert-new {
+	background-color: rgb(99, 99, 99);
+	color: white;
+	font-family: "ios";
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 12px
+}
+
+.meos-alert-type {
+	margin-left: 2px;
+	margin-top: 10px;
+	font-family: "ios";
+	color: white;
+	font-size: 15px
+}
+
+.meos-alert-description {
+	margin-left: 2px;
+	margin-top: 10px;
+	font-family: "ios";
+	color: white;
+	font-size: 12px
+}
+
+.meos-location-button {
+	width: 61px;
+	height: auto;
+	background-color: rgb(66, 66, 66);
+	margin-left: 154px;
+	font-family: "ios";
+	color: white;
+	padding: 5px;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: -10px;
+	transition: .05s linear
+}
+
+.meos-location-button:hover {
+	background-color: rgb(87, 87, 87)
+}
+
+.police-icon-notify {
+	width: 20px
+}
+
+.police-icon {
+	margin-top: 8px;
+	width: 2.1px
+}
+
+.meos-recent-header {
+	position: absolute;
+	left: 20px;
+	bottom: 178px;
+	font-family: "ios";
+	color: transparent;
+	font-size: 15px
+}
+
+.meos-recent-alerts {
+	position: absolute;
+	width: 85.5%;
+	height: 149px;
+	top: 355.29px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	border-radius: 2px;
+	overflow-y: scroll
+}
+
+.meos-recent-alerts::-webkit-scrollbar {
+	display: none
+}
+
+.meos-recent-alert {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	background-color: #004682;
+	border-radius: 3px;
+	transition: .05s linear
+}
+
+.meos-recent-alert:hover {
+	background-color: #005cad
+}
+
+.meos-recent-alert-title {
+	margin-left: 1.918px;
+	margin-top: 9.59px;
+	font-family: "ios";
+	color: white;
+	font-size: 14px
+}
+
+.meos-recent-alert-description {
+	margin-left: 1.91px;
+	margin-top: 4.795px;
+	font-family: "ios";
+	color: white;
+	font-size: 11px
+}

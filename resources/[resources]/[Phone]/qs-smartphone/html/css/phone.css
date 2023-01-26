@@ -1,0 +1,1793 @@
+:root {
+    --mainIcon: #fff;
+    --batteryBorder: #fff;
+    --batteryPercentage: 100%;
+    --batteryPercentageColor: #fff;
+    --battery: #fff;
+}
+
+.phone-app {
+    display: none;
+    height: 110%;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+}
+
+.phone-app-header {
+    position: relative;
+    font-family: "ios";
+    font-size: 30px;
+    top: 76px;
+    height: 192px;
+    text-align: center;
+}
+
+#total-contacts {
+    position: relative;
+    font-size: 11px;
+    font-family: "ios";
+    top: -30px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.phone-app-footer {
+    position: absolute;
+    top: 580px;
+    width: 330px !important;
+    border-top: 1px solid rgba(109, 108, 108, 0.473);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.phone-app-footer-button {
+    text-align: center;
+    line-height: 31px;
+    float: left;
+    top: 0px;
+    font-size: 10px;
+    height: 75px;
+    color: rgb(160, 160, 160);
+    background-color: #f0eff4;
+    transition: 0.1s;
+}
+
+.phone-app-footer-button img {
+    position: relative;
+    top: 6px;
+}
+
+.phone-app-footer-button p {
+    text-align: center;
+    font-size: 11px;
+}
+
+.suggestedcontacts_1 {
+    position: relative;
+    left: 2px;
+}
+
+.phone-contacts {
+    display: block;
+    position: absolute;
+    height: 110%;
+    width: 100%;
+}
+
+.phone-keypad-header {
+    padding-top: 58px;
+    padding-left: 29px;
+    font-family: "ios";
+    font-size: 18px;
+}
+
+#phone-keypad-input {
+    right: 0;
+    width: -webkit-fill-available;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: "ios";
+    line-height: 37.4009px;
+    text-align: center;
+    font-size: 35.9625px;
+    overflow: hidden;
+    margin-top: 100px;
+    min-height: 38px;
+    display: inline-block;
+}
+
+#phone-keypad-input:before {
+    content: "";
+}
+
+.phone-keypad {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: white;
+}
+
+.phone-recent {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: white;
+}
+
+.phone-recent-header {
+    position: relative;
+    top: 40px;
+    line-height: 40px;
+    height: 40px;
+    font-family: "ios";
+    font-size: 17px;
+    text-align: center;
+}
+
+.phone-recent-calls::-webkit-scrollbar {
+    display: none;
+}
+
+.phone-recent-calls {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 80.13px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-top: 1px solid #0000001c;
+    padding: 10px;
+    box-shadow: inset 0 3px 9px -7px rgba(0, 0, 0, 0.5);
+}
+
+.phone-recent-call {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #0000001c;
+    cursor: pointer;
+}
+
+.phone-recent-call:hover {
+    background-color: rgb(234 234 234);
+}
+
+.phone-recent-call-image {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 12px;
+    left: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+    border-radius: 50%;
+    background: #b7b7b7;
+}
+
+.phone-recent-call-name {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    font-family: "ios";
+}
+
+.phone-recent-call-type {
+    position: absolute;
+    bottom: 11px;
+    left: 60px;
+    font-size: 12px;
+    color: rgba(54, 54, 54, 0.808);
+}
+
+.phone-recent-call-time {
+    position: absolute;
+    bottom: 11px;
+    right: 17px;
+    font-size: 10px;
+    font-family: "ios";
+    color: rgba(54, 54, 54, 0.808);
+}
+
+.phone-keypad-key-call {
+    width: 64px;
+    position: relative;
+    font-size: 19.18px;
+    text-align: center;
+    background-color: #4ed964;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.1s ease 0s;
+    margin-bottom: 1em;
+}
+
+.phone-keypad-key-call:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.phone-keypad-key-call:hover {
+    background-color: #1e8046;
+}
+
+.phone-keypad-keys {
+    position: absolute;
+    top: 30px !important;
+    margin-left: -2px !important;
+}
+
+.innerKey i {
+    color: white;
+}
+
+.phone-keypad-key .row .col-sm-4 {
+    margin: auto;
+}
+
+.phone-keypad-key {
+    position: relative;
+    width: 64px;
+    background: rgb(229, 229, 229);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.1s;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.phone-keypad-key:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.phone-keypad-key:hover {
+    color: #6e6e6e;
+    background: rgb(179 179 179 / 18%);
+}
+
+.innerKey {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    width: 100%;
+    font-family: "ios";
+    color: darkslategrey;
+    transform: translate(0, -50%);
+}
+
+.innerKey p {
+    font-size: 30px;
+}
+
+.keycustom {
+    margin: 0 -50% 0 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.keycustom1 {
+    position: relative;
+    left: 0;
+}
+
+.keycustom1 i {
+    position: relative;
+    left: 2px;
+    top: 1px;
+    font-size: 30px;
+    color: darkslategrey !important;
+}
+
+.keycustom2 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.keyspan {
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight: 800;
+    margin-top: -5em;
+    z-index: 100;
+    bottom: 6%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-left: -50%;
+}
+
+.phone-contacts-header {
+    position: absolute;
+    top: 0;
+    height: 39px;
+    width: 100%;
+}
+
+.phone-contacts-header>i {
+    float: right;
+    line-height: 39px;
+    font-size: 18px;
+    padding-right: 20px;
+    margin-left: 2px;
+    transition: 0.1s;
+    color: #000000;
+    z-index: 150;
+}
+
+.phone-contacts-header>i:hover {
+    color: #686de0;
+}
+
+#contact-search {
+    display: none;
+    position: absolute;
+    background: none;
+    border: none;
+    background: rgb(226, 226, 226);
+    top: 7px;
+    width: 165px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.281);
+    font-family: "ios";
+    outline: none;
+    text-indent: 10px;
+    z-index: 100;
+}
+
+#contact-search::placeholder {
+    font-family: "ios";
+}
+
+.phone-contact-list::-webkit-scrollbar {
+    width: 4px;
+    color: transparent;
+}
+
+.phone-contact-list::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.phone-contact-list::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.phone-contact-list {
+    position: absolute;
+    height: 92%;
+    top: 45px;
+    width: 95%;
+    margin: 0 auto;
+    left: 5px;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.phone-contact {
+    position: relative;
+    width: 105%;
+    left: -2px;
+    height: 44px;
+    margin-top: 1px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.phone-contact-firstletter {
+    position: absolute;
+    height: 29px;
+    width: 29px;
+    margin: 5px;
+    margin-left: 6px;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 25%;
+    font-family: "ios";
+    color: white;
+}
+
+.phone-contact-name {
+    position: absolute;
+    left: 48px;
+    line-height: 44px;
+    font-family: "ios";
+    font-size: 14px;
+}
+
+.phone-contact-actions {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    right: 20px;
+    font-size: 22px;
+    transition: 0.1s;
+}
+
+.phone-contact-actions:hover {
+    color: #e74c3c;
+}
+
+.phone-contact-action-buttons {
+    display: none;
+    position: absolute;
+    bottom: 12px;
+    height: 48px;
+    width: 95%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.phone-contact-action-buttons>i {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    left: -2px;
+    top: 10px;
+    font-size: 23px;
+    color: rgb(44, 44, 44);
+    transition: 0.1s;
+}
+
+.phone-contact-action-buttons>i:hover {
+    color: #eb4d4b;
+}
+
+.phone-add-contact {
+    display: none;
+    position: absolute;
+    height: 108%;
+    width: 100%;
+    top: -100%;
+    background: white;
+    z-index: 102;
+}
+
+.phone-add-contact-header {
+    padding-top: 58px;
+    padding-left: 29px;
+    font-family: "ios";
+    font-size: 20px;
+}
+
+.phone-add-contact-name {
+    position: absolute;
+    top: 116px;
+    left: 58px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.555);
+    font-family: "ios";
+    height: 34px;
+    width: 192px;
+    text-indent: 4px;
+    border-radius: 5px 5px 0 0;
+    transition: 0.1s;
+    font-size: 15px;
+}
+
+#phone-add-contact-name-icon {
+    position: absolute;
+    top: 126px;
+    left: 20px;
+    font-size: 24px;
+}
+
+.phone-add-contact-name:focus {
+    border-bottom: 2px solid #30336b;
+}
+
+.phone-add-contact-name:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.phone-add-contact-number {
+    position: absolute;
+    top: 185px;
+    left: 57px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.555);
+    font-family: "ios";
+    height: 34px;
+    width: 192px;
+    text-indent: 4px;
+    border-radius: 5px 5px 0 0;
+    transition: 0.1s;
+    font-size: 15px;
+}
+
+.phone-add-contact-number::-webkit-inner-spin-button {
+    display: none;
+}
+
+.phone-add-contact-number:focus {
+    border-bottom: 2px solid #30336b;
+}
+
+.phone-add-contact-number:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.phone-add-contact-iban {
+    position: absolute;
+    top: 250px;
+    left: 58px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.555);
+    font-family: "ios";
+    height: 34px;
+    width: 192px;
+    text-indent: 5px;
+    border-radius: 5px 5px 0 0;
+    transition: 0.1s;
+    font-size: 15px;
+}
+
+.phone-add-contact-iban::-webkit-inner-spin-button {
+    display: none;
+}
+
+.phone-add-contact-iban:focus {
+    border-bottom: 2px solid #30336b;
+}
+
+.phone-add-contact-iban:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+#phone-add-contact-number-icon {
+    position: absolute;
+    top: 193px;
+    left: 20px;
+    font-size: 24px;
+}
+
+#phone-add-contact-iban-icon {
+    position: absolute;
+    top: 256px;
+    left: 21px;
+    font-size: 23px;
+}
+
+.phone-add-contact-buttons {
+    position: absolute;
+    bottom: 15px;
+    height: 48px;
+    width: 100%;
+}
+
+.phone-add-contact-button {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+    line-height: 45px;
+    font-family: "ios";
+    border-top: 1px solid #3c3c3c3b;
+    transition: 0.1s;
+    font-size: 16px;
+}
+
+.phone-add-contact-button:hover {
+    background-color: #3c3c3c0d;
+}
+
+.phone-edit-contact {
+    display: none;
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    top: -100%;
+    background: white;
+    z-index: 102;
+}
+
+.phone-edit-contact-header {
+    padding-top: 58px;
+    padding-left: 29px;
+    font-family: "ios";
+    font-size: 20px;
+}
+
+.phone-edit-contact-name {
+    position: absolute;
+    top: 116px;
+    left: 58px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.555);
+    font-family: "ios";
+    height: 34px;
+    width: 192px;
+    text-indent: 4px;
+    border-radius: 5px 5px 0 0;
+    transition: 0.1s;
+    font-size: 15px;
+}
+
+#phone-edit-contact-name-icon {
+    position: absolute;
+    top: 126px;
+    left: 21px;
+    font-size: 24px;
+}
+
+.phone-edit-contact-name:focus {
+    border-bottom: 2px solid #30336b;
+}
+
+.phone-edit-contact-name:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.phone-edit-contact-number {
+    position: absolute;
+    top: 183px;
+    left: 58px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.555);
+    font-family: "ios";
+    height: 34px;
+    width: 192px;
+    text-indent: 5px;
+    border-radius: 5px 5px 0 0;
+    transition: 0.1s;
+    font-size: 15px;
+}
+
+.phone-edit-contact-number::-webkit-inner-spin-button {
+    display: none;
+}
+
+.phone-edit-contact-number:focus {
+    border-bottom: 2px solid #30336b;
+}
+
+.phone-edit-contact-number:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.phone-edit-contact-iban {
+    position: absolute;
+    top: 250px;
+    left: 58px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.555);
+    font-family: "ios";
+    height: 34px;
+    width: 192px;
+    text-indent: 4px;
+    border-radius: 5px 5px 0 0;
+    transition: 0.1s;
+    font-size: 15px;
+}
+
+.phone-edit-contact-iban::-webkit-inner-spin-button {
+    display: none;
+}
+
+.phone-edit-contact-iban:focus {
+    border-bottom: 2px solid #30336b;
+}
+
+.phone-edit-contact-iban:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+#phone-edit-contact-number-icon {
+    position: absolute;
+    top: 193px;
+    left: 21px;
+    font-size: 24px;
+}
+
+#phone-edit-contact-iban-icon {
+    position: absolute;
+    top: 260px;
+    left: 21px;
+    font-size: 24px;
+}
+
+.phone-edit-contact-buttons {
+    position: absolute;
+    bottom: 10px;
+    height: 48px;
+    width: 100%;
+}
+
+.phone-edit-contact-button {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: 48px;
+    text-align: center;
+    line-height: 42px;
+    font-family: "ios";
+    border-top: 2px solid #30336b00;
+    transition: 0.1s;
+    font-size: 15px;
+}
+
+.phone-edit-contact-button:hover {
+    border-top: 2px solid #eb4d4b;
+}
+
+.phone-call-app {
+    display: none;
+    height: 110%;
+    width: 100%;
+    background: #000000cc;
+    background-size: 100% 100%;
+}
+
+.phone-call-incoming {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.phone-call-incoming-title {
+    position: absolute;
+    top: 95px;
+    right: 16px;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 280px;
+    font-size: 15px;
+    background: transparent;
+    color: #ffffff;
+}
+
+.phone-call-incoming-caller {
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 280px;
+    font-size: 30px;
+    background: transparent;
+    color: #ffffff;
+}
+
+.accept-call-button>p {
+    position: absolute;
+    bottom: -10px;
+    font-family: "ios";
+    color: white;
+    right: 42px;
+}
+
+.decline-call-button>p {
+    position: absolute;
+    bottom: -10px;
+    font-family: "ios";
+    color: white;
+    left: 42px;
+}
+
+#incoming-answer {
+    position: absolute;
+    bottom: 25px;
+    right: 33px;
+    color: white;
+    background-color: #2ecc70e5;
+    padding: 17.262px;
+    font-size: 27px;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+#incoming-answer:hover {
+    color: white;
+    background-color: #22af5d;
+    transition: 0.5s;
+}
+
+#incoming-deny {
+    position: absolute;
+    bottom: 25px;
+    left: 33px;
+    transform: rotate(135deg);
+    color: white;
+    background-color: #e74d3ce0;
+    padding: 17.262px;
+    font-size: 27px;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+#incoming-deny:hover {
+    color: white;
+    background-color: #bd3f31e0;
+    transition: 0.5s;
+}
+
+.phone-call-outgoing {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.phone-call-outgoing-title {
+    position: absolute;
+    top: 95px;
+    right: 16px;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 280px;
+    font-size: 15px;
+    background: transparent;
+    color: #ffffff;
+}
+
+.phone-call-outgoing-caller {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 280px;
+    font-size: 30px;
+    background: transparent;
+    color: #ffffff;
+}
+
+.cancel-call-button {
+    position: absolute;
+    top: 585px;
+    height: 20px;
+    right: 267px;
+}
+
+#outgoing-cancel {
+    position: absolute;
+    bottom: 28px;
+    margin: 0 auto;
+    left: 128px;
+    transform: rotate(135deg);
+    color: white;
+    background-color: #e74d3ce0;
+    padding: 17.262px;
+    font-size: 27px;
+    border-radius: 50%;
+    transition: background-color .1s ease-in-out;
+}
+
+.cancel-call-button>p {
+    position: relative;
+    font-family: "ios";
+    color: white;
+    left: 137px;
+}
+
+#outgoing-cancel:hover {
+    color: white;
+    background-color: #bd3f31e0;
+    transition: 0.5s;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.phone-call-ongoing {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.phone-call-ongoing-caller {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 280px;
+    font-size: 25px;
+    color: #ffffff;
+        white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+}
+
+.phone-call-ongoing-time {
+    position: absolute;
+    top: 95px;
+    right: 10px;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 280px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+#ongoing-cancel {
+    position: absolute;
+    bottom: 28px;
+    margin: 0 auto;
+    left: 128px;
+    transform: rotate(135deg);
+    color: white;
+    background-color: #e74d3ce0;
+    padding: 17.262px;
+    font-size: 27px;
+    border-radius: 50%;
+    transition: background-color .1s ease-in-out;
+}
+
+.phone-currentcall-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 4px;
+    height: 60px;
+    width: 290px;
+    background-color: rgb(0 0 0 / 51%);
+    top: 40px;
+    z-index: 9999999;
+    transition: background-color .1s linear 0s;
+    border-radius: 10px;
+}
+
+.phone-currentcall-container:hover {
+    background-color: rgb(0 0 0 / 67%);
+}
+
+.phone-currentcall-image {
+    position: absolute;
+    padding: 10px;
+}
+
+.phone-currentcall-image img {
+    height: 36px;
+    border-radius: 50%;
+}
+
+.phone-currentcall-icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 13px;
+    top: 13px;
+    color: white;
+    padding: 8px;
+    line-height: 1px;
+    font-size: 13px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.phone-currentcall-cancel {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 50px;
+    top: 13px;
+    color: white;
+    padding: 8px;
+    line-height: 1px;
+    font-size: 12px;
+    transform: rotate(135deg);
+    background-color: red;
+    border-radius: 50%;
+}
+
+.phone-currentcall-title {
+    position: absolute;
+    top: 15px;
+    left: 56px;
+    font-size: 10px;
+    color: darkgray !important;
+    z-index: 140;
+    width: 155px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.phone-currentcall-contact {
+    position: absolute;
+    top: 30px;
+    left: 56px;
+    font-size: 12px;
+    color: white;
+    width: 195px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 140;
+}
+
+.phone-currentcall-timer {
+    position: absolute;
+    font-size: 12px;
+    left: 21px;
+    top: 6px;
+    color: green;
+    width: 195px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 140;
+}
+
+.island-call-ongoing-container i {
+    position: relative;
+    font-size: 11px;
+    right: -7px;
+    top: 3px;
+    color: green;
+}
+
+.phone-currentcall-sound img {
+    position: relative;
+    height: 22px;
+    float: right;
+    bottom: 17px;
+    right: 15px;
+}
+
+#ongoing-cancel:hover {
+    color: white;
+    background-color: #bd3f31e0;
+    transition: .5s;
+}
+
+.phone-suggestedcontacts {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: white;
+}
+
+.phone-suggestedcontacts-header {
+    position: absolute;
+    width: 100%;
+    height: 76.72px;
+    top: 76.72px;
+    text-align: center;
+    line-height: 60.95px;
+    color: black;
+}
+
+.amount-of-suggested-contacts {
+    position: relative;
+    font-size: 12px;
+    right: 140px;
+    top: 2px;
+    width: 200px;
+}
+
+.c {
+    font-size: 17px !important;
+    margin-top: -50px;
+    font-family: "ios";
+}
+
+.b {
+    margin-top: -48px;
+    margin-left: 200px;
+}
+
+.suggested-contacts {
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 100px;
+    background: white;
+    border-radius: 0;
+    height: 480px;
+    box-shadow: inset 0 3px 9px -7px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-top: 1px solid #0000001c;
+}
+
+.suggested-contacts::-webkit-scrollbar {
+    display: none;
+}
+
+.suggested-contact {
+    position: relative;
+    height: 57.54px;
+    width: 100%;
+    border-bottom: 1px solid #b1b1b16b;
+    transition: 0.05s ease-in-out;
+}
+
+.suggested-contact>i {
+    position: absolute;
+    top: 16.303px;
+    left: 14.385px;
+    font-size: 23.975px;
+    color: #333;
+}
+
+.suggested-name {
+    position: absolute;
+    left: 55px;
+    top: 19px;
+    font-family: "ios";
+    color: black;
+    font-size: 15px;
+}
+
+.suggested-number {
+    position: relative;
+    font-family: "ios";
+    color: grey;
+    font-size: 15px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#phone-app-contacts-plus {
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    font-size: 19px;
+    filter: invert(44%) sepia(56%) saturate(6757%) hue-rotate(196deg) brightness(105%) contrast(103%);
+    cursor: pointer;
+    z-index: 99;
+}
+
+#phone-app-contacts-head {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 43px;
+    left: 20px;
+    flex-direction: column;
+    font-family: "ios";
+}
+
+#phone-app-contacts-head h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#phone-app-contacts-searchContainer {
+    position: relative;
+    width: 270px;
+    right: 5px;
+    height: 30px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+#phone-app-contacts-searchIcon {
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+#phone-app-contacts-body {
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    height: 450px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#phone-app-contacts-body::-webkit-scrollbar {
+    display: none !important;
+}
+
+.phone-app-contacts-body-alphabetic-head {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.phone-app-contacts-body-alphabetic-head a {
+    position: relative;
+    left: 8px;
+    top: 3px;
+    font-size: 11px;
+    font-family: "ios";
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.phone-app-contacts-body-alphabetic-head a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.phone-app-contacts-body-alphabetiC-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7%;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.phone-app-contacts-body-contact {
+    position: relative;
+    left: 8px;
+    font-size: 16px;
+    font-family: "ios";
+    color: black;
+}
+
+.phone-app-contacts-body-contact:hover {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.customLine {
+    position: relative;
+    width: 100%;
+    right: 3.5%;
+    margin-top: 15px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+#phone-app-newcontact {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    z-index: 999999;
+    background-color: #fff;
+    left: -435.65px;
+}
+
+textarea {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.phone-app-cancel {
+    position: absolute;
+    left: 16px;
+    top: 50px;
+    font-size: 15px;
+    color: #3291fe;
+    cursor: pointer;
+}
+
+.phone-app-done {
+    position: absolute;
+    right: 16px;
+    top: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #9b9b9b;
+}
+
+#phone-app-contacts-searchArea {
+    margin-left: 8px;
+    margin-top: 6px;
+    height: 100%;
+    background: none;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+#phone-app-newcontact-image,
+#phone-app-viewContact-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid #dbdbdb;
+    background-size: cover;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+#phone-app-newcontact-imageContainer,
+#phone-app-viewContact-imageContainer {
+    position: absolute;
+    top: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    color: #3291fe;
+}
+
+#phone-app-newcontact-body {
+    position: absolute;
+    top: 32%;
+    width: 100%;
+}
+
+.phone-app-newcontact-bodyContainer {
+    position: relative;
+    width: 100%;
+    left: 4.631px;
+}
+
+.phone-app-newcontact-bodyContainerName {
+    position: relative;
+    top: 10p;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #b1b1b16b;
+}
+
+#phone-app-newcontact-ringtoneContainer {
+    position: absolute;
+    width: 100%;
+    height: 23%;
+    top: 230.16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f5f8f9;
+    cursor: pointer;
+}
+
+#phone-app-newcontact-right {
+    position: absolute;
+    float: right;
+    right: 5px;
+    transition: all 0.4s;
+}
+
+#ringtones {
+    position: absolute;
+    top: 48px;
+    width: 100%;
+}
+
+.ringtoneContainer {
+    position: relative;
+    width: 100%;
+    height: 39px;
+    bottom: 2.7px;
+    display: flex;
+    align-items: center;
+    background-color: #f5f8f9;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0px, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+}
+
+.ringtoneContainer:hover {
+    color: #3291fe;
+}
+
+#phone-app-viewContact {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    left: -435.65px;
+    background-color: #f2f1f7;
+    z-index: 999999;
+}
+
+#back_icon {
+    position: absolute;
+    top: 4px;
+    left: -8px;
+    filter: invert(44%) sepia(56%) saturate(6757%) hue-rotate(196deg) brightness(105%) contrast(103%);
+}
+
+#phone-app-viewContact *a {
+    text-decoration: none;
+}
+
+#phone-app-viewContactActions {
+    position: absolute;
+    top: 220px;
+    left: 5px;
+    display: flex;
+    width: 96%;
+    height: 95.9px;
+    flex-direction: row;
+    padding: 0 5px;
+}
+
+.phone-app-viewContactActionsFastIcons {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 6px;
+    filter: invert(60%) sepia(62%) saturate(5246%) hue-rotate(194deg) brightness(101%) contrast(99%);
+}
+
+.phone-app-viewContactActionsFast {
+    display: flex;
+    width: 100px;
+    height: 65px;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin: 0 5px;
+    align-items: center;
+    color: #3291fe;
+    font-size: 12px !important;
+    border-radius: 8px;
+    font-family: "ios";
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 8px;
+}
+
+.phone-app-viewContactActionsFast a,
+#phone-app-numberInformation a,
+#phone-app-noteInformation a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.phone-app-viewContactActionsFast a {
+    margin-top: 8px;
+}
+
+#phone-app-numberInformation {
+    position: absolute;
+    top: 45%;
+    width: 91%;
+    height: 8%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    left: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 8px;
+}
+
+#phone-app-noteInformation {
+    position: absolute;
+    top: 375px;
+    width: 91%;
+    height: 15%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    left: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 8px;
+}
+
+#phone-app-fastActions-container {
+    position: relative;
+    top: 445px;
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    left: 12px;
+    border-radius: 10px;
+    color: #3291fe;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 8px;
+}
+
+#phone-app-fastActions-container a {
+    position: relative;
+    left: 5px;
+}
+
+.phone-app-fastActions {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.phone-app-fastActions:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    width: 95%;
+    margin-top: 30px;
+    height: 1px;
+    left: 10px;
+    padding: 0;
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.phone-app-fastActions a {
+    font-size: 18px;
+    font-family: "ios";
+    margin-left: 10px;
+}
+
+.phone-bottom-selector {
+    position: absolute;
+    height: fit-content;
+    width: 90%;
+    left: 5%;
+    bottom: -100%;
+    margin-bottom: 29px;
+    display: flex;
+    flex-direction: column;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "ios";
+    z-index: 5100;
+}
+
+.phone-bottom-selector div {
+    text-align: center;
+    background: var(--main-background-color);
+}
+
+.phone-bottom-selector-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+    border-radius: 12px / 16px;
+    transition: all 100ms ease-in-out;
+}
+
+.phone-bottom-selector-item:hover,
+.phone-bottom-selector-close-button:hover {
+    background: var(--second-background-color);
+    transition: all 100ms ease-in-out;
+}
+
+.phone-bottom-selector-title {
+    color: darkslategray;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.phone-bottom-selector-item {
+    padding: 12px;
+    width: 100%;
+    border-top: 1px solid var(--second-background-color);
+}
+
+.phone-bottom-selector-item:last-child {
+    border-radius: 0 0 16px 16px;
+}
+
+.phone-bottom-selector-close-button {
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px / 16px;
+    transition: all 100ms ease-in-out;
+}
+
+.gray-background {
+    display: none;
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 5000;
+}
+
+#phone-notConnection {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 110%;
+    z-index: 999999999999999999;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.phone-notConnectionImg {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.phone-notConnectionTxt {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "ios";
+    top: -5px;
+}
+
+#phone-notConnection {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 110%;
+    z-index: 999999999999999999;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.phone-notConnectionImg {
+    width: 150px;
+    height: 150px;
+}
+
+#close-screen {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    z-index: 999999999999999999999999999999999999999999;
+    align-items: center;
+    justify-content: center;
+}
+
+#close-screen-battery {
+    width: 80px;
+    height: 30px;
+    border: 2px solid #fff;
+    position: relative;
+    border-radius: 5px;
+}
+
+#close-screen-battery::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    background: red;
+    height: 24px;
+    top: 1px;
+    left: 1px;
+    border-radius: 2px;
+}
+
+#close-screen-battery::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 15px;
+    background: #fff;
+    right: -6px;
+    top: 5px;
+    border-radius: 2px;
+}
+
+#charging {
+    display: none;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.back-container-viewContact { 
+    position: absolute;
+    margin-top: 23px !important;
+} 

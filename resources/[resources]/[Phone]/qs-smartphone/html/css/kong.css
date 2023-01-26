@@ -1,0 +1,42 @@
+.kong-app {
+  display: none;
+  height: 110%;
+  width: 100%;
+  background: black;
+}
+
+.kong-header {
+  position: absolute;
+  top: 7px;
+  height: 185.6px;
+  width: 310px;
+  background-color: black;
+  z-index: 9;
+}
+
+.kong-iframe {
+  position: relative;
+  right: 75px;
+  top: 80px;
+  height: 160px;
+  zoom: 2;
+}
+
+.kong-footer {
+  position: absolute;
+  top: 476px;
+  left: 3.17px;
+  height: 389px;
+  width: 310px;
+  background-color: black;
+  z-index: 9;
+}
+
+.kong-anti-popup {
+  position: absolute;
+  top: 455px;
+  height: 25px;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+}

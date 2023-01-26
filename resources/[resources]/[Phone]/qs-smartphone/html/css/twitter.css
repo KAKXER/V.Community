@@ -1,0 +1,970 @@
+.twitter-app {
+	display: none;
+	height: 110%;
+	width: 100%;
+	background: #fff;
+	overflow: hidden
+}
+
+.twitter-header {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	top: 593px;
+	width: 100%;
+	height: 66px;
+	background: white;
+	z-index: 9999;
+	box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2)
+}
+
+.twitter-header-image {
+	position: absolute;
+	background: white;
+	width: 100%;
+	height: 85px;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+	z-index: 9999
+}
+
+.twitter-header-image img {
+	position: absolute;
+	width: 25px;
+	top: 55px;
+	left: 140px
+}
+
+.twitter-header-tab,
+.twitter-header-tab-2 {
+	position: relative;
+	float: left;
+	width: 78px;
+	left: 1px;
+	text-align: center;
+	line-height: 46.35px;
+	font-size: 23px;
+	color: #333;
+	transition: .07s;
+	border-top: 1px solid #33333336;
+	cursor: pointer
+}
+
+i.far.fa-heart {
+	color: #5f5f5f
+}
+
+i.fas.fa-retweet {
+	color: #5f5f5f
+}
+
+.twitter-header-tab:hover,
+.twitter-header-tab-2:hover {
+	color: #1da1f2
+}
+
+.selected-twitter-header-tab {
+	color: #1da1f2
+}
+
+.twitter-app-header {
+	position: relative;
+	padding: 46.35px 0 0 17.1495px;
+	font-family: "ios";
+	font-size: 19.18px
+}
+
+.twitter-home-tab {
+	display: block;
+	position: absolute;
+	height: 508px;
+	background: #fff;
+	width: 100%;
+	top: 85px;
+	overflow: hidden;
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+	z-index: 9999;
+	border-top: 1px solid rgba(109, 108, 108, 0.3)
+}
+
+.twitter-home-tab::-webkit-scrollbar {
+	width: 6.7px
+}
+
+.twitter-home-tab::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0)
+}
+
+.twitter-home-tab::-webkit-scrollbar-track {
+	background-color: #ebebeb00
+}
+
+.twitter-self-tab {
+	display: none;
+	position: absolute;
+	height: 520px;
+	background: #fff;
+	width: 100%;
+	top: 75px;
+	overflow: hidden;
+	overflow-y: scroll !important;
+	overflow-x: hidden !important
+}
+
+.twitter-self-tab::-webkit-scrollbar {
+	display: none
+}
+
+.twitter-mentions-tab {
+	display: none;
+	position: absolute;
+	height: 520px;
+	background: #fff;
+	width: 100%;
+	top: 75px;
+	overflow: hidden;
+	overflow-y: scroll !important;
+	overflow-x: hidden !important
+}
+
+.twitter-mentions-tab::-webkit-scrollbar {
+	display: none
+}
+
+.twitter-hashtags-tab {
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 48px;
+	overflow: hidden;
+	overflow-y: scroll !important;
+	overflow-x: hidden !important
+}
+
+.twitter-hashtags-tab::-webkit-scrollbar {
+	display: none
+}
+
+.tt {
+	position: absolute;
+	right: 700px;
+	top: 400px;
+	padding: 1rem
+}
+
+.twitter-tweet {
+	position: relative;
+	width: 100%;
+	top: 14px;
+	left: 4px;
+	border-bottom: thin solid #ccc
+}
+
+.twitter-tweet:hover {
+	opacity: .8
+}
+
+.twitter-tweet-hashtag {
+	position: relative;
+	height: auto;
+	width: 100%;
+	border-bottom: thin solid #ccc;
+	margin-bottom: 23.975px
+}
+
+.twitter-mentioned-tweet {
+	position: relative;
+	height: auto;
+	width: 100%;
+	border-top: 2px solid rgba(20, 23, 26, 0.37);
+	margin-bottom: 23.975px
+}
+
+.twt-img {
+	position: absolute;
+	left: 7px;
+	height: 100%;
+	width: 100%
+}
+
+.twt-img>img {
+	width: 43px;
+	height: 43px;
+	object-fit: cover;
+	border-radius: 50%
+}
+
+.tweet-reply {
+	color: #333;
+	margin-left: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	left: 45px;
+	transition: .05 linear;
+	z-index: 1;
+	position: relative;
+	cursor: pointer
+}
+
+.tweet-delete {
+	color: #333;
+	margin-left: 38.5px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	left: 2rem;
+	transition: .05 linear;
+	z-index: 100;
+	position: relative;
+	cursor: pointer
+}
+
+.tweet-reply:hover i {
+	color: rgba(0, 0, 0, 1)
+}
+
+.tweet-delete:hover i {
+	color: rgba(0, 0, 0, 1)
+}
+
+.tweet-tweeter {
+	padding-left: 64px;
+	padding-top: 10px;
+	font-family: "ios";
+	font-size: 15px;
+	color: rgb(0, 0, 0);
+	font-weight: 600;
+	width: 290px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+#tweet-tweeter-mention {
+	padding-left: 10px;
+	font-family: "ios";
+	font-size: 18px;
+	line-height: 20px;
+	color: rgb(0, 0, 0);
+	font-weight: 600;
+	cursor: pointer
+}
+
+.tweet-tweeter>span {
+	font-family: "ios";
+	font-size: 12px;
+	top: 1px;
+	color: rgb(109 109 109)
+}
+
+.tweet-message {
+	margin-top: 0;
+	padding-left: 65px;
+	font-family: "ios";
+	font-size: 15.5px;
+	padding-bottom: 10px;
+	max-width: 270px;
+	overflow-wrap: break-word;
+	color: rgb(59, 59, 59);
+	word-wrap: break-word
+}
+
+.tweet-image {
+	margin-top: 2.877px;
+	padding-left: 57.54px;
+	top: 4.795px;
+	z-index: 100;
+	font-family: "ios";
+	font-size: 12.467px;
+	padding-bottom: 9.59px;
+	overflow-wrap: break-word;
+	word-wrap: break-word
+}
+
+.twitter-new-tweet {
+	position: absolute;
+	top: 43px;
+	right: 30px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	z-index: 1;
+	transition: .1s;
+	z-index: 9999
+}
+
+.new-tweet-img {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	padding: 0;
+	border-radius: 50px;
+	top: 480px;
+	right: -14px;
+	background: #1da1f2;
+	box-shadow: 3px 5px 11px 0 #00000036;
+	cursor: pointer;
+	transition: .3s
+}
+
+.new-tweet-img:hover {
+	transform: scale(0.95);
+	background: #1b8fd7
+}
+
+.twitter-new-tweet-tab {
+	display: none;
+	position: absolute;
+	top: -110%;
+	height: 110%;
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	z-index: 99999
+}
+
+.twitter-new-tweet-header {
+	position: relative;
+	padding: 60px 0 0 18px;
+	font-family: "ios";
+	font-size: 19.18px;
+	font-weight: 600
+}
+
+#tweet-new-message {
+	position: absolute;
+	border: none;
+	height: 140px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background-color: rgb(233, 233, 233);
+	outline: none;
+	border-bottom: 2px solid #1da0f200;
+	resize: none;
+	transition: border-bottom .1s ease-in-out;
+	font-family: "ios";
+	padding: 13px;
+	font-size: 14px;
+	top: 90px;
+	width: 90%;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px
+}
+
+#tweet-new-mentions {
+	position: absolute;
+	border: none;
+	height: 47.95px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background-color: rgb(233, 233, 233);
+	outline: none;
+	border-bottom: 2px solid #1da0f200;
+	resize: none;
+	transition: border-bottom .1s ease-in-out;
+	font-family: "ios";
+	padding: 13px;
+	font-size: 14px;
+	top: 250px;
+	width: 90%;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px
+}
+
+#tweet-new-hashtags {
+	position: absolute;
+	border: none;
+	height: 47.95px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background-color: rgb(233, 233, 233);
+	outline: none;
+	border-bottom: 2px solid #1da0f200;
+	resize: none;
+	transition: border-bottom .1s ease-in-out;
+	font-family: "ios";
+	padding: 13px;
+	font-size: 14px;
+	top: 320px;
+	width: 90%;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px
+}
+
+#tweet-new-url {
+	position: absolute;
+	border: none;
+	height: 47.95px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background-color: rgb(233, 233, 233);
+	outline: none;
+	border-bottom: 2px solid #1da0f200;
+	resize: none;
+	transition: border-bottom .1s ease-in-out;
+	font-family: "ios";
+	padding: 13px;
+	font-size: 14px;
+	top: 390px;
+	width: 90%;
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px
+}
+
+#tweet-new-message::-webkit-scrollbar {
+	display: none
+}
+
+#tweet-new-message::placeholder {
+	font-size: 13.5px;
+	font-family: "ios"
+}
+
+#tweet-new-message:focus {
+	border-bottom: 5.5px solid #1da0f2b0
+}
+
+#tweet-new-message:valid {
+	border-bottom: 5.5px solid #6ab04c
+}
+
+.settings-div {
+	margin-top: 135% !important;
+	margin-left: 18.2px !important;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.192);
+	display: none;
+	position: relative;
+	width: 263.725px;
+	margin-left: 6.7px;
+	height: 223.975px;
+	margin-top: 369.215px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 23.975px;
+	bottom: 0;
+	top: 287.7px;
+	z-index: 1000
+}
+
+.settings-div::selection,
+.settings-div-header::selection,
+.settings-div li::selection {
+	background-color: transparent
+}
+
+.settings-div-header {
+	color: rgb(165, 165, 165);
+	width: 100%;
+	text-align: center;
+	line-height: 62.335px;
+	font-size: 13.5px;
+	font-weight: 600;
+	height: 38.5px
+}
+
+.settings-div ul {
+	list-style: none;
+	background-color: var(--qs-white);
+	padding-left: 0;
+	margin-top: 23.975px
+}
+
+::selection {
+	background-color: transparent
+}
+
+.settings-div li {
+	color: var(--qs-white);
+	left: 0;
+	padding: 9.59px;
+	text-align: center;
+	font-weight: 500;
+	color: #61a5f3;
+	transition: background-color .25s;
+	border-bottom: 1px solid rgb(226, 226, 226)
+}
+
+.settings-div li:hover {
+	background-color: rgb(235, 235, 235)
+}
+
+.twitter-new-tweet-buttons {
+	position: absolute;
+	top: 35px;
+	width: 100%;
+	height: 70px
+}
+
+.twitter-new-tweet-button {
+	position: relative;
+	float: left;
+	width: 33%;
+	height: 100%;
+	text-align: center;
+	line-height: 43.155px;
+	font-family: "ios";
+	font-weight: 600;
+	border-top: 2.9px solid #6ab04c00;
+	z-index: 999999;
+	transition: .1s
+}
+
+#send-photo {
+	position: relative;
+	top: 403px;
+	right: 120px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #6b6b6b;
+	cursor: pointer
+}
+
+.sent-phone-text {
+	position: relative;
+	width: 200px;
+	font-size: 14px;
+	bottom: 43px;
+	left: 4px
+}
+
+#send-photo:hover {
+	color: rgb(27, 149, 224)
+}
+
+#send-tweet {
+	position: relative;
+	top: 17px;
+	left: 35px;
+	font-size: 13px;
+	line-height: 19px;
+	background-color: rgb(27, 149, 224);
+	width: 50px;
+	color: white;
+	border-radius: 10px;
+	height: 25px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px
+}
+
+#cancel-tweet {
+	position: relative;
+	top: 7px;
+	right: 9px;
+	font-size: 16px;
+	color: #6b6b6b;
+	cursor: pointer
+}
+
+.twitter-no-tweets {
+	position: absolute;
+	text-align: center;
+	top: 38.5px;
+	width: 100%;
+	font-size: 19.5px;
+	font-family: "ios";
+	color: #333;
+	cursor: pointer
+}
+
+.mentioned-tag {
+	border-bottom: 1px solid rgba(27, 149, 224, 0);
+	padding-bottom: 2.9px;
+	transition: .2s
+}
+
+.mentioned-tag:hover {
+	color: rgb(19, 103, 155);
+	border-bottom: 1px solid rgb(27, 149, 224);
+	transition: .2s
+}
+
+.hashtag-tag-text {
+	border-bottom: 1px solid rgba(27, 149, 224, 0);
+	padding-bottom: 2.9px;
+	transition: .2s
+}
+
+.hashtag-tag-text:hover {
+	color: rgb(19, 103, 155);
+	border-bottom: 1px solid rgb(27, 149, 224);
+	transition: .2s
+}
+
+.twitter-hashtag {
+	position: relative;
+	height: 70px;
+	width: 100%;
+	top: 10px;
+	background-color: white;
+	border-bottom: 1px solid #3333331c;
+	transition: .2s;
+	cursor: pointer
+}
+
+.twitter-hashtag-status {
+	position: absolute;
+	top: 5px;
+	left: 20px;
+	font-family: "ios";
+	font-size: 13px;
+	font-weight: 600;
+	color: rgb(99, 111, 121)
+}
+
+.twitter-hashtag-tag {
+	position: absolute;
+	top: 23px;
+	left: 20px;
+	font-family: "ios";
+	font-size: 16px;
+	color: rgb(66, 66, 66);
+	width: 200px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.twitter-hashtag-messages {
+	position: absolute;
+	bottom: 6px;
+	left: 20px;
+	font-family: "ios";
+	font-size: 12px;
+	color: rgb(99, 111, 121)
+}
+
+.twitter-hashtags {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 30px;
+	height: 515px;
+	overflow-y: scroll;
+	overflow-x: hidden
+}
+
+.twitter-hashtags::-webkit-scrollbar {
+	display: none
+}
+
+.twitter-hashtag-tweets {
+	display: none;
+	position: absolute;
+	top: 25px;
+	width: 100%;
+	height: 531px;
+	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden
+}
+
+#twitter_logo {
+	position: relative;
+	bottom: 40px
+}
+
+.twitter-hashtag-tweets::-webkit-scrollbar {
+	width: 2px
+}
+
+.twitter-hashtag-tweets::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 0, 0)
+}
+
+.twitter-hashtag-tweets::-webkit-scrollbar-track {
+	background-color: #ebebeb00
+}
+
+.twitter-app .not-logged .login-box .header .logo {
+	width: 100px
+}
+
+.twitter-app .not-logged .login-box .form .button-box .btn {
+	background: rgb(29, 161, 242);
+	border: rgb(29, 161, 242)
+}
+
+#tweet-like {
+	color: #333;
+	margin-left: 100px;
+	bottom: 20px;
+	transition: .05 linear;
+	z-index: 1;
+	position: relative;
+	cursor: pointer
+}
+
+#tweet-likes {
+	position: absolute;
+	bottom: 20px;
+	left: 122px;
+	color: #565656;
+	cursor: pointer
+}
+
+#tweet-like:hover,
+#tweet-likes:hover {
+	color: black
+}
+
+.pop-up {
+	background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	width: 100%;
+	z-index: 999;
+	height: 114%
+}
+
+.pop-up-wrap {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 950px;
+	transform: scale(0.6);
+	opacity: 0;
+	transition: .3s ease all
+}
+
+.pop-up-title {
+	flex-basis: 0;
+	flex-grow: 1.5;
+	height: 460px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-image: url(../img/office.jpg);
+	background-size: 165%;
+	background-position: center;
+	background-repeat: no-repeat
+}
+
+.pop-up-title::after {
+	content: "";
+	border-radius: 15px;
+	position: absolute;
+	background: rgba(255, 255, 255, 1);
+	top: -40px;
+	bottom: 33px;
+	margin-top: 423px;
+	width: 302px;
+	height: 276px;
+	left: 4px;
+	right: 0
+}
+
+img.crono_emerge {
+	margin-top: 400px;
+	height: 57px;
+	margin-left: -1px;
+	z-index: 999
+}
+
+.emerge-title {
+	color: #000000
+}
+
+.pop-up-title::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1
+}
+
+.payment-print {
+	z-index: 999;
+	position: absolute
+}
+
+.pop-up-title p {
+	font-size: 20px;
+	font-weight: 900;
+	margin-top: 543px;
+	margin-left: 10px;
+	margin-right: 10px;
+	z-index: 999;
+	position: absolute;
+	text-align: center
+}
+
+.subcription {
+	background: #fff;
+	flex-basis: 0;
+	flex-grow: 2;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	text-align: center
+}
+
+.sub-content {
+	width: 75%
+}
+
+.sub-content h2 {
+	font-weight: 500;
+	font-size: 40px;
+	color: #1f4068;
+	margin-bottom: 15px
+}
+
+.sub-content p {
+	font-weight: 500;
+	color: #01a3b8;
+	margin-bottom: 30px
+}
+
+.line {
+	width: 100%;
+	height: 20px;
+	background: transparent
+}
+
+#close-emerge {
+	position: absolute;
+	top: 590px;
+	left: 15px;
+	font-size: 21px;
+	z-index: 999;
+	text-align: center;
+	color: #000000;
+	background: #cacaca;
+	padding: 6px 116px;
+	border-radius: 15px;
+	transition: .5s;
+	font-style: normal;
+	font-family: "ios";
+	cursor: pointer
+}
+
+#close-emerge:hover {
+	background: #a2a2a2
+}
+
+.pop-up.show {
+	visibility: visible
+}
+
+.pop-up-wrap.show {
+	transform: scale(1);
+	opacity: 1
+}
+
+img.twitter-crono {
+	height: 30px;
+	position: absolute;
+	margin-left: 268px;
+	margin-top: -29px;
+	cursor: pointer
+}
+
+.twitter-editSelfProfile-tab {
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 12vh;
+	background: #fff;
+	overflow: hidden;
+	overflow-y: scroll !important;
+	overflow-x: hidden !important
+}
+
+.twitter-editSelfProfile-tab h5 {
+	text-align: center;
+	font-size: 700px
+}
+
+.twitter-editSelfProfile-tab #twitter-selfProfile-changePhoto {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column
+}
+
+#twitter-selfProfile-changePhoto p {
+	position: relative;
+	top: 10px
+}
+
+.twitter-editSelfProfile-tab #twitter-selfProfile-photo {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	cursor: pointer
+}
+
+#twitter-selfProfile-changePhoto img {
+	object-fit: cover
+}
+
+.twitter-editSelfProfile-tab #aboutYou {
+	width: 100%;
+	height: 100%;
+	padding: 0 10px
+}
+
+.twitter-editSelfProfile-tab #aboutYou #aboutYou-infos {
+	position: relative;
+	top: 50px;
+	width: 100%;
+	height: 30%
+}
+
+.twitter-editSelfProfile-tab #aboutYou #aboutYou-infos .about-info {
+	display: flex;
+	margin-top: 25px;
+	width: 100%;
+	justify-content: space-between;
+	border-bottom: 1px solid #b1b1b16b
+}
+
+.twitter-editSelfProfile-tab #aboutYou #aboutYou-infos .about-info input {
+	position: relative;
+	border: none;
+	width: 100px
+}
+
+.twitter-editSelfProfile-tab #aboutYou h4 {
+	color: rgba(0, 0, 0, 0.6);
+	position: relative;
+	font-size: 18px;
+	top: 40px
+}
+
+.twitter-editSelfProfile-tab #aboutYou #twitter-aboutYou-save {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 250px;
+	border-radius: 2px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background-color: #fff;
+	border-radius: 8px;
+	height: 40px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+	cursor: pointer
+}
+
+.twitter-editSelfProfile-tab::-webkit-scrollbar {
+	display: none
+}

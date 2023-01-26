@@ -1,0 +1,130 @@
+.state-app {
+	display: none;
+	background: white;
+	height: 110%;
+	width: 100%;
+	overflow: hidden
+}
+
+.state-city-text {
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	font-size: 21px;
+	color: black;
+	text-align: center;
+	overflow: hidden
+}
+
+.state-jobs-container {
+	position: absolute;
+	width: 100%;
+	height: 470px;
+	top: 115px;
+	box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
+	background-color: rgb(235, 235, 235);
+	overflow-x: hidden;
+	overflow-y: visible;
+	padding: 6px
+}
+
+.state-jobs-container::-webkit-scrollbar {
+	width: 3px;
+	padding-right: 2%
+}
+
+.state-jobs-container-index {
+	position: relative;
+	width: 277px;
+	left: 4px;
+	margin-top: 2%;
+	top: 0;
+	height: 59px;
+	border-radius: 3px;
+	background-color: rgb(20, 127, 165);
+	text-align: left
+}
+
+.state-jobs-container-index-name {
+	position: absolute;
+	width: 210px;
+	top: 18px;
+	left: 10px;
+	font-size: 16px;
+	font-family: "ios";
+	color: white;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.state-active-jobs {
+	position: absolute;
+	width: 100%;
+	top: 80px;
+	color: grey;
+	font-size: 17px;
+	font-family: "ios";
+	text-align: center
+}
+
+.state-jobs-container-index-icon {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 18%;
+	border-radius: 20px;
+	left: 83%
+}
+
+.state-jobs-container-index-icon i {
+	color: #9cd2f7;
+	font-size: 160%;
+	padding-left: 15%;
+	padding-top: 15%;
+	transition: color .5s;
+	cursor: pointer
+}
+
+.state-jobs-container-index-icon:hover i {
+	color: #63a7d5
+}
+
+.state-nonenotify {
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	top: 30%;
+	height: 9%;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	z-index: 99
+}
+
+.state-app-footer {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 75px;
+	top: 585px;
+	font-size: 12px;
+	color: black;
+	background: white;
+	justify-content: space-around;
+	text-align: center;
+	padding: 8px;
+	border-top: 1px solid rgba(109, 108, 108, 0.473);
+	box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.2)
+}
+
+.state-jobs-name i {
+	position: relative;
+	font-size: 22px;
+	text-align: center;
+	cursor: pointer
+}
+
+.banks-bottom-acts-active {
+	color: rgb(20, 127, 165)
+}

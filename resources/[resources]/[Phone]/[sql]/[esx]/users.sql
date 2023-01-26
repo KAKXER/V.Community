@@ -1,0 +1,11 @@
+ALTER TABLE `users` ADD IF NOT EXISTS `apps` TEXT;
+ALTER TABLE `users` ADD IF NOT EXISTS `widget` TEXT;
+ALTER TABLE `users` ADD IF NOT EXISTS `bt` TEXT;
+ALTER TABLE `users` ADD IF NOT EXISTS `charinfo` TEXT;
+ALTER TABLE `users` ADD IF NOT EXISTS `metadata` mediumtext;
+ALTER TABLE `users` ADD IF NOT EXISTS `cryptocurrency` longtext;
+ALTER TABLE `users` ADD IF NOT EXISTS `cryptocurrencytransfers` TEXT;
+ALTER TABLE `users` ADD IF NOT EXISTS `phonePos` TEXT;
+ALTER TABLE `users` ADD IF NOT EXISTS `spotify` TEXT;
+ALTER TABLE `users` ADD IF NOT EXISTS `ringtone` TEXT;
+ALTER TABLE `users` ADD IF NOT EXISTS `first_screen_showed` INT(11) DEFAULT NULL;

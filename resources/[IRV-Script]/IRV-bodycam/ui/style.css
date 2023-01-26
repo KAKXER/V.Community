@@ -1,0 +1,44 @@
+body { 
+    background-color: rgba(0, 0, 0, 0); 
+	margin: 0vw;
+	padding: 0vw;
+    overflow: hidden; 
+    font-family: 'Cast W01 Medium', monospace;
+    font-size: 0.677vw;
+    color: #F8F8FF;
+}
+
+.Blink {
+    animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+}
+
+@keyframes blinker {  
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.top-right{
+    position: absolute;
+    left: 75.2vw;
+    top: 0.7vw;
+    text-align: right;
+}
+
+.top-right-container{
+    float: right;
+    width: auto;
+    text-align: right;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0.26vw;
+    margin: 0.521vw;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    display: none;
+}
+
+.container{
+    width: 100vh;
+    height: 100vh;
+    left: 1.563vw;
+}

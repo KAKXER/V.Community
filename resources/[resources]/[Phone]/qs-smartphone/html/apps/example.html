@@ -1,0 +1,90 @@
+<div class="custom-content">
+    <div class="custom-header">
+        <p>Example App</p>
+    </div>
+    <div class="custom-box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quaerat optio aliquam incidunt pariatur beatae veniam, 
+        repellendus ea iure harum atque commodi ipsum ut aperiam repudiandae ducimus saepe. Temporibus, commodi!</p>
+    </div>
+    <div class="custom-button">
+        <p>Press to test!</p>
+    </div>
+</div>
+
+<script>
+$(document).on('click', '.custom-button', function(e) {
+	QS.Phone.Notifications.Add("./img/apps/example.png", "Example App", "Congratulations, you have created a custom app!")
+})
+</script>
+
+<style>
+.custom-content {
+    font-family: "ios";
+	height: 108%;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	overflow: hidden;
+}
+
+.custom-header {
+    position: relative;
+	height: 80px;
+	width: 100%;
+	background: rgb(226, 226, 226);
+	border-bottom: 1px solid rgb(199 199 199);
+}
+
+.custom-header > p {
+    position: relative;
+	font-size: 20px;
+    top: 30px;
+    left: 85px;
+    padding: 10px;
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.custom-box {
+    position: relative;
+	height: 270px;
+	width: 280px;
+	top: 20px;
+	left: 12px;
+	border-radius: 10px;
+	background-color: rgb(226, 226, 226);
+
+}
+
+.custom-box > p {
+    position: relative;
+	font-size: 18px;
+    top: 5px;
+    padding: 20px;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+.custom-button {
+    position: relative;
+	height: 40px;
+	width: 280px;
+	top: 30px;
+	left: 12px;
+	border-radius: 10px;
+	background-color: rgb(146 177 127);
+    cursor: pointer;
+}
+
+.custom-button:hover {
+	background-color: rgb(143 199 108);
+}
+
+.custom-button > p {
+    position: relative;
+	font-size: 18px;
+    top: 7px;
+    left: 85px;
+    color: white;
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: 600;
+}
+</style>

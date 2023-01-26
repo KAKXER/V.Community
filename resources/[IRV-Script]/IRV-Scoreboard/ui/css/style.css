@@ -1,0 +1,657 @@
+html {
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#Display {
+	opacity: 0;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#info_data {
+	transition: all ease 0.3s;
+	box-shadow: 0vw 0vw 100vw #000000;
+	position: absolute;
+	border-radius: 0.4vw;
+	width: 24.531vw;
+	height: 2.24vw;
+	left: 38.125vw;
+	top: 9.792vw;
+}
+#back_info_i {
+	opacity: 0.15;
+	fill: url(#back_info_i);
+}
+.back_info_i {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 25.469vw;
+	height: 3.177vw;
+	left: 0vw;
+	top: 0vw;
+}
+#back_image_website {
+	fill: rgba(0,0,0,0.2);
+	stroke: rgba(255,255,255,1);
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back_image_website {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 2.708vw;
+	height: 2.604vw;
+	left: 0.313vw;
+	top: 0.313vw;
+}
+#back_image_discord {
+	fill: rgba(0,0,0,0.2);
+	stroke: rgba(255,255,255,1);
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back_image_discord {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 2.708vw;
+	height: 2.604vw;
+	left: 12.76vw;
+	top: 0.313vw;
+}
+#image_website {
+    filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+    position: absolute;
+    width: 2.2vw;
+    height: 2.15vw;
+    left: 0.104vw;
+    top: 0.208vw;
+    overflow: visible;
+}
+#vcommunityir {
+    filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+    left: 2.396vw;
+    top: 0.336vw;
+    position: absolute;
+    overflow: visible;
+    width: 9.896vw;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.406vw;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: -0.015vw;
+}
+#discordggirv {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	left: 14.896vw;
+    top: 0.336vw;
+	position: absolute;
+	overflow: visible;
+	width: 9.323vw;
+	height: 1.875vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.406vw;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: -0.015vw;
+}
+#image_discord {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+    position: absolute;
+	width: 2.17vw;
+    height: 1.873vw;
+    left: 12.552vw;
+    top: 0.365vw;
+    overflow: visible;
+}
+#admin_data {
+	position: absolute;
+	width: 29.479vw;
+	height: 3.854vw;
+	left: 35.26vw;
+	top: 5.26vw;
+	opacity: 0;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#back_police {
+	opacity: 0.15;
+	fill: rgba(255,255,255,1);
+}
+.back_police {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 7.292vw;
+	height: 3.958vw;
+	left: 0vw;
+	top: 0.833vw;
+}
+#back_medic {
+	opacity: 0.15;
+	fill: rgba(255,255,255,1);
+}
+.back_medic {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 7.292vw;
+	height: 3.958vw;
+	left: 7.708vw;
+	top: 0.833vw;
+}
+#back_mechanic {
+	opacity: 0.15;
+	fill: rgba(255,255,255,1);
+}
+.back_mechanic {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 7.292vw;
+	height: 3.958vw;
+	left: 15.417vw;
+	top: 0.833vw;
+}
+#back_taxi {
+	opacity: 0.15;
+	fill: rgba(255,255,255,1);
+}
+.back_taxi {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 7.292vw;
+	height: 3.958vw;
+	left: 23.125vw;
+	top: 0.833vw;
+}
+#back2_police {
+	fill: rgba(0,0,0,0.2);
+
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back2_police {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 6.563vw;
+	height: 3.229vw;
+	left: 0.365vw;
+	top: 1.198vw;
+}
+#back2_medic {
+	fill: rgba(0,0,0,0.2);
+
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back2_medic {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 6.563vw;
+	height: 3.229vw;
+	left: 8.073vw;
+	top: 1.198vw;
+}
+#back2_mechanic {
+	fill: rgba(0,0,0,0.2);
+
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back2_mechanic {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 6.563vw;
+	height: 3.229vw;
+	left: 15.781vw;
+	top: 1.198vw;
+}
+#back2_taxi {
+	fill: rgba(0,0,0,0.2);
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back2_taxi {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 6.563vw;
+	height: 3.229vw;
+	left: 23.49vw;
+	top: 1.198vw;
+}
+#Police {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 0.969));
+	left: 2.083vw;
+	top: 0vw;
+	position: absolute;
+	overflow: visible;
+	width: 2.24vw;
+	height: 1.042vw;
+	line-height: 1.719vw;
+	margin-top: -0.469vw;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.781vw;
+	color: rgba(207,207,207,1);
+}
+#Medic {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 0.969));
+	left: 9.74vw;
+	top: 0vw;
+	position: absolute;
+	overflow: visible;
+	width: 2.344vw;
+	height: 1.042vw;
+	line-height: 1.719vw;
+	margin-top: -0.469vw;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.781vw;
+	color: rgba(207,207,207,1);
+}
+#Mechainc {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 0.969));
+	left: 16.823vw;
+	top: 0vw;
+	position: absolute;
+	overflow: visible;
+	width: 3.594vw;
+	height: 1.042vw;
+	line-height: 1.719vw;
+	margin-top: -0.469vw;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.781vw;
+	color: rgba(207,207,207,1);
+}
+#Taxi {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 0.969));
+	left: 25.521vw;
+	top: 0vw;
+	position: absolute;
+	overflow: visible;
+	width: 1.615vw;
+	height: 1.042vw;
+	line-height: 1.719vw;
+	margin-top: -0.469vw;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.781vw;
+	color: rgba(207,207,207,1);
+}
+#tedad_police {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.502));
+	left: 0.417vw;
+	    top: 1.302vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.573vw;
+	height: 2.708vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.823vw;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: -0.015vw;
+}
+#tedad_medic {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.502));
+	left: 8.125vw;
+	    top: 1.302vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.573vw;
+	height: 2.708vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.823vw;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: -0.015vw;
+}
+#tedad_taxi {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.502));
+	left: 23.542vw;
+	top: 1.302vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.573vw;
+	height: 2.708vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.823vw;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: -0.015vw;
+}
+#tedad_mechanic {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.502));
+	left: 15.833vw;
+	    top: 1.302vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.573vw;
+	height: 2.708vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.823vw;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: -0.015vw;
+}
+#user_data {
+	position: absolute;
+	width: 29.479vw;
+	height: 3.854vw;
+	left: 35.26vw;
+	top: 0.677vw;
+	overflow: visible;
+}
+#back_playing {
+	opacity: 0.15;
+	fill: rgba(255,255,255,1);
+}
+.back_playing {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 7.292vw;
+	height: 3.958vw;
+	left: 0vw;
+	top: 0.833vw;
+}
+#back_players {
+	opacity: 0.15;
+	fill: rgba(255,255,255,1);
+}
+.back_players {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 7.292vw;
+	height: 3.958vw;
+	left: 7.708vw;
+	top: 0.833vw;
+}
+#back_admins {
+	opacity: 0.15;
+	fill: rgba(255,255,255,1);
+}
+.back_admins {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 7.292vw;
+	height: 3.958vw;
+	left: 15.417vw;
+	top: 0.833vw;
+}
+#back_id {
+	opacity: 0.15;
+	fill: rgba(255,255,255,1);
+}
+.back_id {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 1));
+	position: absolute;
+	overflow: visible;
+	width: 7.292vw;
+	height: 3.958vw;
+	left: 23.125vw;
+	top: 0.833vw;
+}
+#back2_admins {
+	fill: rgba(0,0,0,0.2);
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back2_admins {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 6.563vw;
+	height: 3.229vw;
+	left: 15.781vw;
+	top: 1.198vw;
+}
+#back2_players {
+	fill: rgba(0,0,0,0.2);
+
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back2_players {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 6.563vw;
+	height: 3.229vw;
+	left: 8.073vw;
+	top: 1.198vw;
+}
+#back2_playing {
+	fill: rgba(0,0,0,0.2);
+
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back2_playing {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 6.563vw;
+	height: 3.229vw;
+	left: 0.365vw;
+	top: 1.198vw;
+}
+#back2_id {
+	fill: rgba(0,0,0,0.2);
+
+	stroke-width: 0.052vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.back2_id {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 6.563vw;
+	height: 3.229vw;
+	left: 23.49vw;
+	top: 1.198vw;
+}
+#Playing_For {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 0.969));
+	left: 0.313vw;
+	top: 0vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.833vw;
+	height: 1.042vw;
+	line-height: 1.719vw;
+	margin-top: -0.469vw;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.781vw;
+	color: rgba(207,207,207,1);
+}
+#Players {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 0.969));
+	left: 9.531vw;
+	top: 0vw;
+	position: absolute;
+	overflow: visible;
+	width: 2.76vw;
+	height: 1.042vw;
+	line-height: 1.719vw;
+	margin-top: -0.469vw;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.781vw;
+	color: rgba(207,207,207,1);
+}
+#Admins {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 0.969));
+	left: 17.188vw;
+	top: 0vw;
+	position: absolute;
+	overflow: visible;
+	width: 2.865vw;
+	height: 1.042vw;
+	line-height: 1.719vw;
+	margin-top: -0.469vw;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.781vw;
+	color: rgba(207,207,207,1);
+}
+#Your_ID {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 0.969));
+	left: 23.438vw;
+	top: 0vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.833vw;
+	height: 1.042vw;
+	line-height: 1.719vw;
+	margin-top: -0.469vw;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.781vw;
+	color: rgba(207,207,207,1);
+}
+#tedad_playing {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.502));
+	left: 0.417vw;
+	    top: 1.302vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.573vw;
+	height: 2.708vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.823vw;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: -0.015vw;
+}
+#tedad_players {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.502));
+	left: 8.125vw;
+	    top: 1.302vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.573vw;
+	height: 2.708vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.823vw;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: -0.015vw;
+}
+#tedad_admins {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.502));
+	left: 15.833vw;
+	    top: 1.302vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.573vw;
+	height: 2.708vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.823vw;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: -0.015vw;
+}
+#tedad_id {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(0, 0, 0, 0.502));
+	left: 23.542vw;
+	    top: 1.302vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.573vw;
+	height: 2.708vw;
+	text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.823vw;
+	color: rgba(255,255,255,0.6);
+	letter-spacing: -0.015vw;
+}

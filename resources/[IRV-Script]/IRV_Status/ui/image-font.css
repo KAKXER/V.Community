@@ -1,0 +1,11 @@
+@font-face
+{
+   font-family: "Material Icons";
+   font-display: swap;
+   src: url('font/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: "Jersey 716";
+   src: url("./font/font1.ttf");
+}

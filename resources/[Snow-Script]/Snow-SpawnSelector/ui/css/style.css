@@ -1,0 +1,423 @@
+
+html {
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#Display {
+	opacity: 0;
+	transition: all ease 0.3s;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+#background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	left: 0vw;
+	top: 0vw;
+	overflow: visible;
+}
+#Image_Back_Police_Department {
+	filter: drop-shadow(0vw 0.156vw 20vw rgba(0, 0, 0, 1)) blur(0.26vw);
+	position: absolute;
+	width: 20.638vw;
+	height: 36.979vw;
+	left: 6.488vw;
+	top: 9.635vw;
+	overflow: visible;
+	transition: filter .2s ease-in-out;
+}
+
+#Image_Back_Police_Department:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+}
+#Image_Back_Hotel:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+}
+#Image_Back_Sandy_Shores:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+}
+#Image_Back_Ambulance_:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+}
+#Image_Back_Sandy_Shores {
+	filter: drop-shadow(0vw 0.156vw 20vw rgba(0, 0, 0, 1)) blur(0.26vw);
+	position: absolute;
+	width: 20.638vw;
+	height: 36.979vw;
+	left: 50.729vw;
+	top: 9.635vw;
+	overflow: visible;
+	transition: filter .2s ease-in-out;
+}
+#Image_Back_Ambulance_ {
+	filter: drop-shadow(0vw 0.156vw 20vw rgba(0, 0, 0, 1)) blur(0.26vw);
+	position: absolute;
+	width: 20.638vw;
+	height: 36.979vw;
+	left: 28.60vw;
+	top: 9.635vw;
+	overflow: visible;
+	transition: filter .2s ease-in-out;
+}
+#Image_Back_Hotel {
+	filter: drop-shadow(0vw 0.156vw 20vw rgba(0, 0, 0, 1)) blur(0.26vw);
+	position: absolute;
+	width: 20.638vw;
+	height: 36.979vw;
+	left: 72.872vw;
+	top: 9.635vw;
+	overflow: visible;
+	transition: filter .2s ease-in-out;
+}
+#Text_Asli_Bala {
+	filter: drop-shadow(0vw 0.156vw 20vw rgba(0, 0, 0, 1));
+	left: 33.698vw;
+	top: 1.354vw;
+	position: absolute;
+	overflow: visible;
+	width: 32.708vw;
+	height: 3.49vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.604vw;
+	color: rgba(159,159,159,1);
+	text-transform: uppercase;
+}
+#Players {
+	filter: drop-shadow(0vw 0.156vw 20vw rgba(0, 0, 0, 1));
+	left: 33.698vw;
+	top: 4.635vw;
+	position: absolute;
+	overflow: visible;
+	width: 32.708vw;
+	height: 1.406vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.042vw;
+	color: rgba(159,159,159,1);
+	text-transform: uppercase;
+}
+#Dokme_Bastan {
+	background-color: rgb(11, 132, 136);
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgb(11, 132, 136));
+	border-radius: 1vw;
+    left: 95.9vw;
+    top: 1.2vw;
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Segoe UI, Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    color: rgba(112,112,112,1);
+}
+#Police_Department {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	transform: rotate(-21deg);
+    left: 11.3vw;
+    top: 11vw;
+	position: absolute;
+	overflow: visible;
+	width: 12.292vw;
+	height: 1.719vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.302vw;
+	color: rgba(201,201,201,1);
+}
+#Ambulance {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	transform: rotate(20deg);
+	left: 36.51vw;
+    top: 11.823vw;
+	position: absolute;
+	overflow: visible;
+	width: 7.656vw;
+	height: 1.719vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.302vw;
+	color: rgba(201,201,201,1);
+}
+#Sandy_Shores {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	transform: rotate(-20deg);
+	left: 56.771vw;
+    top: 11.146vw;
+	position: absolute;
+	overflow: visible;
+	width: 9.167vw;
+	height: 1.719vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.302vw;
+	color: rgba(201,201,201,1);
+}
+#Hotel {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	transform: rotate(20deg);
+	left: 82.188vw;
+    top: 11.51vw;
+	position: absolute;
+	overflow: visible;
+	width: 4.063vw;
+	height: 1.719vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.302vw;
+	color: rgba(201,201,201,1);
+}
+#Image_PD {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	position: absolute;
+	width: 2.865vw;
+	height: 2.76vw;
+	left: 9.271vw;
+	top: 13.073vw;
+	overflow: visible;
+}
+#Iamge_Kochik_Ambulance {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	position: absolute;
+	width: 2.865vw;
+	height: 2.813vw;
+	left: 34.271vw;
+	top: 9.531vw;
+	overflow: visible;
+}
+#Image_Kochik_Sandy_Shores {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	position: absolute;
+	width: 2.813vw;
+	height: 2.76vw;
+	left: 54.688vw;
+	top: 12.604vw;
+	overflow: visible;
+}
+#Image_Kochik_Hotel {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	position: absolute;
+	width: 2.865vw;
+	height: 2.813vw;
+	left: 79.896vw;
+	top: 9.844vw;
+	overflow: visible;
+}
+#Image_PD_ {
+	position: absolute;
+	width: 10.781vw;
+	height: 10.781vw;
+	left: 11.406vw;
+	top: 18.854vw;
+	overflow: visible;
+}
+#Image_Ambulance {
+	position: absolute;
+	width: 10.781vw;
+	height: 10.781vw;
+	left: 33.542vw;
+	top: 18.854vw;
+	overflow: visible;
+}
+#Image_Hotel {
+	position: absolute;
+	width: 10.781vw;
+	height: 10.781vw;
+	left: 77.344vw;
+	top: 18.854vw;
+	overflow: visible;
+}#Image_Sandy_Shores {
+	filter: drop-shadow(0vw 0.156vw 0.104vw rgba(0, 0, 0, 0.502));
+	position: absolute;
+	width: 10.781vw;
+	height: 10.781vw;
+	left: 55.26vw;
+	top: 18.854vw;
+	overflow: visible;
+}
+#Text_PD {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	left: 7.917vw;
+	top: 30.677vw;
+	position: absolute;
+	overflow: visible;
+	width: 17.813vw;
+	height: 2.813vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.042vw;
+	color: rgba(159,159,159,1);
+}
+#Text_Ambulance {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	left: 29.792vw;
+	top: 30.677vw;
+	position: absolute;
+	overflow: visible;
+	width: 17.813vw;
+	height: 2.813vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.042vw;
+	color: rgba(159,159,159,1);
+}
+#Text_Ambulance:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+    transition: all ease 0.6s;
+	color: aliceblue;
+}
+#Text_Hotel:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+    transition: all ease 0.6s;
+	color: aliceblue;
+}
+#Text_Sandy_Shores:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+    transition: all ease 0.6s;
+	color: aliceblue;
+}
+#Text_PD:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+    transition: all ease 0.6s;
+	color: aliceblue;
+}
+#Text_Hotel {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	left: 73.854vw;
+	top: 30.677vw;
+	position: absolute;
+	overflow: visible;
+	width: 17.813vw;
+	height: 2.813vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.042vw;
+	color: rgba(159,159,159,1);
+}
+#Text_Sandy_Shores {
+	filter: drop-shadow(0vw 0.156vw 0.156vw rgba(0, 0, 0, 1));
+	left: 52.1vw;
+	top: 30.677vw;
+	position: absolute;
+	overflow: visible;
+	width: 17.813vw;
+	height: 2.813vw;
+	text-align: center;
+	font-family: Segoe UI, Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.042vw;
+	color: rgba(159,159,159,1);
+}
+
+#Back_Asli_Spawn {
+	fill: rgba(8,24,25,0.78);
+}
+.Back_Asli_Spawn {
+	filter: drop-shadow(0vw 0.156vw 0.313vw rgba(8, 24, 25, 1));
+	position: absolute;
+	overflow: visible;
+	width: 29.583vw;
+	height: 6.406vw;
+	left: 35.677vw;
+	top: 50.781vw;
+}
+#Dokme_Spawn {
+	fill: rgba(0,79,91,1);
+}
+.Dokme_Spawn {
+	filter: drop-shadow(0vw 0vw 20vw rgba(9, 62, 70, 1));
+	position: absolute;
+	overflow: visible;
+	width: 10.313vw;
+	height: 5.417vw;
+	left: 55.938vw;
+	top: 52.24vw;
+}
+span:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+	fill: rgb(0, 221, 255);
+    transition: all ease 0.6s;
+	color: aliceblue;
+}
+
+.Dokme_Spawn:hover {
+	filter: drop-shadow(0vw 0vw 5vw rgb(0, 211, 243));
+	fill: rgb(0, 221, 255);
+    transition: all ease 0.6s;
+	color: aliceblue;
+}
+
+.Khat_Spawn {
+	filter: drop-shadow(0vw 0vw 0.313vw rgba(9, 62, 70, 1));
+	overflow: visible;
+    position: absolute;
+    width: 28.8vw;
+    left: 35.6vw;
+    top: 50.8vw;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Image_Spawn {
+    filter: drop-shadow(rgb(0, 0, 0) 0vw 0.156vw 20vw);
+    position: absolute;
+    width: 4.688vw;
+    left: 36.458vw;
+    top: 51.198vw;
+    overflow: visible;
+}
+#Text_Spawn {
+	left: 39.375vw;
+	top: 52.396vw;
+	position: absolute;
+	overflow: visible;
+	width: 14.688vw;
+	height: 1.719vw;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.302vw;
+	color: rgba(112,112,112,1);
+}
+#SPAWN {
+	left: 56.823vw;
+	top: 52.396vw;
+	bottom: 52.396vw;
+	position: absolute;
+	overflow: visible;
+	width: 5.469vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.406vw;
+	color: rgba(112,112,112,1);
+}

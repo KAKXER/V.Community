@@ -1,0 +1,8 @@
+# package
+package-lock.json
+node_modules/
+
+# Steam File
+IRV-MapPack/
+IRV-CarPack/
+IRV-EUP/
