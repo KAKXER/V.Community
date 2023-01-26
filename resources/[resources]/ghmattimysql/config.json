@@ -3,7 +3,7 @@
     "password": "",
     "host": "localhost",
     "port": 3306,
-    "database": "essential",
+    "database": "database",
 	"keepalive": 60,
     "connectTimeout": 60000,
     "acquireTimeout": 60000,

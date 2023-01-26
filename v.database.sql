@@ -12,11 +12,11 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
--- Dumping database structure for essential
-CREATE DATABASE IF NOT EXISTS `essential` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
-USE `essential`;
+-- Dumping database structure for database
+CREATE DATABASE IF NOT EXISTS `database` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `database`;
 
--- Dumping structure for table essential.addon_account
+-- Dumping structure for table database.addon_account
 CREATE TABLE IF NOT EXISTS `addon_account` (
   `name` varchar(60) NOT NULL,
   `label` varchar(100) NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `addon_account` (
   PRIMARY KEY (`name`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.addon_account: ~13 rows (approximately)
+-- Dumping data for table database.addon_account: ~13 rows (approximately)
 /*!40000 ALTER TABLE `addon_account` DISABLE KEYS */;
 INSERT INTO `addon_account` (`name`, `label`, `shared`) VALUES
 	('society_ambulance', 'ambulance', 1);
@@ -56,7 +56,7 @@ INSERT INTO `addon_account` (`name`, `label`, `shared`) VALUES
 	('society_weazel', 'Weazel News', 1);
 /*!40000 ALTER TABLE `addon_account` ENABLE KEYS */;
 
--- Dumping structure for table essential.addon_account_data
+-- Dumping structure for table database.addon_account_data
 CREATE TABLE IF NOT EXISTS `addon_account_data` (
   `account_name` varchar(100) DEFAULT NULL,
   `money` int(11) NOT NULL,
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `addon_account_data` (
   KEY `index_addon_account_data_account_name` (`account_name`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.addon_account_data: ~15 rows (approximately)
+-- Dumping data for table database.addon_account_data: ~15 rows (approximately)
 /*!40000 ALTER TABLE `addon_account_data` DISABLE KEYS */;
 INSERT INTO `addon_account_data` (`account_name`, `money`, `owner`) VALUES
 	('society_police', 0, NULL);
@@ -99,7 +99,7 @@ INSERT INTO `addon_account_data` (`account_name`, `money`, `owner`) VALUES
 	('society_uwu', 1000, NULL);
 /*!40000 ALTER TABLE `addon_account_data` ENABLE KEYS */;
 
--- Dumping structure for table essential.addon_inventory
+-- Dumping structure for table database.addon_inventory
 CREATE TABLE IF NOT EXISTS `addon_inventory` (
   `name` varchar(60) NOT NULL,
   `label` varchar(100) NOT NULL,
@@ -107,7 +107,7 @@ CREATE TABLE IF NOT EXISTS `addon_inventory` (
   PRIMARY KEY (`name`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.addon_inventory: ~13 rows (approximately)
+-- Dumping data for table database.addon_inventory: ~13 rows (approximately)
 /*!40000 ALTER TABLE `addon_inventory` DISABLE KEYS */;
 INSERT INTO `addon_inventory` (`name`, `label`, `shared`) VALUES
 	('property', 'Property', 0);
@@ -139,7 +139,7 @@ INSERT INTO `addon_inventory` (`name`, `label`, `shared`) VALUES
 	('society_weazel', 'Weazel News', 1);
 /*!40000 ALTER TABLE `addon_inventory` ENABLE KEYS */;
 
--- Dumping structure for table essential.addon_inventory_items
+-- Dumping structure for table database.addon_inventory_items
 CREATE TABLE IF NOT EXISTS `addon_inventory_items` (
   `inventory_name` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL,
@@ -150,11 +150,11 @@ CREATE TABLE IF NOT EXISTS `addon_inventory_items` (
   KEY `index_addon_inventory_inventory_name` (`inventory_name`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.addon_inventory_items: ~0 rows (approximately)
+-- Dumping data for table database.addon_inventory_items: ~0 rows (approximately)
 /*!40000 ALTER TABLE `addon_inventory_items` DISABLE KEYS */;
 /*!40000 ALTER TABLE `addon_inventory_items` ENABLE KEYS */;
 
--- Dumping structure for table essential.adminjaillog
+-- Dumping structure for table database.adminjaillog
 CREATE TABLE IF NOT EXISTS `adminjaillog` (
   `id` int(100) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) NOT NULL,
@@ -165,11 +165,11 @@ CREATE TABLE IF NOT EXISTS `adminjaillog` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.adminjaillog: ~0 rows (approximately)
+-- Dumping data for table database.adminjaillog: ~0 rows (approximately)
 /*!40000 ALTER TABLE `adminjaillog` DISABLE KEYS */;
 /*!40000 ALTER TABLE `adminjaillog` ENABLE KEYS */;
 
--- Dumping structure for table essential.alias
+-- Dumping structure for table database.alias
 CREATE TABLE IF NOT EXISTS `alias` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) NOT NULL,
@@ -178,11 +178,11 @@ CREATE TABLE IF NOT EXISTS `alias` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- Dumping data for table essential.alias: ~0 rows (approximately)
+-- Dumping data for table database.alias: ~0 rows (approximately)
 /*!40000 ALTER TABLE `alias` DISABLE KEYS */;
 /*!40000 ALTER TABLE `alias` ENABLE KEYS */;
 
--- Dumping structure for table essential.allhousing
+-- Dumping structure for table database.allhousing
 CREATE TABLE IF NOT EXISTS `allhousing` (
   `id` int(11) NOT NULL,
   `owner` varchar(50) NOT NULL,
@@ -206,11 +206,11 @@ CREATE TABLE IF NOT EXISTS `allhousing` (
   `last_repayment` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.allhousing: ~0 rows (approximately)
+-- Dumping data for table database.allhousing: ~0 rows (approximately)
 /*!40000 ALTER TABLE `allhousing` DISABLE KEYS */;
 /*!40000 ALTER TABLE `allhousing` ENABLE KEYS */;
 
--- Dumping structure for table essential.bansql
+-- Dumping structure for table database.bansql
 CREATE TABLE IF NOT EXISTS `bansql` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Steam` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
@@ -226,11 +226,11 @@ CREATE TABLE IF NOT EXISTS `bansql` (
   KEY `ID` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=274 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.bansql: ~0 rows (approximately)
+-- Dumping data for table database.bansql: ~0 rows (approximately)
 /*!40000 ALTER TABLE `bansql` DISABLE KEYS */;
 /*!40000 ALTER TABLE `bansql` ENABLE KEYS */;
 
--- Dumping structure for table essential.billing
+-- Dumping structure for table database.billing
 CREATE TABLE IF NOT EXISTS `billing` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(255) NOT NULL,
@@ -243,22 +243,22 @@ CREATE TABLE IF NOT EXISTS `billing` (
   KEY `identifier` (`identifier`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=256 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.billing: ~0 rows (approximately)
+-- Dumping data for table database.billing: ~0 rows (approximately)
 /*!40000 ALTER TABLE `billing` DISABLE KEYS */;
 /*!40000 ALTER TABLE `billing` ENABLE KEYS */;
 
--- Dumping structure for table essential.counter
+-- Dumping structure for table database.counter
 CREATE TABLE IF NOT EXISTS `counter` (
   `owner` varchar(255) NOT NULL,
   `type` varchar(50) NOT NULL,
   `job` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.counter: ~0 rows (approximately)
+-- Dumping data for table database.counter: ~0 rows (approximately)
 /*!40000 ALTER TABLE `counter` DISABLE KEYS */;
 /*!40000 ALTER TABLE `counter` ENABLE KEYS */;
 
--- Dumping structure for table essential.crypto_transactions
+-- Dumping structure for table database.crypto_transactions
 CREATE TABLE IF NOT EXISTS `crypto_transactions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(46) DEFAULT NULL,
@@ -269,11 +269,11 @@ CREATE TABLE IF NOT EXISTS `crypto_transactions` (
   KEY `identifier` (`identifier`)
 ) ENGINE=InnoDB AUTO_INCREMENT=753 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.crypto_transactions: ~0 rows (approximately)
+-- Dumping data for table database.crypto_transactions: ~0 rows (approximately)
 /*!40000 ALTER TABLE `crypto_transactions` DISABLE KEYS */;
 /*!40000 ALTER TABLE `crypto_transactions` ENABLE KEYS */;
 
--- Dumping structure for table essential.darkchat_messages
+-- Dumping structure for table database.darkchat_messages
 CREATE TABLE IF NOT EXISTS `darkchat_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `password` text NOT NULL,
@@ -284,11 +284,11 @@ CREATE TABLE IF NOT EXISTS `darkchat_messages` (
   KEY `id` (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.darkchat_messages: ~0 rows (approximately)
+-- Dumping data for table database.darkchat_messages: ~0 rows (approximately)
 /*!40000 ALTER TABLE `darkchat_messages` DISABLE KEYS */;
 /*!40000 ALTER TABLE `darkchat_messages` ENABLE KEYS */;
 
--- Dumping structure for table essential.datastore
+-- Dumping structure for table database.datastore
 CREATE TABLE IF NOT EXISTS `datastore` (
   `name` varchar(60) NOT NULL,
   `label` varchar(100) NOT NULL,
@@ -296,7 +296,7 @@ CREATE TABLE IF NOT EXISTS `datastore` (
   PRIMARY KEY (`name`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.datastore: ~17 rows (approximately)
+-- Dumping data for table database.datastore: ~17 rows (approximately)
 /*!40000 ALTER TABLE `datastore` DISABLE KEYS */;
 INSERT INTO `datastore` (`name`, `label`, `shared`) VALUES
 	('housing', 'Housing', 0);
@@ -336,14 +336,14 @@ INSERT INTO `datastore` (`name`, `label`, `shared`) VALUES
 	('user_mask', 'Mask', 0);
 /*!40000 ALTER TABLE `datastore` ENABLE KEYS */;
 
--- Dumping structure for table essential.datastore_data
+-- Dumping structure for table database.datastore_data
 CREATE TABLE IF NOT EXISTS `datastore_data` (
   `name` varchar(60) NOT NULL,
   `owner` varchar(60) DEFAULT NULL,
   `data` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.datastore_data: ~18 rows (approximately)
+-- Dumping data for table database.datastore_data: ~18 rows (approximately)
 /*!40000 ALTER TABLE `datastore_data` DISABLE KEYS */;
 INSERT INTO `datastore_data` (`name`, `owner`, `data`) VALUES
 	('society_ambulance', NULL, '{}');
@@ -383,14 +383,14 @@ INSERT INTO `datastore_data` (`name`, `owner`, `data`) VALUES
 	('user_mask', 'steam:1100001452540bf', '{}');
 /*!40000 ALTER TABLE `datastore_data` ENABLE KEYS */;
 
--- Dumping structure for table essential.divisions
+-- Dumping structure for table database.divisions
 CREATE TABLE IF NOT EXISTS `divisions` (
   `owner` varchar(50) NOT NULL,
   `name` varchar(50) NOT NULL,
   `label` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.divisions: ~22 rows (approximately)
+-- Dumping data for table database.divisions: ~22 rows (approximately)
 /*!40000 ALTER TABLE `divisions` DISABLE KEYS */;
 INSERT INTO `divisions` (`owner`, `name`, `label`) VALUES
 	('police', 'hr', 'Human Resources');
@@ -438,7 +438,7 @@ INSERT INTO `divisions` (`owner`, `name`, `label`) VALUES
 	('police', 'ia', 'IA');
 /*!40000 ALTER TABLE `divisions` ENABLE KEYS */;
 
--- Dumping structure for table essential.division_grades
+-- Dumping structure for table database.division_grades
 CREATE TABLE IF NOT EXISTS `division_grades` (
   `division_owner` varchar(50) NOT NULL,
   `division` varchar(50) NOT NULL,
@@ -447,7 +447,7 @@ CREATE TABLE IF NOT EXISTS `division_grades` (
   `label` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.division_grades: ~21 rows (approximately)
+-- Dumping data for table database.division_grades: ~21 rows (approximately)
 /*!40000 ALTER TABLE `division_grades` DISABLE KEYS */;
 INSERT INTO `division_grades` (`division_owner`, `division`, `grade`, `name`, `label`) VALUES
 	('police', 'hr', 0, ' Human Resource', ' Human Resource');
@@ -497,7 +497,7 @@ INSERT INTO `division_grades` (`division_owner`, `division`, `grade`, `name`, `l
 	('police', 'ia', 0, 'IA', 'IA');
 /*!40000 ALTER TABLE `division_grades` ENABLE KEYS */;
 
--- Dumping structure for table essential.dpkeybinds
+-- Dumping structure for table database.dpkeybinds
 CREATE TABLE IF NOT EXISTS `dpkeybinds` (
   `id` varchar(50) DEFAULT NULL,
   `keybind1` varchar(50) DEFAULT 'num4',
@@ -514,7 +514,7 @@ CREATE TABLE IF NOT EXISTS `dpkeybinds` (
   `emote6` varchar(255) DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
--- Dumping data for table essential.dpkeybinds: ~12 rows (approximately)
+-- Dumping data for table database.dpkeybinds: ~12 rows (approximately)
 /*!40000 ALTER TABLE `dpkeybinds` DISABLE KEYS */;
 INSERT INTO `dpkeybinds` (`id`, `keybind1`, `emote1`, `keybind2`, `emote2`, `keybind3`, `emote3`, `keybind4`, `emote4`, `keybind5`, `emote5`, `keybind6`, `emote6`) VALUES
 	('steam:11000011bf03921', 'num4', '', 'num5', '', 'num6', '', 'num7', '', 'num8', '', 'num9', '');
@@ -542,7 +542,7 @@ INSERT INTO `dpkeybinds` (`id`, `keybind1`, `emote1`, `keybind2`, `emote2`, `key
 	('steam:1100001470c625d', 'num4', '', 'num5', '', 'num6', '', 'num7', '', 'num8', '', 'num9', '');
 /*!40000 ALTER TABLE `dpkeybinds` ENABLE KEYS */;
 
--- Dumping structure for table essential.finelog
+-- Dumping structure for table database.finelog
 CREATE TABLE IF NOT EXISTS `finelog` (
   `id` int(100) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) NOT NULL,
@@ -555,7 +555,7 @@ CREATE TABLE IF NOT EXISTS `finelog` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.finelog: ~11 rows (approximately)
+-- Dumping data for table database.finelog: ~11 rows (approximately)
 /*!40000 ALTER TABLE `finelog` DISABLE KEYS */;
 INSERT INTO `finelog` (`id`, `identifier`, `name`, `oocname`, `reason`, `fineamount`, `punisher`, `date`) VALUES
 	(15, 'steam:11000014461fd21', 'senior_sezar', 'LORDSEZAR', 'fear rp', 100000, 'HEDVUCK', 1636540002);
@@ -583,7 +583,7 @@ INSERT INTO `finelog` (`id`, `identifier`, `name`, `oocname`, `reason`, `fineamo
 	(26, 'steam:1100001452540bf', 'KAKXER BELA', 'KAKXER', 'ds', 10, 'KAKXER', 1672082869);
 /*!40000 ALTER TABLE `finelog` ENABLE KEYS */;
 
--- Dumping structure for table essential.fines
+-- Dumping structure for table database.fines
 CREATE TABLE IF NOT EXISTS `fines` (
   `id` int(100) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) NOT NULL,
@@ -594,11 +594,11 @@ CREATE TABLE IF NOT EXISTS `fines` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.fines: ~0 rows (approximately)
+-- Dumping data for table database.fines: ~0 rows (approximately)
 /*!40000 ALTER TABLE `fines` DISABLE KEYS */;
 /*!40000 ALTER TABLE `fines` ENABLE KEYS */;
 
--- Dumping structure for table essential.fine_types
+-- Dumping structure for table database.fine_types
 CREATE TABLE IF NOT EXISTS `fine_types` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `label` varchar(255) DEFAULT NULL,
@@ -607,7 +607,7 @@ CREATE TABLE IF NOT EXISTS `fine_types` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.fine_types: ~54 rows (approximately)
+-- Dumping data for table database.fine_types: ~54 rows (approximately)
 /*!40000 ALTER TABLE `fine_types` DISABLE KEYS */;
 INSERT INTO `fine_types` (`id`, `label`, `amount`, `category`) VALUES
 	(1, 'Aloodegi soti', 200, 0);
@@ -717,13 +717,13 @@ INSERT INTO `fine_types` (`id`, `label`, `amount`, `category`) VALUES
 	(53, 'Mojavez Aslahe', 15000, 1);
 /*!40000 ALTER TABLE `fine_types` ENABLE KEYS */;
 
--- Dumping structure for table essential.gangs
+-- Dumping structure for table database.gangs
 CREATE TABLE IF NOT EXISTS `gangs` (
   `name` varchar(254) DEFAULT NULL,
   `label` varchar(254) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.gangs: ~4 rows (approximately)
+-- Dumping data for table database.gangs: ~4 rows (approximately)
 /*!40000 ALTER TABLE `gangs` DISABLE KEYS */;
 INSERT INTO `gangs` (`name`, `label`) VALUES
 	('nogang', 'nogang');
@@ -735,7 +735,7 @@ INSERT INTO `gangs` (`name`, `label`) VALUES
 	('BAx', 'gang');
 /*!40000 ALTER TABLE `gangs` ENABLE KEYS */;
 
--- Dumping structure for table essential.gangs_data
+-- Dumping structure for table database.gangs_data
 CREATE TABLE IF NOT EXISTS `gangs_data` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `logo` longtext NOT NULL DEFAULT '0',
@@ -772,7 +772,7 @@ CREATE TABLE IF NOT EXISTS `gangs_data` (
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.gangs_data: ~3 rows (approximately)
+-- Dumping data for table database.gangs_data: ~3 rows (approximately)
 /*!40000 ALTER TABLE `gangs_data` DISABLE KEYS */;
 INSERT INTO `gangs_data` (`ID`, `logo`, `gang_name`, `blip`, `armory`, `locker`, `boss`, `vehicles`, `veh`, `vehprop`, `vehdel`, `vehspawn`, `webhook`, `bulletproof`, `search`, `expire_time`, `register_time`, `vest_access`, `invite_access`, `blip_sprite`, `blip_color`, `armory_access`, `gangsblip`, `invperm`, `icon`, `garage_access`, `logpower`, `slot`, `gps`, `gps_color`, `xp`, `rank`) VALUES
 	(38, '0', 'asghar', '{"y":81.76506805419922,"x":-1294.924560546875,"z":55.42139434814453}', '{"y":79.64086151123047,"x":-1287.6600341796876,"z":53.9058609008789}', '{"y":78.6995849609375,"x":-1283.153076171875,"z":53.90567398071289}', '{"y":81.04525756835938,"x":-1280.75830078125,"z":53.91144943237305}', '[]', '{"y":84.84817504882813,"x":-1282.8814697265626,"z":53.90581512451172}', '[]', '{"y":87.18743896484375,"x":-1286.041015625,"z":53.9156379699707}', '{"a":66.96993255615235,"x":-1292.577392578125,"y":90.85733032226563,"z":54.91376113891601}', NULL, 0, '1', '2032-10-19', NULL, 0, 6, 1, 1, 0, 0, 6, 'https://cdn.discordapp.com/attachments/996093699060678677/1017286980276600842/Mafia.png?size=4096', 0, 0, 10, NULL, 1, 0, 0);
@@ -782,14 +782,14 @@ INSERT INTO `gangs_data` (`ID`, `logo`, `gang_name`, `blip`, `armory`, `locker`,
 	(40, '0', 'BAx', NULL, NULL, NULL, NULL, '[]', NULL, '[]', NULL, NULL, NULL, 0, NULL, '2023-02-14', NULL, 0, 6, 1, 1, 0, 0, 6, 'https://cdn.discordapp.com/attachments/996093699060678677/1017286980276600842/Mafia.png?size=4096', 0, 0, 10, NULL, 1, 0, 0);
 /*!40000 ALTER TABLE `gangs_data` ENABLE KEYS */;
 
--- Dumping structure for table essential.gang_account
+-- Dumping structure for table database.gang_account
 CREATE TABLE IF NOT EXISTS `gang_account` (
   `name` varchar(254) DEFAULT NULL,
   `label` varchar(254) DEFAULT NULL,
   `shared` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.gang_account: ~3 rows (approximately)
+-- Dumping data for table database.gang_account: ~3 rows (approximately)
 /*!40000 ALTER TABLE `gang_account` DISABLE KEYS */;
 INSERT INTO `gang_account` (`name`, `label`, `shared`) VALUES
 	('gang_asghar', 'gang', 1);
@@ -799,7 +799,7 @@ INSERT INTO `gang_account` (`name`, `label`, `shared`) VALUES
 	('gang_bax', 'gang', 1);
 /*!40000 ALTER TABLE `gang_account` ENABLE KEYS */;
 
--- Dumping structure for table essential.gang_account_data
+-- Dumping structure for table database.gang_account_data
 CREATE TABLE IF NOT EXISTS `gang_account_data` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `gang_name` varchar(254) DEFAULT NULL,
@@ -809,7 +809,7 @@ CREATE TABLE IF NOT EXISTS `gang_account_data` (
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.gang_account_data: ~3 rows (approximately)
+-- Dumping data for table database.gang_account_data: ~3 rows (approximately)
 /*!40000 ALTER TABLE `gang_account_data` DISABLE KEYS */;
 INSERT INTO `gang_account_data` (`ID`, `gang_name`, `money`, `pay`, `owner`) VALUES
 	(22, 'gang_asghar', 0, NULL, NULL);
@@ -819,7 +819,7 @@ INSERT INTO `gang_account_data` (`ID`, `gang_name`, `money`, `pay`, `owner`) VAL
 	(24, 'gang_bax', 0, NULL, NULL);
 /*!40000 ALTER TABLE `gang_account_data` ENABLE KEYS */;
 
--- Dumping structure for table essential.gang_grades
+-- Dumping structure for table database.gang_grades
 CREATE TABLE IF NOT EXISTS `gang_grades` (
   `ID` int(11) NOT NULL,
   `gang_name` varchar(50) DEFAULT NULL,
@@ -831,7 +831,7 @@ CREATE TABLE IF NOT EXISTS `gang_grades` (
   `skin_female` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.gang_grades: ~19 rows (approximately)
+-- Dumping data for table database.gang_grades: ~19 rows (approximately)
 /*!40000 ALTER TABLE `gang_grades` DISABLE KEYS */;
 INSERT INTO `gang_grades` (`ID`, `gang_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
 	(0, 'nogang', 0, 'nogang', 'nogang', 0, '[]', '[]');
@@ -873,7 +873,7 @@ INSERT INTO `gang_grades` (`ID`, `gang_name`, `grade`, `name`, `label`, `salary`
 	(0, 'BAx', 6, 'Rank 6', 'Kingpin', 600, '[]', '[]');
 /*!40000 ALTER TABLE `gang_grades` ENABLE KEYS */;
 
--- Dumping structure for table essential.instagram_account
+-- Dumping structure for table database.instagram_account
 CREATE TABLE IF NOT EXISTS `instagram_account` (
   `id` varchar(90) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -885,21 +885,21 @@ CREATE TABLE IF NOT EXISTS `instagram_account` (
   `verify` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.instagram_account: ~0 rows (approximately)
+-- Dumping data for table database.instagram_account: ~0 rows (approximately)
 /*!40000 ALTER TABLE `instagram_account` DISABLE KEYS */;
 /*!40000 ALTER TABLE `instagram_account` ENABLE KEYS */;
 
--- Dumping structure for table essential.instagram_followers
+-- Dumping structure for table database.instagram_followers
 CREATE TABLE IF NOT EXISTS `instagram_followers` (
   `username` varchar(50) NOT NULL,
   `followed` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.instagram_followers: ~0 rows (approximately)
+-- Dumping data for table database.instagram_followers: ~0 rows (approximately)
 /*!40000 ALTER TABLE `instagram_followers` DISABLE KEYS */;
 /*!40000 ALTER TABLE `instagram_followers` ENABLE KEYS */;
 
--- Dumping structure for table essential.instagram_posts
+-- Dumping structure for table database.instagram_posts
 CREATE TABLE IF NOT EXISTS `instagram_posts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
@@ -912,22 +912,22 @@ CREATE TABLE IF NOT EXISTS `instagram_posts` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.instagram_posts: ~0 rows (approximately)
+-- Dumping data for table database.instagram_posts: ~0 rows (approximately)
 /*!40000 ALTER TABLE `instagram_posts` DISABLE KEYS */;
 /*!40000 ALTER TABLE `instagram_posts` ENABLE KEYS */;
 
--- Dumping structure for table essential.instagram_stories
+-- Dumping structure for table database.instagram_stories
 CREATE TABLE IF NOT EXISTS `instagram_stories` (
   `owner` varchar(50) NOT NULL,
   `data` text DEFAULT NULL,
   PRIMARY KEY (`owner`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
--- Dumping data for table essential.instagram_stories: ~0 rows (approximately)
+-- Dumping data for table database.instagram_stories: ~0 rows (approximately)
 /*!40000 ALTER TABLE `instagram_stories` DISABLE KEYS */;
 /*!40000 ALTER TABLE `instagram_stories` ENABLE KEYS */;
 
--- Dumping structure for table essential.insta_stories
+-- Dumping structure for table database.insta_stories
 CREATE TABLE IF NOT EXISTS `insta_stories` (
   `username` varchar(50) DEFAULT NULL,
   `location` varchar(50) DEFAULT NULL,
@@ -937,11 +937,11 @@ CREATE TABLE IF NOT EXISTS `insta_stories` (
   `created` time DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.insta_stories: ~0 rows (approximately)
+-- Dumping data for table database.insta_stories: ~0 rows (approximately)
 /*!40000 ALTER TABLE `insta_stories` DISABLE KEYS */;
 /*!40000 ALTER TABLE `insta_stories` ENABLE KEYS */;
 
--- Dumping structure for table essential.items
+-- Dumping structure for table database.items
 CREATE TABLE IF NOT EXISTS `items` (
   `name` varchar(50) NOT NULL,
   `label` varchar(255) NOT NULL,
@@ -950,7 +950,7 @@ CREATE TABLE IF NOT EXISTS `items` (
   `can_remove` int(11) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.items: ~346 rows (approximately)
+-- Dumping data for table database.items: ~346 rows (approximately)
 /*!40000 ALTER TABLE `items` DISABLE KEYS */;
 INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES
 	('bandage', 'Bandage', 20, 0, 1);
@@ -1646,7 +1646,7 @@ INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES
 	('vanPogo', 'Pogo', 120, 0, 1);
 /*!40000 ALTER TABLE `items` ENABLE KEYS */;
 
--- Dumping structure for table essential.jobs
+-- Dumping structure for table database.jobs
 CREATE TABLE IF NOT EXISTS `jobs` (
   `name` varchar(50) NOT NULL,
   `label` varchar(255) DEFAULT NULL,
@@ -1654,7 +1654,7 @@ CREATE TABLE IF NOT EXISTS `jobs` (
   PRIMARY KEY (`name`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.jobs: ~30 rows (approximately)
+-- Dumping data for table database.jobs: ~30 rows (approximately)
 /*!40000 ALTER TABLE `jobs` DISABLE KEYS */;
 INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
 	('ambulance', 'Ambulance', 1);
@@ -1718,7 +1718,7 @@ INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
 	('weazel', 'Weazel News', 1);
 /*!40000 ALTER TABLE `jobs` ENABLE KEYS */;
 
--- Dumping structure for table essential.job_grades
+-- Dumping structure for table database.job_grades
 CREATE TABLE IF NOT EXISTS `job_grades` (
   `job_name` varchar(255) DEFAULT NULL,
   `grade` int(11) NOT NULL,
@@ -1731,7 +1731,7 @@ CREATE TABLE IF NOT EXISTS `job_grades` (
   `skin_female2` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.job_grades: ~159 rows (approximately)
+-- Dumping data for table database.job_grades: ~159 rows (approximately)
 /*!40000 ALTER TABLE `job_grades` DISABLE KEYS */;
 INSERT INTO `job_grades` (`job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_male2`, `skin_female`, `skin_female2`) VALUES
 	('nojob', 0, 'nojob', 'nojob', 0, '{}', '{}', '{}', '{}');
@@ -2053,7 +2053,7 @@ INSERT INTO `job_grades` (`job_name`, `grade`, `name`, `label`, `salary`, `skin_
 	('uwu', 5, 'owner', 'Owner', 0, '{}', '{}', '{}', '{}');
 /*!40000 ALTER TABLE `job_grades` ENABLE KEYS */;
 
--- Dumping structure for table essential.jsfour_criminalrecord
+-- Dumping structure for table database.jsfour_criminalrecord
 CREATE TABLE IF NOT EXISTS `jsfour_criminalrecord` (
   `offense` varchar(160) NOT NULL,
   `date` varchar(255) DEFAULT NULL,
@@ -2068,11 +2068,11 @@ CREATE TABLE IF NOT EXISTS `jsfour_criminalrecord` (
   PRIMARY KEY (`offense`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.jsfour_criminalrecord: ~0 rows (approximately)
+-- Dumping data for table database.jsfour_criminalrecord: ~0 rows (approximately)
 /*!40000 ALTER TABLE `jsfour_criminalrecord` DISABLE KEYS */;
 /*!40000 ALTER TABLE `jsfour_criminalrecord` ENABLE KEYS */;
 
--- Dumping structure for table essential.jsfour_criminaluserinfo
+-- Dumping structure for table database.jsfour_criminaluserinfo
 CREATE TABLE IF NOT EXISTS `jsfour_criminaluserinfo` (
   `identifier` varchar(160) NOT NULL,
   `aliases` varchar(255) DEFAULT NULL,
@@ -2088,18 +2088,18 @@ CREATE TABLE IF NOT EXISTS `jsfour_criminaluserinfo` (
   PRIMARY KEY (`identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.jsfour_criminaluserinfo: ~0 rows (approximately)
+-- Dumping data for table database.jsfour_criminaluserinfo: ~0 rows (approximately)
 /*!40000 ALTER TABLE `jsfour_criminaluserinfo` DISABLE KEYS */;
 /*!40000 ALTER TABLE `jsfour_criminaluserinfo` ENABLE KEYS */;
 
--- Dumping structure for table essential.licenses
+-- Dumping structure for table database.licenses
 CREATE TABLE IF NOT EXISTS `licenses` (
   `type` varchar(60) NOT NULL,
   `label` varchar(60) NOT NULL,
   PRIMARY KEY (`type`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.licenses: ~8 rows (approximately)
+-- Dumping data for table database.licenses: ~8 rows (approximately)
 /*!40000 ALTER TABLE `licenses` DISABLE KEYS */;
 INSERT INTO `licenses` (`type`, `label`) VALUES
 	('boat', 'Mojaveze Boat');
@@ -2119,7 +2119,7 @@ INSERT INTO `licenses` (`type`, `label`) VALUES
 	('weapon', 'Mojaveze Weapon');
 /*!40000 ALTER TABLE `licenses` ENABLE KEYS */;
 
--- Dumping structure for table essential.mdt_bolos
+-- Dumping structure for table database.mdt_bolos
 CREATE TABLE IF NOT EXISTS `mdt_bolos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` longtext NOT NULL,
@@ -2136,11 +2136,11 @@ CREATE TABLE IF NOT EXISTS `mdt_bolos` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.mdt_bolos: ~0 rows (approximately)
+-- Dumping data for table database.mdt_bolos: ~0 rows (approximately)
 /*!40000 ALTER TABLE `mdt_bolos` DISABLE KEYS */;
 /*!40000 ALTER TABLE `mdt_bolos` ENABLE KEYS */;
 
--- Dumping structure for table essential.mdt_bulletins
+-- Dumping structure for table database.mdt_bulletins
 CREATE TABLE IF NOT EXISTS `mdt_bulletins` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `author` longtext DEFAULT NULL,
@@ -2150,11 +2150,11 @@ CREATE TABLE IF NOT EXISTS `mdt_bulletins` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.mdt_bulletins: ~0 rows (approximately)
+-- Dumping data for table database.mdt_bulletins: ~0 rows (approximately)
 /*!40000 ALTER TABLE `mdt_bulletins` DISABLE KEYS */;
 /*!40000 ALTER TABLE `mdt_bulletins` ENABLE KEYS */;
 
--- Dumping structure for table essential.mdt_dashmessage
+-- Dumping structure for table database.mdt_dashmessage
 CREATE TABLE IF NOT EXISTS `mdt_dashmessage` (
   `message` longtext DEFAULT NULL,
   `time` longtext DEFAULT NULL,
@@ -2163,7 +2163,7 @@ CREATE TABLE IF NOT EXISTS `mdt_dashmessage` (
   `job` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.mdt_dashmessage: ~2 rows (approximately)
+-- Dumping data for table database.mdt_dashmessage: ~2 rows (approximately)
 /*!40000 ALTER TABLE `mdt_dashmessage` DISABLE KEYS */;
 INSERT INTO `mdt_dashmessage` (`message`, `time`, `author`, `profilepic`, `job`) VALUES
 	('mas', '1671726787837', 'KAKXER BELA', 'https://cdn.discordapp.com/attachments/996093699060678677/1055512175839555614/image.png', 'police');
@@ -2171,7 +2171,7 @@ INSERT INTO `mdt_dashmessage` (`message`, `time`, `author`, `profilepic`, `job`)
 	('das', '1671729694339', 'KAKXER BELA', 'https://cdn.discordapp.com/attachments/996093699060678677/1055512175839555614/image.png', 'police');
 /*!40000 ALTER TABLE `mdt_dashmessage` ENABLE KEYS */;
 
--- Dumping structure for table essential.mdt_incidents
+-- Dumping structure for table database.mdt_incidents
 CREATE TABLE IF NOT EXISTS `mdt_incidents` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` longtext NOT NULL,
@@ -2187,19 +2187,19 @@ CREATE TABLE IF NOT EXISTS `mdt_incidents` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.mdt_incidents: ~0 rows (approximately)
+-- Dumping data for table database.mdt_incidents: ~0 rows (approximately)
 /*!40000 ALTER TABLE `mdt_incidents` DISABLE KEYS */;
 INSERT INTO `mdt_incidents` (`id`, `title`, `information`, `tags`, `officers`, `civilians`, `evidence`, `associated`, `time`, `author`, `type`) VALUES
 	(1, 'Name - Charge - 12/22/2022', '📝 Summary:\n\n[Insert Report Summary Here]\n\n🧍 Hostage: [Name Here]\n\n🔪 Weapons/Items Confiscated:\n\n· [Insert List Here]\n\n-----\n💸 Fine:\n⌚ Sentence:\n-----', '[]', '[]', '[]', '["https://cdn.discordapp.com/attachments/1044228530747220000/1046763067721130074/image.png"]', '[]', '1671719458661', 'KAKXER BELA', 'police');
 /*!40000 ALTER TABLE `mdt_incidents` ENABLE KEYS */;
 
--- Dumping structure for table essential.mdt_logs
+-- Dumping structure for table database.mdt_logs
 CREATE TABLE IF NOT EXISTS `mdt_logs` (
   `log` longtext DEFAULT NULL,
   `time` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.mdt_logs: ~4 rows (approximately)
+-- Dumping data for table database.mdt_logs: ~4 rows (approximately)
 /*!40000 ALTER TABLE `mdt_logs` DISABLE KEYS */;
 INSERT INTO `mdt_logs` (`log`, `time`) VALUES
 	('KAKXER BELA Created New Incident.', '1671719417985');
@@ -2211,7 +2211,7 @@ INSERT INTO `mdt_logs` (`log`, `time`) VALUES
 	('KAKXER BELA Deleted Bulletin.', '1671727041299');
 /*!40000 ALTER TABLE `mdt_logs` ENABLE KEYS */;
 
--- Dumping structure for table essential.mdt_missing
+-- Dumping structure for table database.mdt_missing
 CREATE TABLE IF NOT EXISTS `mdt_missing` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` longtext NOT NULL,
@@ -2224,11 +2224,11 @@ CREATE TABLE IF NOT EXISTS `mdt_missing` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.mdt_missing: ~0 rows (approximately)
+-- Dumping data for table database.mdt_missing: ~0 rows (approximately)
 /*!40000 ALTER TABLE `mdt_missing` DISABLE KEYS */;
 /*!40000 ALTER TABLE `mdt_missing` ENABLE KEYS */;
 
--- Dumping structure for table essential.mdt_report
+-- Dumping structure for table database.mdt_report
 CREATE TABLE IF NOT EXISTS `mdt_report` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` longtext DEFAULT NULL,
@@ -2244,13 +2244,13 @@ CREATE TABLE IF NOT EXISTS `mdt_report` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.mdt_report: ~0 rows (approximately)
+-- Dumping data for table database.mdt_report: ~0 rows (approximately)
 /*!40000 ALTER TABLE `mdt_report` DISABLE KEYS */;
 INSERT INTO `mdt_report` (`id`, `title`, `reporttype`, `author`, `detail`, `tags`, `gallery`, `officers`, `civilians`, `time`, `type`) VALUES
 	(1, '', '', 'KAKXER BELA', '', '[]', '["https://cdn.discordapp.com/attachments/1044228530747220000/1046763067721130074/image.png"]', '[]', '[]', '1671719485972', 'police');
 /*!40000 ALTER TABLE `mdt_report` ENABLE KEYS */;
 
--- Dumping structure for table essential.mdt_vehicleinfo
+-- Dumping structure for table database.mdt_vehicleinfo
 CREATE TABLE IF NOT EXISTS `mdt_vehicleinfo` (
   `plate` varchar(50) NOT NULL DEFAULT '',
   `code5` longtext NOT NULL DEFAULT 0,
@@ -2260,7 +2260,7 @@ CREATE TABLE IF NOT EXISTS `mdt_vehicleinfo` (
   PRIMARY KEY (`plate`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.mdt_vehicleinfo: ~2 rows (approximately)
+-- Dumping data for table database.mdt_vehicleinfo: ~2 rows (approximately)
 /*!40000 ALTER TABLE `mdt_vehicleinfo` DISABLE KEYS */;
 INSERT INTO `mdt_vehicleinfo` (`plate`, `code5`, `stolen`, `info`, `image`) VALUES
 	('', '0', '0', '', '');
@@ -2268,7 +2268,7 @@ INSERT INTO `mdt_vehicleinfo` (`plate`, `code5`, `stolen`, `info`, `image`) VALU
 	('TWSU7382', '0', '0', '', 'https://cdn.discordapp.com/attachments/769245887654002782/890579805798531082/not-found.jpg');
 /*!40000 ALTER TABLE `mdt_vehicleinfo` ENABLE KEYS */;
 
--- Dumping structure for table essential.mdt_weapons
+-- Dumping structure for table database.mdt_weapons
 CREATE TABLE IF NOT EXISTS `mdt_weapons` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` longtext DEFAULT NULL,
@@ -2281,11 +2281,11 @@ CREATE TABLE IF NOT EXISTS `mdt_weapons` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.mdt_weapons: ~0 rows (approximately)
+-- Dumping data for table database.mdt_weapons: ~0 rows (approximately)
 /*!40000 ALTER TABLE `mdt_weapons` DISABLE KEYS */;
 /*!40000 ALTER TABLE `mdt_weapons` ENABLE KEYS */;
 
--- Dumping structure for table essential.owned_bags
+-- Dumping structure for table database.owned_bags
 CREATE TABLE IF NOT EXISTS `owned_bags` (
   `identifier` varchar(50) DEFAULT NULL,
   `id` int(11) DEFAULT NULL,
@@ -2295,11 +2295,11 @@ CREATE TABLE IF NOT EXISTS `owned_bags` (
   `itemcount` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.owned_bags: ~0 rows (approximately)
+-- Dumping data for table database.owned_bags: ~0 rows (approximately)
 /*!40000 ALTER TABLE `owned_bags` DISABLE KEYS */;
 /*!40000 ALTER TABLE `owned_bags` ENABLE KEYS */;
 
--- Dumping structure for table essential.owned_bag_inventory
+-- Dumping structure for table database.owned_bag_inventory
 CREATE TABLE IF NOT EXISTS `owned_bag_inventory` (
   `id` int(11) DEFAULT NULL,
   `item` varchar(50) DEFAULT NULL,
@@ -2307,11 +2307,11 @@ CREATE TABLE IF NOT EXISTS `owned_bag_inventory` (
   `count` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.owned_bag_inventory: ~0 rows (approximately)
+-- Dumping data for table database.owned_bag_inventory: ~0 rows (approximately)
 /*!40000 ALTER TABLE `owned_bag_inventory` DISABLE KEYS */;
 /*!40000 ALTER TABLE `owned_bag_inventory` ENABLE KEYS */;
 
--- Dumping structure for table essential.owned_properties
+-- Dumping structure for table database.owned_properties
 CREATE TABLE IF NOT EXISTS `owned_properties` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
@@ -2321,11 +2321,11 @@ CREATE TABLE IF NOT EXISTS `owned_properties` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
--- Dumping data for table essential.owned_properties: ~0 rows (approximately)
+-- Dumping data for table database.owned_properties: ~0 rows (approximately)
 /*!40000 ALTER TABLE `owned_properties` DISABLE KEYS */;
 /*!40000 ALTER TABLE `owned_properties` ENABLE KEYS */;
 
--- Dumping structure for table essential.owned_shops
+-- Dumping structure for table database.owned_shops
 CREATE TABLE IF NOT EXISTS `owned_shops` (
   `number` int(11) NOT NULL,
   `owner` varchar(250) DEFAULT '{"identifier":"government","name":"Government"}',
@@ -2336,7 +2336,7 @@ CREATE TABLE IF NOT EXISTS `owned_shops` (
   PRIMARY KEY (`number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.owned_shops: ~20 rows (approximately)
+-- Dumping data for table database.owned_shops: ~20 rows (approximately)
 /*!40000 ALTER TABLE `owned_shops` DISABLE KEYS */;
 INSERT INTO `owned_shops` (`number`, `owner`, `money`, `value`, `inventory`, `name`) VALUES
 	(1, '{"name":"KAKXER BELA","identifier":"steam:1100001452540bf"}', 15159200, '{"forsale":false,"value":500000}', '{"red_phone":{"amount":0,"price":10000000}}', 'Shop');
@@ -2380,7 +2380,7 @@ INSERT INTO `owned_shops` (`number`, `owner`, `money`, `value`, `inventory`, `na
 	(20, '{"identifier":"government","name":"Government"}', 0, '{"forsale":true,"value":500000}', '[]', 'Shop');
 /*!40000 ALTER TABLE `owned_shops` ENABLE KEYS */;
 
--- Dumping structure for table essential.owned_vehicles
+-- Dumping structure for table database.owned_vehicles
 CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   `owner` varchar(30) NOT NULL,
   `plate` varchar(12) NOT NULL,
@@ -2398,7 +2398,7 @@ CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   `cooldown` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.owned_vehicles: ~40 rows (approximately)
+-- Dumping data for table database.owned_vehicles: ~40 rows (approximately)
 /*!40000 ALTER TABLE `owned_vehicles` DISABLE KEYS */;
 INSERT INTO `owned_vehicles` (`owner`, `plate`, `damage`, `vehicle`, `type`, `stored`, `job`, `parkmeter`, `garagenum`, `parkmeternum`, `policei`, `sheriffi`, `cost`, `cooldown`) VALUES
 	('steam:1100001452540bfs', 'ODZG7478', '{"engineHealth":1000.0,"dirtLevel":5.0,"fuelLevel":50.0,"vehicleHealth":1000,"doorStates":[],"bodyHealth":1000.0,"windowStates":[2,3,4,5],"tankHealth":1000.0,"tyreStates":[]}', '{"modTransmission":-1,"modSpoilers":-1,"modDial":-1,"color1":0,"modLivery":-1,"pearlescentColor":38,"interiorColor":111,"modSmokeEnabled":false,"modTurbo":false,"modRoof":-1,"modExhaust":-1,"wheelColor":156,"modEngineBlock":-1,"modGrille":-1,"color1Custom":[8,8,8],"extraEnabled":[],"modSeats":-1,"wheels":6,"neonEnabled":[false,false,false,false],"modRightFender":-1,"modSpeakers":-1,"color2Type":0,"modTrimB":-1,"color2":27,"model":86520421,"modShifterLeavers":-1,"modXenon":255,"tyreSmokeColor":[255,255,255],"neonColor":[255,0,255],"modTrunk":-1,"modBrakes":-1,"modBackWheels":-1,"modFender":-1,"modSteeringWheel":-1,"modWindows":-1,"modEngine":-1,"modTank":-1,"modStruts":-1,"modDoorSpeaker":-1,"modArmor":-1,"modVanityPlate":-1,"dashboardColor":111,"modFrontBumper":-1,"plateIndex":0,"modAerials":-1,"modRearBumper":-1,"color1Type":0,"modHood":-1,"modHydrolic":-1,"modFrontWheels":-1,"modDashboard":-1,"modArchCover":-1,"modOrnaments":-1,"modAirFilter":-1,"modTrimA":-1,"modFrame":-1,"modHorns":-1,"modPlateHolder":-1,"windowTint":-1,"modSuspension":-1,"livery":-1,"color2Custom":[105,0,0],"modAPlate":-1,"plate":"ODZG7478","modSideSkirt":-1}', 'bike', 1, 'police', '0', 1, 0, 0, 0, 14500, 0);
@@ -2482,7 +2482,7 @@ INSERT INTO `owned_vehicles` (`owner`, `plate`, `damage`, `vehicle`, `type`, `st
 	('steam:1100001452540bf', 'VEUV2948', '{"bodyHealth":928.0,"vehicleHealth":927,"tyreStates":[],"tankHealth":976.2,"fuelLevel":61.5,"dirtLevel":0.5,"engineHealth":982.5,"windowStates":[0,2,3,4,5],"doorStates":[]}', '{"plateIndex":0,"modTurbo":false,"color1Custom":[138,11,0],"modGrille":-1,"wheels":7,"pearlescentColor":0,"modFrontWheels":-1,"modEngine":-1,"modTank":-1,"neonEnabled":[false,false,false,false],"modHood":-1,"modHorns":-1,"modTrimB":-1,"color1":28,"dashboardColor":0,"modFrame":-1,"wheelColor":156,"color2":0,"modArmor":-1,"modTrimA":-1,"color1Type":0,"neonColor":[255,0,255],"modSuspension":-1,"tyreSmokeColor":[255,255,255],"modStruts":-1,"modAirFilter":-1,"modShifterLeavers":-1,"modSeats":-1,"modVanityPlate":-1,"modExhaust":-1,"modFender":-1,"modSpeakers":-1,"modHydrolic":-1,"modTransmission":-1,"modSideSkirt":-1,"color2Type":0,"extraEnabled":{"12":false,"10":false},"modSpoilers":-1,"interiorColor":0,"modEngineBlock":-1,"modTrunk":-1,"plate":"VEUV2948","modBackWheels":-1,"modDial":-1,"livery":-1,"modPlateHolder":-1,"modFrontBumper":-1,"modRoof":-1,"modSmokeEnabled":false,"modAerials":-1,"modLightbar":-1,"modBrakes":-1,"modDoorSpeaker":-1,"model":2072687711,"windowTint":-1,"modAPlate":-1,"color2Custom":[8,8,8],"modSteeringWheel":-1,"modDashboard":-1,"modXenon":255,"modArchCover":-1,"modRightFender":-1,"modRearBumper":-1,"modWindows":-1,"modLivery":-1,"modOrnaments":-1}', 'car', 0, 'garage', '0', 1, 0, 0, 0, 14500, 0);
 /*!40000 ALTER TABLE `owned_vehicles` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_accounts
+-- Dumping structure for table database.phone_accounts
 CREATE TABLE IF NOT EXISTS `phone_accounts` (
   `app` varchar(50) NOT NULL,
   `id` varchar(80) NOT NULL,
@@ -2494,11 +2494,11 @@ CREATE TABLE IF NOT EXISTS `phone_accounts` (
   `avatar` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.phone_accounts: ~0 rows (approximately)
+-- Dumping data for table database.phone_accounts: ~0 rows (approximately)
 /*!40000 ALTER TABLE `phone_accounts` DISABLE KEYS */;
 /*!40000 ALTER TABLE `phone_accounts` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_alertjobs
+-- Dumping structure for table database.phone_alertjobs
 CREATE TABLE IF NOT EXISTS `phone_alertjobs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `job` varchar(255) NOT NULL,
@@ -2508,7 +2508,7 @@ CREATE TABLE IF NOT EXISTS `phone_alertjobs` (
   UNIQUE KEY `job` (`job`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.phone_alertjobs: ~2 rows (approximately)
+-- Dumping data for table database.phone_alertjobs: ~2 rows (approximately)
 /*!40000 ALTER TABLE `phone_alertjobs` DISABLE KEYS */;
 INSERT INTO `phone_alertjobs` (`id`, `job`, `alerts`, `date`) VALUES
 	(1, 'police', '[{"img":"none","location":{"x":1176.138427734375,"y":2672.15966796875,"z":37.87028503417969},"message":"aqq","phone":"8572769980","alertID":1}]', '2022-11-23 16:31:06');
@@ -2516,7 +2516,7 @@ INSERT INTO `phone_alertjobs` (`id`, `job`, `alerts`, `date`) VALUES
 	(2, 'ambulance', '[{"message":"Injured person","alertID":1,"location":{"x":92.29949951171877,"z":20.79184913635254,"y":-1928.1995849609376}},{"message":"Injured person","alertID":2,"location":{"x":418.0994567871094,"y":-971.8989868164063,"z":29.42925643920898}}]', '2022-12-02 07:55:21');
 /*!40000 ALTER TABLE `phone_alertjobs` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_app_chat
+-- Dumping structure for table database.phone_app_chat
 CREATE TABLE IF NOT EXISTS `phone_app_chat` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `channel` varchar(20) NOT NULL,
@@ -2525,11 +2525,11 @@ CREATE TABLE IF NOT EXISTS `phone_app_chat` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.phone_app_chat: ~0 rows (approximately)
+-- Dumping data for table database.phone_app_chat: ~0 rows (approximately)
 /*!40000 ALTER TABLE `phone_app_chat` DISABLE KEYS */;
 /*!40000 ALTER TABLE `phone_app_chat` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_calls
+-- Dumping structure for table database.phone_calls
 CREATE TABLE IF NOT EXISTS `phone_calls` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `owner` varchar(10) NOT NULL COMMENT 'Name',
@@ -2540,7 +2540,7 @@ CREATE TABLE IF NOT EXISTS `phone_calls` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=442 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.phone_calls: ~62 rows (approximately)
+-- Dumping data for table database.phone_calls: ~62 rows (approximately)
 /*!40000 ALTER TABLE `phone_calls` DISABLE KEYS */;
 INSERT INTO `phone_calls` (`id`, `owner`, `num`, `incoming`, `time`, `accepts`) VALUES
 	(380, '0939853348', '111', 1, '2021-11-08 14:59:32', 0);
@@ -2668,7 +2668,7 @@ INSERT INTO `phone_calls` (`id`, `owner`, `num`, `incoming`, `time`, `accepts`) 
 	(441, '0912653402', '095555555', 1, '2022-10-23 01:23:58', 0);
 /*!40000 ALTER TABLE `phone_calls` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_chatrooms
+-- Dumping structure for table database.phone_chatrooms
 CREATE TABLE IF NOT EXISTS `phone_chatrooms` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `room_code` varchar(10) NOT NULL,
@@ -2685,7 +2685,7 @@ CREATE TABLE IF NOT EXISTS `phone_chatrooms` (
   UNIQUE KEY `room_code` (`room_code`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.phone_chatrooms: ~2 rows (approximately)
+-- Dumping data for table database.phone_chatrooms: ~2 rows (approximately)
 /*!40000 ALTER TABLE `phone_chatrooms` DISABLE KEYS */;
 INSERT INTO `phone_chatrooms` (`id`, `room_code`, `room_name`, `room_owner_id`, `room_owner_name`, `room_members`, `room_pin`, `unpaid_balance`, `is_masked`, `is_pinned`, `created`) VALUES
 	(2, 'lounge', 'The Lounge', 'official', 'Government', '{"steam:1100001356ed847":{"notify":true,"cid":"steam:1100001356ed847","name":"dsadasdas dsads"}}', NULL, 0.00, 0, 1, '2022-11-18 08:13:22');
@@ -2693,7 +2693,7 @@ INSERT INTO `phone_chatrooms` (`id`, `room_code`, `room_name`, `room_owner_id`, 
 	(3, 'events', 'Events', 'official', 'Government', NULL, NULL, 0.00, 0, 1, '2022-11-18 08:13:22');
 /*!40000 ALTER TABLE `phone_chatrooms` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_chatroom_messages
+-- Dumping structure for table database.phone_chatroom_messages
 CREATE TABLE IF NOT EXISTS `phone_chatroom_messages` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `room_id` int(10) unsigned DEFAULT NULL,
@@ -2705,7 +2705,7 @@ CREATE TABLE IF NOT EXISTS `phone_chatroom_messages` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.phone_chatroom_messages: ~9 rows (approximately)
+-- Dumping data for table database.phone_chatroom_messages: ~9 rows (approximately)
 /*!40000 ALTER TABLE `phone_chatroom_messages` DISABLE KEYS */;
 INSERT INTO `phone_chatroom_messages` (`id`, `room_id`, `member_id`, `member_name`, `message`, `is_pinned`, `created`) VALUES
 	(1, 1, 'SYSTEM', 'Member Activity', 'steve watson joined the channel, welcome!', 0, '2022-12-01 16:14:24');
@@ -2727,7 +2727,7 @@ INSERT INTO `phone_chatroom_messages` (`id`, `room_id`, `member_id`, `member_nam
 	(10, 1, 'steam:1100001356ed847', 'dsadasdas dsads', 'OOMADAm Koon beddam', 0, '2022-12-01 16:16:00');
 /*!40000 ALTER TABLE `phone_chatroom_messages` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_chats
+-- Dumping structure for table database.phone_chats
 CREATE TABLE IF NOT EXISTS `phone_chats` (
   `app` varchar(50) NOT NULL,
   `author` varchar(50) NOT NULL,
@@ -2735,11 +2735,11 @@ CREATE TABLE IF NOT EXISTS `phone_chats` (
   `created` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.phone_chats: ~0 rows (approximately)
+-- Dumping data for table database.phone_chats: ~0 rows (approximately)
 /*!40000 ALTER TABLE `phone_chats` DISABLE KEYS */;
 /*!40000 ALTER TABLE `phone_chats` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_crypto
+-- Dumping structure for table database.phone_crypto
 CREATE TABLE IF NOT EXISTS `phone_crypto` (
   `crypto` varchar(50) NOT NULL DEFAULT 'btc',
   `worth` int(11) NOT NULL DEFAULT 0,
@@ -2747,11 +2747,11 @@ CREATE TABLE IF NOT EXISTS `phone_crypto` (
   PRIMARY KEY (`crypto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.phone_crypto: ~0 rows (approximately)
+-- Dumping data for table database.phone_crypto: ~0 rows (approximately)
 /*!40000 ALTER TABLE `phone_crypto` DISABLE KEYS */;
 /*!40000 ALTER TABLE `phone_crypto` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_invoices
+-- Dumping structure for table database.phone_invoices
 CREATE TABLE IF NOT EXISTS `phone_invoices` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(50) DEFAULT NULL,
@@ -2762,11 +2762,11 @@ CREATE TABLE IF NOT EXISTS `phone_invoices` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- Dumping data for table essential.phone_invoices: ~0 rows (approximately)
+-- Dumping data for table database.phone_invoices: ~0 rows (approximately)
 /*!40000 ALTER TABLE `phone_invoices` DISABLE KEYS */;
 /*!40000 ALTER TABLE `phone_invoices` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_messages
+-- Dumping structure for table database.phone_messages
 CREATE TABLE IF NOT EXISTS `phone_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(50) DEFAULT NULL,
@@ -2779,7 +2779,7 @@ CREATE TABLE IF NOT EXISTS `phone_messages` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.phone_messages: ~2 rows (approximately)
+-- Dumping data for table database.phone_messages: ~2 rows (approximately)
 /*!40000 ALTER TABLE `phone_messages` DISABLE KEYS */;
 INSERT INTO `phone_messages` (`id`, `phone`, `number`, `owner`, `messages`, `type`, `read`, `created`) VALUES
 	(20, '553348962', '8573284445\n', NULL, '[{"owner":"553348962","type":"message","read":0,"message":"madare mamad Moon","created":"2022-12-01 15:19:10"},{"owner":"553348962","type":"location","read":0,"message":"{\\"x\\":426.50323486328127,\\"y\\":-984.8522338867188}","created":"2022-12-01 15:19:19"},{"owner":"553348962","type":"message","read":0,"message":"asdasd","created":"2022-12-07 16:30:53"}]', NULL, NULL, '2022-12-07 16:30:53');
@@ -2787,7 +2787,7 @@ INSERT INTO `phone_messages` (`id`, `phone`, `number`, `owner`, `messages`, `typ
 	(21, '8573284445\n', '553348962', NULL, '[{"owner":"553348962","type":"message","read":0,"message":"madare mamad Moon","created":"2022-12-01 15:19:10"},{"owner":"553348962","type":"location","read":0,"message":"{\\"x\\":426.50323486328127,\\"y\\":-984.8522338867188}","created":"2022-12-01 15:19:19"},{"owner":"553348962","type":"message","read":0,"message":"asdasd","created":"2022-12-07 16:30:53"}]', NULL, NULL, '2022-12-07 16:30:53');
 /*!40000 ALTER TABLE `phone_messages` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_news
+-- Dumping structure for table database.phone_news
 CREATE TABLE IF NOT EXISTS `phone_news` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `owner` varchar(50) DEFAULT NULL,
@@ -2798,11 +2798,11 @@ CREATE TABLE IF NOT EXISTS `phone_news` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table essential.phone_news: ~0 rows (approximately)
+-- Dumping data for table database.phone_news: ~0 rows (approximately)
 /*!40000 ALTER TABLE `phone_news` DISABLE KEYS */;
 /*!40000 ALTER TABLE `phone_news` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_notifies
+-- Dumping structure for table database.phone_notifies
 CREATE TABLE IF NOT EXISTS `phone_notifies` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(50) NOT NULL,
@@ -2813,11 +2813,11 @@ CREATE TABLE IF NOT EXISTS `phone_notifies` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.phone_notifies: ~0 rows (approximately)
+-- Dumping data for table database.phone_notifies: ~0 rows (approximately)
 /*!40000 ALTER TABLE `phone_notifies` DISABLE KEYS */;
 /*!40000 ALTER TABLE `phone_notifies` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_reminders
+-- Dumping structure for table database.phone_reminders
 CREATE TABLE IF NOT EXISTS `phone_reminders` (
   `id` int(11) DEFAULT NULL,
   `owner` varchar(46) DEFAULT NULL,
@@ -2827,11 +2827,11 @@ CREATE TABLE IF NOT EXISTS `phone_reminders` (
   `time` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table essential.phone_reminders: ~0 rows (approximately)
+-- Dumping data for table database.phone_reminders: ~0 rows (approximately)
 /*!40000 ALTER TABLE `phone_reminders` DISABLE KEYS */;
 /*!40000 ALTER TABLE `phone_reminders` ENABLE KEYS */;
 
--- Dumping structure for table essential.phone_users_contacts
+-- Dumping structure for table database.phone_users_contacts
 CREATE TABLE IF NOT EXISTS `phone_users_contacts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
@@ -2840,7 +2840,7 @@ CREATE TABLE IF NOT EXISTS `phone_users_contacts` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=MyISAM AUTO_INCREMENT=92 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.phone_users_contacts: 3 rows
+-- Dumping data for table database.phone_users_contacts: 3 rows
 /*!40000 ALTER TABLE `phone_users_contacts` DISABLE KEYS */;
 INSERT INTO `phone_users_contacts` (`id`, `identifier`, `number`, `display`) VALUES
 	(89, 'steam:11000014a890703', '0939846965', 'saman');
@@ -2850,7 +2850,7 @@ INSERT INTO `phone_users_contacts` (`id`, `identifier`, `number`, `display`) VAL
 	(91, 'steam:11000013f2c89a2', '0939746429', 'mobin');
 /*!40000 ALTER TABLE `phone_users_contacts` ENABLE KEYS */;
 
--- Dumping structure for table essential.player_contacts
+-- Dumping structure for table database.player_contacts
 CREATE TABLE IF NOT EXISTS `player_contacts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) DEFAULT NULL,
@@ -2865,13 +2865,13 @@ CREATE TABLE IF NOT EXISTS `player_contacts` (
   KEY `identifier` (`identifier`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.player_contacts: ~0 rows (approximately)
+-- Dumping data for table database.player_contacts: ~0 rows (approximately)
 /*!40000 ALTER TABLE `player_contacts` DISABLE KEYS */;
 INSERT INTO `player_contacts` (`id`, `identifier`, `name`, `number`, `iban`, `display`, `note`, `pp`, `isBlocked`) VALUES
 	(38, '553348962', 'Mehrbod Tighe', '8573284445\n', '0', NULL, '', './img/app_details/default.png', NULL);
 /*!40000 ALTER TABLE `player_contacts` ENABLE KEYS */;
 
--- Dumping structure for table essential.player_gallery
+-- Dumping structure for table database.player_gallery
 CREATE TABLE IF NOT EXISTS `player_gallery` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` text NOT NULL,
@@ -2881,11 +2881,11 @@ CREATE TABLE IF NOT EXISTS `player_gallery` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.player_gallery: ~0 rows (approximately)
+-- Dumping data for table database.player_gallery: ~0 rows (approximately)
 /*!40000 ALTER TABLE `player_gallery` DISABLE KEYS */;
 /*!40000 ALTER TABLE `player_gallery` ENABLE KEYS */;
 
--- Dumping structure for table essential.player_mails
+-- Dumping structure for table database.player_mails
 CREATE TABLE IF NOT EXISTS `player_mails` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) DEFAULT NULL,
@@ -2900,11 +2900,11 @@ CREATE TABLE IF NOT EXISTS `player_mails` (
   KEY `identifier` (`identifier`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.player_mails: ~0 rows (approximately)
+-- Dumping data for table database.player_mails: ~0 rows (approximately)
 /*!40000 ALTER TABLE `player_mails` DISABLE KEYS */;
 /*!40000 ALTER TABLE `player_mails` ENABLE KEYS */;
 
--- Dumping structure for table essential.player_notes
+-- Dumping structure for table database.player_notes
 CREATE TABLE IF NOT EXISTS `player_notes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` text NOT NULL,
@@ -2913,13 +2913,13 @@ CREATE TABLE IF NOT EXISTS `player_notes` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.player_notes: ~0 rows (approximately)
+-- Dumping data for table database.player_notes: ~0 rows (approximately)
 /*!40000 ALTER TABLE `player_notes` DISABLE KEYS */;
 INSERT INTO `player_notes` (`id`, `identifier`, `baslik`, `aciklama`) VALUES
 	(1, 'steam:1100001440a9ff9', 'test', 'Descriadadadaption...');
 /*!40000 ALTER TABLE `player_notes` ENABLE KEYS */;
 
--- Dumping structure for table essential.properties
+-- Dumping structure for table database.properties
 CREATE TABLE IF NOT EXISTS `properties` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
@@ -2938,7 +2938,7 @@ CREATE TABLE IF NOT EXISTS `properties` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.properties: ~42 rows (approximately)
+-- Dumping data for table database.properties: ~42 rows (approximately)
 /*!40000 ALTER TABLE `properties` DISABLE KEYS */;
 INSERT INTO `properties` (`id`, `name`, `label`, `entering`, `exit`, `inside`, `outside`, `ipls`, `gateway`, `is_single`, `is_room`, `is_gateway`, `room_menu`, `price`) VALUES
 	(1, 'WhispymoundDrive', '2677 Whispymound Drive', '{"y":564.89,"z":182.959,"x":119.384}', '{"x":117.347,"y":559.506,"z":183.304}', '{"y":557.032,"z":183.301,"x":118.037}', '{"y":567.798,"z":182.131,"x":119.249}', '[]', NULL, 1, 1, 0, '{"x":118.748,"y":566.573,"z":175.697}', 1500000);
@@ -3026,30 +3026,30 @@ INSERT INTO `properties` (`id`, `name`, `label`, `entering`, `exit`, `inside`, `
 	(42, 'DellPerroHeightst7', 'Dell Perro Heights - Apt 30', NULL, '{"x":-1451.562,"y":-523.535,"z":55.928}', '{"x":-1456.02,"y":-519.209,"z":55.929}', NULL, '[]', 'DellPerroHeights', 0, 1, 0, '{"x":-1457.026,"y":-530.219,"z":55.937}', 1700000);
 /*!40000 ALTER TABLE `properties` ENABLE KEYS */;
 
--- Dumping structure for table essential.redeemcode
+-- Dumping structure for table database.redeemcode
 CREATE TABLE IF NOT EXISTS `redeemcode` (
   `code` varchar(50) DEFAULT NULL,
   `money` int(11) DEFAULT 0,
   `bank` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.redeemcode: ~0 rows (approximately)
+-- Dumping data for table database.redeemcode: ~0 rows (approximately)
 /*!40000 ALTER TABLE `redeemcode` DISABLE KEYS */;
 INSERT INTO `redeemcode` (`code`, `money`, `bank`) VALUES
 	('S56ASD4', 50000, 25000);
 /*!40000 ALTER TABLE `redeemcode` ENABLE KEYS */;
 
--- Dumping structure for table essential.redeemcode_users
+-- Dumping structure for table database.redeemcode_users
 CREATE TABLE IF NOT EXISTS `redeemcode_users` (
   `identifier` varchar(50) DEFAULT NULL,
   `redeemcode` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.redeemcode_users: ~0 rows (approximately)
+-- Dumping data for table database.redeemcode_users: ~0 rows (approximately)
 /*!40000 ALTER TABLE `redeemcode_users` DISABLE KEYS */;
 /*!40000 ALTER TABLE `redeemcode_users` ENABLE KEYS */;
 
--- Dumping structure for table essential.rented_vehicles
+-- Dumping structure for table database.rented_vehicles
 CREATE TABLE IF NOT EXISTS `rented_vehicles` (
   `vehicle` varchar(60) NOT NULL,
   `plate` varchar(12) NOT NULL,
@@ -3060,18 +3060,18 @@ CREATE TABLE IF NOT EXISTS `rented_vehicles` (
   PRIMARY KEY (`plate`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.rented_vehicles: ~0 rows (approximately)
+-- Dumping data for table database.rented_vehicles: ~0 rows (approximately)
 /*!40000 ALTER TABLE `rented_vehicles` DISABLE KEYS */;
 /*!40000 ALTER TABLE `rented_vehicles` ENABLE KEYS */;
 
--- Dumping structure for table essential.reports
+-- Dumping structure for table database.reports
 CREATE TABLE IF NOT EXISTS `reports` (
   `identifier` varchar(50) NOT NULL,
   `count` int(5) DEFAULT NULL,
   PRIMARY KEY (`identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.reports: ~4 rows (approximately)
+-- Dumping data for table database.reports: ~4 rows (approximately)
 /*!40000 ALTER TABLE `reports` DISABLE KEYS */;
 INSERT INTO `reports` (`identifier`, `count`) VALUES
 	('steam:11000011bf03921', 1);
@@ -3083,7 +3083,7 @@ INSERT INTO `reports` (`identifier`, `count`) VALUES
 	('steam:1100001452540bf', 1);
 /*!40000 ALTER TABLE `reports` ENABLE KEYS */;
 
--- Dumping structure for table essential.shipments
+-- Dumping structure for table database.shipments
 CREATE TABLE IF NOT EXISTS `shipments` (
   `id` int(11) DEFAULT NULL,
   `identifier` varchar(50) DEFAULT NULL,
@@ -3094,11 +3094,11 @@ CREATE TABLE IF NOT EXISTS `shipments` (
   `time` int(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.shipments: ~0 rows (approximately)
+-- Dumping data for table database.shipments: ~0 rows (approximately)
 /*!40000 ALTER TABLE `shipments` DISABLE KEYS */;
 /*!40000 ALTER TABLE `shipments` ENABLE KEYS */;
 
--- Dumping structure for table essential.shops2
+-- Dumping structure for table database.shops2
 CREATE TABLE IF NOT EXISTS `shops2` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `store` varchar(100) NOT NULL,
@@ -3107,7 +3107,7 @@ CREATE TABLE IF NOT EXISTS `shops2` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.shops2: ~8 rows (approximately)
+-- Dumping data for table database.shops2: ~8 rows (approximately)
 /*!40000 ALTER TABLE `shops2` DISABLE KEYS */;
 INSERT INTO `shops2` (`id`, `store`, `item`, `price`) VALUES
 	(1, 'narekshop', 'yusuf', 50000);
@@ -3127,7 +3127,7 @@ INSERT INTO `shops2` (`id`, `store`, `item`, `price`) VALUES
 	(8, 'narekshop', 'blowtorch', 280000);
 /*!40000 ALTER TABLE `shops2` ENABLE KEYS */;
 
--- Dumping structure for table essential.stashs
+-- Dumping structure for table database.stashs
 CREATE TABLE IF NOT EXISTS `stashs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `stash` varchar(255) NOT NULL DEFAULT '[]',
@@ -3136,7 +3136,7 @@ CREATE TABLE IF NOT EXISTS `stashs` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- Dumping data for table essential.stashs: ~8 rows (approximately)
+-- Dumping data for table database.stashs: ~8 rows (approximately)
 /*!40000 ALTER TABLE `stashs` DISABLE KEYS */;
 INSERT INTO `stashs` (`id`, `stash`, `inventory`) VALUES
 	(1, 'stash-bag_10461Bg104613', '[{"slot":1,"weight":0.01,"name":"5.56mm","info":[],"count":101},{"slot":2,"weight":10,"name":"weapon_smg","info":{"components":[],"extras":{"license":"No License"},"ammo":0,"tint":false},"count":1},{"slot":3,"weight":1,"name":"phone","info":[],"count":1},{"slot":4,"weight":1,"name":"phone","info":[],"count":1}]');
@@ -3156,7 +3156,7 @@ INSERT INTO `stashs` (`id`, `stash`, `inventory`) VALUES
 	(23, 'stash-Table_4_UwU_Cafe', '[]');
 /*!40000 ALTER TABLE `stashs` ENABLE KEYS */;
 
--- Dumping structure for table essential.tiktok_users
+-- Dumping structure for table database.tiktok_users
 CREATE TABLE IF NOT EXISTS `tiktok_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL DEFAULT '0',
@@ -3173,13 +3173,13 @@ CREATE TABLE IF NOT EXISTS `tiktok_users` (
   KEY `id` (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.tiktok_users: ~0 rows (approximately)
+-- Dumping data for table database.tiktok_users: ~0 rows (approximately)
 /*!40000 ALTER TABLE `tiktok_users` DISABLE KEYS */;
 INSERT INTO `tiktok_users` (`id`, `username`, `phone`, `pp`, `name`, `bio`, `birthday`, `videos`, `followers`, `following`, `liked`) VALUES
 	(13, 'bist', '553419652', './img/app_details/default.png', 'sajad', '', '1999-01-01', '[]', '[]', '[]', '["553419652-440"]');
 /*!40000 ALTER TABLE `tiktok_users` ENABLE KEYS */;
 
--- Dumping structure for table essential.tiktok_videos
+-- Dumping structure for table database.tiktok_videos
 CREATE TABLE IF NOT EXISTS `tiktok_videos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userID` int(11) DEFAULT NULL,
@@ -3189,13 +3189,13 @@ CREATE TABLE IF NOT EXISTS `tiktok_videos` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=441 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table essential.tiktok_videos: ~0 rows (approximately)
+-- Dumping data for table database.tiktok_videos: ~0 rows (approximately)
 /*!40000 ALTER TABLE `tiktok_videos` DISABLE KEYS */;
 INSERT INTO `tiktok_videos` (`id`, `userID`, `created`, `data`, `phone`) VALUES
 	(440, 13, '2022-12-01 16:25:08', '{"url":"https://media.discordapp.net/attachments/1043854942127001630/1047924674132189214/video.webm","likeds":["553419652"],"comments":[],"owner":"553419652"}', '553419652');
 /*!40000 ALTER TABLE `tiktok_videos` ENABLE KEYS */;
 
--- Dumping structure for table essential.tinder_accounts
+-- Dumping structure for table database.tinder_accounts
 CREATE TABLE IF NOT EXISTS `tinder_accounts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(50) NOT NULL DEFAULT '0',
@@ -3210,11 +3210,11 @@ CREATE TABLE IF NOT EXISTS `tinder_accounts` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.tinder_accounts: ~0 rows (approximately)
+-- Dumping data for table database.tinder_accounts: ~0 rows (approximately)
 /*!40000 ALTER TABLE `tinder_accounts` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tinder_accounts` ENABLE KEYS */;
 
--- Dumping structure for table essential.tinder_likes
+-- Dumping structure for table database.tinder_likes
 CREATE TABLE IF NOT EXISTS `tinder_likes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(1024) NOT NULL,
@@ -3222,11 +3222,11 @@ CREATE TABLE IF NOT EXISTS `tinder_likes` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.tinder_likes: ~0 rows (approximately)
+-- Dumping data for table database.tinder_likes: ~0 rows (approximately)
 /*!40000 ALTER TABLE `tinder_likes` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tinder_likes` ENABLE KEYS */;
 
--- Dumping structure for table essential.tinder_messages
+-- Dumping structure for table database.tinder_messages
 CREATE TABLE IF NOT EXISTS `tinder_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(50) NOT NULL,
@@ -3235,11 +3235,11 @@ CREATE TABLE IF NOT EXISTS `tinder_messages` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.tinder_messages: ~0 rows (approximately)
+-- Dumping data for table database.tinder_messages: ~0 rows (approximately)
 /*!40000 ALTER TABLE `tinder_messages` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tinder_messages` ENABLE KEYS */;
 
--- Dumping structure for table essential.trunk_inventory
+-- Dumping structure for table database.trunk_inventory
 CREATE TABLE IF NOT EXISTS `trunk_inventory` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `plate` varchar(8) NOT NULL,
@@ -3249,7 +3249,7 @@ CREATE TABLE IF NOT EXISTS `trunk_inventory` (
   UNIQUE KEY `plate` (`plate`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4621 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.trunk_inventory: ~408 rows (approximately)
+-- Dumping data for table database.trunk_inventory: ~408 rows (approximately)
 /*!40000 ALTER TABLE `trunk_inventory` DISABLE KEYS */;
 INSERT INTO `trunk_inventory` (`id`, `plate`, `data`, `owned`) VALUES
 	(3424, 'QLA 3128', '{}', 1);
@@ -4069,7 +4069,7 @@ INSERT INTO `trunk_inventory` (`id`, `plate`, `data`, `owned`) VALUES
 	(4620, '07KGZ660', '{}', 0);
 /*!40000 ALTER TABLE `trunk_inventory` ENABLE KEYS */;
 
--- Dumping structure for table essential.twitter_account
+-- Dumping structure for table database.twitter_account
 CREATE TABLE IF NOT EXISTS `twitter_account` (
   `id` varchar(90) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -4079,11 +4079,11 @@ CREATE TABLE IF NOT EXISTS `twitter_account` (
   `avatar` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.twitter_account: ~0 rows (approximately)
+-- Dumping data for table database.twitter_account: ~0 rows (approximately)
 /*!40000 ALTER TABLE `twitter_account` DISABLE KEYS */;
 /*!40000 ALTER TABLE `twitter_account` ENABLE KEYS */;
 
--- Dumping structure for table essential.twitter_hashtags
+-- Dumping structure for table database.twitter_hashtags
 CREATE TABLE IF NOT EXISTS `twitter_hashtags` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(80) NOT NULL,
@@ -4092,11 +4092,11 @@ CREATE TABLE IF NOT EXISTS `twitter_hashtags` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.twitter_hashtags: ~0 rows (approximately)
+-- Dumping data for table database.twitter_hashtags: ~0 rows (approximately)
 /*!40000 ALTER TABLE `twitter_hashtags` DISABLE KEYS */;
 /*!40000 ALTER TABLE `twitter_hashtags` ENABLE KEYS */;
 
--- Dumping structure for table essential.twitter_mentions
+-- Dumping structure for table database.twitter_mentions
 CREATE TABLE IF NOT EXISTS `twitter_mentions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_tweet` int(11) NOT NULL,
@@ -4106,11 +4106,11 @@ CREATE TABLE IF NOT EXISTS `twitter_mentions` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.twitter_mentions: ~0 rows (approximately)
+-- Dumping data for table database.twitter_mentions: ~0 rows (approximately)
 /*!40000 ALTER TABLE `twitter_mentions` DISABLE KEYS */;
 /*!40000 ALTER TABLE `twitter_mentions` ENABLE KEYS */;
 
--- Dumping structure for table essential.twitter_tweets
+-- Dumping structure for table database.twitter_tweets
 CREATE TABLE IF NOT EXISTS `twitter_tweets` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
   `username` varchar(80) NOT NULL,
@@ -4123,11 +4123,11 @@ CREATE TABLE IF NOT EXISTS `twitter_tweets` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.twitter_tweets: ~0 rows (approximately)
+-- Dumping data for table database.twitter_tweets: ~0 rows (approximately)
 /*!40000 ALTER TABLE `twitter_tweets` DISABLE KEYS */;
 /*!40000 ALTER TABLE `twitter_tweets` ENABLE KEYS */;
 
--- Dumping structure for table essential.users
+-- Dumping structure for table database.users
 CREATE TABLE IF NOT EXISTS `users` (
   `citizenid` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) NOT NULL,
@@ -4177,7 +4177,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`citizenid`,`identifier`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.users: ~7 rows (approximately)
+-- Dumping data for table database.users: ~7 rows (approximately)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`citizenid`, `identifier`, `license`, `name`, `firstname`, `lastname`, `inventory`, `permission_level`, `money`, `bank`, `skin`, `job`, `job_grade`, `badge`, `divisions`, `position`, `salary`, `group`, `dateofbirth`, `sex`, `is_dead`, `status`, `jail`, `phone_number`, `gang`, `gang_grade`, `timePlay`, `tattoos`, `starterpack`, `comserv`, `apps`, `widget`, `bt`, `charinfo`, `metadata`, `cryptocurrency`, `cryptocurrencytransfers`, `phonePos`, `spotify`, `first_screen_showed`, `ringtone`, `pp`, `policemdtinfo`, `tags`, `gallery`) VALUES
 	(1, 'steam:11000011bf03921', 'license:a1bad4e35f0be147bc8d6a2159dd92c410231821', 'Mehrbod', 'steve', 'watson', '[{"equiped":false,"count":1,"info":[],"weight":1,"slot":1,"name":"wet_red_phone"}]', 12, 0, 0, '{"sun_2":10,"hair_color_1":28,"makeup_1":-1,"lipstick_4":0,"age_2":10,"face_md_weight":50.0,"sex":0,"nose_1":0,"chest_3":0,"sun_1":-1,"blush_3":0,"glasses_2":0,"bodyb_3":-1,"hair_color_2":0,"cheeks_2":0,"eye_color":0,"shoes_1":51,"age_1":-1,"chain_2":0,"jaw_1":0,"makeup_3":0,"chest_2":10,"torso_2":8,"makeup_4":0,"lipstick_1":-1,"nose_5":0,"beard_3":0,"nose_2":0,"mask_2":0,"eyebrows_1":2,"complexion_2":10,"chin_3":0,"eye_squint":0,"mask_1":-1,"moles_2":10,"decals_1":15,"watches_2":0,"torso_1":319,"bags_1":-1,"bproof_2":0,"bodyb_2":0,"dad":0,"eyebrows_2":10,"chain_1":-1,"beard_4":0,"beard_1":11,"nose_4":0,"skin_md_weight":6,"chin_1":0,"bodyb_1":-1,"pants_2":0,"eyebrows_3":0,"chest_1":-1,"blemishes_1":-1,"arms":19,"lipstick_2":10,"nose_3":0,"tshirt_1":122,"eyebrows_6":0,"bracelets_2":0,"beard_2":10,"makeup_2":10,"blemishes_2":10,"blush_2":10,"watches_1":-1,"eyebrows_4":0,"jaw_2":0,"lipstick_3":0,"hair_2":0,"mom":21,"arms_2":0,"cheeks_1":0,"decals_2":5,"eyebrows_5":0,"nose_6":0,"helmet_2":0,"cheeks_3":0,"glasses_1":8,"hair_1":19,"complexion_1":-1,"helmet_1":-1,"bags_2":0,"chin_2":0,"bodyb_4":0,"blush_1":-1,"ears_2":0,"neck_thickness":0,"pants_1":10,"bproof_1":2,"moles_1":-1,"tshirt_2":0,"lip_thickness":0,"shoes_2":0,"bracelets_1":-1,"ears_1":-1,"chin_4":0}', 'nojob', 0, 0, '[]', '{"x":-16.05104637145996,"y":-382.4251708984375,"z":39.05810165405273}', 227300, 'user', '', 'male', 1, '[{"percent":49.89,"val":498900,"name":"hunger"},{"percent":49.8185,"val":498185,"name":"thirst"},{"percent":100,"val":100,"name":"health"},{"percent":0,"val":0,"name":"armor"}]', '{"time":0,"part":0,"reason":0,"type":0}', NULL, 'nogang', 0, 52598, '', 'true', 0, '[{"bottom":true,"Alerts":0,"job":false,"color":"img/apps/phone.png","tooltipText":"Phone","app":"phone","custom":false,"blockedjobs":[],"tooltipPos":"top","slot":1},{"bottom":true,"Alerts":0,"job":false,"color":"img/apps/gallery.png","tooltipText":"Gallery","app":"photos","custom":false,"slot":2,"blockedjobs":[]},{"bottom":true,"Alerts":0,"job":false,"color":"img/apps/messages.png","tooltipText":"Messages","app":"messages","custom":false,"slot":3,"blockedjobs":[]},{"bottom":true,"Alerts":0,"job":false,"color":"img/apps/safari.png","tooltipText":"Safari","app":"safari","custom":false,"blockedjobs":[],"tooltipPos":"top","slot":4},{"app":"mail","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/mail.png","job":false,"tooltipText":"Mail","slot":5},{"app":"calendar","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/calendar.png","job":false,"tooltipText":"Calendar","slot":6},{"app":"camera","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/camera.png","job":false,"tooltipText":"Camera","slot":7},{"app":"store","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/appstore.png","job":false,"tooltipText":"App Store","slot":8},{"app":"clock","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/clock.png","job":false,"tooltipText":"Clock","slot":9},{"app":"ping","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/ping.png","job":false,"tooltipText":"Ping","slot":10},{"app":"tips","custom":false,"Alerts":1,"blockedjobs":[],"color":"img/apps/tips.png","job":false,"tooltipText":"Tips","slot":11},{"app":"calculator","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/calculator.png","job":false,"tooltipText":"Calculator","slot":12},{"app":"bank","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/bank.png","job":false,"tooltipText":"Wallet","slot":13},{"app":"weather","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/weather.png","job":false,"tooltipText":"Weather","slot":14},{"app":"notes","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/notes.png","job":false,"tooltipText":"Notes","slot":15},{"app":"settings","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/settings.png","job":false,"tooltipText":"Settings","slot":16},{"app":"business","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/business.png","job":false,"tooltipText":"Business","slot":17},{"app":"instagram","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/instagram.png","job":false,"slot":18,"tooltipText":"Instagram"},{"app":"whatsapp","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/whatsapp.png","job":false,"slot":19,"tooltipText":"WhatsApp"},{"app":"jump","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/jump.png","job":false,"slot":20,"tooltipText":"Doodle Jump"},{"app":"group-chats","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/discord.png","job":false,"slot":21,"tooltipText":"Discord"},{"app":"twitter","custom":false,"Alerts":0,"blockedjobs":[],"color":"img/apps/twitter.png","job":false,"slot":22,"tooltipText":"Twitter"},{"app":"pacman","custom":false,"Alerts":0,"job":false,"color":"img/apps/pacman.png","tooltipText":"PAC-MAN","slot":23,"blockedjobs":[]}]', '{"widget_gorunum":false}', '0', '{"account":"V5883512315","lastname":"watson","firstname":"steve","phone":"8573284445"}', '{"walletid":"V-89610197","cryptoid":"cpt-dk251","CryptoCurrency":[],"phone":{"background":"b14","Pincode":"9731","InstalledApps":{"meos":"meos","instagram":"instagram","jump":"jump","group-chats":"group-chats","pacman":"pacman","twitter":"twitter","whatsapp":"whatsapp"}}}', NULL, NULL, '{"left":871.0243530273438,"top":25.98958396911621}', NULL, 1, NULL, '', '', '', '');
@@ -4192,16 +4192,16 @@ INSERT INTO `users` (`citizenid`, `identifier`, `license`, `name`, `firstname`, 
 INSERT INTO `users` (`citizenid`, `identifier`, `license`, `name`, `firstname`, `lastname`, `inventory`, `permission_level`, `money`, `bank`, `skin`, `job`, `job_grade`, `badge`, `divisions`, `position`, `salary`, `group`, `dateofbirth`, `sex`, `is_dead`, `status`, `jail`, `phone_number`, `gang`, `gang_grade`, `timePlay`, `tattoos`, `starterpack`, `comserv`, `apps`, `widget`, `bt`, `charinfo`, `metadata`, `cryptocurrency`, `cryptocurrencytransfers`, `phonePos`, `spotify`, `first_screen_showed`, `ringtone`, `pp`, `policemdtinfo`, `tags`, `gallery`) VALUES
 	(6, 'steam:110000144c6a3b8', 'license:e3d350e1c82020c66e8cf66401fcc72b3b343329', 'theMani_kh', 'Salam', 'Khodafez', '[{"name":"radio","count":1,"equiped":5,"slot":1,"info":[],"weight":1},{"name":"weapon_heavypistol","count":1,"weight":5,"info":{"components":["suppressor"],"extras":{"license":"No License"},"ammo":138,"tint":false},"slot":2,"equiped":false},{"name":"red_phone","count":1,"equiped":6,"slot":3,"info":[],"weight":1},{"name":"bodycam","count":1,"equiped":false,"slot":4,"info":[],"weight":0.3},{"name":"megaphone","count":1,"equiped":false,"slot":5,"info":[],"weight":2},{"name":"weapon_pistol50","count":1,"weight":5,"info":{"components":[],"extras":{"license":"No License"},"ammo":0,"tint":false},"slot":6,"equiped":false},{"name":"weapon_combatpdw","count":1,"equiped":"1","slot":7,"info":{"components":["clip_extended","flashlight","scope","grip","suppressor"],"ammo":0,"extras":{"license":"No License"},"tint":3},"weight":10},{"name":"9mm","count":69,"equiped":false,"slot":8,"info":[],"weight":0.01},{"name":"weapon_switchblade","count":1,"equiped":"4","slot":9,"info":{"components":[],"ammo":0,"extras":{"license":"No License"},"tint":false},"weight":2}]', 0, 1000, 9300, '{"bracelets_2":0,"makeup_1":-1,"neck_thickness":0,"helmet_2":0,"chain_1":-1,"bproof_2":0,"beard_3":0,"eye_color":0,"nose_3":0,"chin_1":0,"pants_2":8,"face_md_weight":50.0,"hair_1":4,"torso_1":138,"hair_2":0,"complexion_2":10,"chain_2":0,"nose_5":0,"eyebrows_2":10,"lipstick_1":-1,"nose_2":0,"hair_color_2":0,"bproof_1":-1,"chest_3":0,"hair_color_1":0,"eyebrows_6":0,"beard_4":0,"pants_1":10,"blush_3":0,"lip_thickness":0,"chin_4":0,"cheeks_2":0,"makeup_3":0,"eyebrows_3":0,"dad":0,"blemishes_2":10,"glasses_1":-1,"sun_1":-1,"arms":20,"eyebrows_5":0,"age_2":10,"lipstick_3":0,"blush_1":-1,"moles_2":10,"sex":0,"mask_2":0,"bracelets_1":-1,"mom":21,"sun_2":10,"torso_2":2,"makeup_4":0,"makeup_2":10,"chin_2":0,"skin_md_weight":6,"bags_2":0,"watches_1":-1,"beard_1":-1,"shoes_2":0,"chest_2":10,"bags_1":-1,"nose_1":0,"helmet_1":-1,"tshirt_2":0,"shoes_1":4,"lipstick_4":0,"tshirt_1":15,"lipstick_2":10,"mask_1":-1,"cheeks_3":0,"jaw_2":0,"chest_1":-1,"eyebrows_4":0,"watches_2":0,"moles_1":-1,"blush_2":10,"glasses_2":0,"nose_4":0,"beard_2":10,"blemishes_1":-1,"jaw_1":0,"complexion_1":-1,"age_1":-1,"nose_6":0,"cheeks_1":0,"chin_3":0,"eyebrows_1":0}', 'nojob', 0, 0, '[]', '{"y":-1051.46728515625,"x":-536.4482421875,"z":22.6419506072998}', 19000, 'user', NULL, 'male', 1, '[{"val":500000,"name":"hunger","percent":50.0},{"val":500000,"name":"thirst","percent":50.0},{"val":100,"name":"health","percent":100},{"val":0,"name":"armor","percent":0}]', '{"type": 0, "part": 0, "time": 0, "reason": 0}', '0912558292', 'nogang', 0, 37694, '', 'true', 0, NULL, '{"widget_gorunum":false}', '0', '{"lastname":"Khodafez","account":"QS8247837872","phone":"553194362","firstname":"Salam"}', '{"walletid":"QS-98688584","cryptoid":"cpt-VA801","phone":{"background":"b2","InstalledApps":[],"lockscreen":false,"profilepicture":"https://media.discordapp.net/attachments/1013413430050422784/1045405043773415525/screenshot.jpg"},"CryptoCurrency":[]}', NULL, NULL, NULL, NULL, 1, NULL, '', '', '', '');
 INSERT INTO `users` (`citizenid`, `identifier`, `license`, `name`, `firstname`, `lastname`, `inventory`, `permission_level`, `money`, `bank`, `skin`, `job`, `job_grade`, `badge`, `divisions`, `position`, `salary`, `group`, `dateofbirth`, `sex`, `is_dead`, `status`, `jail`, `phone_number`, `gang`, `gang_grade`, `timePlay`, `tattoos`, `starterpack`, `comserv`, `apps`, `widget`, `bt`, `charinfo`, `metadata`, `cryptocurrency`, `cryptocurrencytransfers`, `phonePos`, `spotify`, `first_screen_showed`, `ringtone`, `pp`, `policemdtinfo`, `tags`, `gallery`) VALUES
-	(7, 'steam:1100001452540bf', 'license:e3d350e1c82020c66e8cf66401fcc72b3b343329', 'KAKXER', 'KAKXER', 'BELA', '[{"slot":1,"count":1,"info":[],"equiped":5,"name":"radio","weight":1},{"slot":2,"count":1,"info":[],"equiped":false,"name":"oil","weight":6}]', 16, 135000, 31934410, '{"chin_3":0,"hair_color_2":0,"eyebrows_1":0,"face_2":21,"bodyb_3":-1,"sun_2":10,"beard_2":10,"lipstick_2":10,"neck_thickness":0,"cheeks_1":0,"ears_1":3,"watches_2":2,"pants_2":0,"mom":21,"shoes_1":32,"shoes":10,"cheeks_3":0,"lipstick_1":-1,"face_3":5,"helmet_1":143,"eyebrows_6":0,"skin_md_weight":6,"chest_1":-1,"bproof_1":-1,"makeup_2":10,"lipstick_4":0,"pants_1":26,"blemishes_2":10,"makeup_3":0,"face_md_weight":50.0,"decals_1":1,"eyebrows_4":0,"dad":0,"blemishes_1":-1,"makeup_4":0,"bracelets_1":6,"nose_5":0,"shoes_2":3,"beard_4":0,"hair_1":4,"hair":{"texture":0,"style":0,"highlight":0,"color":0},"sex":0,"makeup_1":-1,"hair_color_1":0,"lip_thickness":0,"age_2":10,"nose_4":0,"eyebrows_5":0,"beard_3":0,"torso_1":81,"nose_3":0,"headBlend":{"skinThird":0,"thirdMix":0,"skinMix":0,"shapeSecond":0,"skinFirst":0,"shapeMix":0,"shapeFirst":0,"skinSecond":0,"shapeThird":0},"lipstick_3":0,"chain_1":51,"tshirt_2":0,"nose_6":0,"bags_1":-1,"chin_2":0,"bodyb_4":0,"ears_2":0,"components":[{"texture":0,"component_id":0,"drawable":0},{"texture":0,"component_id":2,"drawable":0},{"texture":0,"component_id":1,"drawable":0},{"texture":0,"component_id":7,"drawable":0},{"texture":2,"component_id":4,"drawable":79},{"texture":4,"component_id":6,"drawable":32},{"texture":0,"component_id":10,"drawable":0},{"texture":1,"component_id":3,"drawable":19},{"texture":0,"component_id":5,"drawable":0},{"texture":0,"component_id":9,"drawable":0},{"texture":0,"component_id":8,"drawable":15},{"texture":0,"component_id":11,"drawable":80}],"tattoos":[],"age_1":-1,"chest_3":0,"jaw_2":0,"skin":0,"chain_2":0,"bodyb_1":-1,"blush_1":-1,"mask_1":-1,"headOverlays":{"blush":{"style":0,"color":0,"opacity":0},"makeUp":{"secondColor":0,"style":0,"opacity":0,"color":0},"bodyBlemishes":{"style":0,"color":0,"opacity":0},"lipstick":{"style":0,"color":0,"opacity":0},"complexion":{"style":0,"color":0,"opacity":0},"eyebrows":{"style":0,"color":0,"opacity":0},"beard":{"style":0,"color":0,"opacity":0},"ageing":{"style":0,"color":0,"opacity":0},"chestHair":{"style":0,"color":0,"opacity":0},"sunDamage":{"style":0,"color":0,"opacity":0},"blemishes":{"style":0,"color":0,"opacity":0},"moleAndFreckles":{"style":0,"color":0,"opacity":0}},"arms_2":0,"helmet_2":0,"eyebrows_2":10,"decals_2":0,"beard_1":-1,"chest_2":10,"arms":19,"jaw_1":0,"chin_1":0,"face_1":16,"glasses":0,"torso_2":0,"watches_1":6,"moles_2":10,"eyebrows_3":0,"complexion_2":10,"bags_2":0,"chin_4":0,"faceFeatures":{"cheeksBoneWidth":0,"nosePeakLowering":0,"eyesOpening":0,"eyeBrownHigh":0,"chinBoneLenght":0,"chinHole":0,"nosePeakHigh":0,"cheeksBoneHigh":0,"chinBoneSize":0,"lipsThickness":0,"neckThickness":0,"jawBoneBackSize":0,"noseWidth":0,"eyeBrownForward":0,"noseBoneHigh":0,"nosePeakSize":0,"jawBoneWidth":0,"chinBoneLowering":0,"noseBoneTwist":0,"cheeksWidth":0},"eye_squint":0,"complexion_1":-1,"tshirt_1":15,"blush_2":10,"nose_1":0,"bodyb_2":0,"glasses_2":4,"nose_2":0,"props":[{"drawable":18,"prop_id":1,"texture":5},{"drawable":4,"prop_id":2,"texture":0},{"drawable":6,"prop_id":6,"texture":2},{"drawable":6,"prop_id":7,"texture":0},{"drawable":152,"prop_id":0,"texture":0}],"model":"mp_m_freemode_01","bracelets_2":0,"blush_3":0,"eye_color":0,"glasses_1":5,"mask_2":0,"bproof_2":0,"hair_2":0,"sun_1":-1,"eyeColor":-1,"moles_1":-1,"cheeks_2":0,"face":0}', 'cardealer', 3, 0, '{"police":{"fa":0,"hr":1,"gc2":0}}', '{"y":-969.7406616210938,"x":117.55223083496094,"z":28.74896240234375}', 98000, 'user', NULL, 'male', 1, '[{"percent":43.78,"name":"hunger","val":437800},{"percent":44.137,"name":"thirst","val":441370},{"percent":50,"name":"health","val":50},{"percent":0,"name":"armor","val":0}]', '{"type": 0, "part": 0, "time": 0, "reason": 0}', '0912912520', 'asghar', 6, 504900, '', 'true', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', '');
+	(7, 'steam:1100001452540bf', 'license:e3d350e1c82020c66e8cf66401fcc72b3b343329', 'KAKXER', 'KAKXER', 'BELA', '[{"name":"radio","slot":1,"info":[],"weight":1,"count":1,"equiped":5},{"name":"oil","slot":2,"info":[],"weight":6,"count":1,"equiped":false}]', 18, 135000, 31934410, '{"chin_3":0,"hair_color_2":0,"eyebrows_1":0,"face_2":21,"bodyb_3":-1,"sun_2":10,"beard_2":10,"lipstick_2":10,"neck_thickness":0,"cheeks_1":0,"ears_1":3,"watches_2":2,"pants_2":0,"mom":21,"shoes_1":32,"shoes":10,"cheeks_3":0,"lipstick_1":-1,"face_3":5,"helmet_1":143,"eyebrows_6":0,"skin_md_weight":6,"chest_1":-1,"bproof_1":-1,"makeup_2":10,"lipstick_4":0,"pants_1":26,"blemishes_2":10,"makeup_3":0,"face_md_weight":50.0,"decals_1":1,"eyebrows_4":0,"dad":0,"blemishes_1":-1,"makeup_4":0,"bracelets_1":6,"nose_5":0,"shoes_2":3,"beard_4":0,"hair_1":4,"hair":{"texture":0,"style":0,"highlight":0,"color":0},"sex":0,"makeup_1":-1,"hair_color_1":0,"lip_thickness":0,"age_2":10,"nose_4":0,"eyebrows_5":0,"beard_3":0,"torso_1":81,"nose_3":0,"headBlend":{"skinThird":0,"thirdMix":0,"skinMix":0,"shapeSecond":0,"skinFirst":0,"shapeMix":0,"shapeFirst":0,"skinSecond":0,"shapeThird":0},"lipstick_3":0,"chain_1":51,"tshirt_2":0,"nose_6":0,"bags_1":-1,"chin_2":0,"bodyb_4":0,"ears_2":0,"components":[{"texture":0,"component_id":0,"drawable":0},{"texture":0,"component_id":2,"drawable":0},{"texture":0,"component_id":1,"drawable":0},{"texture":0,"component_id":7,"drawable":0},{"texture":2,"component_id":4,"drawable":79},{"texture":4,"component_id":6,"drawable":32},{"texture":0,"component_id":10,"drawable":0},{"texture":1,"component_id":3,"drawable":19},{"texture":0,"component_id":5,"drawable":0},{"texture":0,"component_id":9,"drawable":0},{"texture":0,"component_id":8,"drawable":15},{"texture":0,"component_id":11,"drawable":80}],"tattoos":[],"age_1":-1,"chest_3":0,"jaw_2":0,"skin":0,"chain_2":0,"bodyb_1":-1,"blush_1":-1,"mask_1":-1,"headOverlays":{"blush":{"style":0,"color":0,"opacity":0},"makeUp":{"secondColor":0,"style":0,"opacity":0,"color":0},"bodyBlemishes":{"style":0,"color":0,"opacity":0},"lipstick":{"style":0,"color":0,"opacity":0},"complexion":{"style":0,"color":0,"opacity":0},"eyebrows":{"style":0,"color":0,"opacity":0},"beard":{"style":0,"color":0,"opacity":0},"ageing":{"style":0,"color":0,"opacity":0},"chestHair":{"style":0,"color":0,"opacity":0},"sunDamage":{"style":0,"color":0,"opacity":0},"blemishes":{"style":0,"color":0,"opacity":0},"moleAndFreckles":{"style":0,"color":0,"opacity":0}},"arms_2":0,"helmet_2":0,"eyebrows_2":10,"decals_2":0,"beard_1":-1,"chest_2":10,"arms":19,"jaw_1":0,"chin_1":0,"face_1":16,"glasses":0,"torso_2":0,"watches_1":6,"moles_2":10,"eyebrows_3":0,"complexion_2":10,"bags_2":0,"chin_4":0,"faceFeatures":{"cheeksBoneWidth":0,"nosePeakLowering":0,"eyesOpening":0,"eyeBrownHigh":0,"chinBoneLenght":0,"chinHole":0,"nosePeakHigh":0,"cheeksBoneHigh":0,"chinBoneSize":0,"lipsThickness":0,"neckThickness":0,"jawBoneBackSize":0,"noseWidth":0,"eyeBrownForward":0,"noseBoneHigh":0,"nosePeakSize":0,"jawBoneWidth":0,"chinBoneLowering":0,"noseBoneTwist":0,"cheeksWidth":0},"eye_squint":0,"complexion_1":-1,"tshirt_1":15,"blush_2":10,"nose_1":0,"bodyb_2":0,"glasses_2":4,"nose_2":0,"props":[{"drawable":18,"prop_id":1,"texture":5},{"drawable":4,"prop_id":2,"texture":0},{"drawable":6,"prop_id":6,"texture":2},{"drawable":6,"prop_id":7,"texture":0},{"drawable":152,"prop_id":0,"texture":0}],"model":"mp_m_freemode_01","bracelets_2":0,"blush_3":0,"eye_color":0,"glasses_1":5,"mask_2":0,"bproof_2":0,"hair_2":0,"sun_1":-1,"eyeColor":-1,"moles_1":-1,"cheeks_2":0,"face":0}', 'cardealer', 3, 0, '{"police":{"hr":1,"gc2":0,"fa":0}}', '{"z":29.39675140380859,"y":-996.8062133789063,"x":108.05027770996094}', 98000, 'user', NULL, 'male', 1, '[{"name":"hunger","percent":40.89,"val":408900},{"name":"thirst","percent":39.3685,"val":393685},{"name":"health","percent":50,"val":50},{"name":"armor","percent":0,"val":0}]', '{"type": 0, "part": 0, "time": 0, "reason": 0}', '0912912520', 'asghar', 6, 505195, '', 'true', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', '');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
--- Dumping structure for table essential.user_licenses
+-- Dumping structure for table database.user_licenses
 CREATE TABLE IF NOT EXISTS `user_licenses` (
   `type` varchar(60) NOT NULL,
   `owner` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.user_licenses: ~4 rows (approximately)
+-- Dumping data for table database.user_licenses: ~4 rows (approximately)
 /*!40000 ALTER TABLE `user_licenses` DISABLE KEYS */;
 INSERT INTO `user_licenses` (`type`, `owner`) VALUES
 	('weapon', 'steam:1100001440a9ff9');
@@ -4213,7 +4213,7 @@ INSERT INTO `user_licenses` (`type`, `owner`) VALUES
 	('weapon', 'steam:1100001452540bf');
 /*!40000 ALTER TABLE `user_licenses` ENABLE KEYS */;
 
--- Dumping structure for table essential.user_outfits
+-- Dumping structure for table database.user_outfits
 CREATE TABLE IF NOT EXISTS `user_outfits` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `identifier` varchar(50) DEFAULT NULL,
@@ -4226,11 +4226,11 @@ CREATE TABLE IF NOT EXISTS `user_outfits` (
   KEY `identifier` (`identifier`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.user_outfits: ~0 rows (approximately)
+-- Dumping data for table database.user_outfits: ~0 rows (approximately)
 /*!40000 ALTER TABLE `user_outfits` DISABLE KEYS */;
 /*!40000 ALTER TABLE `user_outfits` ENABLE KEYS */;
 
--- Dumping structure for table essential.weashops
+-- Dumping structure for table database.weashops
 CREATE TABLE IF NOT EXISTS `weashops` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `zone` varchar(255) NOT NULL,
@@ -4239,7 +4239,7 @@ CREATE TABLE IF NOT EXISTS `weashops` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table essential.weashops: ~8 rows (approximately)
+-- Dumping data for table database.weashops: ~8 rows (approximately)
 /*!40000 ALTER TABLE `weashops` DISABLE KEYS */;
 INSERT INTO `weashops` (`id`, `zone`, `item`, `price`) VALUES
 	(9, 'GunShop', 'WEAPON_BAT', 15000);
@@ -4259,7 +4259,7 @@ INSERT INTO `weashops` (`id`, `zone`, `item`, `price`) VALUES
 	(65, 'GunShop', 'gadget_parachute', 80000);
 /*!40000 ALTER TABLE `weashops` ENABLE KEYS */;
 
--- Dumping structure for table essential.whatsapp_accounts
+-- Dumping structure for table database.whatsapp_accounts
 CREATE TABLE IF NOT EXISTS `whatsapp_accounts` (
   `id` varchar(100) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -4268,11 +4268,11 @@ CREATE TABLE IF NOT EXISTS `whatsapp_accounts` (
   `avatar` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table essential.whatsapp_accounts: ~0 rows (approximately)
+-- Dumping data for table database.whatsapp_accounts: ~0 rows (approximately)
 /*!40000 ALTER TABLE `whatsapp_accounts` DISABLE KEYS */;
 /*!40000 ALTER TABLE `whatsapp_accounts` ENABLE KEYS */;
 
--- Dumping structure for table essential.whatsapp_chats
+-- Dumping structure for table database.whatsapp_chats
 CREATE TABLE IF NOT EXISTS `whatsapp_chats` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(50) NOT NULL,
@@ -4282,11 +4282,11 @@ CREATE TABLE IF NOT EXISTS `whatsapp_chats` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.whatsapp_chats: ~0 rows (approximately)
+-- Dumping data for table database.whatsapp_chats: ~0 rows (approximately)
 /*!40000 ALTER TABLE `whatsapp_chats` DISABLE KEYS */;
 /*!40000 ALTER TABLE `whatsapp_chats` ENABLE KEYS */;
 
--- Dumping structure for table essential.whatsapp_chats_messages
+-- Dumping structure for table database.whatsapp_chats_messages
 CREATE TABLE IF NOT EXISTS `whatsapp_chats_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_chat` int(11) NOT NULL,
@@ -4298,11 +4298,11 @@ CREATE TABLE IF NOT EXISTS `whatsapp_chats_messages` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table essential.whatsapp_chats_messages: ~0 rows (approximately)
+-- Dumping data for table database.whatsapp_chats_messages: ~0 rows (approximately)
 /*!40000 ALTER TABLE `whatsapp_chats_messages` DISABLE KEYS */;
 /*!40000 ALTER TABLE `whatsapp_chats_messages` ENABLE KEYS */;
 
--- Dumping structure for table essential.whatsapp_groups
+-- Dumping structure for table database.whatsapp_groups
 CREATE TABLE IF NOT EXISTS `whatsapp_groups` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(50) NOT NULL,
@@ -4314,11 +4314,11 @@ CREATE TABLE IF NOT EXISTS `whatsapp_groups` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.whatsapp_groups: ~0 rows (approximately)
+-- Dumping data for table database.whatsapp_groups: ~0 rows (approximately)
 /*!40000 ALTER TABLE `whatsapp_groups` DISABLE KEYS */;
 /*!40000 ALTER TABLE `whatsapp_groups` ENABLE KEYS */;
 
--- Dumping structure for table essential.whatsapp_groups_messages
+-- Dumping structure for table database.whatsapp_groups_messages
 CREATE TABLE IF NOT EXISTS `whatsapp_groups_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_group` varchar(50) NOT NULL,
@@ -4331,22 +4331,22 @@ CREATE TABLE IF NOT EXISTS `whatsapp_groups_messages` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table essential.whatsapp_groups_messages: ~0 rows (approximately)
+-- Dumping data for table database.whatsapp_groups_messages: ~0 rows (approximately)
 /*!40000 ALTER TABLE `whatsapp_groups_messages` DISABLE KEYS */;
 /*!40000 ALTER TABLE `whatsapp_groups_messages` ENABLE KEYS */;
 
--- Dumping structure for table essential.whatsapp_groups_users
+-- Dumping structure for table database.whatsapp_groups_users
 CREATE TABLE IF NOT EXISTS `whatsapp_groups_users` (
   `number_group` varchar(50) NOT NULL,
   `admin` int(11) NOT NULL,
   `phone` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table essential.whatsapp_groups_users: ~0 rows (approximately)
+-- Dumping data for table database.whatsapp_groups_users: ~0 rows (approximately)
 /*!40000 ALTER TABLE `whatsapp_groups_users` DISABLE KEYS */;
 /*!40000 ALTER TABLE `whatsapp_groups_users` ENABLE KEYS */;
 
--- Dumping structure for table essential.whatsapp_stories
+-- Dumping structure for table database.whatsapp_stories
 CREATE TABLE IF NOT EXISTS `whatsapp_stories` (
   `phone` varchar(50) NOT NULL,
   `image` text NOT NULL,
@@ -4356,18 +4356,18 @@ CREATE TABLE IF NOT EXISTS `whatsapp_stories` (
   `filter` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.whatsapp_stories: ~0 rows (approximately)
+-- Dumping data for table database.whatsapp_stories: ~0 rows (approximately)
 /*!40000 ALTER TABLE `whatsapp_stories` DISABLE KEYS */;
 /*!40000 ALTER TABLE `whatsapp_stories` ENABLE KEYS */;
 
--- Dumping structure for table essential.whitelist
+-- Dumping structure for table database.whitelist
 CREATE TABLE IF NOT EXISTS `whitelist` (
   `identifier` varchar(40) NOT NULL,
   `Name` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table essential.whitelist: ~0 rows (approximately)
+-- Dumping data for table database.whitelist: ~0 rows (approximately)
 /*!40000 ALTER TABLE `whitelist` DISABLE KEYS */;
 /*!40000 ALTER TABLE `whitelist` ENABLE KEYS */;
 

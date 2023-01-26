@@ -72,7 +72,7 @@ function SaveMap(name, objects)
 	xml = xml .. '  </Objects>' .. "\n"
 	xml = xml .. '</Map>'       .. "\n"
 	
-	local file = io.open('resources/[essential]/es_mapper/data/maps/' .. name .. '.xml', 'w')
+	local file = io.open('resources/[DevTools]/es_mapper/data/maps/' .. name .. '.xml', 'w')
 
 	file:write(xml)
 	file:flush()
