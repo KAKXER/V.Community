@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 
 intents = discord.Intents.all()
-discord.member = True
+discord.member = false
 
 client = commands.Bot(command_prefix = '>', intents = intents)
 
