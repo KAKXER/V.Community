@@ -1,8 +1,6 @@
 fx_version 'bodacious'
 game 'gta5'
 
-author 'theMani_kh'
-
 shared_script 'config.lua'
 
 server_scripts {
@@ -13,6 +11,7 @@ server_scripts {
 client_scripts {
   'client/*.lua',
 }
+
 ui_page('ui/index.html')
 
 files {
