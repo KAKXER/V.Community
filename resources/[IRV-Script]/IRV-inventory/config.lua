@@ -1,6 +1,5 @@
 -- inventory ta 3 mah ayande expire mishavad...
 -- :_)
--- kobi baby man Daniiiiiiiiiiii
 
 Config = {}
 
