@@ -20,3 +20,4 @@ files {
   'ui/images/*.*',
   'ui/js/*.*',
 }
+
