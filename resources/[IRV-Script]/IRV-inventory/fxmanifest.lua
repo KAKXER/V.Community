@@ -1,6 +1,8 @@
 fx_version 'bodacious'
 game 'gta5'
 
+author 'theMani_kh'
+
 shared_script 'config.lua'
 
 server_scripts {
