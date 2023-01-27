@@ -4,7 +4,7 @@
 ### Stream File
  - [Download [6.79 GB]](https://drive.google.com/drive/folders/1A0iXlCuCqlQw6FneMuyi1YQNQ6tkFZP_?usp=share_link)
 
->  Tebgh License `GNU Affero General Public License v3.0` hagh estefade mahdod ra darid.
+>  Tebgh License `GNU Affero General Public License v3.0` hagh estefade mahdodi ra darid.
 >
 >| Permissions🧾  |
 >| ---------------|
