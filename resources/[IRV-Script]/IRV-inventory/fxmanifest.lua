@@ -13,7 +13,6 @@ server_scripts {
 client_scripts {
   'client/*.lua',
 }
-
 ui_page('ui/index.html')
 
 files {
