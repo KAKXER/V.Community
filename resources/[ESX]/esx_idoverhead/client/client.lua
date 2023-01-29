@@ -290,36 +290,42 @@ end
 exports("getAlias", getAlias)
 
 
-RegisterCommand("hide", function()
-    PlaySoundFrontend(-1, "Mission_Pass_Notify", "DLC_HEISTS_GENERAL_FRONTEND_SOUNDS", true);
-    -- hide(true)
-end)
 
 
+----------------------------------------
 
-function hide(hide)
-    DisplayRadar(not hide)
-    exports['chat']:Hide(hide)
-    exports['IRV-Speedometer']:Hide(hide)
-    exports['IRV_Status']:Hide(hide)
-    exports['IRV-Streetlabel']:Hide(hide)
-    ESX.UI.Menu.CloseAll()
-end
 
-function StartDarkScreen()
-	DoScreenFadeOut(500)
-	while IsScreenFadingOut() do
-		Citizen.Wait(1)
-	end
-end
+-- test camera
 
-function EndDarkScreen()
-	ShutdownLoadingScreen()
-	DoScreenFadeIn(500)
-	while IsScreenFadingIn() do
-		Citizen.Wait(1)
-	end
-end
+
+-- RegisterCommand("hide", function()
+--     PlaySoundFrontend(-1, "Mission_Pass_Notify", "DLC_HEISTS_GENERAL_FRONTEND_SOUNDS", true);
+--     -- hide(true)
+-- end)
+
+-- function hide(hide)
+--     DisplayRadar(not hide)
+--     exports['chat']:Hide(hide)
+--     exports['IRV-Speedometer']:Hide(hide)
+--     exports['IRV_Status']:Hide(hide)
+--     exports['IRV-Streetlabel']:Hide(hide)
+--     ESX.UI.Menu.CloseAll()
+-- end
+
+-- function StartDarkScreen()
+-- 	DoScreenFadeOut(500)
+-- 	while IsScreenFadingOut() do
+-- 		Citizen.Wait(1)
+-- 	end
+-- end
+
+-- function EndDarkScreen()
+-- 	ShutdownLoadingScreen()
+-- 	DoScreenFadeIn(500)
+-- 	while IsScreenFadingIn() do
+-- 		Citizen.Wait(1)
+-- 	end
+-- end
 
 -- RegisterCommand("dasda", function()
 --     StartDarkScreen()
